@@ -10,7 +10,7 @@ const exists = util.promisify(fs.exists);
 
 var ajv = new Ajv({ useDefaults: true, jsonPointers: true });
 
-async function getConfiguration(dirname, preset = null) {
+async function getConfiguration(dirname, preset = null, argument = null) {
   let schema;
   let defaultConfiguration;
   let configurationPreset;
@@ -69,7 +69,23 @@ async function getConfiguration(dirname, preset = null) {
     return null;
   }
 
-  return merge({}, defaultConfiguration, configurationPreset, configuration);
+  if (argument !== null) {
+    error = validateConfiguration(schema, argument);
+
+    if (error) {
+      console.error(`Configuration argument is not valid.`);
+      console.error(error);
+      return null;
+    }
+  }
+
+  return merge(
+    {},
+    defaultConfiguration,
+    configurationPreset,
+    configuration,
+    argument ? argument : {}
+  );
 }
 
 function validateConfiguration(schema, configuration) {
