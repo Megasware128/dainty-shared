@@ -1,6 +1,6 @@
 const culori = require("culori");
 const changeCase = require("change-case");
-const { groupBy } = require("./utils");
+const { groupBy, identity } = require("./utils");
 
 let colorsCount = [];
 let isTrackingColorsCount = false;
@@ -123,11 +123,11 @@ function trackColorsCount(isTracking) {
   isTrackingColorsCount = isTracking;
 }
 
-function getColorsCountByScale() {
+function getColorsCountByScale(filterFn = identity) {
   return groupBy(
     colorsCount
       .sort((a, b) => a.color.localeCompare(b.color, "en", { numeric: true }))
-      .filter(c => c.count > 0),
+      .filter(filterFn),
     "scale"
   );
 }
