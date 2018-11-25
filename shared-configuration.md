@@ -1,6 +1,6 @@
-# Configuration across applications
+# Shared configuration
 
-Dainty has a unique configuration schema per application. However, the properties `"variant"` and `"colors"` are shared among them. In addition, Dainty has support for presets among all applications. That is also described in this document.
+Dainty has a unique configuration schema defined for each application. Properties `"variant"` and `"colors"` are shared among all schemas. In addition, Dainty for every application supports configuration presets.
 
 ## `configuration.json`
 
@@ -36,8 +36,8 @@ With a provided base color a scale of 40 shades is built. The color will be conv
 
 ## Presets
 
-Presets are configuration files that can be used in addition to `configuration.json`. They are intended for turning Dainty into another color theme. Presets, if present, are located in the `presets` directory and can be activated by adding `-p <name>` or `--preset <name>` to `build`:
+Presets are configuration files that can be used in addition to `configuration.json`. They are intended for turning Dainty into another color theme. Presets, if present, are located in the `presets` directory for each application and can be activated by adding `-p <name>` or `--preset <name>` to `yarn build`:
 
-    npm run build -- -p dainty-remix
+    yarn build -p dainty-remix
 
 If a property is set in both `configuration.json` and the preset configuration, then the one in `configuration.json` is used.
