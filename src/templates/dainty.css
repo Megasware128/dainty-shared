@@ -331,7 +331,7 @@ button {
 
 button.primary {
   color: "BLUE_GRAY_39";
-  background-color: "BLUE_8";
+  background-color: "BLUE_MORE_CHROMA_10";
 }
 
 button:not(.primary) {
@@ -344,7 +344,7 @@ button:focus {
 }
 
 button.primary:hover {
-  background-color: "BLUE_10";
+  background-color: "BLUE_MORE_CHROMA_12";
 }
 
 button:not(.primary):hover {
