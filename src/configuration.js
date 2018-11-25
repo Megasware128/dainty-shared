@@ -109,5 +109,6 @@ function getDefaultConfiguration(configurationSchema) {
 }
 
 module.exports = {
-  getConfiguration
+  getConfiguration,
+  getDefaultConfiguration
 };
