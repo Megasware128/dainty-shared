@@ -56,16 +56,16 @@ async function getConfiguration(dirname, preset = null, argument = null) {
   let error = validateConfiguration(schema, configurationPreset);
 
   if (error) {
-    console.error(`Configuration preset \`${preset}\` is not valid.`);
     console.error(error);
+    console.error(`Configuration preset \`${preset}\` is not valid.`);
     return null;
   }
 
   error = validateConfiguration(schema, configuration);
 
   if (error) {
-    console.error(`Configuration is not valid.`);
     console.error(error);
+    console.error("`configuration.json` is not valid.");
     return null;
   }
 
