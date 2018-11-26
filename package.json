@@ -1,6 +1,6 @@
 {
   "name": "dainty-shared",
-  "version": "0.1.0-4caaf5d",
+  "version": "0.1.0-484523e",
   "main": "src/index.js",
   "dependencies": {
     "ajv": "6.5.5",
