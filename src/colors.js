@@ -21,7 +21,7 @@ function generateScale(color, override, adjustments) {
   const lchOverride = override ? culori.lch(override) : null;
 
   if (!lchOverride) {
-    chromaAdjustment = -2;
+    chromaAdjustment = -1.5;
   }
 
   switch (color) {
