@@ -26,8 +26,24 @@ function generateScale(color, override, adjustments) {
 
   switch (color) {
     case "RED":
-      hue = 90 / 4;
+      hue = 22.5;
       chromaDivisor = 2.5;
+      break;
+    case "ORANGE":
+      hue = 45;
+      chromaDivisor = 6;
+      break;
+    case "YELLOW":
+      hue = 90;
+      chromaDivisor = 4.25;
+      break;
+    case "GREEN":
+      hue = 180;
+      chromaDivisor = 4.5;
+      break;
+    case "CYAN":
+      hue = 225 + 90 / 32;
+      chromaDivisor = 4;
       break;
     case "BLUE_GRAY":
       hue = 270 - 90 / 16;
@@ -50,21 +66,9 @@ function generateScale(color, override, adjustments) {
       hue = 270 + 90 / 16;
       chromaDivisor = 2;
       break;
-    case "CYAN":
-      hue = 225 + 90 / 32;
-      chromaDivisor = 4;
-      break;
     case "PURPLE":
       hue = 315;
       chromaDivisor = 3;
-      break;
-    case "GREEN":
-      hue = 180;
-      chromaDivisor = 4.5;
-      break;
-    case "ORANGE":
-      hue = 45;
-      chromaDivisor = 6;
       break;
   }
 
@@ -146,6 +150,29 @@ function generateColorPalette(configuration) {
   }
 
   const colors = {
+    red: handleVariant(
+      generateScale("RED", overrides.red, configuration.colors.adjustments)
+    ),
+    orange: handleVariant(
+      generateScale(
+        "ORANGE",
+        overrides.orange,
+        configuration.colors.adjustments
+      )
+    ),
+    yellow: handleVariant(
+      generateScale(
+        "YELLOW",
+        overrides.yellow,
+        configuration.colors.adjustments
+      )
+    ),
+    green: handleVariant(
+      generateScale("GREEN", overrides.green, configuration.colors.adjustments)
+    ),
+    cyan: handleVariant(
+      generateScale("CYAN", overrides.cyan, configuration.colors.adjustments)
+    ),
     blueGray: handleVariant(
       generateScale(
         "BLUE_GRAY",
@@ -170,28 +197,12 @@ function generateColorPalette(configuration) {
         configuration.colors.adjustments
       )
     ),
-    cyan: handleVariant(
-      generateScale("CYAN", overrides.cyan, configuration.colors.adjustments)
-    ),
     purple: handleVariant(
       generateScale(
         "PURPLE",
         overrides.purple,
         configuration.colors.adjustments
       )
-    ),
-    orange: handleVariant(
-      generateScale(
-        "ORANGE",
-        overrides.orange,
-        configuration.colors.adjustments
-      )
-    ),
-    green: handleVariant(
-      generateScale("GREEN", overrides.green, configuration.colors.adjustments)
-    ),
-    red: handleVariant(
-      generateScale("RED", overrides.red, configuration.colors.adjustments)
     )
   };
 
