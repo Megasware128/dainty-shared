@@ -6,6 +6,7 @@
     "ajv": "6.5.5",
     "appdata-path": "1.0.0",
     "better-avj-errors": "0.4.0-alpha.3",
+    "chalk": "2.4.1",
     "change-case": "3.0.2",
     "culori": "0.7.3",
     "decomment": "0.9.2",

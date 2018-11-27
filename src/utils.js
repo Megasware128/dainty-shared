@@ -6,6 +6,7 @@ const replaceOnce = require("replace-once");
 const appDataPath_ = require("appdata-path");
 const decomment = require("decomment");
 const parseJson = require("parse-json");
+const chalk = require("chalk");
 
 const execAsync = util.promisify(exec);
 const exists = util.promisify(fs.exists);
@@ -57,10 +58,30 @@ async function backupFile(dirname, source) {
   );
 }
 
+function backticks(str) {
+  return `\`${str}\``;
+}
+
+function logTransform(source) {
+  console.log(
+    `${chalk.dim("–")} Transforming ${backticks(path.basename(source))}…`
+  );
+}
+
 async function writeFileLog(...args) {
-  console.log(`Writing to \`${args[0]}\`…`);
+  console.log(
+    `${chalk.dim("–")} Writing to ${backticks(
+      path.relative(process.cwd(), args[0])
+    )}…`
+  );
+
   await writeFile(...args);
-  console.log(`Done writing to \`${args[0]}\`.`);
+
+  console.log(
+    `${chalk.green("✓")} ${chalk.green.bold(
+      `Done writing to ${backticks(path.relative(process.cwd(), args[0]))}.`
+    )}`
+  );
 }
 
 function identity(value) {
@@ -126,5 +147,6 @@ module.exports = {
   createDistDirectory,
   createBackupDirectory,
   writeFileLog,
-  zip
+  zip,
+  logTransform
 };
