@@ -252,6 +252,18 @@ function generateColorConstantReplacements(colors, quotedKeys = true) {
   return replacements;
 }
 
+function generateColorConstants(colors) {
+  let constants = {};
+
+  for (const key of Object.keys(colors)) {
+    for (let i = 0; i < colors[key].length; i++) {
+      constants[`${changeCase.camelCase(key)}${i}`] = colors[key][i];
+    }
+  }
+
+  return constants;
+}
+
 function getColorScaleName(constantName) {
   switch (constantName) {
     case "BLUE_GRAY":
@@ -294,6 +306,7 @@ module.exports = {
   applyColorConstantReplacements,
   checkColorScaleRange,
   generateColorConstantReplacements,
+  generateColorConstants,
   generateColorPalette,
   getColorsCountByScale,
   getColorScaleName,
