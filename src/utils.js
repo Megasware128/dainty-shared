@@ -78,9 +78,9 @@ async function writeFileLog(...args) {
   await writeFile(...args);
 
   console.log(
-    `${chalk.green("✓")} ${chalk.green.bold(
-      `Done writing to ${backticks(path.relative(process.cwd(), args[0]))}.`
-    )}`
+    chalk.green.bold(
+      `✓ Done writing to ${backticks(path.relative(process.cwd(), args[0]))}.`
+    )
   );
 }
 
