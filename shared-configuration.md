@@ -32,11 +32,11 @@ There are currently no minimum or maximum values set.
 | `"orange"`         | Base color as hex for orange scale           |
 | `"purple"`         | Base color as hex for purple scale           |
 
-With a provided base color a scale of 40 shades is built. The color will be converted to LCh and its hue and chroma (saturation) are used while the lightness is calculated. For the blue-grays scale the exact lightness is used for the darkest shade. For the remaining an algorithm decides what lightness to use.
+With a provided base color a scale of 40 shades is built. The color will be converted to LCh and its hue and chroma (saturation) are used while the lightness is calculated. For the blue-gray scale, the lightness of the provided color is used for the darkest shade.
 
 ## Presets
 
-Presets are configuration files that can be used in addition to `configuration.json`. They are intended for turning Dainty into another color theme. Presets, if present, are located in the `presets` directory for each application and can be activated by adding `-p <name>` or `--preset <name>` to `yarn build`:
+Presets are configuration files that can be used in addition to `configuration.json`. They are intended for turning Dainty into another color theme. Presets are located in the `presets` directory for each application and can be activated by adding `-p <preset>` or `--preset <preset>` to `yarn build`:
 
     yarn build -p dainty-remix
 
