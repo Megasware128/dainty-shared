@@ -13,6 +13,7 @@ var ajv = new Ajv({ useDefaults: true, jsonPointers: true });
 async function getConfiguration(dirname, preset = null, argument = null) {
   let schema;
   let defaultConfiguration;
+  let configurationPresetDainty;
   let configurationPreset;
   let configuration;
 
@@ -22,6 +23,12 @@ async function getConfiguration(dirname, preset = null, argument = null) {
     );
 
     defaultConfiguration = getDefaultConfiguration(schema);
+
+    configurationPresetDainty = await readFileJson(
+      path.join(dirname, `../presets/dainty.json`)
+    );
+
+    console.log({ configurationPresetDainty });
 
     if (preset) {
       if (!(await exists(path.join(dirname, `../presets/${preset}.json`)))) {
@@ -82,6 +89,7 @@ async function getConfiguration(dirname, preset = null, argument = null) {
   return merge(
     {},
     defaultConfiguration,
+    configurationPresetDainty,
     configurationPreset,
     configuration,
     argument ? argument : {}
