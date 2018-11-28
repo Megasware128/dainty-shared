@@ -28,8 +28,6 @@ async function getConfiguration(dirname, preset = null, argument = null) {
       path.join(dirname, `../presets/dainty.json`)
     );
 
-    console.log({ configurationPresetDainty });
-
     if (preset) {
       if (!(await exists(path.join(dirname, `../presets/${preset}.json`)))) {
         console.error(`Configuration preset \`${preset}\` was not found.`);
