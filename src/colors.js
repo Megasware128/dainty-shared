@@ -122,10 +122,10 @@ function trackColorsCount(isTracking) {
 }
 
 function increaseColorCount(scale, shade) {
-  const el = colorsCount.find(c => c.color === `${scale}_${shade}`);
+  const el = colorsCount.find(c => c.color === `${scale}${shade}`);
 
   if (!el) {
-    colorsCount.push({ scale, color: `${scale}_${shade}`, count: 1 });
+    colorsCount.push({ scale, color: `${scale}${shade}`, count: 1 });
   } else {
     el.count = el.count + 1;
   }
@@ -256,7 +256,7 @@ function generateColorConstants(colors) {
 
   for (const key of Object.keys(colors)) {
     for (let i = 0; i < colors[key].length; i++) {
-      constants[`${changeCase.camelCase(key)}${i}`] = colors[key][i];
+      constants[`${key}${i}`] = colors[key][i];
     }
   }
 
@@ -313,7 +313,7 @@ function translateColorConstant(colorConstants, colorConstant) {
       if (isTrackingColorsCount) {
         const [scale, shade] = splitColorConstant(colorConstant_);
 
-        increaseColorCount(changeCase.constantCase(scale), shade);
+        increaseColorCount(scale, shade);
       }
 
       return colorConstants[colorConstant_] + alpha;
@@ -321,7 +321,7 @@ function translateColorConstant(colorConstants, colorConstant) {
       if (isTrackingColorsCount) {
         const [scale, shade] = splitColorConstant(colorConstant);
 
-        increaseColorCount(changeCase.constantCase(scale), shade);
+        increaseColorCount(scale, shade);
       }
 
       return colorConstants[colorConstant];
