@@ -264,6 +264,18 @@ function generateColorConstants(colors) {
   return constants;
 }
 
+function translateColorConstant(colorConstants, colorConstant) {
+  if (colorConstant.startsWith("#")) {
+    return colorConstant;
+  } else if (colorConstant.includes("_")) {
+    const [colorConstant_, alpha] = colorConstant.split("_");
+
+    return colorConstants[colorConstant_] + alpha;
+  } else {
+    return colorConstants[colorConstant];
+  }
+}
+
 function getColorScaleName(constantName) {
   switch (constantName) {
     case "BLUE_GRAY":
@@ -307,6 +319,7 @@ module.exports = {
   checkColorScaleRange,
   generateColorConstantReplacements,
   generateColorConstants,
+  translateColorConstant,
   generateColorPalette,
   getColorsCountByScale,
   getColorScaleName,
