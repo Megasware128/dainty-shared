@@ -85,39 +85,43 @@
       },
       "string": {
         "dark": "orange33",
-        "light": "orange18"
+        "light": "orange24"
       },
       "keyword": {
         "dark": "blue26",
-        "light": "blue22"
+        "light": "blue20"
       },
       "type": {
         "dark": "blueLessChroma30",
-        "light": "purple18"
+        "light": "blueLessChroma20"
+      },
+      "function": {
+        "dark": "blueLessChroma34",
+        "light": "blueLessChroma26"
       },
       "otherType": {
         "dark": "purple30",
-        "light": "purple30"
+        "light": "purple24"
       },
       "identifier": {
         "dark": "neutral34",
-        "light": "neutral34"
+        "light": "neutral24"
       },
       "number": {
         "dark": "green35",
-        "light": "green16"
+        "light": "green24"
       },
       "operator": {
         "dark": "neutral30",
-        "light": "neutral22"
+        "light": "neutral24"
       },
       "punctuation": {
         "dark": "neutral26",
-        "light": "neutral18"
+        "light": "neutral24"
       },
       "url": {
         "dark": "blueMoreChroma28",
-        "light": "blueMoreChroma16"
+        "light": "blueMoreChroma24"
       }
     }
   }
