@@ -25,27 +25,27 @@ function generateScale(scale, override, adjustments) {
   }
 
   switch (scale) {
-    case "RED":
+    case "red":
       hue = 22.5;
       chromaDivisor = 2.5;
       break;
-    case "ORANGE":
+    case "orange":
       hue = 45;
       chromaDivisor = 6;
       break;
-    case "YELLOW":
+    case "yellow":
       hue = 90;
       chromaDivisor = 4.25;
       break;
-    case "GREEN":
+    case "green":
       hue = 180;
       chromaDivisor = 4.5;
       break;
-    case "CYAN":
+    case "cyan":
       hue = 225 + 90 / 32;
       chromaDivisor = 4;
       break;
-    case "NEUTRAL":
+    case "neutral":
       hue = 270 - 90 / 16;
       chromaDivisor = 13.125;
 
@@ -54,25 +54,25 @@ function generateScale(scale, override, adjustments) {
         chromaEndAdjustment = -10;
       }
       break;
-    case "BLUE":
+    case "blue":
       hue = 270 - 90 / 16;
       chromaDivisor = 3.5;
       break;
-    case "BLUE_LESS_CHROMA":
+    case "blueLessChroma":
       hue = 270 - 90 / 16;
       chromaDivisor = 5;
       break;
-    case "BLUE_MORE_CHROMA":
+    case "blueMoreChroma":
       hue = 270 + 90 / 16;
       chromaDivisor = 2;
       break;
-    case "PURPLE":
+    case "purple":
       hue = 315;
       chromaDivisor = 3;
       break;
   }
 
-  if (scale === "NEUTRAL") {
+  if (scale === "neutral") {
     chromaAdjustment += adjustments.chroma ? adjustments.chroma / 3 : 0;
     lightnessAdjustment += adjustments.lightness ? adjustments.lightness : 0;
     chromaStartAdjustment += adjustments.chromaStart
@@ -90,13 +90,13 @@ function generateScale(scale, override, adjustments) {
       mode: "lch",
       h: lchOverride ? lchOverride.h : hue,
       l:
-        (lchOverride && scale === "NEUTRAL"
+        (lchOverride && scale === "neutral"
           ? lchOverride.l + ((maximumLightness - lchOverride.l) / 40) * i
           : maximumLightness - lightnessMultiplier * (39 - i)) +
         (lightnessAdjustment / 40) * (39 - i),
       c:
         (lchOverride ? lchOverride.c : maximumChroma / chromaDivisor) +
-        (scale === "NEUTRAL" ? chromaAdjustment / 3 : chromaAdjustment * 3) +
+        (scale === "neutral" ? chromaAdjustment / 3 : chromaAdjustment * 3) +
         (chromaStartAdjustment / 40) * (39 - i) +
         (chromaEndAdjustment / 40) * i
     });
@@ -145,65 +145,66 @@ function generateColorScales(configuration) {
     ? configuration.colors.overrides
     : {};
 
-  function handleVariant(scale) {
-    if (configuration.variant !== "light") {
-      return scale;
+  function handleVariant(shades, isNeutral) {
+    if (configuration.variant === "light" && isNeutral) {
+      return shades.reverse();
     } else {
-      return scale.reverse();
+      return shades;
     }
   }
 
   const colors = {
     red: handleVariant(
-      generateScale("RED", overrides.red, configuration.colors.adjustments)
+      generateScale("red", overrides.red, configuration.colors.adjustments)
     ),
     orange: handleVariant(
       generateScale(
-        "ORANGE",
+        "orange",
         overrides.orange,
         configuration.colors.adjustments
       )
     ),
     yellow: handleVariant(
       generateScale(
-        "YELLOW",
+        "yellow",
         overrides.yellow,
         configuration.colors.adjustments
       )
     ),
     green: handleVariant(
-      generateScale("GREEN", overrides.green, configuration.colors.adjustments)
+      generateScale("green", overrides.green, configuration.colors.adjustments)
     ),
     cyan: handleVariant(
-      generateScale("CYAN", overrides.cyan, configuration.colors.adjustments)
+      generateScale("cyan", overrides.cyan, configuration.colors.adjustments)
     ),
     neutral: handleVariant(
       generateScale(
-        "NEUTRAL",
+        "neutral",
         overrides.neutral,
         configuration.colors.adjustments
-      )
+      ),
+      true
     ),
     blue: handleVariant(
-      generateScale("BLUE", overrides.blue, configuration.colors.adjustments)
+      generateScale("blue", overrides.blue, configuration.colors.adjustments)
     ),
     blueLessChroma: handleVariant(
       generateScale(
-        "BLUE_LESS_CHROMA",
+        "blueLessChroma",
         overrides.blueLessChroma,
         configuration.colors.adjustments
       )
     ),
     blueMoreChroma: handleVariant(
       generateScale(
-        "BLUE_MORE_CHROMA",
+        "blueMoreChroma",
         overrides.blueMoreChroma,
         configuration.colors.adjustments
       )
     ),
     purple: handleVariant(
       generateScale(
-        "PURPLE",
+        "purple",
         overrides.purple,
         configuration.colors.adjustments
       )
@@ -240,15 +241,9 @@ function generateColorConstantReplacements(colors, quotedKeys = true) {
   for (const key of Object.keys(colors)) {
     for (let i = 0; i < colors[key].length; i++) {
       if (quotedKeys) {
-        replacements.push([
-          `"${changeCase.constantCase(key)}_${i}"`,
-          colors[key][i]
-        ]);
+        replacements.push([`"${key}${i}"`, colors[key][i]]);
       } else {
-        replacements.push([
-          `${changeCase.constantCase(key)}_${i}`,
-          colors[key][i]
-        ]);
+        replacements.push([`${key}${i}`, colors[key][i]]);
       }
     }
   }
@@ -336,11 +331,9 @@ function translateColorConstant(colorConstants, colorConstant) {
 
 function getColorScaleName(constantName) {
   switch (constantName) {
-    case "NEUTRAL":
-      return "Neutral";
-    case "BLUE_LESS_CHROMA":
+    case "blueLessChroma":
       return "Blue (less chroma)";
-    case "BLUE_MORE_CHROMA":
+    case "blueMoreChroma":
       return "Blue (more chroma)";
     default:
       return changeCase.titleCase(constantName);
