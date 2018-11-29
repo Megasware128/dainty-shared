@@ -47,7 +47,7 @@ function generateScale(scale, override, adjustments) {
       break;
     case "neutral":
       hue = 270 - 90 / 16;
-      chromaDivisor = 13.125;
+      chromaDivisor = 12.5;
 
       if (!lchOverride) {
         lightnessAdjustment = 2;
@@ -91,14 +91,14 @@ function generateScale(scale, override, adjustments) {
       h: lchOverride ? lchOverride.h : hue,
       l:
         (lchOverride && scale === "neutral"
-          ? lchOverride.l + ((maximumLightness - lchOverride.l) / 40) * i
+          ? lchOverride.l + ((maximumLightness - lchOverride.l) / 39) * i
           : maximumLightness - lightnessMultiplier * (39 - i)) +
-        (lightnessAdjustment / 40) * (39 - i),
+        (lightnessAdjustment / 39) * (39 - i),
       c:
         (lchOverride ? lchOverride.c : maximumChroma / chromaDivisor) +
         (scale === "neutral" ? chromaAdjustment / 3 : chromaAdjustment * 3) +
-        (chromaStartAdjustment / 40) * (39 - i) +
-        (chromaEndAdjustment / 40) * i
+        (chromaStartAdjustment / 39) * (39 - i) +
+        (chromaEndAdjustment / 39) * i
     });
   }
 
