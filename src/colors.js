@@ -140,7 +140,7 @@ function getColorsCountByScale(filterFn = identity) {
   );
 }
 
-function generateColorPalette(configuration) {
+function generateColorScales(configuration) {
   const overrides = configuration.colors.overrides
     ? configuration.colors.overrides
     : {};
@@ -380,7 +380,7 @@ module.exports = {
   getTerminalColorFunction,
   getTokenColorFunction,
   translateColorConstant,
-  generateColorPalette,
+  generateColorScales,
   getColorsCountByScale,
   getColorScaleName,
   isHexColor,
