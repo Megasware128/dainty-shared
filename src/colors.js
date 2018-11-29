@@ -106,13 +106,7 @@ function generateScale(color, override, adjustments) {
     get: (target, propertyKey, reciever) => {
       if (isTrackingColorsCount) {
         if (propertyKey !== "length" && propertyKey !== "entries") {
-          const key = `${color}_${propertyKey}`;
-          const el = colorsCount.find(c => c.color === key);
-          if (!el) {
-            colorsCount.push({ scale: color, color: key, count: 1 });
-          } else {
-            el.count = el.count + 1;
-          }
+          increaseColorCount(color, propertyKey);
         }
       }
 
@@ -125,6 +119,16 @@ function generateScale(color, override, adjustments) {
 
 function trackColorsCount(isTracking) {
   isTrackingColorsCount = isTracking;
+}
+
+function increaseColorCount(scale, shade) {
+  const el = colorsCount.find(c => c.color === `${scale}_${shade}`);
+
+  if (!el) {
+    colorsCount.push({ scale, color: `${scale}_${shade}`, count: 1 });
+  } else {
+    el.count = el.count + 1;
+  }
 }
 
 function getColorsCountByScale(filterFn = identity) {
@@ -264,15 +268,69 @@ function generateColorConstants(colors) {
   return constants;
 }
 
+function getTerminalColorFunction(configuration, colorConstants) {
+  return terminalColor => {
+    const dark = configuration.variant !== "light";
+
+    const tokenColor = configuration.customizations.terminal[terminalColor];
+
+    return translateColorConstant(
+      colorConstants,
+      dark ? tokenColor.dark : tokenColor.light
+    );
+  };
+}
+
+function getTokenColorFunction(configuration, colorConstants) {
+  return tokenName => {
+    const dark = configuration.variant !== "light";
+
+    const tokenColor = configuration.customizations.tokens[tokenName];
+
+    return translateColorConstant(
+      colorConstants,
+      dark ? tokenColor.dark : tokenColor.light
+    );
+  };
+}
+
+function splitColorConstant(colorConstant) {
+  if (Number.isNaN(parseInt(colorConstant[colorConstant.length - 2], 10))) {
+    return [
+      colorConstant.substr(0, colorConstant.length - 1),
+      colorConstant[colorConstant.length - 1]
+    ];
+  } else {
+    return [
+      colorConstant.substr(0, colorConstant.length - 2),
+      colorConstant.substr(colorConstant.length - 2)
+    ];
+  }
+}
+
 function translateColorConstant(colorConstants, colorConstant) {
   if (colorConstant.startsWith("#")) {
     return colorConstant;
-  } else if (colorConstant.includes("_")) {
-    const [colorConstant_, alpha] = colorConstant.split("_");
-
-    return colorConstants[colorConstant_] + alpha;
   } else {
-    return colorConstants[colorConstant];
+    if (colorConstant.includes("_")) {
+      const [colorConstant_, alpha] = colorConstant.split("_");
+
+      if (isTrackingColorsCount) {
+        const [scale, shade] = splitColorConstant(colorConstant_);
+
+        increaseColorCount(changeCase.constantCase(scale), shade);
+      }
+
+      return colorConstants[colorConstant_] + alpha;
+    } else {
+      if (isTrackingColorsCount) {
+        const [scale, shade] = splitColorConstant(colorConstant);
+
+        increaseColorCount(changeCase.constantCase(scale), shade);
+      }
+
+      return colorConstants[colorConstant];
+    }
   }
 }
 
@@ -319,6 +377,8 @@ module.exports = {
   checkColorScaleRange,
   generateColorConstantReplacements,
   generateColorConstants,
+  getTerminalColorFunction,
+  getTokenColorFunction,
   translateColorConstant,
   generateColorPalette,
   getColorsCountByScale,

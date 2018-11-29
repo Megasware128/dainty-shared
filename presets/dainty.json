@@ -92,8 +92,12 @@
         "light": "blue22"
       },
       "type": {
-        "dark": "purple30",
+        "dark": "blueLessChroma30",
         "light": "purple18"
+      },
+      "otherType": {
+        "dark": "purple30",
+        "light": "purple30"
       },
       "identifier": {
         "dark": "blueGray34",
@@ -110,6 +114,10 @@
       "punctuation": {
         "dark": "blueGray26",
         "light": "blueGray18"
+      },
+      "url": {
+        "dark": "blueMoreChroma28",
+        "light": "blueMoreChroma16"
       }
     }
   }
