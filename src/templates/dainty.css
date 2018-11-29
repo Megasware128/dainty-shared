@@ -7,8 +7,8 @@
 }
 
 body {
-  background-color: "BLUE_GRAY_0";
-  color: "BLUE_GRAY_34";
+  background-color: "NEUTRAL_0";
+  color: "NEUTRAL_34";
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
     sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   line-height: 1.875;
@@ -165,7 +165,7 @@ code {
   font-family: "Roboto Mono", SFMono-Regular, Consolas, Liberation Mono, Menlo,
     Courier, monospace;
   font-size: 0.875em;
-  color: "BLUE_GRAY_38";
+  color: "NEUTRAL_38";
 }
 
 a > code,
@@ -196,7 +196,7 @@ table {
 }
 
 tr {
-  border-bottom: 0.5px solid "BLUE_GRAY_10";
+  border-bottom: 0.5px solid "NEUTRAL_10";
 }
 
 th {
@@ -242,7 +242,7 @@ ul:not(.nav) > li:before {
   content: "–";
   width: 18px;
   margin-left: -18px;
-  color: "BLUE_GRAY_16";
+  color: "NEUTRAL_16";
 }
 
 ul ul {
@@ -274,7 +274,7 @@ ul.nav li.active a {
 }
 
 ul.nav li:not(.active) a {
-  color: "BLUE_GRAY_34";
+  color: "NEUTRAL_34";
 }
 
 ul.nav li:not(.active) a:hover {
@@ -330,7 +330,7 @@ button {
 }
 
 button.primary {
-  color: "BLUE_GRAY_39";
+  color: "NEUTRAL_39";
   background-color: "BLUE_MORE_CHROMA_10";
 }
 
@@ -348,7 +348,7 @@ button.primary:hover {
 }
 
 button:not(.primary):hover {
-  background-color: "BLUE_GRAY_2";
+  background-color: "NEUTRAL_2";
 }
 
 button:active {
@@ -377,7 +377,7 @@ button:active {
 
 .form-group {
   display: flex;
-  border-bottom: 0.5px solid "BLUE_GRAY_10";
+  border-bottom: 0.5px solid "NEUTRAL_10";
   padding-bottom: 16px;
   margin-bottom: 16px;
   padding-left: 16px;
@@ -385,7 +385,7 @@ button:active {
 }
 
 .form-group:first-child {
-  border-top: 0.5px solid "BLUE_GRAY_10";
+  border-top: 0.5px solid "NEUTRAL_10";
   padding-top: 16px;
 }
 
@@ -403,22 +403,22 @@ button:active {
   border: 0;
   padding: 8px 12px;
   position: absolute;
-  background-color: "BLUE_GRAY_2";
-  color: "BLUE_GRAY_34";
+  background-color: "NEUTRAL_2";
+  color: "NEUTRAL_34";
   transition: background-color 0.25s ease;
 }
 
 .form-group > .input-container > input[type="text"]:hover,
 .form-group > .input-container > select:hover {
-  background-color: "BLUE_GRAY_4";
-  color: "BLUE_GRAY_35";
+  background-color: "NEUTRAL_4";
+  color: "NEUTRAL_35";
 }
 
 .form-group > .input-container > input[type="text"]:focus,
 .form-group > .input-container > select:focus {
   outline: none;
-  background-color: "BLUE_GRAY_6";
-  color: "BLUE_GRAY_36";
+  background-color: "NEUTRAL_6";
+  color: "NEUTRAL_36";
 }
 
 .form-group > .input-container > input[type="text"] {
@@ -453,7 +453,7 @@ button:active {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 1024px;
-  background-color: "BLUE_GRAY_0";
+  background-color: "NEUTRAL_0";
   overflow: auto;
   padding: 24px 32px 32px 32px;
   box-shadow: 1px 3px 25px rgba(0, 0, 0, 0.25);
@@ -507,7 +507,7 @@ div[class^="ckbx-style-"] input[type="checkbox"] {
   height: 1em;
   left: 0.1em;
   transition: background-color 0.25s ease;
-  background-color: "BLUE_GRAY_2";
+  background-color: "NEUTRAL_2";
   border-radius: 50px;
 }
 
@@ -519,7 +519,7 @@ div[class^="ckbx-style-"] input[type="checkbox"] {
   border-radius: 50px;
   left: 0;
   transition: all 0.25s;
-  background-color: "BLUE_GRAY_34";
+  background-color: "NEUTRAL_34";
   z-index: 3;
 }
 
@@ -532,7 +532,7 @@ div[class^="ckbx-style-"] input[type="checkbox"] {
 }
 
 .ckbx-style-8 input[type="checkbox"]:hover + label:before {
-  background-color: "BLUE_GRAY_6";
+  background-color: "NEUTRAL_6";
 }
 
 .ckbx-style-8 input[type="checkbox"]:checked:hover + label:before {

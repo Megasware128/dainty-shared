@@ -2,20 +2,20 @@
   "customizations": {
     "terminal": {
       "background": {
-        "dark": "blueGray0",
-        "light": "blueGray0"
+        "dark": "neutral0",
+        "light": "neutral0"
       },
       "foreground": {
-        "dark": "blueGray34",
-        "light": "blueGray34"
+        "dark": "neutral34",
+        "light": "neutral34"
       },
       "cursor": {
-        "dark": "blueGray28",
-        "light": "blueGray28"
+        "dark": "neutral28",
+        "light": "neutral28"
       },
       "black": {
-        "dark": "blueGray0",
-        "light": "blueGray0"
+        "dark": "neutral0",
+        "light": "neutral0"
       },
       "red": {
         "dark": "red16",
@@ -42,12 +42,12 @@
         "light": "cyan30"
       },
       "white": {
-        "dark": "blueGray34",
-        "light": "blueGray34"
+        "dark": "neutral34",
+        "light": "neutral34"
       },
       "brightBlack": {
-        "dark": "blueGray30",
-        "light": "blueGray30"
+        "dark": "neutral30",
+        "light": "neutral30"
       },
       "brightRed": {
         "dark": "red30",
@@ -74,14 +74,14 @@
         "light": "cyan30"
       },
       "brightWhite": {
-        "dark": "blueGray39",
-        "light": "blueGray39"
+        "dark": "neutral39",
+        "light": "neutral39"
       }
     },
     "tokens": {
       "comment": {
-        "dark": "blueGray16",
-        "light": "blueGray16"
+        "dark": "neutral16",
+        "light": "neutral16"
       },
       "string": {
         "dark": "orange33",
@@ -100,20 +100,20 @@
         "light": "purple30"
       },
       "identifier": {
-        "dark": "blueGray34",
-        "light": "blueGray34"
+        "dark": "neutral34",
+        "light": "neutral34"
       },
       "number": {
         "dark": "green35",
         "light": "green16"
       },
       "operator": {
-        "dark": "blueGray30",
-        "light": "blueGray22"
+        "dark": "neutral30",
+        "light": "neutral22"
       },
       "punctuation": {
-        "dark": "blueGray26",
-        "light": "blueGray18"
+        "dark": "neutral26",
+        "light": "neutral18"
       },
       "url": {
         "dark": "blueMoreChroma28",

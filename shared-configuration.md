@@ -10,12 +10,12 @@ Set `"variant"` to `"light"` to enable the light theme. _The light theme is curr
 
 ### `"colors"."adjustments"`
 
-| Property        | Description                                                  |
-| --------------- | ------------------------------------------------------------ |
-| `"lightness"`   | Adjust lightness to make blue-grays either darker or lighter |
-| `"chroma"`      | Adjust chroma to make colors either more or less saturated   |
-| `"chromaStart"` | Adjust start of blue grays scale chroma                      |
-| `"chromaEnd"`   | Adjust start of blue grays scale chroma                      |
+| Property        | Description                                                |
+| --------------- | ---------------------------------------------------------- |
+| `"lightness"`   | Adjust lightness to make neutrals either darker or lighter |
+| `"chroma"`      | Adjust chroma to make colors either more or less saturated |
+| `"chromaStart"` | Adjust start of blue grays scale chroma                    |
+| `"chromaEnd"`   | Adjust start of blue grays scale chroma                    |
 
 There are currently no minimum or maximum values set.
 
@@ -24,7 +24,7 @@ There are currently no minimum or maximum values set.
 | Property           | Description                                  |
 | ------------------ | -------------------------------------------- |
 | `"blue"`           | Base color as hex for blue scale             |
-| `"blueGray"`       | Base color as hex for blue-gray scale        |
+| `"neutral"`        | Base color as hex for neutral scale          |
 | `"blueLessChroma"` | Base color as hex for blue less chroma scale |
 | `"blueMoreChroma"` | Base color as hex for blue more chroma scale |
 | `"cyan"`           | Base color as hex for cyan scale             |
@@ -32,7 +32,7 @@ There are currently no minimum or maximum values set.
 | `"orange"`         | Base color as hex for orange scale           |
 | `"purple"`         | Base color as hex for purple scale           |
 
-With a provided base color a scale of 40 shades is built. The color will be converted to LCh and its hue and chroma (saturation) are used while the lightness is calculated. For the blue-gray scale, the lightness of the provided color is used for the darkest shade.
+With a provided base color a scale of 40 shades is built. The color will be converted to LCh and its hue and chroma (saturation) are used while the lightness is calculated. For the neutral scale, the lightness of the provided color is used for the darkest shade.
 
 ## Presets
 

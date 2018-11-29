@@ -45,7 +45,7 @@ function generateScale(color, override, adjustments) {
       hue = 225 + 90 / 32;
       chromaDivisor = 4;
       break;
-    case "BLUE_GRAY":
+    case "NEUTRAL":
       hue = 270 - 90 / 16;
       chromaDivisor = 13.125;
 
@@ -72,7 +72,7 @@ function generateScale(color, override, adjustments) {
       break;
   }
 
-  if (color === "BLUE_GRAY") {
+  if (color === "NEUTRAL") {
     chromaAdjustment += adjustments.chroma ? adjustments.chroma / 3 : 0;
     lightnessAdjustment += adjustments.lightness ? adjustments.lightness : 0;
     chromaStartAdjustment += adjustments.chromaStart
@@ -90,13 +90,13 @@ function generateScale(color, override, adjustments) {
       mode: "lch",
       h: lchOverride ? lchOverride.h : hue,
       l:
-        (lchOverride && color === "BLUE_GRAY"
+        (lchOverride && color === "NEUTRAL"
           ? lchOverride.l + ((maximumLightness - lchOverride.l) / 40) * i
           : maximumLightness - lightnessMultiplier * (39 - i)) +
         (lightnessAdjustment / 40) * (39 - i),
       c:
         (lchOverride ? lchOverride.c : maximumChroma / chromaDivisor) +
-        (color === "BLUE_GRAY" ? chromaAdjustment / 3 : chromaAdjustment * 3) +
+        (color === "NEUTRAL" ? chromaAdjustment / 3 : chromaAdjustment * 3) +
         (chromaStartAdjustment / 40) * (39 - i) +
         (chromaEndAdjustment / 40) * i
     });
@@ -177,10 +177,10 @@ function generateColorScales(configuration) {
     cyan: handleVariant(
       generateScale("CYAN", overrides.cyan, configuration.colors.adjustments)
     ),
-    blueGray: handleVariant(
+    neutral: handleVariant(
       generateScale(
-        "BLUE_GRAY",
-        overrides.blueGray,
+        "NEUTRAL",
+        overrides.neutral,
         configuration.colors.adjustments
       )
     ),
@@ -336,8 +336,8 @@ function translateColorConstant(colorConstants, colorConstant) {
 
 function getColorScaleName(constantName) {
   switch (constantName) {
-    case "BLUE_GRAY":
-      return "Blue-gray";
+    case "NEUTRAL":
+      return "Neutral";
     case "BLUE_LESS_CHROMA":
       return "Blue (less chroma)";
     case "BLUE_MORE_CHROMA":
