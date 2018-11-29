@@ -5,7 +5,7 @@ const { groupBy, identity } = require("./utils");
 let colorsCount = [];
 let isTrackingColorsCount = false;
 
-function generateScale(color, override, adjustments) {
+function generateScale(scale, override, adjustments) {
   const maximumLightness = 100;
   const lightnessMultiplier = 2 + 5 / 16;
   let lightnessAdjustment = 0;
@@ -24,7 +24,7 @@ function generateScale(color, override, adjustments) {
     chromaAdjustment = -1;
   }
 
-  switch (color) {
+  switch (scale) {
     case "RED":
       hue = 22.5;
       chromaDivisor = 2.5;
@@ -72,7 +72,7 @@ function generateScale(color, override, adjustments) {
       break;
   }
 
-  if (color === "NEUTRAL") {
+  if (scale === "NEUTRAL") {
     chromaAdjustment += adjustments.chroma ? adjustments.chroma / 3 : 0;
     lightnessAdjustment += adjustments.lightness ? adjustments.lightness : 0;
     chromaStartAdjustment += adjustments.chromaStart
@@ -83,20 +83,20 @@ function generateScale(color, override, adjustments) {
     chromaAdjustment += adjustments.chroma ? adjustments.chroma * 2 : 0;
   }
 
-  let scale = [];
+  let shades = [];
 
   for (let i = 0; i < 40; i++) {
-    scale.push({
+    shades.push({
       mode: "lch",
       h: lchOverride ? lchOverride.h : hue,
       l:
-        (lchOverride && color === "NEUTRAL"
+        (lchOverride && scale === "NEUTRAL"
           ? lchOverride.l + ((maximumLightness - lchOverride.l) / 40) * i
           : maximumLightness - lightnessMultiplier * (39 - i)) +
         (lightnessAdjustment / 40) * (39 - i),
       c:
         (lchOverride ? lchOverride.c : maximumChroma / chromaDivisor) +
-        (color === "NEUTRAL" ? chromaAdjustment / 3 : chromaAdjustment * 3) +
+        (scale === "NEUTRAL" ? chromaAdjustment / 3 : chromaAdjustment * 3) +
         (chromaStartAdjustment / 40) * (39 - i) +
         (chromaEndAdjustment / 40) * i
     });
@@ -106,7 +106,7 @@ function generateScale(color, override, adjustments) {
     get: (target, propertyKey, reciever) => {
       if (isTrackingColorsCount) {
         if (propertyKey !== "length" && propertyKey !== "entries") {
-          increaseColorCount(color, propertyKey);
+          increaseColorCount(scale, propertyKey);
         }
       }
 
@@ -114,7 +114,7 @@ function generateScale(color, override, adjustments) {
     }
   };
 
-  return new Proxy(scale.map(culori.formatter("hex")), handler);
+  return new Proxy(shades.map(culori.formatter("hex")), handler);
 }
 
 function trackColorsCount(isTracking) {
