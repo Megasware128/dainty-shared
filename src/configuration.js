@@ -25,7 +25,7 @@ async function getConfiguration(dirname, preset = null, argument = null) {
     defaultConfiguration = getDefaultConfiguration(schema);
 
     configurationPresetDainty = await readFileJson(
-      path.join(dirname, `../presets/dainty.json`)
+      path.join(__dirname, `../presets/dainty.json`)
     );
 
     if (preset) {
