@@ -2,42 +2,43 @@
 
 Dainty has a unique configuration schema defined for each application. Properties `"variant"` and `"colors"` are shared among all schemas. In addition, Dainty for every application supports configuration presets.
 
-## `configuration.json`
+## `configuration.jsonc`
 
 ### `"variant"`
 
 Set `"variant"` to `"light"` to enable the light theme. _The light theme is currently not as complete as the dark theme._
 
-### `"colors"."adjustments"`
+### `"colors"
 
-| Property        | Description                                                |
-| --------------- | ---------------------------------------------------------- |
-| `"lightness"`   | Adjust lightness to make neutrals either darker or lighter |
-| `"chroma"`      | Adjust chroma to make colors either more or less saturated |
-| `"chromaStart"` | Adjust start of blue grays scale chroma                    |
-| `"chromaEnd"`   | Adjust start of blue grays scale chroma                    |
+### `"_all"`
 
-There are currently no minimum or maximum values set.
+| Property           | Description                                           |
+| ------------------ | ----------------------------------------------------- |
+| `"lightness"`      | Lightness to be added or subtracted                   |
+| `"lightnessStart"` | Lightness to be added or subtracted at start of scale |
+| `"lightnessEnd"`   | Lightness to be added or subtracted at end of scale   |
+| `"chromaStart"`    | Chroma to be added or subtracted at start of scale    |
+| `"chromaEnd"`      | Chroma to be added or subtracted at end of scale      |
 
-### `"colors"."overrides"`
+### `"name-of-color"`
 
-| Property           | Description                                  |
-| ------------------ | -------------------------------------------- |
-| `"blue"`           | Base color as hex for blue scale             |
-| `"neutral"`        | Base color as hex for neutral scale          |
-| `"blueLessChroma"` | Base color as hex for blue less chroma scale |
-| `"blueMoreChroma"` | Base color as hex for blue more chroma scale |
-| `"cyan"`           | Base color as hex for cyan scale             |
-| `"green"`          | Base color as hex for green scale            |
-| `"orange"`         | Base color as hex for orange scale           |
-| `"purple"`         | Base color as hex for purple scale           |
+| Property           | Description                                           |
+| ------------------ | ----------------------------------------------------- |
+| `"hex"`            | Color as hex                                          |
+| `"lightness"`      | Lightness to be added or subtracted                   |
+| `"lightnessStart"` | Lightness to be added or subtracted at start of scale |
+| `"lightnessEnd"`   | Lightness to be added or subtracted at end of scale   |
+| `"chroma"`         | Chroma of color                                       |
+| `"chromaStart"`    | Chroma to be added or subtracted at start of scale    |
+| `"chromaEnd"`      | Chroma to be added or subtracted at end of scale      |
+| `"hue"`            | Hue as CIELAB hue in range 0–360                      |
 
-With a provided base color a scale of 40 shades is built. The color will be converted to LCh and its hue and chroma (saturation) are used while the lightness is calculated. For the neutral scale, the lightness of the provided color is used for the darkest shade.
+With a provided base color a scale of 40 shades is built. When color is expressed as hex as opposed to hue and chroma, the color will be converted to LCh and its hue and chroma are used while the lightness is calculated.
 
 ## Presets
 
-Presets are configuration files that can be used in addition to `configuration.json`. They are intended for turning Dainty into another color theme. Presets are located in the `presets` directory for each application and can be activated by adding `-p <preset>` or `--preset <preset>` to `yarn build`:
+Presets are configuration files that can be used in addition to `configuration.jsonc`. They are intended for turning Dainty into another color theme. Presets are located in the `presets` directory of the shared repository and can be activated by adding `-p <preset>` or `--preset <preset>` to `yarn build`:
 
     yarn build -p dainty-remix
 
-If a property is set in both `configuration.json` and the preset configuration, then the one in `configuration.json` is used.
+If a property is set in both `configuration.jsonc` and the preset configuration, then the one in `configuration.jsonc` is used.
