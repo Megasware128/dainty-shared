@@ -1,5 +1,8 @@
 {
   "colors": {
+    "_all": {
+      "lightnessStart": 7.5
+    },
     "neutral": {
       "hex": "#011627",
       "chromaEnd": -10
@@ -17,6 +20,17 @@
     "blueLessChroma": {
       // Green
       "hex": "#addb67"
+    },
+    "purple": {
+      "hex": "#c792ea"
+    }
+  },
+  "customizations": {
+    "tokens": {
+      "operator": {
+        "dark": "purple24",
+        "light": "purple24"
+      }
     }
   }
 }
