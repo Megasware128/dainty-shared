@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "variant": {
+      "$id": "#/properties/variant",
+      "type": "string",
+      "enum": ["dark", "light"],
+      "default": "dark",
+      "additionalProperties": false
+    },
+    "colors": {
+      "$id": "#/properties/colors",
+      "type": "object"
+    },
+    "customizations": {
+      "$id": "#/properties/colors",
+      "type": "object"
+    }
+  }
+}

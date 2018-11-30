@@ -26,9 +26,15 @@ async function getConfiguration(dirname, preset = null, argument = null) {
   let configuration;
 
   try {
-    schema = await readFileJson(
+    sharedSchema = await readFileJson(
+      path.join(__dirname, "../configuration-schema.json")
+    );
+
+    appSchema = await readFileJson(
       path.join(dirname, "../configuration-schema.json")
     );
+
+    schema = merge(sharedSchema, appSchema);
 
     defaultConfiguration = getDefaultConfiguration(schema);
 
