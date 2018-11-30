@@ -1,104 +1,77 @@
 const culori = require("culori");
 const changeCase = require("change-case");
-const { groupBy, identity } = require("./utils");
+const { groupBy, identity, logWarning } = require("./utils");
+
+const maximumLightness = 100;
+const maximumChroma = 131.207;
 
 let colorsCount = [];
 let isTrackingColorsCount = false;
 
-function generateScale(scale, override, adjustments) {
-  const maximumLightness = 100;
-  const lightnessMultiplier = 2 + 5 / 16;
-  let lightnessAdjustment = 0;
+function getInternalColor(color) {
+  if (color.hex) {
+    const lchColor = culori.lch(color.hex);
 
-  const maximumChroma = 131.207;
-  let chromaDivisor;
-  let chromaAdjustment = 0;
-  let chromaStartAdjustment = 0;
-  let chromaEndAdjustment = 0;
-
-  let hue;
-
-  const lchOverride = override ? culori.lch(override) : null;
-
-  if (!lchOverride) {
-    chromaAdjustment = -1;
-  }
-
-  switch (scale) {
-    case "red":
-      hue = 22.5;
-      chromaDivisor = 2.5;
-      break;
-    case "orange":
-      hue = 45;
-      chromaDivisor = 6;
-      break;
-    case "yellow":
-      hue = 90;
-      chromaDivisor = 4.25;
-      break;
-    case "green":
-      hue = 180;
-      chromaDivisor = 4.5;
-      break;
-    case "cyan":
-      hue = 225 + 90 / 32;
-      chromaDivisor = 4;
-      break;
-    case "neutral":
-      hue = 270 - 90 / 16;
-      chromaDivisor = 12.5;
-
-      if (!lchOverride) {
-        lightnessAdjustment = 2;
-        chromaEndAdjustment = -10;
-      }
-      break;
-    case "blue":
-      hue = 270 - 90 / 16;
-      chromaDivisor = 3.5;
-      break;
-    case "blueLessChroma":
-      hue = 270 - 90 / 16;
-      chromaDivisor = 5;
-      break;
-    case "blueMoreChroma":
-      hue = 270 + 90 / 16;
-      chromaDivisor = 2;
-      break;
-    case "purple":
-      hue = 315;
-      chromaDivisor = 3;
-      break;
-  }
-
-  if (scale === "neutral") {
-    chromaAdjustment += adjustments.chroma ? adjustments.chroma / 3 : 0;
-    lightnessAdjustment += adjustments.lightness ? adjustments.lightness : 0;
-    chromaStartAdjustment += adjustments.chromaStart
-      ? adjustments.chromaStart
-      : 0;
-    chromaEndAdjustment += adjustments.chromaEnd ? adjustments.chromaEnd : 0;
+    return {
+      ...color,
+      chroma: (lchColor.c / maximumChroma) * 100
+    };
   } else {
-    chromaAdjustment += adjustments.chroma ? adjustments.chroma * 2 : 0;
+    return color;
   }
+}
+
+function getLightness(i, color, all) {
+  const allLightness = all.lightness ? all.lightness : 0;
+  const allLightnessStart = all.lightnessStart ? all.lightnessStart : 0;
+  const allLightnessEnd = all.lightnessEnd ? all.lightnessEnd : 0;
+
+  const lightness = color.lightness
+    ? color.lightness + allLightness
+    : allLightness;
+  const lightnessStart = color.lightnessStart
+    ? color.lightnessStart + allLightnessStart
+    : allLightnessStart;
+  const lightnessEnd = color.lightnessEnd
+    ? color.lightnessEnd + allLightnessEnd
+    : allLightnessEnd;
+
+  return (
+    maximumLightness -
+    (maximumLightness / 40) * (40 - i) +
+    lightness +
+    (lightnessStart / 40) * (40 - i) +
+    (lightnessEnd / 40) * i
+  );
+}
+
+function getChroma(i, color, all) {
+  const allChroma = all.chroma ? all.chroma : 0;
+  const allChromaStart = all.chromaStart ? all.chromaStart : 0;
+  const allChromaEnd = all.chromaEnd ? all.chromaEnd : 0;
+
+  const chroma = color.chroma + allChroma;
+  const chromaStart = color.chromaStart ? color.chromaStart : allChromaStart;
+  const chromaEnd = color.chromaEnd ? color.chromaEnd : allChromaEnd;
+
+  return (
+    (maximumChroma / 100) * chroma +
+    (maximumChroma / 100) * (chromaStart / 40) * (40 - i) +
+    (maximumChroma / 100) * (chromaEnd / 40) * i
+  );
+}
+
+function generateColorScale(scale, color, all) {
+  const color_ = getInternalColor(color);
 
   let shades = [];
 
-  for (let i = 0; i < 40; i++) {
+  for (let i = 0; i <= 40; i++) {
     shades.push({
       mode: "lch",
-      h: lchOverride ? lchOverride.h : hue,
-      l:
-        (lchOverride && scale === "neutral"
-          ? lchOverride.l + ((maximumLightness - lchOverride.l) / 39) * i
-          : maximumLightness - lightnessMultiplier * (39 - i)) +
-        (lightnessAdjustment / 39) * (39 - i),
-      c:
-        (lchOverride ? lchOverride.c : maximumChroma / chromaDivisor) +
-        (scale === "neutral" ? chromaAdjustment / 3 : chromaAdjustment * 3) +
-        (chromaStartAdjustment / 39) * (39 - i) +
-        (chromaEndAdjustment / 39) * i
+      l: limitLightness(scale, i, getLightness(i, color_, all)),
+      c: limitChroma(scale, i, getChroma(i, color_, all)),
+      h: color_.hue
     });
   }
 
@@ -115,6 +88,50 @@ function generateScale(scale, override, adjustments) {
   };
 
   return new Proxy(shades.map(culori.formatter("hex")), handler);
+}
+
+function limitLightness(scale, i, lightness) {
+  if (lightness < 0) {
+    logWarning(
+      `Calculated LCh lightness \`${lightness}\` for \`${scale}${i}\` is out of range, and has been set to \`0\`.`
+    );
+  } else if (lightness > maximumLightness) {
+    logWarning(
+      `Calculated LCh lightness \`${lightness}\` for \`${scale}${i}\` is out of range, and has been set to \`${maximumLightness}\`.`
+    );
+  }
+
+  return Math.max(Math.min(lightness, maximumLightness), 0);
+}
+
+function limitChroma(scale, i, chroma) {
+  if (chroma < 0) {
+    logWarning(
+      `Calculated LCh chroma \`${chroma}\` for \`${scale}${i}\` is out of range, and has been set to \`0\`.`
+    );
+  } else if (chroma > maximumChroma) {
+    logWarning(
+      `Calculated LCh chroma \`${chroma}\` for \`${scale}${i}\` is out of range, and has been set to \`${maximumChroma}\`.`
+    );
+  }
+
+  return Math.max(Math.min(chroma, maximumChroma), 0);
+}
+
+function generateColorScales(configuration) {
+  let scales = {};
+
+  for (const scale of Object.keys(configuration.colors).filter(
+    k => k !== "_all"
+  )) {
+    scales[scale] = generateColorScale(
+      scale,
+      configuration.colors[scale],
+      configuration.colors["_all"]
+    );
+  }
+
+  return scales;
 }
 
 function trackColorsCount(isTracking) {
@@ -138,80 +155,6 @@ function getColorsCountByScale(filterFn = identity) {
       .filter(filterFn),
     "scale"
   );
-}
-
-function generateColorScales(configuration) {
-  const overrides = configuration.colors.overrides
-    ? configuration.colors.overrides
-    : {};
-
-  function handleVariant(shades, isNeutral) {
-    if (configuration.variant === "light" && isNeutral) {
-      return shades.reverse();
-    } else {
-      return shades;
-    }
-  }
-
-  const colors = {
-    red: handleVariant(
-      generateScale("red", overrides.red, configuration.colors.adjustments)
-    ),
-    orange: handleVariant(
-      generateScale(
-        "orange",
-        overrides.orange,
-        configuration.colors.adjustments
-      )
-    ),
-    yellow: handleVariant(
-      generateScale(
-        "yellow",
-        overrides.yellow,
-        configuration.colors.adjustments
-      )
-    ),
-    green: handleVariant(
-      generateScale("green", overrides.green, configuration.colors.adjustments)
-    ),
-    cyan: handleVariant(
-      generateScale("cyan", overrides.cyan, configuration.colors.adjustments)
-    ),
-    neutral: handleVariant(
-      generateScale(
-        "neutral",
-        overrides.neutral,
-        configuration.colors.adjustments
-      ),
-      true
-    ),
-    blue: handleVariant(
-      generateScale("blue", overrides.blue, configuration.colors.adjustments)
-    ),
-    blueLessChroma: handleVariant(
-      generateScale(
-        "blueLessChroma",
-        overrides.blueLessChroma,
-        configuration.colors.adjustments
-      )
-    ),
-    blueMoreChroma: handleVariant(
-      generateScale(
-        "blueMoreChroma",
-        overrides.blueMoreChroma,
-        configuration.colors.adjustments
-      )
-    ),
-    purple: handleVariant(
-      generateScale(
-        "purple",
-        overrides.purple,
-        configuration.colors.adjustments
-      )
-    )
-  };
-
-  return colors;
 }
 
 function alpha(colorHex, alpha) {

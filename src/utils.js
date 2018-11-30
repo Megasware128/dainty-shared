@@ -68,6 +68,10 @@ function logTransform(source) {
   );
 }
 
+function logWarning(message) {
+  console.log(chalk.yellow.bold(`  ${message}`));
+}
+
 async function writeFileLog(...args) {
   console.log(
     `${chalk.dim("–")} Writing to ${backticks(
@@ -148,5 +152,6 @@ module.exports = {
   createBackupDirectory,
   writeFileLog,
   zip,
-  logTransform
+  logTransform,
+  logWarning
 };

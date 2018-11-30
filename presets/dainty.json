@@ -1,4 +1,51 @@
 {
+  "colors": {
+    "_all": {
+      "chroma": -2.5,
+      "lightnessStart": 12.5
+    },
+    "red": {
+      "hue": 22.5,
+      "chroma": 31.25
+    },
+    "orange": {
+      "hue": 45,
+      "chroma": 15.625
+    },
+    "yellow": {
+      "hue": 90,
+      "chroma": 25
+    },
+    "green": {
+      "hue": 180,
+      "chroma": 27.5
+    },
+    "cyan": {
+      "hue": 227.8125, // 225 + 90 / 32
+      "chroma": 31.25
+    },
+    "neutral": {
+      "hue": 264.375, // 270 - 90 / 16
+      "chroma": 10,
+      "chromaEnd": -5
+    },
+    "blue": {
+      "hue": 264.375, // 270 - 90 / 16,
+      "chroma": 31.25
+    },
+    "blueLessChroma": {
+      "hue": 264.375, // 270 - 90 / 16,
+      "chroma": 18.75
+    },
+    "blueMoreChroma": {
+      "hue": 264.375, // 270 - 90 / 16,
+      "chroma": 43.75
+    },
+    "purple": {
+      "hue": 315,
+      "chroma": 31.25
+    }
+  },
   "customizations": {
     "terminal": {
       "background": {
