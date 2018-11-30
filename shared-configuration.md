@@ -8,7 +8,7 @@ Dainty has a unique configuration schema defined for each application. Propertie
 
 Set `"variant"` to `"light"` to enable the light theme. _The light theme is currently not as complete as the dark theme._
 
-### `"colors"
+### `"colors"`
 
 ### `"_all"`
 
