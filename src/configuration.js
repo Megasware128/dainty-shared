@@ -10,10 +10,18 @@ const exists = util.promisify(fs.exists);
 
 var ajv = new Ajv({ useDefaults: true, jsonPointers: true });
 
+async function getPresetPath(dirname, preset) {
+  if (await exists(path.join(__dirname, `../presets/${preset}.json`))) {
+    return path.join(__dirname, `../presets/${preset}.json`);
+  } else if (await exists(path.join(dirname, `../presets/${preset}.json`))) {
+    return path.join(dirname, `../presets/${preset}.json`);
+  } else return null;
+}
+
 async function getConfiguration(dirname, preset = null, argument = null) {
   let schema;
   let defaultConfiguration;
-  let configurationPresetDainty;
+  let configurationPresetBase;
   let configurationPreset;
   let configuration;
 
@@ -24,19 +32,19 @@ async function getConfiguration(dirname, preset = null, argument = null) {
 
     defaultConfiguration = getDefaultConfiguration(schema);
 
-    configurationPresetDainty = await readFileJson(
+    configurationPresetBase = await readFileJson(
       path.join(__dirname, `../presets/dainty.json`)
     );
 
     if (preset) {
-      if (!(await exists(path.join(dirname, `../presets/${preset}.json`)))) {
+      const presetPath = await getPresetPath(dirname, preset);
+
+      if (presetPath === null) {
         console.error(`Configuration preset \`${preset}\` was not found.`);
         return null;
       }
 
-      configurationPreset = await readFileJson(
-        path.join(dirname, `../presets/${preset}.json`)
-      );
+      configurationPreset = await readFileJson(presetPath);
     } else {
       configurationPreset = {};
     }
@@ -87,7 +95,7 @@ async function getConfiguration(dirname, preset = null, argument = null) {
   return merge(
     {},
     defaultConfiguration,
-    configurationPresetDainty,
+    configurationPresetBase,
     configurationPreset,
     configuration,
     argument ? argument : {}
