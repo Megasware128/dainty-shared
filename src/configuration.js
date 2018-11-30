@@ -11,10 +11,10 @@ const exists = util.promisify(fs.exists);
 var ajv = new Ajv({ useDefaults: true, jsonPointers: true });
 
 async function getPresetPath(dirname, preset) {
-  if (await exists(path.join(__dirname, `../presets/${preset}.json`))) {
-    return path.join(__dirname, `../presets/${preset}.json`);
-  } else if (await exists(path.join(dirname, `../presets/${preset}.json`))) {
-    return path.join(dirname, `../presets/${preset}.json`);
+  if (await exists(path.join(__dirname, `../presets/${preset}.jsonc`))) {
+    return path.join(__dirname, `../presets/${preset}.jsonc`);
+  } else if (await exists(path.join(dirname, `../presets/${preset}.jsonc`))) {
+    return path.join(dirname, `../presets/${preset}.jsonc`);
   } else return null;
 }
 
@@ -33,7 +33,7 @@ async function getConfiguration(dirname, preset = null, argument = null) {
     defaultConfiguration = getDefaultConfiguration(schema);
 
     configurationPresetBase = await readFileJson(
-      path.join(__dirname, `../presets/dainty.json`)
+      path.join(__dirname, `../presets/dainty.jsonc`)
     );
 
     if (preset) {
@@ -49,15 +49,15 @@ async function getConfiguration(dirname, preset = null, argument = null) {
       configurationPreset = {};
     }
 
-    if (await exists(path.join(dirname, "../configuration.json"))) {
+    if (await exists(path.join(dirname, "../configuration.jsonc"))) {
       configuration = await readFileJson(
-        path.join(dirname, "../configuration.json")
+        path.join(dirname, "../configuration.jsonc")
       );
     } else {
       configuration = defaultConfiguration;
 
       await writeFileLog(
-        path.join(dirname, "../configuration.json"),
+        path.join(dirname, "../configuration.jsonc"),
         JSON.stringify(configuration, null, 2)
       );
     }
@@ -78,7 +78,7 @@ async function getConfiguration(dirname, preset = null, argument = null) {
 
   if (error) {
     console.error(error);
-    console.error("`configuration.json` is not valid.");
+    console.error("`configuration.jsonc` is not valid.");
     return null;
   }
 

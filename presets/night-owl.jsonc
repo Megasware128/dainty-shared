@@ -8,13 +8,15 @@
       "hex": "#82aaff"
     },
     "green": {
-      "hex": "#f78c6c" // Deep orange
+      // Deep orange
+      "hex": "#f78c6c"
     },
     "orange": {
       "hex": "#ecc48d"
     },
     "blueLessChroma": {
-      "hex": "#addb67" // Green
+      // Green
+      "hex": "#addb67"
     }
   }
 }
