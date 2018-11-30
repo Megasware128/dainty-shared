@@ -14,7 +14,8 @@ function getInternalColor(color) {
 
     return {
       ...color,
-      chroma: (lchColor.c / maximumChroma) * 100
+      chroma: (lchColor.c / maximumChroma) * 100,
+      hue: lchColor.h
     };
   } else {
     return color;
