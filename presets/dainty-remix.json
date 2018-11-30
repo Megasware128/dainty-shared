@@ -1,0 +1,28 @@
+{
+  "colors": {
+    // Material Purple 500
+    "blue": {
+      "hex": "#9c27b0"
+    },
+
+    // Material Purple 500
+    "blueLessChroma": {
+      "hex": "#9c27b0"
+    },
+
+    // Material Indigo 500
+    "purple": {
+      "hex": "#3f51b5"
+    },
+
+    // Material Teal A200
+    "green": {
+      "hex": "#64ffda"
+    },
+
+    // Material Blue A700
+    "orange": {
+      "hex": "#2962ff"
+    }
+  }
+}

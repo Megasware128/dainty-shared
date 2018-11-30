@@ -1,0 +1,20 @@
+{
+  "colors": {
+    "neutral": {
+      "hex": "#011627",
+      "chromaEnd": -10
+    },
+    "blue": {
+      "hex": "#82aaff"
+    },
+    "green": {
+      "hex": "#f78c6c" // Deep orange
+    },
+    "orange": {
+      "hex": "#ecc48d"
+    },
+    "blueLessChroma": {
+      "hex": "#addb67" // Green
+    }
+  }
+}
