@@ -8,13 +8,584 @@
       "enum": ["dark", "light"],
       "additionalProperties": false
     },
+    "name": {
+      "$id": "#/properties/name",
+      "type": "string"
+    },
     "colors": {
       "$id": "#/properties/colors",
-      "type": "object"
-    },
-    "customizations": {
-      "$id": "#/properties/customizations",
-      "type": "object"
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "_all": {
+          "$id": "#/properties/colors/properties/_all",
+          "type": "object",
+          "properties": {
+            "lightness": {
+              "$id": "#/properties/colors/properties/_all/properties/lightness",
+              "type": "number"
+            },
+            "lightnessStart": {
+              "$id": "#/properties/colors/properties/_all/properties/lightnessStart",
+              "type": "number"
+            },
+            "lightnessEnd": {
+              "$id": "#/properties/colors/properties/_all/properties/lightnessEnd",
+              "type": "number"
+            },
+            "chroma": {
+              "$id": "#/properties/colors/properties/_all/properties/chroma",
+              "type": "number"
+            },
+            "chromaStart": {
+              "$id": "#/properties/colors/properties/_all/properties/chromaStart",
+              "type": "number"
+            },
+            "chromaEnd": {
+              "$id": "#/properties/colors/properties/_all/properties/chromaEnd",
+              "type": "number"
+            }
+          }
+        },
+        "red": {
+          "$id": "#/properties/colors/properties/red",
+          "type": "object",
+          "properties": {
+            "hex": {
+              "$id": "#/properties/colors/properties/red/properties/hex",
+              "type": "string"
+            },
+            "lightness": {
+              "$id": "#/properties/colors/properties/red/properties/lightness",
+              "type": "number"
+            },
+            "lightnessStart": {
+              "$id": "#/properties/colors/properties/red/properties/lightnessStart",
+              "type": "number"
+            },
+            "lightnessEnd": {
+              "$id": "#/properties/colors/properties/red/properties/lightnessEnd",
+              "type": "number"
+            },
+            "chroma": {
+              "$id": "#/properties/colors/properties/red/properties/chroma",
+              "type": "number"
+            },
+            "chromaStart": {
+              "$id": "#/properties/colors/properties/red/properties/chromaStart",
+              "type": "number"
+            },
+            "chromaEnd": {
+              "$id": "#/properties/colors/properties/red/properties/chromaEnd",
+              "type": "number"
+            },
+            "hue": {
+              "$id": "#/properties/colors/properties/red/properties/hue",
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 360
+            }
+          }
+        },
+        "orange": {
+          "$id": "#/properties/colors/properties/orange",
+          "type": "object",
+          "properties": {
+            "hex": {
+              "$id": "#/properties/colors/properties/orange/properties/hex",
+              "type": "string"
+            },
+            "lightness": {
+              "$id": "#/properties/colors/properties/orange/properties/lightness",
+              "type": "number"
+            },
+            "lightnessStart": {
+              "$id": "#/properties/colors/properties/orange/properties/lightnessStart",
+              "type": "number"
+            },
+            "lightnessEnd": {
+              "$id": "#/properties/colors/properties/orange/properties/lightnessEnd",
+              "type": "number"
+            },
+            "chroma": {
+              "$id": "#/properties/colors/properties/orange/properties/chroma",
+              "type": "number"
+            },
+            "chromaStart": {
+              "$id": "#/properties/colors/properties/orange/properties/chromaStart",
+              "type": "number"
+            },
+            "chromaEnd": {
+              "$id": "#/properties/colors/properties/orange/properties/chromaEnd",
+              "type": "number"
+            },
+            "hue": {
+              "$id": "#/properties/colors/properties/orange/properties/hue",
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 360
+            }
+          }
+        },
+        "yellow": {
+          "$id": "#/properties/colors/properties/yellow",
+          "type": "object",
+          "properties": {
+            "hex": {
+              "$id": "#/properties/colors/properties/yellow/properties/hex",
+              "type": "string"
+            },
+            "lightness": {
+              "$id": "#/properties/colors/properties/yellow/properties/lightness",
+              "type": "number"
+            },
+            "lightnessStart": {
+              "$id": "#/properties/colors/properties/yellow/properties/lightnessStart",
+              "type": "number"
+            },
+            "lightnessEnd": {
+              "$id": "#/properties/colors/properties/yellow/properties/lightnessEnd",
+              "type": "number"
+            },
+            "chroma": {
+              "$id": "#/properties/colors/properties/yellow/properties/chroma",
+              "type": "number"
+            },
+            "chromaStart": {
+              "$id": "#/properties/colors/properties/yellow/properties/chromaStart",
+              "type": "number"
+            },
+            "chromaEnd": {
+              "$id": "#/properties/colors/properties/yellow/properties/chromaEnd",
+              "type": "number"
+            },
+            "hue": {
+              "$id": "#/properties/colors/properties/yellow/properties/hue",
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 360
+            }
+          }
+        },
+        "green": {
+          "$id": "#/properties/colors/properties/green",
+          "type": "object",
+          "properties": {
+            "hex": {
+              "$id": "#/properties/colors/properties/green/properties/hex",
+              "type": "string"
+            },
+            "lightness": {
+              "$id": "#/properties/colors/properties/green/properties/lightness",
+              "type": "number"
+            },
+            "lightnessStart": {
+              "$id": "#/properties/colors/properties/green/properties/lightnessStart",
+              "type": "number"
+            },
+            "lightnessEnd": {
+              "$id": "#/properties/colors/properties/green/properties/lightnessEnd",
+              "type": "number"
+            },
+            "chroma": {
+              "$id": "#/properties/colors/properties/green/properties/chroma",
+              "type": "number"
+            },
+            "chromaStart": {
+              "$id": "#/properties/colors/properties/green/properties/chromaStart",
+              "type": "number"
+            },
+            "chromaEnd": {
+              "$id": "#/properties/colors/properties/green/properties/chromaEnd",
+              "type": "number"
+            },
+            "hue": {
+              "$id": "#/properties/colors/properties/green/properties/hue",
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 360
+            }
+          }
+        },
+        "cyan": {
+          "$id": "#/properties/colors/properties/cyan",
+          "type": "object",
+          "properties": {
+            "hex": {
+              "$id": "#/properties/colors/properties/cyan/properties/hex",
+              "type": "string"
+            },
+            "lightness": {
+              "$id": "#/properties/colors/properties/cyan/properties/lightness",
+              "type": "number"
+            },
+            "lightnessStart": {
+              "$id": "#/properties/colors/properties/cyan/properties/lightnessStart",
+              "type": "number"
+            },
+            "lightnessEnd": {
+              "$id": "#/properties/colors/properties/cyan/properties/lightnessEnd",
+              "type": "number"
+            },
+            "chroma": {
+              "$id": "#/properties/colors/properties/cyan/properties/chroma",
+              "type": "number"
+            },
+            "chromaStart": {
+              "$id": "#/properties/colors/properties/cyan/properties/chromaStart",
+              "type": "number"
+            },
+            "chromaEnd": {
+              "$id": "#/properties/colors/properties/cyan/properties/chromaEnd",
+              "type": "number"
+            },
+            "hue": {
+              "$id": "#/properties/colors/properties/cyan/properties/hue",
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 360
+            }
+          }
+        },
+        "neutral": {
+          "$id": "#/properties/colors/properties/neutral",
+          "type": "object",
+          "properties": {
+            "hex": {
+              "$id": "#/properties/colors/properties/neutral/properties/hex",
+              "type": "string"
+            },
+            "lightness": {
+              "$id": "#/properties/colors/properties/neutral/properties/lightness",
+              "type": "number"
+            },
+            "lightnessStart": {
+              "$id": "#/properties/colors/properties/neutral/properties/lightnessStart",
+              "type": "number"
+            },
+            "lightnessEnd": {
+              "$id": "#/properties/colors/properties/neutral/properties/lightnessEnd",
+              "type": "number"
+            },
+            "chroma": {
+              "$id": "#/properties/colors/properties/neutral/properties/chroma",
+              "type": "number"
+            },
+            "chromaStart": {
+              "$id": "#/properties/colors/properties/neutral/properties/chromaStart",
+              "type": "number"
+            },
+            "chromaEnd": {
+              "$id": "#/properties/colors/properties/neutral/properties/chromaEnd",
+              "type": "number"
+            },
+            "hue": {
+              "$id": "#/properties/colors/properties/neutral/properties/hue",
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 360
+            }
+          }
+        },
+        "blue": {
+          "$id": "#/properties/colors/properties/blue",
+          "type": "object",
+          "properties": {
+            "hex": {
+              "$id": "#/properties/colors/properties/blue/properties/hex",
+              "type": "string"
+            },
+            "lightness": {
+              "$id": "#/properties/colors/properties/blue/properties/lightness",
+              "type": "number"
+            },
+            "lightnessStart": {
+              "$id": "#/properties/colors/properties/blue/properties/lightnessStart",
+              "type": "number"
+            },
+            "lightnessEnd": {
+              "$id": "#/properties/colors/properties/blue/properties/lightnessEnd",
+              "type": "number"
+            },
+            "chroma": {
+              "$id": "#/properties/colors/properties/blue/properties/chroma",
+              "type": "number"
+            },
+            "chromaStart": {
+              "$id": "#/properties/colors/properties/blue/properties/chromaStart",
+              "type": "number"
+            },
+            "chromaEnd": {
+              "$id": "#/properties/colors/properties/blue/properties/chromaEnd",
+              "type": "number"
+            },
+            "hue": {
+              "$id": "#/properties/colors/properties/blue/properties/hue",
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 360
+            }
+          }
+        },
+        "blueLessChroma": {
+          "$id": "#/properties/colors/properties/blueLessChroma",
+          "type": "object",
+          "properties": {
+            "hex": {
+              "$id": "#/properties/colors/properties/blueLessChroma/properties/hex",
+              "type": "string"
+            },
+            "lightness": {
+              "$id": "#/properties/colors/properties/blueLessChroma/properties/lightness",
+              "type": "number"
+            },
+            "lightnessStart": {
+              "$id": "#/properties/colors/properties/blueLessChroma/properties/lightnessStart",
+              "type": "number"
+            },
+            "lightnessEnd": {
+              "$id": "#/properties/colors/properties/blueLessChroma/properties/lightnessEnd",
+              "type": "number"
+            },
+            "chroma": {
+              "$id": "#/properties/colors/properties/blueLessChroma/properties/chroma",
+              "type": "number"
+            },
+            "chromaStart": {
+              "$id": "#/properties/colors/properties/blueLessChroma/properties/chromaStart",
+              "type": "number"
+            },
+            "chromaEnd": {
+              "$id": "#/properties/colors/properties/blueLessChroma/properties/chromaEnd",
+              "type": "number"
+            },
+            "hue": {
+              "$id": "#/properties/colors/properties/blueLessChroma/properties/hue",
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 360
+            }
+          }
+        },
+        "blueMoreChroma": {
+          "$id": "#/properties/colors/properties/blueMoreChroma",
+          "type": "object",
+          "properties": {
+            "hex": {
+              "$id": "#/properties/colors/properties/blueMoreChroma/properties/hex",
+              "type": "string"
+            },
+            "lightness": {
+              "$id": "#/properties/colors/properties/blueMoreChroma/properties/lightness",
+              "type": "number"
+            },
+            "lightnessStart": {
+              "$id": "#/properties/colors/properties/blueMoreChroma/properties/lightnessStart",
+              "type": "number"
+            },
+            "lightnessEnd": {
+              "$id": "#/properties/colors/properties/blueMoreChroma/properties/lightnessEnd",
+              "type": "number"
+            },
+            "chroma": {
+              "$id": "#/properties/colors/properties/blueMoreChroma/properties/chroma",
+              "type": "number"
+            },
+            "chromaStart": {
+              "$id": "#/properties/colors/properties/blueMoreChroma/properties/chromaStart",
+              "type": "number"
+            },
+            "chromaEnd": {
+              "$id": "#/properties/colors/properties/blueMoreChroma/properties/chromaEnd",
+              "type": "number"
+            },
+            "hue": {
+              "$id": "#/properties/colors/properties/blueMoreChroma/properties/hue",
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 360
+            }
+          },
+          "purple": {
+            "$id": "#/properties/colors/properties/purple",
+            "type": "object",
+            "properties": {
+              "hex": {
+                "$id": "#/properties/colors/properties/purple/properties/hex",
+                "type": "string"
+              },
+              "lightness": {
+                "$id": "#/properties/colors/properties/purple/properties/lightness",
+                "type": "number"
+              },
+              "lightnessStart": {
+                "$id": "#/properties/colors/properties/purple/properties/lightnessStart",
+                "type": "number"
+              },
+              "lightnessEnd": {
+                "$id": "#/properties/colors/properties/purple/properties/lightnessEnd",
+                "type": "number"
+              },
+              "chroma": {
+                "$id": "#/properties/colors/properties/purple/properties/chroma",
+                "type": "number"
+              },
+              "chromaStart": {
+                "$id": "#/properties/colors/properties/purple/properties/chromaStart",
+                "type": "number"
+              },
+              "chromaEnd": {
+                "$id": "#/properties/colors/properties/purple/properties/chromaEnd",
+                "type": "number"
+              },
+              "hue": {
+                "$id": "#/properties/colors/properties/purple/properties/hue",
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 360
+              }
+            }
+          }
+        }
+      },
+      "customizations": {
+        "$id": "#/properties/customizations",
+        "type": "object",
+        "properties": {
+          "terminal": {
+            "$id": "#/properties/customizations/properties/terminal",
+            "type": "object",
+            "properties": {
+              "background": {
+                "$id": "#/properties/customizations/properties/terminal/properties/background",
+                "type": "string"
+              },
+              "foreground": {
+                "$id": "#/properties/customizations/properties/terminal/properties/foreground",
+                "type": "string"
+              },
+              "cursor": {
+                "$id": "#/properties/customizations/properties/terminal/properties/cursor",
+                "type": "string"
+              },
+              "black": {
+                "$id": "#/properties/customizations/properties/terminal/properties/black",
+                "type": "string"
+              },
+              "red": {
+                "$id": "#/properties/customizations/properties/terminal/properties/red",
+                "type": "string"
+              },
+              "green": {
+                "$id": "#/properties/customizations/properties/terminal/properties/green",
+                "type": "string"
+              },
+              "yellow": {
+                "$id": "#/properties/customizations/properties/terminal/properties/yellow",
+                "type": "string"
+              },
+              "blue": {
+                "$id": "#/properties/customizations/properties/terminal/properties/blue",
+                "type": "string"
+              },
+              "magenta": {
+                "$id": "#/properties/customizations/properties/terminal/properties/magenta",
+                "type": "string"
+              },
+              "cyan": {
+                "$id": "#/properties/customizations/properties/terminal/properties/cyan",
+                "type": "string"
+              },
+              "white": {
+                "$id": "#/properties/customizations/properties/terminal/properties/white",
+                "type": "string"
+              },
+              "brightBlack": {
+                "$id": "#/properties/customizations/properties/terminal/properties/brightBlack",
+                "type": "string"
+              },
+              "brightRed": {
+                "$id": "#/properties/customizations/properties/terminal/properties/brightRed",
+                "type": "string"
+              },
+              "brightGreen": {
+                "$id": "#/properties/customizations/properties/terminal/properties/brightGreen",
+                "type": "string"
+              },
+              "brightYellow": {
+                "$id": "#/properties/customizations/properties/terminal/properties/brightYellow",
+                "type": "string"
+              },
+              "brightBlue": {
+                "$id": "#/properties/customizations/properties/terminal/properties/brightBlue",
+                "type": "string"
+              },
+              "brightMagenta": {
+                "$id": "#/properties/customizations/properties/terminal/properties/brightMagenta",
+                "type": "string"
+              },
+              "brightCyan": {
+                "$id": "#/properties/customizations/properties/terminal/properties/brightCyan",
+                "type": "string"
+              },
+              "brightWhite": {
+                "$id": "#/properties/customizations/properties/terminal/properties/brightWhite",
+                "type": "string"
+              }
+            }
+          },
+          "tokens": {
+            "$id": "#/properties/customizations/properties/tokens",
+            "type": "object",
+            "properties": {
+              "comment": {
+                "$id": "#/properties/customizations/properties/tokens/properties/comment",
+                "type": "string"
+              },
+              "string": {
+                "$id": "#/properties/customizations/properties/tokens/properties/string",
+                "type": "string"
+              },
+              "keyword": {
+                "$id": "#/properties/customizations/properties/tokens/properties/keyword",
+                "type": "string"
+              },
+              "type": {
+                "$id": "#/properties/customizations/properties/tokens/properties/type",
+                "type": "string"
+              },
+              "function": {
+                "$id": "#/properties/customizations/properties/tokens/properties/function",
+                "type": "string"
+              },
+              "otherType": {
+                "$id": "#/properties/customizations/properties/tokens/properties/otherType",
+                "type": "string"
+              },
+              "identifier": {
+                "$id": "#/properties/customizations/properties/tokens/properties/identifier",
+                "type": "string"
+              },
+              "number": {
+                "$id": "#/properties/customizations/properties/tokens/properties/number",
+                "type": "string"
+              },
+              "operator": {
+                "$id": "#/properties/customizations/properties/tokens/properties/operator",
+                "type": "string"
+              },
+              "punctuation": {
+                "$id": "#/properties/customizations/properties/tokens/properties/punctuation",
+                "type": "string"
+              },
+              "url": {
+                "$id": "#/properties/customizations/properties/tokens/properties/url",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
