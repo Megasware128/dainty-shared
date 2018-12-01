@@ -18,7 +18,12 @@ async function getPresetPath(dirname, preset) {
   } else return null;
 }
 
-async function getConfiguration(dirname, preset = null, argument = null) {
+async function getConfiguration(
+  dirname,
+  preset = null,
+  argument = null,
+  createConfigurationFile = true
+) {
   let schema;
   let defaultConfiguration;
   let configurationPresetBase;
@@ -62,10 +67,12 @@ async function getConfiguration(dirname, preset = null, argument = null) {
     } else {
       configuration = defaultConfiguration;
 
-      await writeFileLog(
-        path.join(dirname, "../configuration.jsonc"),
-        JSON.stringify(configuration, null, 2)
-      );
+      if (createConfigurationFile) {
+        await writeFileLog(
+          path.join(dirname, "../configuration.jsonc"),
+          JSON.stringify(configuration, null, 2)
+        );
+      }
     }
   } catch (error) {
     console.error(error);

@@ -1,6 +1,6 @@
 const culori = require("culori");
 const changeCase = require("change-case");
-const { groupBy, identity, logWarning } = require("./utils");
+const { groupBy, identity } = require("./utils-universal");
 
 const maximumLightness = 100;
 const maximumChroma = 131.207;
@@ -93,11 +93,11 @@ function generateColorScale(scale, color, all) {
 
 function limitLightness(scale, i, lightness) {
   if (lightness < 0) {
-    logWarning(
+    console.warn(
       `Calculated LCh lightness \`${lightness}\` for \`${scale}${i}\` is out of range, and has been set to \`0\`.`
     );
   } else if (lightness > maximumLightness) {
-    logWarning(
+    console.warn(
       `Calculated LCh lightness \`${lightness}\` for \`${scale}${i}\` is out of range, and has been set to \`${maximumLightness}\`.`
     );
   }
@@ -107,11 +107,11 @@ function limitLightness(scale, i, lightness) {
 
 function limitChroma(scale, i, chroma) {
   if (chroma < 0) {
-    logWarning(
+    console.warn(
       `Calculated LCh chroma \`${chroma}\` for \`${scale}${i}\` is out of range, and has been set to \`0\`.`
     );
   } else if (chroma > maximumChroma) {
-    logWarning(
+    console.warn(
       `Calculated LCh chroma \`${chroma}\` for \`${scale}${i}\` is out of range, and has been set to \`${maximumChroma}\`.`
     );
   }
@@ -233,6 +233,14 @@ function getTokenColorFunction(configuration, colorConstants) {
   };
 }
 
+function getVariantShadeFunction(configuration) {
+  return shade => {
+    const dark = configuration.variant !== "light";
+
+    return dark ? shade : 40 - shade;
+  };
+}
+
 function splitColorConstant(colorConstant) {
   if (Number.isNaN(parseInt(colorConstant[colorConstant.length - 2], 10))) {
     return [
@@ -314,6 +322,7 @@ module.exports = {
   checkColorScaleRange,
   generateColorConstantReplacements,
   generateColorConstants,
+  getVariantShadeFunction,
   getTerminalColorFunction,
   getTokenColorFunction,
   translateColorConstant,
