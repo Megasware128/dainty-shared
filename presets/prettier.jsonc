@@ -1,6 +1,7 @@
 {
   "type": "dark",
   "name": "Prettier",
+  "description": "A preset inspired by the branding of Prettier",
   "colors": {
     "neutral": {
       "hex": "#1a2b34"

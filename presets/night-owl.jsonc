@@ -1,6 +1,7 @@
 {
   "type": "dark",
   "name": "Night Owl",
+  "description": "A preset inspired by Night Owl for VS Code",
   "colors": {
     "_all": {
       "lightnessStart": 7.5

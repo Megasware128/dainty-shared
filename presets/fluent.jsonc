@@ -1,6 +1,7 @@
 {
   "type": "dark",
   "name": "Fluent",
+  "description": "A preset inspired by the Fluent Design System",
   "colors": {
     "neutral": {
       "hex": "#515c6b"

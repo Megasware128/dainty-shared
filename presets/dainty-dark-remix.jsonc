@@ -1,6 +1,7 @@
 {
   "type": "dark",
   "name": "Dainty Dark Remix",
+  "description": "A remix of Dainty using colors from the Material Design palette"
   "colors": {
     "blue": {
       // Material Purple 500

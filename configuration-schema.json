@@ -12,6 +12,10 @@
       "$id": "#/properties/name",
       "type": "string"
     },
+    "description": {
+      "$id": "#/properties/description",
+      "type": "string"
+    },
     "colors": {
       "$id": "#/properties/colors",
       "type": "object",

@@ -1,6 +1,7 @@
 {
   "type": "dark",
   "name": "Dainty Dark",
+  "description": "The dark variant of the Dainty color theme theme",
   "colors": {
     "_all": {
       "lightnessStart": 10,
