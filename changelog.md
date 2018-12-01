@@ -1,5 +1,15 @@
 # Changelog
 
+## `2.0.0`
+
+- Extract light theme into `dainty-light`
+- Add support for `dainty-site`
+- Use shared configuration schema
+- Use JSON with comments
+- Move presets into shared
+- Merge chroma adjustments into chrome definitions for Dainty themes
+- Fix use of hex colors
+
 ## `1.0.0`
 
 - Add more color adjustment options
