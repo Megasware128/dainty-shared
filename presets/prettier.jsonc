@@ -3,17 +3,17 @@
   "name": "Prettier",
   "description": "A preset inspired by the branding of Prettier",
   "colors": {
+    "orange": {
+      "hex": "#f2ba54"
+    },
+    "green": {
+      "hex": "#6ab3b2"
+    },
     "neutral": {
       "hex": "#1a2b34"
     },
     "blue": {
       "hex": "#6ab3b2"
-    },
-    "green": {
-      "hex": "#6ab3b2"
-    },
-    "orange": {
-      "hex": "#f2ba54"
     },
     "purple": {
       "hex": "#c098c5"

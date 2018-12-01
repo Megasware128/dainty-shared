@@ -6,19 +6,19 @@
     "_all": {
       "lightnessStart": 7.5
     },
+    "orange": {
+      "hex": "#ecc48d"
+    },
+    "green": {
+      // Deep orange
+      "hex": "#f78c6c"
+    },
     "neutral": {
       "hex": "#011627",
       "chromaEnd": -10
     },
     "blue": {
       "hex": "#82aaff"
-    },
-    "green": {
-      // Deep orange
-      "hex": "#f78c6c"
-    },
-    "orange": {
-      "hex": "#ecc48d"
     },
     "blueLessChroma": {
       // Green

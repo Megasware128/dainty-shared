@@ -3,6 +3,12 @@
   "name": "Fluent",
   "description": "A preset inspired by the Fluent Design System",
   "colors": {
+    "orange": {
+      "hex": "#ef6950"
+    },
+    "green": {
+      "hex": "#00cc6a"
+    },
     "neutral": {
       "hex": "#515c6b"
     },
@@ -11,12 +17,6 @@
     },
     "purple": {
       "hex": "#b146c2"
-    },
-    "green": {
-      "hex": "#00cc6a"
-    },
-    "orange": {
-      "hex": "#ef6950"
     }
   }
 }

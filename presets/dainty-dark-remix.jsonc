@@ -1,8 +1,18 @@
 {
   "type": "dark",
   "name": "Dainty Dark Remix",
-  "description": "A remix of Dainty using colors from the Material Design palette"
+  "description": "A remix of Dainty using colors from the Material Design palette",
   "colors": {
+    "orange": {
+      // Material Blue A700
+      "hex": "#2962ff"
+    },
+
+    "green": {
+      // Material Teal A200
+      "hex": "#64ffda"
+    },
+
     "blue": {
       // Material Purple 500
       "hex": "#9c27b0"
@@ -16,16 +26,6 @@
     "purple": {
       // Material Indigo 500
       "hex": "#3f51b5"
-    },
-
-    "green": {
-      // Material Teal A200
-      "hex": "#64ffda"
-    },
-
-    "orange": {
-      // Material Blue A700
-      "hex": "#2962ff"
     }
   }
 }
