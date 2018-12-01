@@ -27,10 +27,7 @@
   },
   "customizations": {
     "tokens": {
-      "operator": {
-        "dark": "purple24",
-        "light": "purple24"
-      }
+      "operator": "purple24"
     }
   }
 }

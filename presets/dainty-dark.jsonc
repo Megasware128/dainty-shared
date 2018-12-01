@@ -1,0 +1,110 @@
+{
+  "type": "dark",
+  "colors": {
+    "_all": {
+      "lightnessStart": 10,
+      "lightnessEnd": -2.1875
+    },
+    "red": {
+      "hue": 22.5,
+
+      // 100 / 16 * 5 - 2.5
+      "chroma": 28.75
+    },
+    "orange": {
+      "hue": 45,
+
+      // 100 / 32 * 5 - 2.5
+      "chroma": 13.125
+    },
+    "yellow": {
+      "hue": 90,
+
+      // 100 / 4 - 2.5
+      "chroma": 22.5
+    },
+    "green": {
+      "hue": 180,
+
+      // 100 / 4 - 2.5
+      "chroma": 22.5
+    },
+    "cyan": {
+      "hue": 225,
+
+      // 100 / 16 * 5 - 2.5
+      "chroma": 28.75
+    },
+    "neutral": {
+      // 270 - 90 / 16
+      "hue": 264.375,
+
+      // 100 / 10 - 2.5
+      "chroma": 7.5,
+      "chromaEnd": -5
+    },
+    "blue": {
+      // 270 - 90 / 16
+      "hue": 264.375,
+
+      // 100 / 16 * 5 - 2.5
+      "chroma": 28.75
+    },
+    "blueLessChroma": {
+      // 270 - 90 / 16
+      "hue": 264.375,
+
+      // 100 / 16 * 3 - 2.5
+      "chroma": 16.25
+    },
+    "blueMoreChroma": {
+      // 270 - 90 / 16
+      "hue": 264.375,
+
+      // 100 / 16 * 7 - 2.5
+      "chroma": 41.25
+    },
+    "purple": {
+      "hue": 315,
+
+      // 100 / 16 * 5 - 2.5
+      "chroma": 28.75
+    }
+  },
+  "customizations": {
+    "terminal": {
+      "background": "neutral0",
+      "foreground": "neutral34",
+      "cursor": "neutral28",
+      "black": "neutral0",
+      "red": "red16",
+      "green": "green16",
+      "yellow": "yellow30",
+      "blue": "blue30",
+      "magenta": "purple30",
+      "cyan": "cyan30",
+      "white": "neutral34",
+      "brightBlack": "neutral30",
+      "brightRed": "red30",
+      "brightGreen": "green30",
+      "brightYellow": "yellow30",
+      "brightBlue": "blue30",
+      "brightMagenta": "purple30",
+      "brightCyan": "cyan30",
+      "brightWhite": "neutral39"
+    },
+    "tokens": {
+      "comment": "neutral16",
+      "string": "orange33",
+      "keyword": "blue26",
+      "type": "blueLessChroma30",
+      "function": "blueLessChroma34",
+      "otherType": "purple30",
+      "identifier": "neutral34",
+      "number": "green35",
+      "operator": "neutral30",
+      "punctuation": "neutral26",
+      "url": "blueMoreChroma28"
+    }
+  }
+}

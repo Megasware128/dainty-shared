@@ -209,35 +209,27 @@ function generateColorConstants(colors) {
 
 function getTerminalColorFunction(configuration, colorConstants) {
   return terminalColor => {
-    const dark = configuration.variant !== "light";
-
-    const tokenColor = configuration.customizations.terminal[terminalColor];
-
     return translateColorConstant(
       colorConstants,
-      dark ? tokenColor.dark : tokenColor.light
+      configuration.customizations.terminal[terminalColor]
     );
   };
 }
 
 function getTokenColorFunction(configuration, colorConstants) {
   return tokenName => {
-    const dark = configuration.variant !== "light";
-
-    const tokenColor = configuration.customizations.tokens[tokenName];
-
     return translateColorConstant(
       colorConstants,
-      dark ? tokenColor.dark : tokenColor.light
+      configuration.customizations.tokens[tokenName]
     );
   };
 }
 
-function getVariantShadeFunction(configuration) {
-  return shade => {
-    const dark = configuration.variant !== "light";
+function getTypeShadeFunction(configuration) {
+  return (shade, lightShade = null) => {
+    const dark = configuration.type !== "light";
 
-    return dark ? shade : 40 - shade;
+    return dark ? shade : lightShade ? lightShade : 40 - shade;
   };
 }
 
@@ -322,7 +314,7 @@ module.exports = {
   checkColorScaleRange,
   generateColorConstantReplacements,
   generateColorConstants,
-  getVariantShadeFunction,
+  getTypeShadeFunction,
   getTerminalColorFunction,
   getTokenColorFunction,
   translateColorConstant,

@@ -1,12 +1,12 @@
 # Shared configuration
 
-Dainty has a unique configuration schema defined for each application. Properties `"variant"` and `"colors"` are shared among all schemas. In addition, Dainty for every application supports configuration presets.
+Dainty has a unique configuration schema defined for each application. Properties `"type"` and `"colors"` are shared among all schemas. In addition, Dainty for every application supports configuration presets.
 
 ## `configuration.jsonc`
 
-### `"variant"`
+### `"type"`
 
-Set `"variant"` to `"light"` to enable the light theme. _The light theme is currently not as complete as the dark theme._
+Set `"type"` to `"light"` to enable the light theme. _The light theme is currently not as complete as the dark theme._
 
 ### `"colors"`
 

@@ -44,7 +44,7 @@ async function getConfiguration(
     defaultConfiguration = getDefaultConfiguration(schema);
 
     configurationPresetBase = await readFileJson(
-      path.join(__dirname, `../presets/dainty.jsonc`)
+      path.join(__dirname, `../presets/dainty-dark.jsonc`)
     );
 
     if (preset) {

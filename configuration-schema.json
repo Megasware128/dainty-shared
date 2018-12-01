@@ -2,11 +2,10 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "variant": {
-      "$id": "#/properties/variant",
+    "type": {
+      "$id": "#/properties/type",
       "type": "string",
       "enum": ["dark", "light"],
-      "default": "dark",
       "additionalProperties": false
     },
     "colors": {
