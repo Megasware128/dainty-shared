@@ -1,7 +1,8 @@
 {
   "colors": {
     "_all": {
-      "lightnessStart": 12.5
+      "lightnessStart": 10,
+      "lightnessEnd": -2.1875
     },
     "red": {
       "hue": 22.5,
@@ -151,39 +152,39 @@
     "tokens": {
       "comment": {
         "dark": "neutral16",
-        "light": "neutral16"
+        "light": "neutral24"
       },
       "string": {
         "dark": "orange33",
-        "light": "orange24"
+        "light": "orange20"
       },
       "keyword": {
         "dark": "blue26",
-        "light": "blue20"
+        "light": "blue16"
       },
       "type": {
         "dark": "blueLessChroma30",
-        "light": "blueLessChroma20"
+        "light": "blueLessChroma16"
       },
       "function": {
         "dark": "blueLessChroma34",
-        "light": "blueLessChroma26"
+        "light": "blueLessChroma20"
       },
       "otherType": {
         "dark": "purple30",
-        "light": "purple24"
+        "light": "purple16"
       },
       "identifier": {
         "dark": "neutral34",
-        "light": "neutral24"
+        "light": "neutral6"
       },
       "number": {
         "dark": "green35",
-        "light": "green24"
+        "light": "green20"
       },
       "operator": {
         "dark": "neutral30",
-        "light": "neutral24"
+        "light": "neutral16"
       },
       "punctuation": {
         "dark": "neutral26",
@@ -191,7 +192,7 @@
       },
       "url": {
         "dark": "blueMoreChroma28",
-        "light": "blueMoreChroma24"
+        "light": "blueMoreChroma16"
       }
     }
   }
