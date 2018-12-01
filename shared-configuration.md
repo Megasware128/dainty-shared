@@ -34,7 +34,7 @@ Set `"type"` to `"light"` to enable the light theme. _The light theme is current
 | `"chromaEnd"`      | Chroma to be added or subtracted at end of scale      |
 | `"hue"`            | Hue as CIELAB hue in range 0–360                      |
 
-With a provided base color a scale of 40 shades is built. When color is expressed as hex as opposed to hue and chroma, the color will be converted to LCh and its hue and chroma are used while the lightness is calculated.
+With a provided base color a scale of 41 shades is built. When color is expressed as hex as opposed to hue and chroma, the color will be converted to LCh and its hue and chroma are used while the lightness is calculated.
 
 ## Presets
 
