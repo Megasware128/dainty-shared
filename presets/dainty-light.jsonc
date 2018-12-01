@@ -1,5 +1,6 @@
 {
   "type": "light",
+  "name": "Dainty Light",
   "colors": {
     "_all": {
       "lightnessStart": 10,

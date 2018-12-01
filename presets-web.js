@@ -1,6 +1,7 @@
 const presets = {
 daintyDarkRemix: {
   "type": "dark",
+  "name": "Dainty Dark Remix",
   "colors": {
     "_all": {
       "lightnessStart": 10,
@@ -92,6 +93,7 @@ daintyDarkRemix: {
 },
 daintyDark: {
   "type": "dark",
+  "name": "Dainty Dark",
   "colors": {
     "_all": {
       "lightnessStart": 10,
@@ -178,6 +180,7 @@ daintyDark: {
 },
 daintyLight: {
   "type": "light",
+  "name": "Dainty Light",
   "colors": {
     "_all": {
       "lightnessStart": 10,
@@ -264,6 +267,7 @@ daintyLight: {
 },
 fluent: {
   "type": "dark",
+  "name": "Fluent",
   "colors": {
     "_all": {
       "lightnessStart": 10,
@@ -355,6 +359,7 @@ fluent: {
 },
 nightOwl: {
   "type": "dark",
+  "name": "Night Owl",
   "colors": {
     "_all": {
       "lightnessStart": 7.5,
@@ -447,6 +452,7 @@ nightOwl: {
 },
 prettier: {
   "type": "dark",
+  "name": "Prettier",
   "colors": {
     "_all": {
       "lightnessStart": 10,

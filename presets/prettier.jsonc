@@ -1,4 +1,6 @@
 {
+  "type": "dark",
+  "name": "Prettier",
   "colors": {
     "neutral": {
       "hex": "#1a2b34"

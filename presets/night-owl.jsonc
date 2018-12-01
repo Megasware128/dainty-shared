@@ -1,4 +1,6 @@
 {
+  "type": "dark",
+  "name": "Night Owl",
   "colors": {
     "_all": {
       "lightnessStart": 7.5

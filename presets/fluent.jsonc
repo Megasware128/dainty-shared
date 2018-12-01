@@ -1,4 +1,6 @@
 {
+  "type": "dark",
+  "name": "Fluent",
   "colors": {
     "neutral": {
       "hex": "#515c6b"
