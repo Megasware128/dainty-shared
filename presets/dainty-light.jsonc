@@ -4,8 +4,7 @@
   "description": "The light variant of the Dainty color theme",
   "colors": {
     "_all": {
-      "lightnessStart": 10,
-      "lightnessEnd": 0
+      "lightnessStart": 10
     },
     "red": {
       "hue": 22.5,
