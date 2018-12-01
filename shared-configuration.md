@@ -17,6 +17,7 @@ Set `"type"` to `"light"` to enable the light theme. _The light theme is current
 | `"lightness"`      | Lightness to be added or subtracted                   |
 | `"lightnessStart"` | Lightness to be added or subtracted at start of scale |
 | `"lightnessEnd"`   | Lightness to be added or subtracted at end of scale   |
+| `"chroma"`         | Chroma to be added or subtracted                      |
 | `"chromaStart"`    | Chroma to be added or subtracted at start of scale    |
 | `"chromaEnd"`      | Chroma to be added or subtracted at end of scale      |
 
