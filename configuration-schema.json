@@ -85,7 +85,7 @@
             },
             "hue": {
               "$id": "#/properties/colors/properties/red/properties/hue",
-              "type": "integer",
+              "type": "number",
               "minimum": 0,
               "maximum": 360
             }
@@ -125,7 +125,7 @@
             },
             "hue": {
               "$id": "#/properties/colors/properties/orange/properties/hue",
-              "type": "integer",
+              "type": "number",
               "minimum": 0,
               "maximum": 360
             }
@@ -165,7 +165,7 @@
             },
             "hue": {
               "$id": "#/properties/colors/properties/yellow/properties/hue",
-              "type": "integer",
+              "type": "number",
               "minimum": 0,
               "maximum": 360
             }
@@ -205,7 +205,7 @@
             },
             "hue": {
               "$id": "#/properties/colors/properties/green/properties/hue",
-              "type": "integer",
+              "type": "number",
               "minimum": 0,
               "maximum": 360
             }
@@ -245,7 +245,7 @@
             },
             "hue": {
               "$id": "#/properties/colors/properties/cyan/properties/hue",
-              "type": "integer",
+              "type": "number",
               "minimum": 0,
               "maximum": 360
             }
@@ -285,7 +285,7 @@
             },
             "hue": {
               "$id": "#/properties/colors/properties/neutral/properties/hue",
-              "type": "integer",
+              "type": "number",
               "minimum": 0,
               "maximum": 360
             }
@@ -325,7 +325,7 @@
             },
             "hue": {
               "$id": "#/properties/colors/properties/blue/properties/hue",
-              "type": "integer",
+              "type": "number",
               "minimum": 0,
               "maximum": 360
             }
@@ -365,7 +365,7 @@
             },
             "hue": {
               "$id": "#/properties/colors/properties/blueLessChroma/properties/hue",
-              "type": "integer",
+              "type": "number",
               "minimum": 0,
               "maximum": 360
             }
@@ -405,49 +405,49 @@
             },
             "hue": {
               "$id": "#/properties/colors/properties/blueMoreChroma/properties/hue",
-              "type": "integer",
+              "type": "number",
               "minimum": 0,
               "maximum": 360
             }
-          },
-          "purple": {
-            "$id": "#/properties/colors/properties/purple",
-            "type": "object",
-            "properties": {
-              "hex": {
-                "$id": "#/properties/colors/properties/purple/properties/hex",
-                "type": "string"
-              },
-              "lightness": {
-                "$id": "#/properties/colors/properties/purple/properties/lightness",
-                "type": "number"
-              },
-              "lightnessStart": {
-                "$id": "#/properties/colors/properties/purple/properties/lightnessStart",
-                "type": "number"
-              },
-              "lightnessEnd": {
-                "$id": "#/properties/colors/properties/purple/properties/lightnessEnd",
-                "type": "number"
-              },
-              "chroma": {
-                "$id": "#/properties/colors/properties/purple/properties/chroma",
-                "type": "number"
-              },
-              "chromaStart": {
-                "$id": "#/properties/colors/properties/purple/properties/chromaStart",
-                "type": "number"
-              },
-              "chromaEnd": {
-                "$id": "#/properties/colors/properties/purple/properties/chromaEnd",
-                "type": "number"
-              },
-              "hue": {
-                "$id": "#/properties/colors/properties/purple/properties/hue",
-                "type": "integer",
-                "minimum": 0,
-                "maximum": 360
-              }
+          }
+        },
+        "purple": {
+          "$id": "#/properties/colors/properties/purple",
+          "type": "object",
+          "properties": {
+            "hex": {
+              "$id": "#/properties/colors/properties/purple/properties/hex",
+              "type": "string"
+            },
+            "lightness": {
+              "$id": "#/properties/colors/properties/purple/properties/lightness",
+              "type": "number"
+            },
+            "lightnessStart": {
+              "$id": "#/properties/colors/properties/purple/properties/lightnessStart",
+              "type": "number"
+            },
+            "lightnessEnd": {
+              "$id": "#/properties/colors/properties/purple/properties/lightnessEnd",
+              "type": "number"
+            },
+            "chroma": {
+              "$id": "#/properties/colors/properties/purple/properties/chroma",
+              "type": "number"
+            },
+            "chromaStart": {
+              "$id": "#/properties/colors/properties/purple/properties/chromaStart",
+              "type": "number"
+            },
+            "chromaEnd": {
+              "$id": "#/properties/colors/properties/purple/properties/chromaEnd",
+              "type": "number"
+            },
+            "hue": {
+              "$id": "#/properties/colors/properties/purple/properties/hue",
+              "type": "number",
+              "minimum": 0,
+              "maximum": 360
             }
           }
         }
