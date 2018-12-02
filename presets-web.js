@@ -5,7 +5,9 @@ daintyDarkRemix: {
   "description": "A remix of Dainty using colors from the Material Design palette",
   "colors": {
     "_all": {
-      "lightnessStart": 10
+      "lightnessStart": 8.5,
+      "lightnessEnd": -27.5,
+      "chroma": 6.5
     },
     "red": {
       "hue": 22.5,
@@ -396,7 +398,8 @@ monokai: {
     },
     "blue": {
       "hue": 264.375,
-      "chroma": 28.75
+      "chroma": 28.75,
+      "hex": "#66d9ef"
     },
     "blueLessChroma": {
       "hue": 264.375,
@@ -440,11 +443,11 @@ monokai: {
       "keyword": "#f92472",
       "type": "#a6e22d",
       "function": "#a6e22d",
-      "otherType": "purple30",
+      "otherType": "#66d9ef",
       "identifier": "neutral36",
       "number": "#ac80ff",
-      "operator": "neutral30",
-      "punctuation": "neutral26",
+      "operator": "#f92472",
+      "punctuation": "neutral36",
       "url": "blueMoreChroma28"
     }
   }
