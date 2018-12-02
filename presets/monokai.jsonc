@@ -32,11 +32,7 @@
       // "chromaEnd": -5
     },
     "blue": {
-      // 270 - 90 / 16
-      "hue": 264.375,
-
-      // 100 / 16 * 5 - 2.5
-      "chroma": 28.75
+      "hex": "#66d9ef"
     },
     "blueLessChroma": {
       // 270 - 90 / 16
@@ -82,18 +78,28 @@
       "comment": "neutral16",
       // Yellow
       "string": "#e7db74",
+
       // Red
       "keyword": "#f92472",
+
       // Green
       "type": "#a6e22d",
+
       // Green
       "function": "#a6e22d",
-      "otherType": "purple30",
+
+      // Blue
+      "otherType": "#66d9ef",
+
       "identifier": "neutral36",
+
       // Purple
       "number": "#ac80ff",
-      "operator": "neutral30",
-      "punctuation": "neutral26",
+
+      // Red
+      "operator": "#f92472",
+
+      "punctuation": "neutral36",
       "url": "blueMoreChroma28"
     }
   }
