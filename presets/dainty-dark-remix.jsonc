@@ -3,6 +3,12 @@
   "name": "Dainty Dark Remix",
   "description": "A remix of Dainty using colors from the Material Design palette",
   "colors": {
+    "_all": {
+      "lightnessStart": 8.5,
+      "lightnessEnd": -27.5,
+      "chroma": 6.5
+    },
+
     "orange": {
       // Material Blue A700
       "hex": "#2962ff"
