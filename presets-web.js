@@ -2,10 +2,10 @@ const presets = {
 daintyDarkRemix: {
   "type": "dark",
   "name": "Dainty Dark Remix",
+  "description": "A remix of Dainty using colors from the Material Design palette",
   "colors": {
     "_all": {
-      "lightnessStart": 10,
-      "lightnessEnd": 0
+      "lightnessStart": 10
     },
     "red": {
       "hue": 22.5,
@@ -94,10 +94,10 @@ daintyDarkRemix: {
 daintyDark: {
   "type": "dark",
   "name": "Dainty Dark",
+  "description": "The dark variant of the Dainty color theme",
   "colors": {
     "_all": {
-      "lightnessStart": 10,
-      "lightnessEnd": 0
+      "lightnessStart": 10
     },
     "red": {
       "hue": 22.5,
@@ -181,10 +181,10 @@ daintyDark: {
 daintyLight: {
   "type": "light",
   "name": "Dainty Light",
+  "description": "The light variant of the Dainty color theme",
   "colors": {
     "_all": {
-      "lightnessStart": 10,
-      "lightnessEnd": 0
+      "lightnessStart": 10
     },
     "red": {
       "hue": 22.5,
@@ -268,10 +268,10 @@ daintyLight: {
 fluent: {
   "type": "dark",
   "name": "Fluent",
+  "description": "A preset inspired by the Fluent Design System",
   "colors": {
     "_all": {
-      "lightnessStart": 10,
-      "lightnessEnd": 0
+      "lightnessStart": 10
     },
     "red": {
       "hue": 22.5,
@@ -357,13 +357,104 @@ fluent: {
     }
   }
 },
+monokai: {
+  "type": "dark",
+  "name": "Monokai",
+  "description": "A theme inspired by Monokai for Sublime Text",
+  "colors": {
+    "_all": {
+      "lightnessStart": 15
+    },
+    "red": {
+      "hue": 22.5,
+      "chroma": 28.75,
+      "hex": "#f92472"
+    },
+    "orange": {
+      "hue": 45,
+      "chroma": 13.125
+    },
+    "yellow": {
+      "hue": 90,
+      "chroma": 22.5
+    },
+    "green": {
+      "hue": 180,
+      "chroma": 22.5,
+      "hex": "#a6e22d"
+    },
+    "cyan": {
+      "hue": 225,
+      "chroma": 28.75
+    },
+    "neutral": {
+      "hue": 264.375,
+      "chroma": 7.5,
+      "chromaEnd": -5,
+      "hex": "#282923"
+    },
+    "blue": {
+      "hue": 264.375,
+      "chroma": 28.75
+    },
+    "blueLessChroma": {
+      "hue": 264.375,
+      "chroma": 16.25
+    },
+    "blueMoreChroma": {
+      "hue": 264.375,
+      "chroma": 41.25
+    },
+    "purple": {
+      "hue": 315,
+      "chroma": 28.75,
+      "hex": "#ac80ff"
+    }
+  },
+  "customizations": {
+    "terminal": {
+      "background": "neutral0",
+      "foreground": "neutral34",
+      "cursor": "neutral28",
+      "black": "neutral0",
+      "red": "red16",
+      "green": "green16",
+      "yellow": "yellow30",
+      "blue": "blue30",
+      "magenta": "purple30",
+      "cyan": "cyan30",
+      "white": "neutral34",
+      "brightBlack": "neutral30",
+      "brightRed": "red30",
+      "brightGreen": "green30",
+      "brightYellow": "yellow30",
+      "brightBlue": "blue30",
+      "brightMagenta": "purple30",
+      "brightCyan": "cyan30",
+      "brightWhite": "neutral39"
+    },
+    "tokens": {
+      "comment": "neutral16",
+      "string": "orange33",
+      "keyword": "#f92472",
+      "type": "#a6e22d",
+      "function": "#a6e22d",
+      "otherType": "purple30",
+      "identifier": "neutral36",
+      "number": "#ac80ff",
+      "operator": "neutral30",
+      "punctuation": "neutral26",
+      "url": "blueMoreChroma28"
+    }
+  }
+},
 nightOwl: {
   "type": "dark",
   "name": "Night Owl",
+  "description": "A preset inspired by Night Owl for VS Code",
   "colors": {
     "_all": {
-      "lightnessStart": 7.5,
-      "lightnessEnd": 0
+      "lightnessStart": 7.5
     },
     "red": {
       "hue": 22.5,
@@ -453,10 +544,10 @@ nightOwl: {
 prettier: {
   "type": "dark",
   "name": "Prettier",
+  "description": "A preset inspired by the branding of Prettier",
   "colors": {
     "_all": {
-      "lightnessStart": 10,
-      "lightnessEnd": 0
+      "lightnessStart": 10
     },
     "red": {
       "hue": 22.5,

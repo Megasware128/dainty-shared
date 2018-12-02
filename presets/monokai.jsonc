@@ -1,16 +1,13 @@
 {
   "type": "dark",
-  "name": "Dainty Dark",
-  "description": "The dark variant of the Dainty color theme",
+  "name": "Monokai",
+  "description": "A theme inspired by Monokai for Sublime Text",
   "colors": {
     "_all": {
-      "lightnessStart": 10
+      "lightnessStart": 15
     },
     "red": {
-      "hue": 22.5,
-
-      // 100 / 16 * 5 - 2.5
-      "chroma": 28.75
+      "hex": "#f92472"
     },
     "orange": {
       "hue": 45,
@@ -25,10 +22,7 @@
       "chroma": 22.5
     },
     "green": {
-      "hue": 180,
-
-      // 100 / 4 - 2.5
-      "chroma": 22.5
+      "hex": "#a6e22d"
     },
     "cyan": {
       "hue": 225,
@@ -37,12 +31,8 @@
       "chroma": 28.75
     },
     "neutral": {
-      // 270 - 90 / 16
-      "hue": 264.375,
-
-      // 100 / 10 - 2.5
-      "chroma": 7.5,
-      "chromaEnd": -5
+      "hex": "#282923"
+      // "chromaEnd": -5
     },
     "blue": {
       // 270 - 90 / 16
@@ -66,10 +56,7 @@
       "chroma": 41.25
     },
     "purple": {
-      "hue": 315,
-
-      // 100 / 16 * 5 - 2.5
-      "chroma": 28.75
+      "hex": "#ac80ff"
     }
   },
   "customizations": {
@@ -97,12 +84,15 @@
     "tokens": {
       "comment": "neutral16",
       "string": "orange33",
-      "keyword": "blue26",
-      "type": "blueLessChroma30",
-      "function": "blueLessChroma34",
+      "keyword": "#f92472",
+      // Green
+      "type": "#a6e22d",
+      // Green
+      "function": "#a6e22d",
       "otherType": "purple30",
-      "identifier": "neutral34",
-      "number": "green35",
+      "identifier": "neutral36",
+      // Purple
+      "number": "#ac80ff",
       "operator": "neutral30",
       "punctuation": "neutral26",
       "url": "blueMoreChroma28"
