@@ -376,7 +376,8 @@ monokai: {
     },
     "yellow": {
       "hue": 90,
-      "chroma": 22.5
+      "chroma": 22.5,
+      "hex": "#e7db74"
     },
     "green": {
       "hue": 180,
@@ -435,7 +436,7 @@ monokai: {
     },
     "tokens": {
       "comment": "neutral16",
-      "string": "orange33",
+      "string": "#e7db74",
       "keyword": "#f92472",
       "type": "#a6e22d",
       "function": "#a6e22d",

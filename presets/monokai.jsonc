@@ -16,10 +16,7 @@
       "chroma": 13.125
     },
     "yellow": {
-      "hue": 90,
-
-      // 100 / 4 - 2.5
-      "chroma": 22.5
+      "hex": "#e7db74"
     },
     "green": {
       "hex": "#a6e22d"
@@ -83,7 +80,9 @@
     },
     "tokens": {
       "comment": "neutral16",
-      "string": "orange33",
+      // Yellow
+      "string": "#e7db74",
+      // Red
       "keyword": "#f92472",
       // Green
       "type": "#a6e22d",
