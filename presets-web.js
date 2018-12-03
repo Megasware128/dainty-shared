@@ -119,7 +119,7 @@ daintyLight: {
     "neutral": {
       "hue": 264.375,
       "chroma": 0,
-      "chromaEnd": -25
+      "chromaEnd": -23.75
     },
     "blue": {
       "hue": 264.375,
