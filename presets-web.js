@@ -1,146 +1,53 @@
 const presets = {
-daintyDarkRemix: {
-  "type": "dark",
-  "name": "Dainty Dark Remix",
-  "description": "A remix of Dainty using colors from the Material Design palette",
-  "colors": {
-    "_all": {
-      "lightnessStart": 8.5,
-      "lightnessEnd": -27.5,
-      "chroma": 6.5
-    },
-    "red": {
-      "hue": 22.5,
-      "chroma": 28.75
-    },
-    "orange": {
-      "hue": 45,
-      "chroma": 13.125,
-      "hex": "#2962ff"
-    },
-    "yellow": {
-      "hue": 90,
-      "chroma": 22.5
-    },
-    "green": {
-      "hue": 180,
-      "chroma": 22.5,
-      "hex": "#64ffda"
-    },
-    "cyan": {
-      "hue": 225,
-      "chroma": 28.75
-    },
-    "neutral": {
-      "hue": 264.375,
-      "chroma": 7.5,
-      "chromaEnd": -5
-    },
-    "blue": {
-      "hue": 264.375,
-      "chroma": 28.75,
-      "hex": "#9c27b0"
-    },
-    "blueLessChroma": {
-      "hue": 264.375,
-      "chroma": 16.25,
-      "hex": "#9c27b0"
-    },
-    "blueMoreChroma": {
-      "hue": 264.375,
-      "chroma": 41.25
-    },
-    "purple": {
-      "hue": 315,
-      "chroma": 28.75,
-      "hex": "#3f51b5"
-    }
-  },
-  "customizations": {
-    "terminal": {
-      "background": "neutral0",
-      "foreground": "neutral34",
-      "cursor": "neutral28",
-      "black": "neutral0",
-      "red": "red16",
-      "green": "green16",
-      "yellow": "yellow30",
-      "blue": "blue30",
-      "magenta": "purple30",
-      "cyan": "cyan30",
-      "white": "neutral34",
-      "brightBlack": "neutral30",
-      "brightRed": "red30",
-      "brightGreen": "green30",
-      "brightYellow": "yellow30",
-      "brightBlue": "blue30",
-      "brightMagenta": "purple30",
-      "brightCyan": "cyan30",
-      "brightWhite": "neutral39"
-    },
-    "tokens": {
-      "comment": "neutral16",
-      "string": "orange33",
-      "keyword": "blue26",
-      "type": "blueLessChroma30",
-      "function": "blueLessChroma34",
-      "otherType": "purple30",
-      "identifier": "neutral34",
-      "number": "green35",
-      "operator": "neutral30",
-      "punctuation": "neutral26",
-      "url": "blueMoreChroma28"
-    }
-  }
-},
 daintyDark: {
   "type": "dark",
   "name": "Dainty Dark",
   "description": "The dark variant of the Dainty color theme",
   "colors": {
     "_all": {
-      "lightnessStart": 10
+      "lightnessStart": 10,
+      "chroma": -2.5
     },
     "red": {
       "hue": 22.5,
-      "chroma": 28.75
+      "chroma": 31.25
     },
     "orange": {
       "hue": 45,
-      "chroma": 13.125
+      "chroma": 15.625
     },
     "yellow": {
       "hue": 90,
-      "chroma": 22.5
+      "chroma": 25
     },
     "green": {
       "hue": 180,
-      "chroma": 22.5
+      "chroma": 25
     },
     "cyan": {
       "hue": 225,
-      "chroma": 28.75
+      "chroma": 31.25
     },
     "neutral": {
       "hue": 264.375,
-      "chroma": 7.5,
+      "chroma": 10,
       "chromaEnd": -5
     },
     "blue": {
       "hue": 264.375,
-      "chroma": 28.75
+      "chroma": 31.25
     },
     "blueLessChroma": {
       "hue": 264.375,
-      "chroma": 16.25
+      "chroma": 18.75
     },
     "blueMoreChroma": {
       "hue": 264.375,
-      "chroma": 41.25
+      "chroma": 43.75
     },
     "purple": {
       "hue": 315,
-      "chroma": 28.75
+      "chroma": 31.25
     }
   },
   "customizations": {
@@ -186,48 +93,50 @@ daintyLight: {
   "description": "The light variant of the Dainty color theme",
   "colors": {
     "_all": {
-      "lightnessStart": 10
+      "lightnessStart": 10,
+      "chroma": -2.5,
+      "lightnessEnd": -2.5
     },
     "red": {
       "hue": 22.5,
-      "chroma": 56.25
+      "chroma": 31.25
     },
     "orange": {
       "hue": 45,
-      "chroma": 40.625
+      "chroma": 15.625
     },
     "yellow": {
       "hue": 90,
-      "chroma": 50
+      "chroma": 25
     },
     "green": {
       "hue": 180,
-      "chroma": 50
+      "chroma": 25
     },
     "cyan": {
       "hue": 225,
-      "chroma": 56.25
+      "chroma": 31.25
     },
     "neutral": {
       "hue": 264.375,
       "chroma": 35,
-      "chromaEnd": -30
+      "chromaEnd": -32.5
     },
     "blue": {
       "hue": 264.375,
-      "chroma": 56.25
+      "chroma": 31.25
     },
     "blueLessChroma": {
       "hue": 264.375,
-      "chroma": 43.75
+      "chroma": 18.75
     },
     "blueMoreChroma": {
       "hue": 264.375,
-      "chroma": 68.75
+      "chroma": 43.75
     },
     "purple": {
       "hue": 315,
-      "chroma": 56.25
+      "chroma": 31.25
     }
   },
   "customizations": {
@@ -273,52 +182,53 @@ fluent: {
   "description": "A preset inspired by the Fluent Design System",
   "colors": {
     "_all": {
-      "lightnessStart": 10
+      "lightnessStart": 10,
+      "chroma": -2.5
     },
     "red": {
       "hue": 22.5,
-      "chroma": 28.75
+      "chroma": 31.25
     },
     "orange": {
       "hue": 45,
-      "chroma": 13.125,
+      "chroma": 15.625,
       "hex": "#ef6950"
     },
     "yellow": {
       "hue": 90,
-      "chroma": 22.5
+      "chroma": 25
     },
     "green": {
       "hue": 180,
-      "chroma": 22.5,
+      "chroma": 25,
       "hex": "#00cc6a"
     },
     "cyan": {
       "hue": 225,
-      "chroma": 28.75
+      "chroma": 31.25
     },
     "neutral": {
       "hue": 264.375,
-      "chroma": 7.5,
+      "chroma": 10,
       "chromaEnd": -5,
       "hex": "#515c6b"
     },
     "blue": {
       "hue": 264.375,
-      "chroma": 28.75,
+      "chroma": 31.25,
       "hex": "#0078d7"
     },
     "blueLessChroma": {
       "hue": 264.375,
-      "chroma": 16.25
+      "chroma": 18.75
     },
     "blueMoreChroma": {
       "hue": 264.375,
-      "chroma": 41.25
+      "chroma": 43.75
     },
     "purple": {
       "hue": 315,
-      "chroma": 28.75,
+      "chroma": 31.25,
       "hex": "#b146c2"
     }
   },
@@ -365,11 +275,12 @@ monokai: {
   "description": "A theme inspired by Monokai for Sublime Text",
   "colors": {
     "_all": {
-      "lightnessStart": 15
+      "lightnessStart": 15,
+      "chroma": -2.5
     },
     "red": {
       "hue": 22.5,
-      "chroma": 28.75,
+      "chroma": 31.25,
       "hex": "#f92472"
     },
     "orange": {
@@ -378,12 +289,12 @@ monokai: {
     },
     "yellow": {
       "hue": 90,
-      "chroma": 22.5,
+      "chroma": 25,
       "hex": "#e7db74"
     },
     "green": {
       "hue": 180,
-      "chroma": 22.5,
+      "chroma": 25,
       "hex": "#a6e22d"
     },
     "cyan": {
@@ -392,13 +303,13 @@ monokai: {
     },
     "neutral": {
       "hue": 264.375,
-      "chroma": 7.5,
+      "chroma": 10,
       "chromaEnd": -5,
       "hex": "#282923"
     },
     "blue": {
       "hue": 264.375,
-      "chroma": 28.75,
+      "chroma": 31.25,
       "hex": "#66d9ef"
     },
     "blueLessChroma": {
@@ -411,7 +322,7 @@ monokai: {
     },
     "purple": {
       "hue": 315,
-      "chroma": 28.75,
+      "chroma": 31.25,
       "hex": "#ac80ff"
     }
   },
@@ -458,53 +369,54 @@ nightOwl: {
   "description": "A preset inspired by Night Owl for VS Code",
   "colors": {
     "_all": {
-      "lightnessStart": 7.5
+      "lightnessStart": 7.5,
+      "chroma": -2.5
     },
     "red": {
       "hue": 22.5,
-      "chroma": 28.75
+      "chroma": 31.25
     },
     "orange": {
       "hue": 45,
-      "chroma": 13.125,
+      "chroma": 15.625,
       "hex": "#ecc48d"
     },
     "yellow": {
       "hue": 90,
-      "chroma": 22.5
+      "chroma": 25
     },
     "green": {
       "hue": 180,
-      "chroma": 22.5,
+      "chroma": 25,
       "hex": "#f78c6c"
     },
     "cyan": {
       "hue": 225,
-      "chroma": 28.75
+      "chroma": 31.25
     },
     "neutral": {
       "hue": 264.375,
-      "chroma": 7.5,
+      "chroma": 10,
       "chromaEnd": -10,
       "hex": "#011627"
     },
     "blue": {
       "hue": 264.375,
-      "chroma": 28.75,
+      "chroma": 31.25,
       "hex": "#82aaff"
     },
     "blueLessChroma": {
       "hue": 264.375,
-      "chroma": 16.25,
+      "chroma": 18.75,
       "hex": "#addb67"
     },
     "blueMoreChroma": {
       "hue": 264.375,
-      "chroma": 41.25
+      "chroma": 43.75
     },
     "purple": {
       "hue": 315,
-      "chroma": 28.75,
+      "chroma": 31.25,
       "hex": "#c792ea"
     }
   },
@@ -551,53 +463,148 @@ prettier: {
   "description": "A preset inspired by the branding of Prettier",
   "colors": {
     "_all": {
-      "lightnessStart": 10
+      "lightnessStart": 10,
+      "chroma": -2.5
     },
     "red": {
       "hue": 22.5,
-      "chroma": 28.75
+      "chroma": 31.25
     },
     "orange": {
       "hue": 45,
-      "chroma": 13.125,
+      "chroma": 15.625,
       "hex": "#f2ba54"
     },
     "yellow": {
       "hue": 90,
-      "chroma": 22.5
+      "chroma": 25
     },
     "green": {
       "hue": 180,
-      "chroma": 22.5,
+      "chroma": 25,
       "hex": "#6ab3b2"
     },
     "cyan": {
       "hue": 225,
-      "chroma": 28.75
+      "chroma": 31.25
     },
     "neutral": {
       "hue": 264.375,
-      "chroma": 7.5,
+      "chroma": 10,
       "chromaEnd": -5,
       "hex": "#1a2b34"
     },
     "blue": {
       "hue": 264.375,
-      "chroma": 28.75,
+      "chroma": 31.25,
       "hex": "#6ab3b2"
     },
     "blueLessChroma": {
       "hue": 264.375,
-      "chroma": 16.25
+      "chroma": 18.75
     },
     "blueMoreChroma": {
       "hue": 264.375,
-      "chroma": 41.25
+      "chroma": 43.75
     },
     "purple": {
       "hue": 315,
-      "chroma": 28.75,
+      "chroma": 31.25,
       "hex": "#c098c5"
+    }
+  },
+  "customizations": {
+    "terminal": {
+      "background": "neutral0",
+      "foreground": "neutral34",
+      "cursor": "neutral28",
+      "black": "neutral0",
+      "red": "red16",
+      "green": "green16",
+      "yellow": "yellow30",
+      "blue": "blue30",
+      "magenta": "purple30",
+      "cyan": "cyan30",
+      "white": "neutral34",
+      "brightBlack": "neutral30",
+      "brightRed": "red30",
+      "brightGreen": "green30",
+      "brightYellow": "yellow30",
+      "brightBlue": "blue30",
+      "brightMagenta": "purple30",
+      "brightCyan": "cyan30",
+      "brightWhite": "neutral39"
+    },
+    "tokens": {
+      "comment": "neutral16",
+      "string": "orange33",
+      "keyword": "blue26",
+      "type": "blueLessChroma30",
+      "function": "blueLessChroma34",
+      "otherType": "purple30",
+      "identifier": "neutral34",
+      "number": "green35",
+      "operator": "neutral30",
+      "punctuation": "neutral26",
+      "url": "blueMoreChroma28"
+    }
+  }
+},
+purpleHaze: {
+  "type": "dark",
+  "name": "Purple Haze",
+  "description": "Purple, dark, and mysterious",
+  "colors": {
+    "_all": {
+      "lightnessStart": 10,
+      "chroma": 7.5,
+      "lightnessEnd": -25
+    },
+    "red": {
+      "hue": 22.5,
+      "chroma": 31.25
+    },
+    "orange": {
+      "hue": 45,
+      "chroma": 15.625,
+      "hex": "#2962ff"
+    },
+    "yellow": {
+      "hue": 90,
+      "chroma": 25
+    },
+    "green": {
+      "hue": 180,
+      "chroma": 25,
+      "hex": "#64ffda"
+    },
+    "cyan": {
+      "hue": 225,
+      "chroma": 31.25
+    },
+    "neutral": {
+      "hue": 264.375,
+      "chroma": 10,
+      "chromaEnd": -5
+    },
+    "blue": {
+      "hue": 264.375,
+      "chroma": 31.25,
+      "hex": "#9c27b0"
+    },
+    "blueLessChroma": {
+      "hue": 264.375,
+      "chroma": 18.75,
+      "hex": "#9c27b0"
+    },
+    "blueMoreChroma": {
+      "hue": 264.375,
+      "chroma": 43.75
+    },
+    "purple": {
+      "hue": 315,
+      "chroma": 31.25,
+      "hex": "#3f51b5"
     }
   },
   "customizations": {
