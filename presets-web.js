@@ -94,8 +94,7 @@ daintyLight: {
   "colors": {
     "_all": {
       "lightnessStart": 10,
-      "chroma": -2.5,
-      "lightnessEnd": -2.5
+      "chroma": 25
     },
     "red": {
       "hue": 22.5,
@@ -119,8 +118,8 @@ daintyLight: {
     },
     "neutral": {
       "hue": 264.375,
-      "chroma": 35,
-      "chromaEnd": -32.5
+      "chroma": 12.5,
+      "chromaEnd": -35
     },
     "blue": {
       "hue": 264.375,
@@ -166,7 +165,7 @@ daintyLight: {
       "string": "orange18",
       "keyword": "blue12",
       "type": "blueLessChroma10",
-      "function": "blueLessChroma16",
+      "function": "blueLessChroma18",
       "otherType": "purple16",
       "identifier": "neutral0",
       "number": "green20",
