@@ -10,6 +10,13 @@ const exists = util.promisify(fs.exists);
 
 var ajv = new Ajv({ useDefaults: true, jsonPointers: true });
 
+async function getSchema(dirname) {
+  return merge(
+    await readFileJson(path.join(__dirname, "../configuration-schema.json")),
+    await readFileJson(path.join(dirname, "../configuration-schema.json"))
+  );
+}
+
 async function getPresetPath(dirname, preset) {
   if (await exists(path.join(__dirname, `../presets/${preset}.jsonc`))) {
     return path.join(__dirname, `../presets/${preset}.jsonc`);
@@ -31,34 +38,13 @@ async function getConfiguration(
   let configuration;
 
   try {
-    sharedSchema = await readFileJson(
-      path.join(__dirname, "../configuration-schema.json")
-    );
-
-    appSchema = await readFileJson(
-      path.join(dirname, "../configuration-schema.json")
-    );
-
-    schema = merge(sharedSchema, appSchema);
+    schema = await getSchema(dirname);
 
     defaultConfiguration = getDefaultConfiguration(schema);
 
     configurationPresetBase = await readFileJson(
       path.join(__dirname, `../presets/dainty-dark.jsonc`)
     );
-
-    if (preset) {
-      const presetPath = await getPresetPath(dirname, preset);
-
-      if (presetPath === null) {
-        console.error(`Configuration preset \`${preset}\` was not found.`);
-        return null;
-      }
-
-      configurationPreset = await readFileJson(presetPath);
-    } else {
-      configurationPreset = {};
-    }
 
     if (await exists(path.join(dirname, "../configuration.jsonc"))) {
       configuration = await readFileJson(
@@ -73,6 +59,25 @@ async function getConfiguration(
           JSON.stringify(configuration, null, 2)
         );
       }
+    }
+
+    let preset_ = preset
+      ? preset
+      : configuration.preset
+      ? configuration.preset
+      : null;
+
+    if (preset_) {
+      const presetPath = await getPresetPath(dirname, preset_);
+
+      if (presetPath === null) {
+        console.error(`Configuration preset \`${preset_}\` was not found.`);
+        return null;
+      }
+
+      configurationPreset = await readFileJson(presetPath);
+    } else {
+      configurationPreset = {};
     }
   } catch (error) {
     console.error(error);
