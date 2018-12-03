@@ -1,5 +1,13 @@
 # Changelog
 
+## `2.1.0`
+
+- Rename preset “Dainty Dark Remix” to “Purple Haze”
+- Add `colors._adjustments` for user adjustments, letting presets use `colors._all`
+- Add Monokai preset
+- Allow hue to be specified using floating point number
+- Add metadata to presets
+
 ## `2.0.0`
 
 - Extract light theme into `dainty-light`
