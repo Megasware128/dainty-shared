@@ -1,6 +1,6 @@
 const culori = require("culori");
 const changeCase = require("change-case");
-const { groupBy, identity } = require("./utils-universal");
+const { groupBy, identity, valueOrDefault, sum } = require("./utils-universal");
 
 const maximumLightness = 100;
 const maximumChroma = 131.207;
@@ -22,20 +22,26 @@ function getInternalColor(color) {
   }
 }
 
-function getLightness(i, color, all) {
-  const allLightness = all.lightness ? all.lightness : 0;
-  const allLightnessStart = all.lightnessStart ? all.lightnessStart : 0;
-  const allLightnessEnd = all.lightnessEnd ? all.lightnessEnd : 0;
+function getLightness(i, color, all, adjustments = {}) {
+  const lightness = [color.lightness, all.lightness, adjustments.lightness]
+    .map(valueOrDefault)
+    .reduce(sum);
 
-  const lightness = color.lightness
-    ? color.lightness + allLightness
-    : allLightness;
-  const lightnessStart = color.lightnessStart
-    ? color.lightnessStart + allLightnessStart
-    : allLightnessStart;
-  const lightnessEnd = color.lightnessEnd
-    ? color.lightnessEnd + allLightnessEnd
-    : allLightnessEnd;
+  const lightnessStart = [
+    color.lightnessStart,
+    all.lightnessStart,
+    adjustments.lightnessStart
+  ]
+    .map(valueOrDefault)
+    .reduce(sum);
+
+  const lightnessEnd = [
+    color.lightnessEnd,
+    all.lightnessEnd,
+    adjustments.lightnessEnd
+  ]
+    .map(valueOrDefault)
+    .reduce(sum);
 
   return (
     maximumLightness -
@@ -46,14 +52,22 @@ function getLightness(i, color, all) {
   );
 }
 
-function getChroma(i, color, all) {
-  const allChroma = all.chroma ? all.chroma : 0;
-  const allChromaStart = all.chromaStart ? all.chromaStart : 0;
-  const allChromaEnd = all.chromaEnd ? all.chromaEnd : 0;
+function getChroma(i, color, all, adjustments = {}) {
+  const chroma = [color.chroma, all.chroma, adjustments.chroma]
+    .map(valueOrDefault)
+    .reduce(sum);
 
-  const chroma = color.chroma + allChroma;
-  const chromaStart = color.chromaStart ? color.chromaStart : allChromaStart;
-  const chromaEnd = color.chromaEnd ? color.chromaEnd : allChromaEnd;
+  const chromaStart = [
+    color.chromaStart,
+    all.chromaStart,
+    adjustments.chromaStart
+  ]
+    .map(valueOrDefault)
+    .reduce(sum);
+
+  const chromaEnd = [color.chromaEnd, all.chromaEnd, adjustments.chromaEnd]
+    .map(valueOrDefault)
+    .reduce(sum);
 
   return (
     (maximumChroma / 100) * chroma +
@@ -62,7 +76,7 @@ function getChroma(i, color, all) {
   );
 }
 
-function generateColorScale(scale, color, all) {
+function generateColorScale(scale, color, all, adjustments) {
   const color_ = getInternalColor(color);
 
   let shades = [];
@@ -70,8 +84,8 @@ function generateColorScale(scale, color, all) {
   for (let i = 0; i <= 40; i++) {
     shades.push({
       mode: "lch",
-      l: limitLightness(scale, i, getLightness(i, color_, all)),
-      c: limitChroma(scale, i, getChroma(i, color_, all)),
+      l: limitLightness(scale, i, getLightness(i, color_, all, adjustments)),
+      c: limitChroma(scale, i, getChroma(i, color_, all, adjustments)),
       h: color_.hue
     });
   }
@@ -123,12 +137,13 @@ function generateColorScales(configuration) {
   let scales = {};
 
   for (const scale of Object.keys(configuration.colors).filter(
-    k => k !== "_all"
+    k => !(k === "_all" || k === "_adjustments")
   )) {
     scales[scale] = generateColorScale(
       scale,
       configuration.colors[scale],
-      configuration.colors["_all"]
+      configuration.colors["_all"],
+      configuration.colors["_adjustments"]
     );
   }
 

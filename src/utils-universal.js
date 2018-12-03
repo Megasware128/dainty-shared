@@ -12,7 +12,17 @@ function identity(value) {
   return value;
 }
 
+function valueOrDefault(value) {
+  return value ? value : 0;
+}
+
+function sum(a, b) {
+  return a + b;
+}
+
 module.exports = {
   groupBy,
-  identity
+  identity,
+  valueOrDefault,
+  sum
 };

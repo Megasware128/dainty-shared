@@ -16,11 +16,45 @@
       "$id": "#/properties/description",
       "type": "string"
     },
+    "preset": {
+      "$id": "#/properties/preset",
+      "type": "string"
+    },
     "colors": {
       "$id": "#/properties/colors",
       "type": "object",
       "additionalProperties": false,
       "properties": {
+        "_adjustments": {
+          "$id": "#/properties/colors/properties/_adjustments",
+          "type": "object",
+          "properties": {
+            "lightness": {
+              "$id": "#/properties/colors/properties/_all/properties/lightness",
+              "type": "number"
+            },
+            "lightnessStart": {
+              "$id": "#/properties/colors/properties/_all/properties/lightnessStart",
+              "type": "number"
+            },
+            "lightnessEnd": {
+              "$id": "#/properties/colors/properties/_all/properties/lightnessEnd",
+              "type": "number"
+            },
+            "chroma": {
+              "$id": "#/properties/colors/properties/_all/properties/chroma",
+              "type": "number"
+            },
+            "chromaStart": {
+              "$id": "#/properties/colors/properties/_all/properties/chromaStart",
+              "type": "number"
+            },
+            "chromaEnd": {
+              "$id": "#/properties/colors/properties/_all/properties/chromaEnd",
+              "type": "number"
+            }
+          }
+        },
         "_all": {
           "$id": "#/properties/colors/properties/_all",
           "type": "object",
