@@ -1,12 +1,11 @@
 {
   "type": "dark",
-  "name": "Dainty Dark Remix",
-  "description": "A remix of Dainty using colors from the Material Design palette",
+  "name": "Purple Haze",
+  "description": "Purple, dark, and mysterious",
   "colors": {
     "_all": {
-      "lightnessStart": 8.5,
-      "lightnessEnd": -27.5,
-      "chroma": 6.5
+      "lightnessEnd": -25,
+      "chroma": 7.5
     },
 
     "orange": {
