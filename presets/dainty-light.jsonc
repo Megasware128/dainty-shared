@@ -5,7 +5,6 @@
   "colors": {
     "_all": {
       "lightnessStart": 10,
-      // "lightnessEnd": -2.5,
       "chroma": 25
     },
     "red": {
@@ -42,8 +41,8 @@
       // 270 - 90 / 16
       "hue": 264.375,
 
-      "chroma": 12.5,
-      "chromaEnd": -35
+      "chroma": 0,
+      "chromaEnd": -25
     },
     "blue": {
       // 270 - 90 / 16
