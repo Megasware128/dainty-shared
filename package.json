@@ -1,6 +1,6 @@
 {
   "name": "dainty-shared",
-  "version": "2.1.0-680d2f6",
+  "version": "2.1.0-adde4ab",
   "main": "src/index.js",
   "scripts": {
     "build": "node src/build.js"
