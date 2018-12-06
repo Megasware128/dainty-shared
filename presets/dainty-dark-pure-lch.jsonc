@@ -1,0 +1,52 @@
+{
+  "type": "dark",
+  "name": "Dainty Dark Pure LCh",
+  "description": "A pure LCh variant of the Dainty color theme",
+  "colors": {
+    "red": {
+      "hue": 0,
+      "chroma": 0
+    },
+    "orange": {
+      "hue": 45,
+      "chroma": 18.75
+    },
+    "yellow": {
+      "hue": 90,
+      "chroma": 25
+    },
+    "green": {
+      "hue": 135,
+      "chroma": 25
+    },
+    "cyan": {
+      "hue": 180,
+      "chroma": 25
+    },
+    "neutral": {
+      "hue": 270,
+      "chroma": 10,
+      "chromaEnd": -5
+    },
+    "blue": {
+      "hue": 270,
+      "chroma": 25
+    },
+    "blueLessChroma": {
+      "hue": 270,
+
+      // 100 / 16 * 3
+      "chroma": 18.75
+    },
+    "blueMoreChroma": {
+      "hue": 270,
+
+      // 100 / 16 * 7
+      "chroma": 43.75
+    },
+    "purple": {
+      "hue": 315,
+      "chroma": 25
+    }
+  }
+}

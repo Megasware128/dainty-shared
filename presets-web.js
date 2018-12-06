@@ -1,4 +1,92 @@
 const presets = {
+daintyDarkPureLch: {
+  "type": "dark",
+  "name": "Dainty Dark Pure LCh",
+  "description": "A pure LCh variant of the Dainty color theme",
+  "colors": {
+    "_all": {
+      "lightnessStart": 10,
+      "chroma": -2.5
+    },
+    "red": {
+      "hue": 0,
+      "chroma": 0
+    },
+    "orange": {
+      "hue": 45,
+      "chroma": 18.75
+    },
+    "yellow": {
+      "hue": 90,
+      "chroma": 25
+    },
+    "green": {
+      "hue": 135,
+      "chroma": 25
+    },
+    "cyan": {
+      "hue": 180,
+      "chroma": 25
+    },
+    "neutral": {
+      "hue": 270,
+      "chroma": 10,
+      "chromaEnd": -5
+    },
+    "blue": {
+      "hue": 270,
+      "chroma": 25
+    },
+    "blueLessChroma": {
+      "hue": 270,
+      "chroma": 18.75
+    },
+    "blueMoreChroma": {
+      "hue": 270,
+      "chroma": 43.75
+    },
+    "purple": {
+      "hue": 315,
+      "chroma": 25
+    }
+  },
+  "customizations": {
+    "terminal": {
+      "background": "neutral0",
+      "foreground": "neutral34",
+      "cursor": "neutral28",
+      "black": "neutral0",
+      "red": "red16",
+      "green": "green16",
+      "yellow": "yellow30",
+      "blue": "blue30",
+      "magenta": "purple30",
+      "cyan": "cyan30",
+      "white": "neutral34",
+      "brightBlack": "neutral30",
+      "brightRed": "red30",
+      "brightGreen": "green30",
+      "brightYellow": "yellow30",
+      "brightBlue": "blue30",
+      "brightMagenta": "purple30",
+      "brightCyan": "cyan30",
+      "brightWhite": "neutral39"
+    },
+    "tokens": {
+      "comment": "neutral16",
+      "string": "orange33",
+      "keyword": "blue26",
+      "type": "blueLessChroma30",
+      "function": "blueLessChroma34",
+      "otherType": "purple30",
+      "identifier": "neutral34",
+      "number": "green35",
+      "operator": "neutral30",
+      "punctuation": "neutral26",
+      "url": "blueMoreChroma28"
+    }
+  }
+},
 daintyDark: {
   "type": "dark",
   "name": "Dainty Dark",
