@@ -1,6 +1,6 @@
 # `dainty-shared`
 
-Dainty is a configurable, refined, and balanced color theme using carefully selected colors within the CIELAB color space. It is designed to maximize readability and reduce eye strain.
+Dainty is a configurable, refined, and balanced color theme using carefully selected colors within the Lab color space. It is designed to maximize readability and reduce eye strain.
 
 _This repo contains code and documentation shared between Dainty for different applications._
 
