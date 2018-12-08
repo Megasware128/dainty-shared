@@ -42,7 +42,7 @@
     "parameter": {
       "hex": "#e06c75"
     },
-    "propertyName": {
+    "property": {
       "hex": "#e06c75"
     },
     "regex": {
@@ -87,7 +87,7 @@
       "operator": "operator_exact",
       "otherType": "otherType_exact",
       "parameter": "parameter_exact",
-      "propertyName": "propertyName_exact",
+      "property": "property_exact",
       "regex": "regex_exact",
       "storageType": "storageType_exact",
       "string": "string_exact",

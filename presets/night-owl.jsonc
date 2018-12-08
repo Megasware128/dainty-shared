@@ -45,7 +45,7 @@
     "parameter": {
       "hex": "#d7dbe0"
     },
-    "propertyName": {
+    "property": {
       "hex": "#80CBC4"
     },
     "storageType": {
@@ -85,7 +85,7 @@
       "other": "other_exact",
       "otherType": "otherType_exact",
       "parameter": "parameter_exact",
-      "propertyName": "propertyName_exact",
+      "property": "property_exact",
       "storageType": "storageType_exact",
       "string": "string_exact",
       "supportFunction": "supportFunction_exact",

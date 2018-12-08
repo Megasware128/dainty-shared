@@ -54,9 +54,6 @@ ayuMirage: {
       "hue": 315,
       "chroma": 43.75
     },
-    "debug": {
-      "hex": "#ff00ff"
-    },
     "attributeName": {
       "hex": "#ffd580"
     },
@@ -90,7 +87,7 @@ ayuMirage: {
     "parameter": {
       "hex": "#d4bfff"
     },
-    "propertyName": {
+    "property": {
       "hex": "#5ccfe6"
     },
     "storageType": {
@@ -151,7 +148,7 @@ ayuMirage: {
       "other": "other_exact",
       "otherType": "otherType_exact",
       "parameter": "parameter_exact",
-      "propertyName": "propertyName_exact",
+      "property": "property_exact",
       "punctuation": "neutral26",
       "regex": "purple30",
       "storageType": "storageType_exact",
@@ -217,9 +214,6 @@ daintyDark: {
     "purple": {
       "hue": 315,
       "chroma": 43.75
-    },
-    "debug": {
-      "hex": "#ff00ff"
     }
   },
   "customizations": {
@@ -261,7 +255,7 @@ daintyDark: {
       "other": "neutral34",
       "otherType": "purple34",
       "parameter": "neutral34",
-      "propertyName": "neutral34",
+      "property": "neutral34",
       "punctuation": "neutral26",
       "regex": "purple30",
       "storageType": "blue28",
@@ -327,9 +321,6 @@ daintyLight: {
     "purple": {
       "hue": 315,
       "chroma": 31.25
-    },
-    "debug": {
-      "hex": "#ff00ff"
     }
   },
   "customizations": {
@@ -371,7 +362,7 @@ daintyLight: {
       "other": "neutral0",
       "otherType": "purple16",
       "parameter": "neutral0",
-      "propertyName": "neutral0",
+      "property": "neutral0",
       "punctuation": "neutral24",
       "regex": "purple18",
       "storageType": "blue12",
@@ -439,9 +430,6 @@ dracula: {
     "purple": {
       "hue": 315,
       "chroma": 43.75
-    },
-    "debug": {
-      "hex": "#ff00ff"
     },
     "attributeName": {
       "hex": "#50FA7B"
@@ -528,7 +516,7 @@ dracula: {
       "other": "other_exact",
       "otherType": "purple34",
       "parameter": "parameter_exact",
-      "propertyName": "neutral34",
+      "property": "neutral34",
       "punctuation": "neutral26",
       "regex": "regex_exact",
       "storageType": "storageType_exact",
@@ -600,9 +588,6 @@ fluent: {
       "hue": 315,
       "chroma": 43.75,
       "hex": "#cf90ff"
-    },
-    "debug": {
-      "hex": "#ff00ff"
     }
   },
   "customizations": {
@@ -644,7 +629,7 @@ fluent: {
       "other": "neutral34",
       "otherType": "purple34",
       "parameter": "neutral34",
-      "propertyName": "neutral34",
+      "property": "neutral34",
       "punctuation": "neutral26",
       "regex": "purple30",
       "storageType": "blue28",
@@ -712,9 +697,6 @@ materialThemeOcean: {
     "purple": {
       "hue": 315,
       "chroma": 43.75
-    },
-    "debug": {
-      "hex": "#ff00ff"
     },
     "attributeName": {
       "hex": "#C792EA"
@@ -807,7 +789,7 @@ materialThemeOcean: {
       "other": "other_exact",
       "otherType": "otherType_exact",
       "parameter": "parameter_exact",
-      "propertyName": "neutral34",
+      "property": "neutral34",
       "punctuation": "punctuation_exact",
       "regex": "purple30",
       "storageType": "storageType_exact",
@@ -875,9 +857,6 @@ materialThemePalenight: {
     "purple": {
       "hue": 315,
       "chroma": 43.75
-    },
-    "debug": {
-      "hex": "#ff00ff"
     },
     "attributeName": {
       "hex": "#C792EA"
@@ -970,7 +949,7 @@ materialThemePalenight: {
       "other": "other_exact",
       "otherType": "otherType_exact",
       "parameter": "parameter_exact",
-      "propertyName": "neutral34",
+      "property": "neutral34",
       "punctuation": "punctuation_exact",
       "regex": "purple30",
       "storageType": "storageType_exact",
@@ -1038,9 +1017,6 @@ materialTheme: {
     "purple": {
       "hue": 315,
       "chroma": 43.75
-    },
-    "debug": {
-      "hex": "#ff00ff"
     },
     "attributeName": {
       "hex": "#C792EA"
@@ -1133,7 +1109,7 @@ materialTheme: {
       "other": "other_exact",
       "otherType": "otherType_exact",
       "parameter": "parameter_exact",
-      "propertyName": "neutral34",
+      "property": "neutral34",
       "punctuation": "punctuation_exact",
       "regex": "purple30",
       "storageType": "storageType_exact",
@@ -1201,9 +1177,6 @@ monokaiNight: {
     "purple": {
       "hue": 315,
       "chroma": 43.75
-    },
-    "debug": {
-      "hex": "#ff00ff"
     },
     "attributeName": {
       "hex": "#A6E22E"
@@ -1293,7 +1266,7 @@ monokaiNight: {
       "other": "other_exact",
       "otherType": "otherType_exact",
       "parameter": "parameter_exact",
-      "propertyName": "neutral34",
+      "property": "neutral34",
       "punctuation": "neutral26",
       "regex": "purple30",
       "storageType": "storageType_exact",
@@ -1362,9 +1335,6 @@ nightOwl: {
       "hue": 315,
       "chroma": 43.75
     },
-    "debug": {
-      "hex": "#ff00ff"
-    },
     "attributeName": {
       "hex": "#addb67"
     },
@@ -1398,7 +1368,7 @@ nightOwl: {
     "parameter": {
       "hex": "#d7dbe0"
     },
-    "propertyName": {
+    "property": {
       "hex": "#80CBC4"
     },
     "storageType": {
@@ -1459,7 +1429,7 @@ nightOwl: {
       "other": "other_exact",
       "otherType": "otherType_exact",
       "parameter": "parameter_exact",
-      "propertyName": "propertyName_exact",
+      "property": "property_exact",
       "punctuation": "neutral26",
       "regex": "purple30",
       "storageType": "storageType_exact",
@@ -1528,9 +1498,6 @@ oneDarkPro: {
       "hue": 315,
       "chroma": 43.75
     },
-    "debug": {
-      "hex": "#ff00ff"
-    },
     "attributeName": {
       "hex": "#d19a66"
     },
@@ -1561,7 +1528,7 @@ oneDarkPro: {
     "parameter": {
       "hex": "#e06c75"
     },
-    "propertyName": {
+    "property": {
       "hex": "#e06c75"
     },
     "regex": {
@@ -1628,7 +1595,7 @@ oneDarkPro: {
       "other": "neutral34",
       "otherType": "otherType_exact",
       "parameter": "parameter_exact",
-      "propertyName": "propertyName_exact",
+      "property": "property_exact",
       "punctuation": "neutral26",
       "regex": "regex_exact",
       "storageType": "storageType_exact",
@@ -1699,9 +1666,6 @@ prettier: {
       "hue": 315,
       "chroma": 43.75,
       "hex": "#c098c5"
-    },
-    "debug": {
-      "hex": "#ff00ff"
     }
   },
   "customizations": {
@@ -1743,7 +1707,7 @@ prettier: {
       "other": "neutral34",
       "otherType": "purple34",
       "parameter": "neutral34",
-      "propertyName": "neutral34",
+      "property": "neutral34",
       "punctuation": "neutral26",
       "regex": "purple30",
       "storageType": "blue28",
@@ -1815,9 +1779,6 @@ purpleHaze: {
       "hue": 315,
       "chroma": 43.75,
       "hex": "#3f51b5"
-    },
-    "debug": {
-      "hex": "#ff00ff"
     }
   },
   "customizations": {
@@ -1859,7 +1820,7 @@ purpleHaze: {
       "other": "neutral34",
       "otherType": "purple34",
       "parameter": "neutral34",
-      "propertyName": "neutral34",
+      "property": "neutral34",
       "punctuation": "neutral26",
       "regex": "purple30",
       "storageType": "blue28",

@@ -76,9 +76,6 @@
 
       // 100 / 16 * 5
       "chroma": 43.75
-    },
-    "debug": {
-      "hex": "#ff00ff"
     }
   },
   "customizations": {
@@ -116,13 +113,13 @@
       "other": "neutral34",
       "otherType": "purple34",
       "parameter": "neutral34",
-      "propertyName": "neutral34",
+      "property": "neutral34",
       "punctuation": "neutral26",
       "regex": "purple30",
       "storageType": "blue28",
       "string": "orange34",
-      "supportFunction": "neutral34",
-      "supportType": "neutral34",
+      "supportFunction": "blueLessChroma34",
+      "supportType": "blue28",
       "type": "blueLessChroma34",
       "url": "blueMoreChroma28",
       "variable": "neutral34",

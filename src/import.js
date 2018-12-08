@@ -126,7 +126,7 @@ function transform(theme, hints) {
     other: getColor("editor.foreground"),
     otherType: getTokenColor("otherType", ["support.type", "support.class"]),
     parameter: getTokenColor("parameter", ["variable.parameter"]),
-    propertyName: getTokenColor("propertyName", ["support.type.property-name"]),
+    property: getTokenColor("property", ["support.type.property-name"]),
     punctuation: getTokenColor("punctuation", ["punctuation"]),
     regex: getTokenColor("regex", ["constant.regexp"]),
     storageType: getTokenColor("storageType", ["storage.type"]),

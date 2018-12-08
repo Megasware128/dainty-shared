@@ -4,7 +4,7 @@
     "literal": "constant",
     "parameter": "variable.parameter.function.js",
     "variableProperty": "meta.property.object",
-    "propertyName": "support.type.property-name.json",
+    "property": "support.type.property-name.json",
     "regex": "constant.other.character-class.regexp"
   }
 }

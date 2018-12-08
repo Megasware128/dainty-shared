@@ -17,7 +17,7 @@
 | `number`          | `42`, `0777`                                      | ✓           |
 | `operator`        | "neutral30"                                       | -           |
 | `otherType`       | `IServiceCollection`, `SameSiteMode`              | ✓           |
-| `propertyName`    | _JSON properties and object keys_                 | ✓           |
+| `property`    | _JSON properties and object keys_                 | ✓           |
 | `punctuation`     | `{`, `[`, `;`, `(`, `)`                           | ✓           |
 | `regex`           | `\d`, `\w`                                        | ✓           |
 | `storageType`     | `const`, `let`, `function`                        | ✓           |
