@@ -2,11 +2,12 @@
   "name": "Prettier",
   "type": "dark",
   "colors": {
+    "_all": {
+      "lightnessStart": 0,
+      "chroma": 0
+    },
     "orange": {
       "hex": "#f2ba54"
-    },
-    "green": {
-      "hex": "#6ab3b2"
     },
     "neutral": {
       "hex": "#1a2b34"
@@ -16,6 +17,23 @@
     },
     "purple": {
       "hex": "#c098c5"
+    },
+    "red": {
+      "hex": "#ea5e5e"
+    }
+  },
+  "customizations": {
+    "tokens": {
+      "function": "purple_exact",
+      "keyword": "blue_exact",
+      "literal": "red_exact",
+      "number": "red_exact",
+      "otherType": "purple_exact",
+      "regex": "purple_exact",
+      "storageType": "blue_exact",
+      "type": "blue_exact",
+      "string": "orange_exact",
+      "supportType": "blue_exact"
     }
   }
 }

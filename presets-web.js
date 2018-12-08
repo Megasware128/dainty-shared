@@ -260,8 +260,8 @@ daintyDark: {
       "regex": "purple30",
       "storageType": "blue28",
       "string": "orange34",
-      "supportFunction": "neutral34",
-      "supportType": "neutral34",
+      "supportFunction": "blueLessChroma34",
+      "supportType": "blue28",
       "type": "blueLessChroma34",
       "url": "blueMoreChroma28",
       "variable": "neutral34",
@@ -368,7 +368,7 @@ daintyLight: {
       "storageType": "blue12",
       "string": "orange18",
       "supportFunction": "blueLessChroma10",
-      "supportType": "blueLessChroma10",
+      "supportType": "blue12",
       "type": "blueLessChroma10",
       "url": "blueMoreChroma16",
       "variable": "neutral0",
@@ -522,7 +522,7 @@ dracula: {
       "storageType": "storageType_exact",
       "string": "string_exact",
       "supportFunction": "supportFunction_exact",
-      "supportType": "neutral34",
+      "supportType": "blue28",
       "type": "type_exact",
       "url": "blueMoreChroma28",
       "variable": "variable_exact",
@@ -634,8 +634,8 @@ fluent: {
       "regex": "purple30",
       "storageType": "blue28",
       "string": "orange34",
-      "supportFunction": "neutral34",
-      "supportType": "neutral34",
+      "supportFunction": "blueLessChroma34",
+      "supportType": "blue28",
       "type": "blueLessChroma34",
       "url": "blueMoreChroma28",
       "variable": "neutral34",
@@ -1614,8 +1614,8 @@ prettier: {
   "type": "dark",
   "colors": {
     "_all": {
-      "lightnessStart": 10,
-      "chroma": -2.5
+      "lightnessStart": 0,
+      "chroma": 0
     },
     "accent": {
       "hue": 264.375,
@@ -1623,7 +1623,8 @@ prettier: {
     },
     "red": {
       "hue": 22.5,
-      "chroma": 31.25
+      "chroma": 31.25,
+      "hex": "#ea5e5e"
     },
     "orange": {
       "hue": 45,
@@ -1636,8 +1637,7 @@ prettier: {
     },
     "green": {
       "hue": 180,
-      "chroma": 25,
-      "hex": "#6ab3b2"
+      "chroma": 25
     },
     "cyan": {
       "hue": 225,
@@ -1699,22 +1699,22 @@ prettier: {
       "attributeName": "blueLessChroma34",
       "comment": "neutral16",
       "constant": "neutral34",
-      "function": "blueLessChroma34",
-      "keyword": "blue28",
-      "literal": "blue28",
-      "number": "green34",
+      "function": "purple_exact",
+      "keyword": "blue_exact",
+      "literal": "red_exact",
+      "number": "red_exact",
       "operator": "neutral30",
       "other": "neutral34",
-      "otherType": "purple34",
+      "otherType": "purple_exact",
       "parameter": "neutral34",
       "property": "neutral34",
       "punctuation": "neutral26",
-      "regex": "purple30",
-      "storageType": "blue28",
-      "string": "orange34",
-      "supportFunction": "neutral34",
-      "supportType": "neutral34",
-      "type": "blueLessChroma34",
+      "regex": "purple_exact",
+      "storageType": "blue_exact",
+      "string": "orange_exact",
+      "supportFunction": "blueLessChroma34",
+      "supportType": "blue_exact",
+      "type": "blue_exact",
       "url": "blueMoreChroma28",
       "variable": "neutral34",
       "variableProperty": "neutral34"
@@ -1825,8 +1825,8 @@ purpleHaze: {
       "regex": "purple30",
       "storageType": "blue28",
       "string": "orange34",
-      "supportFunction": "neutral34",
-      "supportType": "neutral34",
+      "supportFunction": "blueLessChroma34",
+      "supportType": "blue28",
       "type": "blueLessChroma34",
       "url": "blueMoreChroma28",
       "variable": "neutral34",
