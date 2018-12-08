@@ -13,7 +13,7 @@ const readdir = util.promisify(fs.readdir);
 const exists = util.promisify(fs.exists);
 
 (async () => {
-  const files = await readdir(path.join(__dirname, "import-sources"));
+  const files = await readdir(path.join(__dirname, "sources-import"));
 
   for (const file of files) {
     log(`Importing \`${file}\`…`);
@@ -26,7 +26,7 @@ const exists = util.promisify(fs.exists);
 
     const hintsPath = path.join(
       __dirname,
-      "import-sources",
+      "sources-import",
       path.basename(file, ".jsonc") + ".hints.jsonc"
     );
 
@@ -37,7 +37,7 @@ const exists = util.promisify(fs.exists);
     }
 
     const result = transform(
-      await readFileJson(path.join(__dirname, "import-sources", file)),
+      await readFileJson(path.join(__dirname, "sources-import", file)),
       hints
     );
 
