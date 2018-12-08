@@ -4,6 +4,7 @@ const { groupBy, identity, valueOrDefault, sum } = require("./utils-universal");
 
 const maximumLightness = 100;
 const maximumChroma = 131.207;
+const defaultHue = 264.375;
 
 let colorsCount = [];
 let isTrackingColorsCount = false;
@@ -17,7 +18,7 @@ function getInternalColor(scale, color) {
       lightnessStart: scale === "neutral" ? lchColor.l : null,
       lightnessExact: lchColor.l,
       chroma: (lchColor.c / maximumChroma) * 100,
-      hue: lchColor.h
+      hue: lchColor.h ? lchColor.h : defaultHue
     };
   } else {
     return color;
@@ -387,6 +388,7 @@ function checkColorScaleRange(index) {
 }
 
 module.exports = {
+  getInternalColor,
   alpha,
   applyColorConstantReplacements,
   checkColorScaleRange,

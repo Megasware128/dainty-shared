@@ -3,6 +3,7 @@
   "version": "2.2.0-bb2feb8",
   "main": "src/index.js",
   "scripts": {
+    "test": "jest",
     "build": "node src/build.js",
     "import": "node src/import.js"
   },
@@ -18,5 +19,8 @@
     "node-zip": "1.1.1",
     "parse-json": "4.0.0",
     "replace-once": "1.0.0"
+  },
+  "devDependencies": {
+    "jest": "23.6.0"
   }
 }
