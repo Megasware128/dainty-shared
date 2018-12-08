@@ -548,8 +548,8 @@ fluent: {
   "type": "dark",
   "colors": {
     "_all": {
-      "lightnessStart": 10,
-      "chroma": -2.5
+      "lightnessStart": 0,
+      "chroma": 0
     },
     "accent": {
       "hue": 264.375,
@@ -580,13 +580,14 @@ fluent: {
     "neutral": {
       "hue": 264.375,
       "chroma": 10,
-      "chromaEnd": -5,
-      "hex": "#515c6b"
+      "chromaEnd": -15,
+      "hex": "#092642",
+      "chromaStart": -1.25
     },
     "blue": {
       "hue": 264.375,
       "chroma": 31.25,
-      "hex": "#0078d7"
+      "hex": "#0078d4"
     },
     "blueLessChroma": {
       "hue": 264.375,
@@ -599,7 +600,7 @@ fluent: {
     "purple": {
       "hue": 315,
       "chroma": 43.75,
-      "hex": "#b146c2"
+      "hex": "#cf90ff"
     },
     "debug": {
       "hex": "#ff00ff"
