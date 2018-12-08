@@ -1,0 +1,9 @@
+{
+  "tokens": {
+    "literal": "constant.language.null",
+    "operator": "keyword.operator.assignment",
+    "string": "string.quoted",
+    "supportFunction": "support.type",
+    "variable": "variable.js"
+  }
+}

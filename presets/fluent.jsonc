@@ -1,8 +1,11 @@
 {
-  "type": "dark",
   "name": "Fluent",
-  "description": "A preset inspired by the Fluent Design System",
+  "type": "dark",
   "colors": {
+    "_all": {
+      "lightnessStart": 0,
+      "chroma": 0
+    },
     "orange": {
       "hex": "#ef6950"
     },
@@ -10,10 +13,11 @@
       "hex": "#00cc6a"
     },
     "neutral": {
-      "hex": "#515c6b"
+      "hex": "#092642",
+      "chromaEnd": -15
     },
     "blue": {
-      "hex": "#0078d7"
+      "hex": "#0078d4"
     },
     "purple": {
       "hex": "#b146c2"

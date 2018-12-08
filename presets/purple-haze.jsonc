@@ -1,7 +1,6 @@
 {
-  "type": "dark",
   "name": "Purple Haze",
-  "description": "Purple, dark, and mysterious",
+  "type": "dark",
   "colors": {
     "_all": {
       "lightnessEnd": -25,

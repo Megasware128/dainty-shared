@@ -2,19 +2,14 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "type": {
-      "$id": "#/properties/type",
-      "type": "string",
-      "enum": ["dark", "light"],
-      "additionalProperties": false
-    },
     "name": {
       "$id": "#/properties/name",
       "type": "string"
     },
-    "description": {
-      "$id": "#/properties/description",
-      "type": "string"
+    "type": {
+      "$id": "#/properties/type",
+      "type": "string",
+      "enum": ["dark", "light"]
     },
     "preset": {
       "$id": "#/properties/preset",
@@ -23,7 +18,6 @@
     "colors": {
       "$id": "#/properties/colors",
       "type": "object",
-      "additionalProperties": false,
       "properties": {
         "_adjustments": {
           "$id": "#/properties/colors/properties/_adjustments",

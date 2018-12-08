@@ -1,5 +1,5 @@
 {
-  "name": "Night Owl",
+  "name": "Material Theme Ocean",
   "type": "dark",
   "colors": {
     "_all": {
@@ -10,61 +10,58 @@
       "hex": "#82AAFF"
     },
     "neutral": {
-      "hex": "#011627"
+      "hex": "#0f111a"
     },
     "attributeName": {
-      "hex": "#addb67"
+      "hex": "#C792EA"
     },
     "comment": {
-      "hex": "#637777"
+      "hex": "#464B5D"
     },
     "constant": {
-      "hex": "#82AAFF"
+      "hex": "#f07178"
     },
     "function": {
       "hex": "#82AAFF"
     },
     "keyword": {
-      "hex": "#c792ea"
+      "hex": "#C792EA"
     },
     "literal": {
-      "hex": "#ff5874"
+      "hex": "#F78C6C"
     },
     "number": {
       "hex": "#F78C6C"
     },
-    "operator": {
-      "hex": "#c792ea"
-    },
     "other": {
-      "hex": "#d6deeb"
+      "hex": "#8f93a2"
     },
     "otherType": {
-      "hex": "#addb67"
+      "hex": "#FFCB6B"
     },
     "parameter": {
-      "hex": "#d7dbe0"
+      "hex": "#FF5370"
     },
-    "propertyName": {
-      "hex": "#80CBC4"
+    "punctuation": {
+      "hex": "#89DDFF"
     },
     "storageType": {
-      "hex": "#82AAFF"
+      "hex": "#C792EA"
     },
     "string": {
-      "hex": "#ecc48d"
+      "hex": "#C3E88D"
     },
     "supportFunction": {
-      "hex": "#addb67"
+      "hex": "#82AAFF"
     },
     "supportType": {
-      "hex": "#addb67"
+      "hex": "#FFCB6B"
+    },
+    "url": {
+      "hex": "#80cbc4"
     },
     "variable": {
-      "hex": "#d6deeb"
-    },
-    "variableProperty": {
-      "hex": "#7fdbca"
+      "hex": "#8F93A2"
     }
   },
   "customizations": {
@@ -81,17 +78,16 @@
       "keyword": "keyword_exact",
       "literal": "literal_exact",
       "number": "number_exact",
-      "operator": "operator_exact",
       "other": "other_exact",
       "otherType": "otherType_exact",
       "parameter": "parameter_exact",
-      "propertyName": "propertyName_exact",
+      "punctuation": "punctuation_exact",
       "storageType": "storageType_exact",
       "string": "string_exact",
       "supportFunction": "supportFunction_exact",
       "supportType": "supportType_exact",
-      "variable": "variable_exact",
-      "variableProperty": "variableProperty_exact"
+      "url": "url_exact",
+      "variable": "variable_exact"
     }
   }
 }

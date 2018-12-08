@@ -1,5 +1,5 @@
 {
-  "name": "Night Owl",
+  "name": "One Dark Pro",
   "type": "dark",
   "colors": {
     "_all": {
@@ -7,64 +7,67 @@
       "chroma": 0
     },
     "accent": {
-      "hex": "#82AAFF"
+      "hex": "#61AFEF"
     },
     "neutral": {
-      "hex": "#011627"
+      "hex": "#282c34"
     },
     "attributeName": {
-      "hex": "#addb67"
+      "hex": "#d19a66"
     },
     "comment": {
-      "hex": "#637777"
+      "hex": "#7F848E"
     },
     "constant": {
-      "hex": "#82AAFF"
+      "hex": "#E5C07B"
     },
     "function": {
-      "hex": "#82AAFF"
+      "hex": "#61AFEF"
     },
     "keyword": {
-      "hex": "#c792ea"
+      "hex": "#c678dd"
     },
     "literal": {
-      "hex": "#ff5874"
+      "hex": "#d19a66"
     },
     "number": {
-      "hex": "#F78C6C"
+      "hex": "#d19a66"
     },
     "operator": {
-      "hex": "#c792ea"
-    },
-    "other": {
-      "hex": "#d6deeb"
+      "hex": "#56b6c2"
     },
     "otherType": {
-      "hex": "#addb67"
+      "hex": "#E5C07B"
     },
     "parameter": {
-      "hex": "#d7dbe0"
+      "hex": "#e06c75"
     },
     "propertyName": {
-      "hex": "#80CBC4"
+      "hex": "#e06c75"
+    },
+    "regex": {
+      "hex": "#e06c75"
     },
     "storageType": {
-      "hex": "#82AAFF"
+      "hex": "#c678dd"
     },
     "string": {
-      "hex": "#ecc48d"
+      "hex": "#98c379"
     },
     "supportFunction": {
-      "hex": "#addb67"
+      "hex": "#56b6c2"
     },
     "supportType": {
-      "hex": "#addb67"
+      "hex": "#E5C07B"
+    },
+    "type": {
+      "hex": "#E5C07B"
     },
     "variable": {
-      "hex": "#d6deeb"
+      "hex": "#e06c75"
     },
     "variableProperty": {
-      "hex": "#7fdbca"
+      "hex": "#e06c75"
     }
   },
   "customizations": {
@@ -82,14 +85,15 @@
       "literal": "literal_exact",
       "number": "number_exact",
       "operator": "operator_exact",
-      "other": "other_exact",
       "otherType": "otherType_exact",
       "parameter": "parameter_exact",
       "propertyName": "propertyName_exact",
+      "regex": "regex_exact",
       "storageType": "storageType_exact",
       "string": "string_exact",
       "supportFunction": "supportFunction_exact",
       "supportType": "supportType_exact",
+      "type": "type_exact",
       "variable": "variable_exact",
       "variableProperty": "variableProperty_exact"
     }

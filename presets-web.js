@@ -1,56 +1,123 @@
 const presets = {
-daintyDarkPureLch: {
+ayuMirage: {
+  "name": "Ayu Mirage",
   "type": "dark",
-  "name": "Dainty Dark Pure LCh",
-  "description": "A pure LCh variant of the Dainty color theme",
   "colors": {
     "_all": {
-      "lightnessStart": 10,
-      "chroma": -2.5
+      "lightnessStart": 0,
+      "chroma": 0
+    },
+    "accent": {
+      "hue": 264.375,
+      "chroma": 43.75,
+      "hex": "#ffd580"
     },
     "red": {
-      "hue": 0,
-      "chroma": 0
+      "hue": 22.5,
+      "chroma": 31.25
     },
     "orange": {
       "hue": 45,
-      "chroma": 18.75
+      "chroma": 15.625
     },
     "yellow": {
       "hue": 90,
       "chroma": 25
     },
     "green": {
-      "hue": 135,
-      "chroma": 25
-    },
-    "cyan": {
       "hue": 180,
       "chroma": 25
     },
+    "cyan": {
+      "hue": 225,
+      "chroma": 31.25
+    },
     "neutral": {
-      "hue": 270,
+      "hue": 264.375,
       "chroma": 10,
-      "chromaEnd": -5
+      "chromaEnd": -5,
+      "hex": "#1f2430"
     },
     "blue": {
-      "hue": 270,
-      "chroma": 25
+      "hue": 264.375,
+      "chroma": 31.25
     },
     "blueLessChroma": {
-      "hue": 270,
+      "hue": 264.375,
       "chroma": 18.75
     },
     "blueMoreChroma": {
-      "hue": 270,
+      "hue": 264.375,
       "chroma": 43.75
     },
     "purple": {
       "hue": 315,
-      "chroma": 25
+      "chroma": 43.75
+    },
+    "debug": {
+      "hex": "#ff00ff"
+    },
+    "attributeName": {
+      "hex": "#ffd580"
+    },
+    "comment": {
+      "hex": "#5c6773"
+    },
+    "constant": {
+      "hex": "#cbccc6"
+    },
+    "function": {
+      "hex": "#ffd580"
+    },
+    "keyword": {
+      "hex": "#ffa759"
+    },
+    "literal": {
+      "hex": "#ffcc66"
+    },
+    "number": {
+      "hex": "#ffcc66"
+    },
+    "operator": {
+      "hex": "#f29e74"
+    },
+    "other": {
+      "hex": "#cbccc6"
+    },
+    "otherType": {
+      "hex": "#5ccfe6"
+    },
+    "parameter": {
+      "hex": "#d4bfff"
+    },
+    "propertyName": {
+      "hex": "#5ccfe6"
+    },
+    "storageType": {
+      "hex": "#ffa759"
+    },
+    "string": {
+      "hex": "#bae67e"
+    },
+    "supportFunction": {
+      "hex": "#f28779"
+    },
+    "supportType": {
+      "hex": "#5ccfe6"
+    },
+    "url": {
+      "hex": "#ffcc66"
+    },
+    "variable": {
+      "hex": "#cbccc6"
     }
   },
   "customizations": {
+    "accents": [
+      "accent_80_exact",
+      "accent_c0_exact",
+      "accent_exact"
+    ],
     "terminal": {
       "background": "neutral0",
       "foreground": "neutral34",
@@ -73,28 +140,42 @@ daintyDarkPureLch: {
       "brightWhite": "neutral39"
     },
     "tokens": {
-      "comment": "neutral16",
-      "string": "orange33",
-      "keyword": "blue26",
-      "type": "blueLessChroma30",
-      "function": "blueLessChroma34",
-      "otherType": "purple30",
-      "identifier": "neutral34",
-      "number": "green35",
-      "operator": "neutral30",
+      "attributeName": "attributeName_exact",
+      "comment": "comment_exact",
+      "constant": "constant_exact",
+      "function": "function_exact",
+      "keyword": "keyword_exact",
+      "literal": "literal_exact",
+      "number": "number_exact",
+      "operator": "operator_exact",
+      "other": "other_exact",
+      "otherType": "otherType_exact",
+      "parameter": "parameter_exact",
+      "propertyName": "propertyName_exact",
       "punctuation": "neutral26",
-      "url": "blueMoreChroma28"
+      "regex": "purple30",
+      "storageType": "storageType_exact",
+      "string": "string_exact",
+      "supportFunction": "supportFunction_exact",
+      "supportType": "supportType_exact",
+      "type": "blueLessChroma34",
+      "url": "url_exact",
+      "variable": "variable_exact",
+      "variableProperty": "neutral34"
     }
   }
 },
 daintyDark: {
-  "type": "dark",
   "name": "Dainty Dark",
-  "description": "The dark variant of the Dainty color theme",
+  "type": "dark",
   "colors": {
     "_all": {
       "lightnessStart": 10,
       "chroma": -2.5
+    },
+    "accent": {
+      "hue": 264.375,
+      "chroma": 43.75
     },
     "red": {
       "hue": 22.5,
@@ -135,10 +216,18 @@ daintyDark: {
     },
     "purple": {
       "hue": 315,
-      "chroma": 31.25
+      "chroma": 43.75
+    },
+    "debug": {
+      "hex": "#ff00ff"
     }
   },
   "customizations": {
+    "accents": [
+      "accent16",
+      "accent24",
+      "accent32"
+    ],
     "terminal": {
       "background": "neutral0",
       "foreground": "neutral34",
@@ -161,28 +250,42 @@ daintyDark: {
       "brightWhite": "neutral39"
     },
     "tokens": {
+      "attributeName": "blueLessChroma34",
       "comment": "neutral16",
-      "string": "orange33",
-      "keyword": "blue26",
-      "type": "blueLessChroma30",
+      "constant": "neutral34",
       "function": "blueLessChroma34",
-      "otherType": "purple30",
-      "identifier": "neutral34",
-      "number": "green35",
+      "keyword": "blue28",
+      "literal": "blue28",
+      "number": "green34",
       "operator": "neutral30",
+      "other": "neutral34",
+      "otherType": "purple34",
+      "parameter": "neutral34",
+      "propertyName": "neutral34",
       "punctuation": "neutral26",
-      "url": "blueMoreChroma28"
+      "regex": "purple30",
+      "storageType": "blue28",
+      "string": "orange34",
+      "supportFunction": "neutral34",
+      "supportType": "neutral34",
+      "type": "blueLessChroma34",
+      "url": "blueMoreChroma28",
+      "variable": "neutral34",
+      "variableProperty": "neutral34"
     }
   }
 },
 daintyLight: {
-  "type": "light",
   "name": "Dainty Light",
-  "description": "The light variant of the Dainty color theme",
+  "type": "light",
   "colors": {
     "_all": {
       "lightnessStart": 10,
       "chroma": 25
+    },
+    "accent": {
+      "hue": 264.375,
+      "chroma": 43.75
     },
     "red": {
       "hue": 22.5,
@@ -224,9 +327,17 @@ daintyLight: {
     "purple": {
       "hue": 315,
       "chroma": 31.25
+    },
+    "debug": {
+      "hex": "#ff00ff"
     }
   },
   "customizations": {
+    "accents": [
+      "accent16",
+      "accent24",
+      "accent32"
+    ],
     "terminal": {
       "background": "neutral40",
       "foreground": "neutral0",
@@ -249,28 +360,200 @@ daintyLight: {
       "brightWhite": "neutral39"
     },
     "tokens": {
+      "attributeName": "blueLessChroma34",
       "comment": "neutral24",
-      "string": "orange18",
-      "keyword": "blue12",
-      "type": "blueLessChroma10",
+      "constant": "neutral34",
       "function": "blueLessChroma18",
-      "otherType": "purple16",
-      "identifier": "neutral0",
+      "keyword": "blue12",
+      "literal": "blue28",
       "number": "green20",
       "operator": "neutral16",
+      "other": "neutral34",
+      "otherType": "purple16",
+      "parameter": "neutral34",
+      "propertyName": "neutral34",
       "punctuation": "neutral24",
-      "url": "blueMoreChroma16"
+      "regex": "purple30",
+      "storageType": "blue28",
+      "string": "orange18",
+      "supportFunction": "neutral34",
+      "supportType": "neutral34",
+      "type": "blueLessChroma10",
+      "url": "blueMoreChroma16",
+      "variable": "neutral34",
+      "variableProperty": "neutral34",
+      "identifier": "neutral0"
+    }
+  }
+},
+dracula: {
+  "name": "Dracula",
+  "type": "dark",
+  "colors": {
+    "_all": {
+      "lightnessStart": 0,
+      "chroma": 0
+    },
+    "accent": {
+      "hue": 264.375,
+      "chroma": 43.75,
+      "hex": "#50FA7B"
+    },
+    "red": {
+      "hue": 22.5,
+      "chroma": 31.25
+    },
+    "orange": {
+      "hue": 45,
+      "chroma": 15.625
+    },
+    "yellow": {
+      "hue": 90,
+      "chroma": 25
+    },
+    "green": {
+      "hue": 180,
+      "chroma": 25
+    },
+    "cyan": {
+      "hue": 225,
+      "chroma": 31.25
+    },
+    "neutral": {
+      "hue": 264.375,
+      "chroma": 10,
+      "chromaEnd": -5,
+      "hex": "#282a36"
+    },
+    "blue": {
+      "hue": 264.375,
+      "chroma": 31.25
+    },
+    "blueLessChroma": {
+      "hue": 264.375,
+      "chroma": 18.75
+    },
+    "blueMoreChroma": {
+      "hue": 264.375,
+      "chroma": 43.75
+    },
+    "purple": {
+      "hue": 315,
+      "chroma": 43.75
+    },
+    "debug": {
+      "hex": "#ff00ff"
+    },
+    "attributeName": {
+      "hex": "#50FA7B"
+    },
+    "comment": {
+      "hex": "#6272A4"
+    },
+    "constant": {
+      "hex": "#F8F8F2"
+    },
+    "function": {
+      "hex": "#50FA7B"
+    },
+    "keyword": {
+      "hex": "#FF79C6"
+    },
+    "literal": {
+      "hex": "#BD93F9"
+    },
+    "number": {
+      "hex": "#BD93F9"
+    },
+    "other": {
+      "hex": "#f8f8f2"
+    },
+    "parameter": {
+      "hex": "#FFB86C"
+    },
+    "regex": {
+      "hex": "#FF79C6"
+    },
+    "storageType": {
+      "hex": "#FF79C6"
+    },
+    "string": {
+      "hex": "#F1FA8C"
+    },
+    "supportFunction": {
+      "hex": "#8BE9FD"
+    },
+    "type": {
+      "hex": "#8BE9FD"
+    },
+    "variable": {
+      "hex": "#F8F8F2"
+    }
+  },
+  "customizations": {
+    "accents": [
+      "accent_80_exact",
+      "accent_c0_exact",
+      "accent_exact"
+    ],
+    "terminal": {
+      "background": "neutral0",
+      "foreground": "neutral34",
+      "cursor": "neutral28",
+      "black": "neutral0",
+      "red": "red16",
+      "green": "green16",
+      "yellow": "yellow30",
+      "blue": "blue30",
+      "magenta": "purple30",
+      "cyan": "cyan30",
+      "white": "neutral34",
+      "brightBlack": "neutral30",
+      "brightRed": "red30",
+      "brightGreen": "green30",
+      "brightYellow": "yellow30",
+      "brightBlue": "blue30",
+      "brightMagenta": "purple30",
+      "brightCyan": "cyan30",
+      "brightWhite": "neutral39"
+    },
+    "tokens": {
+      "attributeName": "attributeName_exact",
+      "comment": "comment_exact",
+      "constant": "constant_exact",
+      "function": "function_exact",
+      "keyword": "keyword_exact",
+      "literal": "literal_exact",
+      "number": "number_exact",
+      "operator": "neutral30",
+      "other": "other_exact",
+      "otherType": "purple34",
+      "parameter": "parameter_exact",
+      "propertyName": "neutral34",
+      "punctuation": "neutral26",
+      "regex": "regex_exact",
+      "storageType": "storageType_exact",
+      "string": "string_exact",
+      "supportFunction": "supportFunction_exact",
+      "supportType": "neutral34",
+      "type": "type_exact",
+      "url": "blueMoreChroma28",
+      "variable": "variable_exact",
+      "variableProperty": "neutral34"
     }
   }
 },
 fluent: {
-  "type": "dark",
   "name": "Fluent",
-  "description": "A preset inspired by the Fluent Design System",
+  "type": "dark",
   "colors": {
     "_all": {
       "lightnessStart": 10,
       "chroma": -2.5
+    },
+    "accent": {
+      "hue": 264.375,
+      "chroma": 43.75
     },
     "red": {
       "hue": 22.5,
@@ -315,11 +598,19 @@ fluent: {
     },
     "purple": {
       "hue": 315,
-      "chroma": 31.25,
+      "chroma": 43.75,
       "hex": "#b146c2"
+    },
+    "debug": {
+      "hex": "#ff00ff"
     }
   },
   "customizations": {
+    "accents": [
+      "accent16",
+      "accent24",
+      "accent32"
+    ],
     "terminal": {
       "background": "neutral0",
       "foreground": "neutral34",
@@ -342,122 +633,43 @@ fluent: {
       "brightWhite": "neutral39"
     },
     "tokens": {
+      "attributeName": "blueLessChroma34",
       "comment": "neutral16",
-      "string": "orange33",
-      "keyword": "blue26",
-      "type": "blueLessChroma30",
+      "constant": "neutral34",
       "function": "blueLessChroma34",
-      "otherType": "purple30",
-      "identifier": "neutral34",
-      "number": "green35",
+      "keyword": "blue28",
+      "literal": "blue28",
+      "number": "green34",
       "operator": "neutral30",
+      "other": "neutral34",
+      "otherType": "purple34",
+      "parameter": "neutral34",
+      "propertyName": "neutral34",
       "punctuation": "neutral26",
-      "url": "blueMoreChroma28"
+      "regex": "purple30",
+      "storageType": "blue28",
+      "string": "orange34",
+      "supportFunction": "neutral34",
+      "supportType": "neutral34",
+      "type": "blueLessChroma34",
+      "url": "blueMoreChroma28",
+      "variable": "neutral34",
+      "variableProperty": "neutral34"
     }
   }
 },
-monokai: {
+materialThemeOcean: {
+  "name": "Material Theme Ocean",
   "type": "dark",
-  "name": "Monokai",
-  "description": "A theme inspired by Monokai for Sublime Text",
   "colors": {
     "_all": {
-      "lightnessStart": 15,
-      "chroma": -2.5
+      "lightnessStart": 0,
+      "chroma": 0
     },
-    "red": {
-      "hue": 22.5,
-      "chroma": 31.25,
-      "hex": "#f92472"
-    },
-    "orange": {
-      "hue": 45,
-      "chroma": 13.125
-    },
-    "yellow": {
-      "hue": 90,
-      "chroma": 25,
-      "hex": "#e7db74"
-    },
-    "green": {
-      "hue": 180,
-      "chroma": 25,
-      "hex": "#a6e22d"
-    },
-    "cyan": {
-      "hue": 225,
-      "chroma": 28.75
-    },
-    "neutral": {
+    "accent": {
       "hue": 264.375,
-      "chroma": 10,
-      "chromaEnd": -5,
-      "hex": "#282923"
-    },
-    "blue": {
-      "hue": 264.375,
-      "chroma": 31.25,
-      "hex": "#66d9ef"
-    },
-    "blueLessChroma": {
-      "hue": 264.375,
-      "chroma": 16.25
-    },
-    "blueMoreChroma": {
-      "hue": 264.375,
-      "chroma": 41.25
-    },
-    "purple": {
-      "hue": 315,
-      "chroma": 31.25,
-      "hex": "#ac80ff"
-    }
-  },
-  "customizations": {
-    "terminal": {
-      "background": "neutral0",
-      "foreground": "neutral34",
-      "cursor": "neutral28",
-      "black": "neutral0",
-      "red": "red16",
-      "green": "green16",
-      "yellow": "yellow30",
-      "blue": "blue30",
-      "magenta": "purple30",
-      "cyan": "cyan30",
-      "white": "neutral34",
-      "brightBlack": "neutral30",
-      "brightRed": "red30",
-      "brightGreen": "green30",
-      "brightYellow": "yellow30",
-      "brightBlue": "blue30",
-      "brightMagenta": "purple30",
-      "brightCyan": "cyan30",
-      "brightWhite": "neutral39"
-    },
-    "tokens": {
-      "comment": "neutral16",
-      "string": "#e7db74",
-      "keyword": "#f92472",
-      "type": "#a6e22d",
-      "function": "#a6e22d",
-      "otherType": "#66d9ef",
-      "identifier": "neutral36",
-      "number": "#ac80ff",
-      "operator": "#f92472",
-      "punctuation": "neutral36",
-      "url": "blueMoreChroma28"
-    }
-  }
-},
-nightOwl: {
-  "type": "dark",
-  "name": "Night Owl",
-  "description": "A preset inspired by Night Owl for VS Code",
-  "colors": {
-    "_all": {
-      "lightnessStart": 7.5,
-      "chroma": -2.5
+      "chroma": 43.75,
+      "hex": "#82AAFF"
     },
     "red": {
       "hue": 22.5,
@@ -465,8 +677,7 @@ nightOwl: {
     },
     "orange": {
       "hue": 45,
-      "chroma": 15.625,
-      "hex": "#ecc48d"
+      "chroma": 15.625
     },
     "yellow": {
       "hue": 90,
@@ -474,8 +685,7 @@ nightOwl: {
     },
     "green": {
       "hue": 180,
-      "chroma": 25,
-      "hex": "#f78c6c"
+      "chroma": 25
     },
     "cyan": {
       "hue": 225,
@@ -484,18 +694,16 @@ nightOwl: {
     "neutral": {
       "hue": 264.375,
       "chroma": 10,
-      "chromaEnd": -10,
-      "hex": "#011627"
+      "chromaEnd": -5,
+      "hex": "#0f111a"
     },
     "blue": {
       "hue": 264.375,
-      "chroma": 31.25,
-      "hex": "#82aaff"
+      "chroma": 31.25
     },
     "blueLessChroma": {
       "hue": 264.375,
-      "chroma": 18.75,
-      "hex": "#addb67"
+      "chroma": 18.75
     },
     "blueMoreChroma": {
       "hue": 264.375,
@@ -503,11 +711,69 @@ nightOwl: {
     },
     "purple": {
       "hue": 315,
-      "chroma": 31.25,
-      "hex": "#c792ea"
+      "chroma": 43.75
+    },
+    "debug": {
+      "hex": "#ff00ff"
+    },
+    "attributeName": {
+      "hex": "#C792EA"
+    },
+    "comment": {
+      "hex": "#464B5D"
+    },
+    "constant": {
+      "hex": "#f07178"
+    },
+    "function": {
+      "hex": "#82AAFF"
+    },
+    "keyword": {
+      "hex": "#C792EA"
+    },
+    "literal": {
+      "hex": "#F78C6C"
+    },
+    "number": {
+      "hex": "#F78C6C"
+    },
+    "other": {
+      "hex": "#8f93a2"
+    },
+    "otherType": {
+      "hex": "#FFCB6B"
+    },
+    "parameter": {
+      "hex": "#FF5370"
+    },
+    "punctuation": {
+      "hex": "#89DDFF"
+    },
+    "storageType": {
+      "hex": "#C792EA"
+    },
+    "string": {
+      "hex": "#C3E88D"
+    },
+    "supportFunction": {
+      "hex": "#82AAFF"
+    },
+    "supportType": {
+      "hex": "#FFCB6B"
+    },
+    "url": {
+      "hex": "#80cbc4"
+    },
+    "variable": {
+      "hex": "#8F93A2"
     }
   },
   "customizations": {
+    "accents": [
+      "accent_80_exact",
+      "accent_c0_exact",
+      "accent_exact"
+    ],
     "terminal": {
       "background": "neutral0",
       "foreground": "neutral34",
@@ -530,28 +796,863 @@ nightOwl: {
       "brightWhite": "neutral39"
     },
     "tokens": {
-      "comment": "neutral16",
-      "string": "orange33",
-      "keyword": "blue26",
-      "type": "blueLessChroma30",
-      "function": "blueLessChroma34",
-      "otherType": "purple30",
-      "identifier": "neutral34",
-      "number": "green35",
-      "operator": "purple24",
+      "attributeName": "attributeName_exact",
+      "comment": "comment_exact",
+      "constant": "constant_exact",
+      "function": "function_exact",
+      "keyword": "keyword_exact",
+      "literal": "literal_exact",
+      "number": "number_exact",
+      "operator": "neutral30",
+      "other": "other_exact",
+      "otherType": "otherType_exact",
+      "parameter": "parameter_exact",
+      "propertyName": "neutral34",
+      "punctuation": "punctuation_exact",
+      "regex": "purple30",
+      "storageType": "storageType_exact",
+      "string": "string_exact",
+      "supportFunction": "supportFunction_exact",
+      "supportType": "supportType_exact",
+      "type": "blueLessChroma34",
+      "url": "url_exact",
+      "variable": "variable_exact",
+      "variableProperty": "neutral34"
+    }
+  }
+},
+materialThemePalenight: {
+  "name": "Material Theme Palenight",
+  "type": "dark",
+  "colors": {
+    "_all": {
+      "lightnessStart": 0,
+      "chroma": 0
+    },
+    "accent": {
+      "hue": 264.375,
+      "chroma": 43.75,
+      "hex": "#82AAFF"
+    },
+    "red": {
+      "hue": 22.5,
+      "chroma": 31.25
+    },
+    "orange": {
+      "hue": 45,
+      "chroma": 15.625
+    },
+    "yellow": {
+      "hue": 90,
+      "chroma": 25
+    },
+    "green": {
+      "hue": 180,
+      "chroma": 25
+    },
+    "cyan": {
+      "hue": 225,
+      "chroma": 31.25
+    },
+    "neutral": {
+      "hue": 264.375,
+      "chroma": 10,
+      "chromaEnd": -5,
+      "hex": "#292d3e"
+    },
+    "blue": {
+      "hue": 264.375,
+      "chroma": 31.25
+    },
+    "blueLessChroma": {
+      "hue": 264.375,
+      "chroma": 18.75
+    },
+    "blueMoreChroma": {
+      "hue": 264.375,
+      "chroma": 43.75
+    },
+    "purple": {
+      "hue": 315,
+      "chroma": 43.75
+    },
+    "debug": {
+      "hex": "#ff00ff"
+    },
+    "attributeName": {
+      "hex": "#C792EA"
+    },
+    "comment": {
+      "hex": "#676E95"
+    },
+    "constant": {
+      "hex": "#f07178"
+    },
+    "function": {
+      "hex": "#82AAFF"
+    },
+    "keyword": {
+      "hex": "#C792EA"
+    },
+    "literal": {
+      "hex": "#F78C6C"
+    },
+    "number": {
+      "hex": "#F78C6C"
+    },
+    "other": {
+      "hex": "#a6accd"
+    },
+    "otherType": {
+      "hex": "#FFCB6B"
+    },
+    "parameter": {
+      "hex": "#FF5370"
+    },
+    "punctuation": {
+      "hex": "#89DDFF"
+    },
+    "storageType": {
+      "hex": "#C792EA"
+    },
+    "string": {
+      "hex": "#C3E88D"
+    },
+    "supportFunction": {
+      "hex": "#82AAFF"
+    },
+    "supportType": {
+      "hex": "#FFCB6B"
+    },
+    "url": {
+      "hex": "#80cbc4"
+    },
+    "variable": {
+      "hex": "#A6ACCD"
+    }
+  },
+  "customizations": {
+    "accents": [
+      "accent_80_exact",
+      "accent_c0_exact",
+      "accent_exact"
+    ],
+    "terminal": {
+      "background": "neutral0",
+      "foreground": "neutral34",
+      "cursor": "neutral28",
+      "black": "neutral0",
+      "red": "red16",
+      "green": "green16",
+      "yellow": "yellow30",
+      "blue": "blue30",
+      "magenta": "purple30",
+      "cyan": "cyan30",
+      "white": "neutral34",
+      "brightBlack": "neutral30",
+      "brightRed": "red30",
+      "brightGreen": "green30",
+      "brightYellow": "yellow30",
+      "brightBlue": "blue30",
+      "brightMagenta": "purple30",
+      "brightCyan": "cyan30",
+      "brightWhite": "neutral39"
+    },
+    "tokens": {
+      "attributeName": "attributeName_exact",
+      "comment": "comment_exact",
+      "constant": "constant_exact",
+      "function": "function_exact",
+      "keyword": "keyword_exact",
+      "literal": "literal_exact",
+      "number": "number_exact",
+      "operator": "neutral30",
+      "other": "other_exact",
+      "otherType": "otherType_exact",
+      "parameter": "parameter_exact",
+      "propertyName": "neutral34",
+      "punctuation": "punctuation_exact",
+      "regex": "purple30",
+      "storageType": "storageType_exact",
+      "string": "string_exact",
+      "supportFunction": "supportFunction_exact",
+      "supportType": "supportType_exact",
+      "type": "blueLessChroma34",
+      "url": "url_exact",
+      "variable": "variable_exact",
+      "variableProperty": "neutral34"
+    }
+  }
+},
+materialTheme: {
+  "name": "Material Theme",
+  "type": "dark",
+  "colors": {
+    "_all": {
+      "lightnessStart": 0,
+      "chroma": 0
+    },
+    "accent": {
+      "hue": 264.375,
+      "chroma": 43.75,
+      "hex": "#82AAFF"
+    },
+    "red": {
+      "hue": 22.5,
+      "chroma": 31.25
+    },
+    "orange": {
+      "hue": 45,
+      "chroma": 15.625
+    },
+    "yellow": {
+      "hue": 90,
+      "chroma": 25
+    },
+    "green": {
+      "hue": 180,
+      "chroma": 25
+    },
+    "cyan": {
+      "hue": 225,
+      "chroma": 31.25
+    },
+    "neutral": {
+      "hue": 264.375,
+      "chroma": 10,
+      "chromaEnd": -5,
+      "hex": "#263238"
+    },
+    "blue": {
+      "hue": 264.375,
+      "chroma": 31.25
+    },
+    "blueLessChroma": {
+      "hue": 264.375,
+      "chroma": 18.75
+    },
+    "blueMoreChroma": {
+      "hue": 264.375,
+      "chroma": 43.75
+    },
+    "purple": {
+      "hue": 315,
+      "chroma": 43.75
+    },
+    "debug": {
+      "hex": "#ff00ff"
+    },
+    "attributeName": {
+      "hex": "#C792EA"
+    },
+    "comment": {
+      "hex": "#546E7A"
+    },
+    "constant": {
+      "hex": "#f07178"
+    },
+    "function": {
+      "hex": "#82AAFF"
+    },
+    "keyword": {
+      "hex": "#C792EA"
+    },
+    "literal": {
+      "hex": "#F78C6C"
+    },
+    "number": {
+      "hex": "#F78C6C"
+    },
+    "other": {
+      "hex": "#eeffff"
+    },
+    "otherType": {
+      "hex": "#FFCB6B"
+    },
+    "parameter": {
+      "hex": "#FF5370"
+    },
+    "punctuation": {
+      "hex": "#89DDFF"
+    },
+    "storageType": {
+      "hex": "#C792EA"
+    },
+    "string": {
+      "hex": "#C3E88D"
+    },
+    "supportFunction": {
+      "hex": "#82AAFF"
+    },
+    "supportType": {
+      "hex": "#FFCB6B"
+    },
+    "url": {
+      "hex": "#80cbc4"
+    },
+    "variable": {
+      "hex": "#EEFFFF"
+    }
+  },
+  "customizations": {
+    "accents": [
+      "accent_80_exact",
+      "accent_c0_exact",
+      "accent_exact"
+    ],
+    "terminal": {
+      "background": "neutral0",
+      "foreground": "neutral34",
+      "cursor": "neutral28",
+      "black": "neutral0",
+      "red": "red16",
+      "green": "green16",
+      "yellow": "yellow30",
+      "blue": "blue30",
+      "magenta": "purple30",
+      "cyan": "cyan30",
+      "white": "neutral34",
+      "brightBlack": "neutral30",
+      "brightRed": "red30",
+      "brightGreen": "green30",
+      "brightYellow": "yellow30",
+      "brightBlue": "blue30",
+      "brightMagenta": "purple30",
+      "brightCyan": "cyan30",
+      "brightWhite": "neutral39"
+    },
+    "tokens": {
+      "attributeName": "attributeName_exact",
+      "comment": "comment_exact",
+      "constant": "constant_exact",
+      "function": "function_exact",
+      "keyword": "keyword_exact",
+      "literal": "literal_exact",
+      "number": "number_exact",
+      "operator": "neutral30",
+      "other": "other_exact",
+      "otherType": "otherType_exact",
+      "parameter": "parameter_exact",
+      "propertyName": "neutral34",
+      "punctuation": "punctuation_exact",
+      "regex": "purple30",
+      "storageType": "storageType_exact",
+      "string": "string_exact",
+      "supportFunction": "supportFunction_exact",
+      "supportType": "supportType_exact",
+      "type": "blueLessChroma34",
+      "url": "url_exact",
+      "variable": "variable_exact",
+      "variableProperty": "neutral34"
+    }
+  }
+},
+monokaiNight: {
+  "name": "Monokai Night",
+  "type": "dark",
+  "colors": {
+    "_all": {
+      "lightnessStart": 0,
+      "chroma": 0
+    },
+    "accent": {
+      "hue": 264.375,
+      "chroma": 43.75,
+      "hex": "#A6E22E"
+    },
+    "red": {
+      "hue": 22.5,
+      "chroma": 31.25
+    },
+    "orange": {
+      "hue": 45,
+      "chroma": 15.625
+    },
+    "yellow": {
+      "hue": 90,
+      "chroma": 25
+    },
+    "green": {
+      "hue": 180,
+      "chroma": 25
+    },
+    "cyan": {
+      "hue": 225,
+      "chroma": 31.25
+    },
+    "neutral": {
+      "hue": 264.375,
+      "chroma": 10,
+      "chromaEnd": -5,
+      "hex": "#1f1f1f"
+    },
+    "blue": {
+      "hue": 264.375,
+      "chroma": 31.25
+    },
+    "blueLessChroma": {
+      "hue": 264.375,
+      "chroma": 18.75
+    },
+    "blueMoreChroma": {
+      "hue": 264.375,
+      "chroma": 43.75
+    },
+    "purple": {
+      "hue": 315,
+      "chroma": 43.75
+    },
+    "debug": {
+      "hex": "#ff00ff"
+    },
+    "attributeName": {
+      "hex": "#A6E22E"
+    },
+    "comment": {
+      "hex": "#75715E"
+    },
+    "function": {
+      "hex": "#A6E22E"
+    },
+    "keyword": {
+      "hex": "#F92672"
+    },
+    "literal": {
+      "hex": "#AE81FF"
+    },
+    "number": {
+      "hex": "#AE81FF"
+    },
+    "other": {
+      "hex": "#dddddd"
+    },
+    "otherType": {
+      "hex": "#66D9EF"
+    },
+    "parameter": {
+      "hex": "#FD971F"
+    },
+    "storageType": {
+      "hex": "#66D9EF"
+    },
+    "string": {
+      "hex": "#E6DB74"
+    },
+    "supportFunction": {
+      "hex": "#66D9EF"
+    },
+    "supportType": {
+      "hex": "#66D9EF"
+    },
+    "type": {
+      "hex": "#A6E22E"
+    },
+    "url": {
+      "hex": "#007acc"
+    },
+    "variable": {
+      "hex": "#F8F8F2"
+    }
+  },
+  "customizations": {
+    "accents": [
+      "accent_80_exact",
+      "accent_c0_exact",
+      "accent_exact"
+    ],
+    "terminal": {
+      "background": "neutral0",
+      "foreground": "neutral34",
+      "cursor": "neutral28",
+      "black": "neutral0",
+      "red": "red16",
+      "green": "green16",
+      "yellow": "yellow30",
+      "blue": "blue30",
+      "magenta": "purple30",
+      "cyan": "cyan30",
+      "white": "neutral34",
+      "brightBlack": "neutral30",
+      "brightRed": "red30",
+      "brightGreen": "green30",
+      "brightYellow": "yellow30",
+      "brightBlue": "blue30",
+      "brightMagenta": "purple30",
+      "brightCyan": "cyan30",
+      "brightWhite": "neutral39"
+    },
+    "tokens": {
+      "attributeName": "attributeName_exact",
+      "comment": "comment_exact",
+      "constant": "neutral34",
+      "function": "function_exact",
+      "keyword": "keyword_exact",
+      "literal": "literal_exact",
+      "number": "number_exact",
+      "operator": "neutral30",
+      "other": "other_exact",
+      "otherType": "otherType_exact",
+      "parameter": "parameter_exact",
+      "propertyName": "neutral34",
       "punctuation": "neutral26",
-      "url": "blueMoreChroma28"
+      "regex": "purple30",
+      "storageType": "storageType_exact",
+      "string": "string_exact",
+      "supportFunction": "supportFunction_exact",
+      "supportType": "supportType_exact",
+      "type": "type_exact",
+      "url": "url_exact",
+      "variable": "variable_exact",
+      "variableProperty": "neutral34"
+    }
+  }
+},
+nightOwl: {
+  "name": "Night Owl",
+  "type": "dark",
+  "colors": {
+    "_all": {
+      "lightnessStart": 0,
+      "chroma": 0
+    },
+    "accent": {
+      "hue": 264.375,
+      "chroma": 43.75,
+      "hex": "#82AAFF"
+    },
+    "red": {
+      "hue": 22.5,
+      "chroma": 31.25
+    },
+    "orange": {
+      "hue": 45,
+      "chroma": 15.625
+    },
+    "yellow": {
+      "hue": 90,
+      "chroma": 25
+    },
+    "green": {
+      "hue": 180,
+      "chroma": 25
+    },
+    "cyan": {
+      "hue": 225,
+      "chroma": 31.25
+    },
+    "neutral": {
+      "hue": 264.375,
+      "chroma": 10,
+      "chromaEnd": -5,
+      "hex": "#011627"
+    },
+    "blue": {
+      "hue": 264.375,
+      "chroma": 31.25
+    },
+    "blueLessChroma": {
+      "hue": 264.375,
+      "chroma": 18.75
+    },
+    "blueMoreChroma": {
+      "hue": 264.375,
+      "chroma": 43.75
+    },
+    "purple": {
+      "hue": 315,
+      "chroma": 43.75
+    },
+    "debug": {
+      "hex": "#ff00ff"
+    },
+    "attributeName": {
+      "hex": "#addb67"
+    },
+    "comment": {
+      "hex": "#637777"
+    },
+    "constant": {
+      "hex": "#82AAFF"
+    },
+    "function": {
+      "hex": "#82AAFF"
+    },
+    "keyword": {
+      "hex": "#c792ea"
+    },
+    "literal": {
+      "hex": "#ff5874"
+    },
+    "number": {
+      "hex": "#F78C6C"
+    },
+    "operator": {
+      "hex": "#c792ea"
+    },
+    "other": {
+      "hex": "#d6deeb"
+    },
+    "otherType": {
+      "hex": "#addb67"
+    },
+    "parameter": {
+      "hex": "#d7dbe0"
+    },
+    "propertyName": {
+      "hex": "#80CBC4"
+    },
+    "storageType": {
+      "hex": "#82AAFF"
+    },
+    "string": {
+      "hex": "#ecc48d"
+    },
+    "supportFunction": {
+      "hex": "#addb67"
+    },
+    "supportType": {
+      "hex": "#addb67"
+    },
+    "variable": {
+      "hex": "#d6deeb"
+    },
+    "variableProperty": {
+      "hex": "#7fdbca"
+    }
+  },
+  "customizations": {
+    "accents": [
+      "accent_80_exact",
+      "accent_c0_exact",
+      "accent_exact"
+    ],
+    "terminal": {
+      "background": "neutral0",
+      "foreground": "neutral34",
+      "cursor": "neutral28",
+      "black": "neutral0",
+      "red": "red16",
+      "green": "green16",
+      "yellow": "yellow30",
+      "blue": "blue30",
+      "magenta": "purple30",
+      "cyan": "cyan30",
+      "white": "neutral34",
+      "brightBlack": "neutral30",
+      "brightRed": "red30",
+      "brightGreen": "green30",
+      "brightYellow": "yellow30",
+      "brightBlue": "blue30",
+      "brightMagenta": "purple30",
+      "brightCyan": "cyan30",
+      "brightWhite": "neutral39"
+    },
+    "tokens": {
+      "attributeName": "attributeName_exact",
+      "comment": "comment_exact",
+      "constant": "constant_exact",
+      "function": "function_exact",
+      "keyword": "keyword_exact",
+      "literal": "literal_exact",
+      "number": "number_exact",
+      "operator": "operator_exact",
+      "other": "other_exact",
+      "otherType": "otherType_exact",
+      "parameter": "parameter_exact",
+      "propertyName": "propertyName_exact",
+      "punctuation": "neutral26",
+      "regex": "purple30",
+      "storageType": "storageType_exact",
+      "string": "string_exact",
+      "supportFunction": "supportFunction_exact",
+      "supportType": "supportType_exact",
+      "type": "blueLessChroma34",
+      "url": "blueMoreChroma28",
+      "variable": "variable_exact",
+      "variableProperty": "variableProperty_exact"
+    }
+  }
+},
+oneDarkPro: {
+  "name": "One Dark Pro",
+  "type": "dark",
+  "colors": {
+    "_all": {
+      "lightnessStart": 0,
+      "chroma": 0
+    },
+    "accent": {
+      "hue": 264.375,
+      "chroma": 43.75,
+      "hex": "#61AFEF"
+    },
+    "red": {
+      "hue": 22.5,
+      "chroma": 31.25
+    },
+    "orange": {
+      "hue": 45,
+      "chroma": 15.625
+    },
+    "yellow": {
+      "hue": 90,
+      "chroma": 25
+    },
+    "green": {
+      "hue": 180,
+      "chroma": 25
+    },
+    "cyan": {
+      "hue": 225,
+      "chroma": 31.25
+    },
+    "neutral": {
+      "hue": 264.375,
+      "chroma": 10,
+      "chromaEnd": -5,
+      "hex": "#282c34"
+    },
+    "blue": {
+      "hue": 264.375,
+      "chroma": 31.25
+    },
+    "blueLessChroma": {
+      "hue": 264.375,
+      "chroma": 18.75
+    },
+    "blueMoreChroma": {
+      "hue": 264.375,
+      "chroma": 43.75
+    },
+    "purple": {
+      "hue": 315,
+      "chroma": 43.75
+    },
+    "debug": {
+      "hex": "#ff00ff"
+    },
+    "attributeName": {
+      "hex": "#d19a66"
+    },
+    "comment": {
+      "hex": "#7F848E"
+    },
+    "constant": {
+      "hex": "#E5C07B"
+    },
+    "function": {
+      "hex": "#61AFEF"
+    },
+    "keyword": {
+      "hex": "#c678dd"
+    },
+    "literal": {
+      "hex": "#d19a66"
+    },
+    "number": {
+      "hex": "#d19a66"
+    },
+    "operator": {
+      "hex": "#56b6c2"
+    },
+    "otherType": {
+      "hex": "#E5C07B"
+    },
+    "parameter": {
+      "hex": "#e06c75"
+    },
+    "propertyName": {
+      "hex": "#e06c75"
+    },
+    "regex": {
+      "hex": "#e06c75"
+    },
+    "storageType": {
+      "hex": "#c678dd"
+    },
+    "string": {
+      "hex": "#98c379"
+    },
+    "supportFunction": {
+      "hex": "#56b6c2"
+    },
+    "supportType": {
+      "hex": "#E5C07B"
+    },
+    "type": {
+      "hex": "#E5C07B"
+    },
+    "variable": {
+      "hex": "#e06c75"
+    },
+    "variableProperty": {
+      "hex": "#e06c75"
+    }
+  },
+  "customizations": {
+    "accents": [
+      "accent_80_exact",
+      "accent_c0_exact",
+      "accent_exact"
+    ],
+    "terminal": {
+      "background": "neutral0",
+      "foreground": "neutral34",
+      "cursor": "neutral28",
+      "black": "neutral0",
+      "red": "red16",
+      "green": "green16",
+      "yellow": "yellow30",
+      "blue": "blue30",
+      "magenta": "purple30",
+      "cyan": "cyan30",
+      "white": "neutral34",
+      "brightBlack": "neutral30",
+      "brightRed": "red30",
+      "brightGreen": "green30",
+      "brightYellow": "yellow30",
+      "brightBlue": "blue30",
+      "brightMagenta": "purple30",
+      "brightCyan": "cyan30",
+      "brightWhite": "neutral39"
+    },
+    "tokens": {
+      "attributeName": "attributeName_exact",
+      "comment": "comment_exact",
+      "constant": "constant_exact",
+      "function": "function_exact",
+      "keyword": "keyword_exact",
+      "literal": "literal_exact",
+      "number": "number_exact",
+      "operator": "operator_exact",
+      "other": "neutral34",
+      "otherType": "otherType_exact",
+      "parameter": "parameter_exact",
+      "propertyName": "propertyName_exact",
+      "punctuation": "neutral26",
+      "regex": "regex_exact",
+      "storageType": "storageType_exact",
+      "string": "string_exact",
+      "supportFunction": "supportFunction_exact",
+      "supportType": "supportType_exact",
+      "type": "type_exact",
+      "url": "blueMoreChroma28",
+      "variable": "variable_exact",
+      "variableProperty": "variableProperty_exact"
     }
   }
 },
 prettier: {
-  "type": "dark",
   "name": "Prettier",
-  "description": "A preset inspired by the branding of Prettier",
+  "type": "dark",
   "colors": {
     "_all": {
       "lightnessStart": 10,
       "chroma": -2.5
+    },
+    "accent": {
+      "hue": 264.375,
+      "chroma": 43.75
     },
     "red": {
       "hue": 22.5,
@@ -596,11 +1697,19 @@ prettier: {
     },
     "purple": {
       "hue": 315,
-      "chroma": 31.25,
+      "chroma": 43.75,
       "hex": "#c098c5"
+    },
+    "debug": {
+      "hex": "#ff00ff"
     }
   },
   "customizations": {
+    "accents": [
+      "accent16",
+      "accent24",
+      "accent32"
+    ],
     "terminal": {
       "background": "neutral0",
       "foreground": "neutral34",
@@ -623,29 +1732,43 @@ prettier: {
       "brightWhite": "neutral39"
     },
     "tokens": {
+      "attributeName": "blueLessChroma34",
       "comment": "neutral16",
-      "string": "orange33",
-      "keyword": "blue26",
-      "type": "blueLessChroma30",
+      "constant": "neutral34",
       "function": "blueLessChroma34",
-      "otherType": "purple30",
-      "identifier": "neutral34",
-      "number": "green35",
+      "keyword": "blue28",
+      "literal": "blue28",
+      "number": "green34",
       "operator": "neutral30",
+      "other": "neutral34",
+      "otherType": "purple34",
+      "parameter": "neutral34",
+      "propertyName": "neutral34",
       "punctuation": "neutral26",
-      "url": "blueMoreChroma28"
+      "regex": "purple30",
+      "storageType": "blue28",
+      "string": "orange34",
+      "supportFunction": "neutral34",
+      "supportType": "neutral34",
+      "type": "blueLessChroma34",
+      "url": "blueMoreChroma28",
+      "variable": "neutral34",
+      "variableProperty": "neutral34"
     }
   }
 },
 purpleHaze: {
-  "type": "dark",
   "name": "Purple Haze",
-  "description": "Purple, dark, and mysterious",
+  "type": "dark",
   "colors": {
     "_all": {
       "lightnessStart": 10,
       "chroma": 7.5,
       "lightnessEnd": -25
+    },
+    "accent": {
+      "hue": 264.375,
+      "chroma": 43.75
     },
     "red": {
       "hue": 22.5,
@@ -690,11 +1813,19 @@ purpleHaze: {
     },
     "purple": {
       "hue": 315,
-      "chroma": 31.25,
+      "chroma": 43.75,
       "hex": "#3f51b5"
+    },
+    "debug": {
+      "hex": "#ff00ff"
     }
   },
   "customizations": {
+    "accents": [
+      "accent16",
+      "accent24",
+      "accent32"
+    ],
     "terminal": {
       "background": "neutral0",
       "foreground": "neutral34",
@@ -717,17 +1848,28 @@ purpleHaze: {
       "brightWhite": "neutral39"
     },
     "tokens": {
+      "attributeName": "blueLessChroma34",
       "comment": "neutral16",
-      "string": "orange33",
-      "keyword": "blue26",
-      "type": "blueLessChroma30",
+      "constant": "neutral34",
       "function": "blueLessChroma34",
-      "otherType": "purple30",
-      "identifier": "neutral34",
-      "number": "green35",
+      "keyword": "blue28",
+      "literal": "blue28",
+      "number": "green34",
       "operator": "neutral30",
+      "other": "neutral34",
+      "otherType": "purple34",
+      "parameter": "neutral34",
+      "propertyName": "neutral34",
       "punctuation": "neutral26",
-      "url": "blueMoreChroma28"
+      "regex": "purple30",
+      "storageType": "blue28",
+      "string": "orange34",
+      "supportFunction": "neutral34",
+      "supportType": "neutral34",
+      "type": "blueLessChroma34",
+      "url": "blueMoreChroma28",
+      "variable": "neutral34",
+      "variableProperty": "neutral34"
     }
   }
 },

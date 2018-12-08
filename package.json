@@ -3,7 +3,8 @@
   "version": "2.1.0-deff5db",
   "main": "src/index.js",
   "scripts": {
-    "build": "node src/build.js"
+    "build": "node src/build.js",
+    "import": "node src/import.js"
   },
   "dependencies": {
     "ajv": "6.5.5",

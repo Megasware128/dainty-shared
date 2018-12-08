@@ -8,12 +8,14 @@ const maximumChroma = 131.207;
 let colorsCount = [];
 let isTrackingColorsCount = false;
 
-function getInternalColor(color) {
+function getInternalColor(scale, color) {
   if (color.hex) {
     const lchColor = culori.lch(color.hex);
 
     return {
       ...color,
+      lightnessStart: scale === "neutral" ? lchColor.l : null,
+      lightnessExact: lchColor.l,
       chroma: (lchColor.c / maximumChroma) * 100,
       hue: lchColor.h
     };
@@ -22,7 +24,7 @@ function getInternalColor(color) {
   }
 }
 
-function getLightness(i, color, all, adjustments = {}) {
+function getLightness(i, color, all, adjustments = {}, exact = false) {
   const lightness = [color.lightness, all.lightness, adjustments.lightness]
     .map(valueOrDefault)
     .reduce(sum);
@@ -43,16 +45,20 @@ function getLightness(i, color, all, adjustments = {}) {
     .map(valueOrDefault)
     .reduce(sum);
 
-  return (
-    maximumLightness -
-    (maximumLightness / 40) * (40 - i) +
-    lightness +
-    (lightnessStart / 40) * (40 - i) +
-    (lightnessEnd / 40) * i
-  );
+  if (exact) {
+    return color.lightnessExact + lightness + lightnessStart + lightnessEnd;
+  } else {
+    return (
+      maximumLightness -
+      (maximumLightness / 40) * (40 - i) +
+      lightness +
+      (lightnessStart / 40) * (40 - i) +
+      (lightnessEnd / 40) * i
+    );
+  }
 }
 
-function getChroma(i, color, all, adjustments = {}) {
+function getChroma(i, color, all, adjustments = {}, exact = false) {
   const chroma = [color.chroma, all.chroma, adjustments.chroma]
     .map(valueOrDefault)
     .reduce(sum);
@@ -69,15 +75,23 @@ function getChroma(i, color, all, adjustments = {}) {
     .map(valueOrDefault)
     .reduce(sum);
 
-  return (
-    (maximumChroma / 100) * chroma +
-    (maximumChroma / 100) * (chromaStart / 40) * (40 - i) +
-    (maximumChroma / 100) * (chromaEnd / 40) * i
-  );
+  if (exact) {
+    return (
+      (maximumChroma / 100) * chroma +
+      (maximumChroma / 100) * chromaStart +
+      (maximumChroma / 100) * chromaEnd
+    );
+  } else {
+    return (
+      (maximumChroma / 100) * chroma +
+      (maximumChroma / 100) * (chromaStart / 40) * (40 - i) +
+      (maximumChroma / 100) * (chromaEnd / 40) * i
+    );
+  }
 }
 
 function generateColorScale(scale, color, all, adjustments) {
-  const color_ = getInternalColor(color);
+  const color_ = getInternalColor(scale, color);
 
   let shades = [];
 
@@ -102,17 +116,41 @@ function generateColorScale(scale, color, all, adjustments) {
     }
   };
 
-  return new Proxy(shades.map(culori.formatter("hex")), handler);
+  let exact;
+
+  if (color_.hex) {
+    exact = culori.formatter("hex")({
+      mode: "lch",
+      l: limitLightness(
+        scale,
+        "_exact",
+        getLightness(null, color_, all, adjustments, true)
+      ),
+      c: limitChroma(
+        scale,
+        "_exact",
+        getChroma(null, color_, all, adjustments, true)
+      ),
+      h: color_.hue
+    });
+  } else {
+    exact = null;
+  }
+
+  return new Proxy(
+    [...shades.map(culori.formatter("hex")), { exact }],
+    handler
+  );
 }
 
 function limitLightness(scale, i, lightness) {
   if (lightness < 0) {
     console.warn(
-      `Calculated LCh lightness \`${lightness}\` for \`${scale}${i}\` is out of range, and has been set to \`0\`.`
+      `Calculated LCh lightness \`${lightness}\` for \`${scale}${i}\` is out of range. Will be set to \`0\`.`
     );
   } else if (lightness > maximumLightness) {
     console.warn(
-      `Calculated LCh lightness \`${lightness}\` for \`${scale}${i}\` is out of range, and has been set to \`${maximumLightness}\`.`
+      `Calculated LCh lightness \`${lightness}\` for \`${scale}${i}\` is out of range. Will be set to \`${maximumLightness}\`.`
     );
   }
 
@@ -122,11 +160,11 @@ function limitLightness(scale, i, lightness) {
 function limitChroma(scale, i, chroma) {
   if (chroma < 0) {
     console.warn(
-      `Calculated LCh chroma \`${chroma}\` for \`${scale}${i}\` is out of range, and has been set to \`0\`.`
+      `Calculated LCh chroma \`${chroma}\` for \`${scale}${i}\` is out of range. Will be set to \`0\`.`
     );
   } else if (chroma > maximumChroma) {
     console.warn(
-      `Calculated LCh chroma \`${chroma}\` for \`${scale}${i}\` is out of range, and has been set to \`${maximumChroma}\`.`
+      `Calculated LCh chroma \`${chroma}\` for \`${scale}${i}\` is out of range. Will be set to \`${maximumChroma}\`.`
     );
   }
 
@@ -214,12 +252,25 @@ function generateColorConstants(colors) {
   let constants = {};
 
   for (const key of Object.keys(colors)) {
-    for (let i = 0; i < colors[key].length; i++) {
+    for (let i = 0; i <= 40; i++) {
       constants[`${key}${i}`] = colors[key][i];
+    }
+
+    if (colors[key].find(c => c.exact)) {
+      constants[`${key}_exact`] = colors[key].find(c => c.exact).exact;
     }
   }
 
   return constants;
+}
+
+function getAccentColorFunction(configuration, colorConstants) {
+  return accentColor => {
+    return translateColorConstant(
+      colorConstants,
+      configuration.customizations.accents[accentColor]
+    );
+  };
 }
 
 function getTerminalColorFunction(configuration, colorConstants) {
@@ -263,27 +314,39 @@ function splitColorConstant(colorConstant) {
 }
 
 function translateColorConstant(colorConstants, colorConstant) {
-  if (colorConstant.startsWith("#")) {
-    return colorConstant;
-  } else {
-    if (colorConstant.includes("_")) {
-      const [colorConstant_, alpha] = colorConstant.split("_");
+  let exact = false;
+  let colorConstant_ = colorConstant;
 
-      if (isTrackingColorsCount) {
-        const [scale, shade] = splitColorConstant(colorConstant_);
+  if (colorConstant_.endsWith("_exact")) {
+    exact = true;
+    colorConstant_ = colorConstant_.slice(0, -6);
+  }
 
-        increaseColorCount(scale, shade);
-      }
+  if (colorConstant_.includes("_")) {
+    const [colorConstant__, alpha] = colorConstant_.split("_");
 
-      return colorConstants[colorConstant_] + alpha;
+    if (isTrackingColorsCount) {
+      const [scale, shade] = splitColorConstant(colorConstant__);
+
+      increaseColorCount(scale, shade);
+    }
+
+    if (exact) {
+      return colorConstants[colorConstant__ + "_exact"] + alpha;
     } else {
-      if (isTrackingColorsCount) {
-        const [scale, shade] = splitColorConstant(colorConstant);
+      return colorConstants[colorConstant__] + alpha;
+    }
+  } else {
+    if (isTrackingColorsCount) {
+      const [scale, shade] = splitColorConstant(colorConstant_);
 
-        increaseColorCount(scale, shade);
-      }
+      increaseColorCount(scale, shade);
+    }
 
-      return colorConstants[colorConstant];
+    if (exact) {
+      return colorConstants[colorConstant_ + "_exact"];
+    } else {
+      return colorConstants[colorConstant_];
     }
   }
 }
@@ -330,6 +393,7 @@ module.exports = {
   generateColorConstantReplacements,
   generateColorConstants,
   getTypeShadeFunction,
+  getAccentColorFunction,
   getTerminalColorFunction,
   getTokenColorFunction,
   translateColorConstant,

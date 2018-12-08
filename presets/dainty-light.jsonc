@@ -1,7 +1,6 @@
 {
-  "type": "light",
   "name": "Dainty Light",
-  "description": "The light variant of the Dainty color theme",
+  "type": "light",
   "colors": {
     "_all": {
       "lightnessStart": 10,

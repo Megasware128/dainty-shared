@@ -1,5 +1,5 @@
 {
-  "name": "Night Owl",
+  "name": "Monokai Night",
   "type": "dark",
   "colors": {
     "_all": {
@@ -7,64 +7,58 @@
       "chroma": 0
     },
     "accent": {
-      "hex": "#82AAFF"
+      "hex": "#A6E22E"
     },
     "neutral": {
-      "hex": "#011627"
+      "hex": "#1f1f1f"
     },
     "attributeName": {
-      "hex": "#addb67"
+      "hex": "#A6E22E"
     },
     "comment": {
-      "hex": "#637777"
-    },
-    "constant": {
-      "hex": "#82AAFF"
+      "hex": "#75715E"
     },
     "function": {
-      "hex": "#82AAFF"
+      "hex": "#A6E22E"
     },
     "keyword": {
-      "hex": "#c792ea"
+      "hex": "#F92672"
     },
     "literal": {
-      "hex": "#ff5874"
+      "hex": "#AE81FF"
     },
     "number": {
-      "hex": "#F78C6C"
-    },
-    "operator": {
-      "hex": "#c792ea"
+      "hex": "#AE81FF"
     },
     "other": {
-      "hex": "#d6deeb"
+      "hex": "#dddddd"
     },
     "otherType": {
-      "hex": "#addb67"
+      "hex": "#66D9EF"
     },
     "parameter": {
-      "hex": "#d7dbe0"
-    },
-    "propertyName": {
-      "hex": "#80CBC4"
+      "hex": "#FD971F"
     },
     "storageType": {
-      "hex": "#82AAFF"
+      "hex": "#66D9EF"
     },
     "string": {
-      "hex": "#ecc48d"
+      "hex": "#E6DB74"
     },
     "supportFunction": {
-      "hex": "#addb67"
+      "hex": "#66D9EF"
     },
     "supportType": {
-      "hex": "#addb67"
+      "hex": "#66D9EF"
+    },
+    "type": {
+      "hex": "#A6E22E"
+    },
+    "url": {
+      "hex": "#007acc"
     },
     "variable": {
-      "hex": "#d6deeb"
-    },
-    "variableProperty": {
-      "hex": "#7fdbca"
+      "hex": "#F8F8F2"
     }
   },
   "customizations": {
@@ -76,22 +70,20 @@
     "tokens": {
       "attributeName": "attributeName_exact",
       "comment": "comment_exact",
-      "constant": "constant_exact",
       "function": "function_exact",
       "keyword": "keyword_exact",
       "literal": "literal_exact",
       "number": "number_exact",
-      "operator": "operator_exact",
       "other": "other_exact",
       "otherType": "otherType_exact",
       "parameter": "parameter_exact",
-      "propertyName": "propertyName_exact",
       "storageType": "storageType_exact",
       "string": "string_exact",
       "supportFunction": "supportFunction_exact",
       "supportType": "supportType_exact",
-      "variable": "variable_exact",
-      "variableProperty": "variableProperty_exact"
+      "type": "type_exact",
+      "url": "url_exact",
+      "variable": "variable_exact"
     }
   }
 }

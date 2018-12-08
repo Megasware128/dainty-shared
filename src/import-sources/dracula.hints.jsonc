@@ -1,0 +1,9 @@
+{
+  "tokens": {
+    "constant": "variable.other.constant.js",
+    "literal": "constant",
+    "number": "constant",
+    "storageType": "keyword",
+    "supportFunction": "support"
+  }
+}

@@ -1,11 +1,17 @@
 {
-  "type": "dark",
   "name": "Dainty Dark",
-  "description": "The dark variant of the Dainty color theme",
+  "type": "dark",
   "colors": {
     "_all": {
       "lightnessStart": 10,
       "chroma": -2.5
+    },
+    "accent": {
+      // 270 - 90 / 16
+      "hue": 264.375,
+
+      // 100 / 16 * 7
+      "chroma": 43.75
     },
     "red": {
       "hue": 22.5,
@@ -69,10 +75,14 @@
       "hue": 315,
 
       // 100 / 16 * 5
-      "chroma": 31.25
+      "chroma": 43.75
+    },
+    "debug": {
+      "hex": "#ff00ff"
     }
   },
   "customizations": {
+    "accents": ["accent16", "accent24", "accent32"],
     "terminal": {
       "background": "neutral0",
       "foreground": "neutral34",
@@ -95,17 +105,28 @@
       "brightWhite": "neutral39"
     },
     "tokens": {
+      "attributeName": "blueLessChroma34",
       "comment": "neutral16",
-      "string": "orange33",
-      "keyword": "blue26",
-      "type": "blueLessChroma30",
+      "constant": "neutral34",
       "function": "blueLessChroma34",
-      "otherType": "purple30",
-      "identifier": "neutral34",
-      "number": "green35",
+      "keyword": "blue28",
+      "literal": "blue28",
+      "number": "green34",
       "operator": "neutral30",
+      "other": "neutral34",
+      "otherType": "purple34",
+      "parameter": "neutral34",
+      "propertyName": "neutral34",
       "punctuation": "neutral26",
-      "url": "blueMoreChroma28"
+      "regex": "purple30",
+      "storageType": "blue28",
+      "string": "orange34",
+      "supportFunction": "neutral34",
+      "supportType": "neutral34",
+      "type": "blueLessChroma34",
+      "url": "blueMoreChroma28",
+      "variable": "neutral34",
+      "variableProperty": "neutral34"
     }
   }
 }

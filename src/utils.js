@@ -14,6 +14,10 @@ const mkdir = util.promisify(fs.mkdir);
 const readFile = util.promisify(fs.readFile);
 const writeFile = util.promisify(fs.writeFile);
 
+function pluralize(str, n) {
+  return n === 1 ? str : `${str}s`;
+}
+
 function cloneDeep(obj) {
   return JSON.parse(JSON.stringify(obj));
 }
@@ -62,10 +66,12 @@ function backticks(str) {
   return `\`${str}\``;
 }
 
+function log(message) {
+  console.log(`${chalk.dim("–")} ${message}`);
+}
+
 function logTransform(source) {
-  console.log(
-    `${chalk.dim("–")} Transforming ${backticks(path.basename(source))}…`
-  );
+  log(`Transforming ${backticks(path.basename(source))}`);
 }
 
 function logWarning(message) {
@@ -73,11 +79,7 @@ function logWarning(message) {
 }
 
 async function writeFileLog(...args) {
-  console.log(
-    `${chalk.dim("–")} Writing to ${backticks(
-      path.relative(process.cwd(), args[0])
-    )}…`
-  );
+  log(`Writing to ${backticks(path.relative(process.cwd(), args[0]))}…`);
 
   await writeFile(...args);
 
@@ -152,6 +154,8 @@ module.exports = {
   createBackupDirectory,
   writeFileLog,
   zip,
+  log,
   logTransform,
-  logWarning
+  logWarning,
+  pluralize
 };
