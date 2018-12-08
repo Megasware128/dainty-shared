@@ -1,5 +1,13 @@
 # Changelog
 
+## `2.2.0`
+
+- Enable import of VS Code themes
+- Migrate configuration document to `dainty-site`
+- Add support for setting `preset` in configuration
+- Improve default themes
+- Document CLI workflow
+
 ## `2.1.0`
 
 - Rename preset “Dainty Dark Remix” to “Purple Haze”
