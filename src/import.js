@@ -8,6 +8,7 @@ const {
   logWarning,
   pluralize
 } = require("./utils");
+const changeCase = require("change-case");
 
 const readdir = util.promisify(fs.readdir);
 const exists = util.promisify(fs.exists);
@@ -144,6 +145,28 @@ function transform(theme, hints) {
     ])
   };
 
+  const terminalColors = {
+    background: getColor("editor.background"),
+    foreground: getColor("editor.foreground"),
+    cursor: getColor("editorCursor.foreground"),
+    black: getColor("terminal.ansiBlack"),
+    blue: getColor("terminal.ansiBlue"),
+    brightBlack: getColor("terminal.ansiBrightBlack"),
+    brightBlue: getColor("terminal.ansiBrightBlue"),
+    brightCyan: getColor("terminal.ansiBrightCyan"),
+    brightGreen: getColor("terminal.ansiBrightGreen"),
+    brightMagenta: getColor("terminal.ansiBrightMagenta"),
+    brightRed: getColor("terminal.ansiBrightRed"),
+    brightWhite: getColor("terminal.ansiBrightWhite"),
+    brightYellow: getColor("terminal.ansiBrightYellow"),
+    cyan: getColor("terminal.ansiCyan"),
+    green: getColor("terminal.ansiGreen"),
+    magenta: getColor("terminal.ansiMagenta"),
+    red: getColor("terminal.ansiRed"),
+    white: getColor("terminal.ansiWhite"),
+    yellow: getColor("terminal.ansiYellow")
+  };
+
   let newTheme = {
     name: getProperty("name"),
     type: getProperty("type"),
@@ -155,6 +178,7 @@ function transform(theme, hints) {
     },
     customizations: {
       accents: ["accent_80_exact", "accent_c0_exact", "accent_exact"],
+      terminal: {},
       tokens: {}
     }
   };
@@ -179,6 +203,21 @@ function transform(theme, hints) {
     if (token !== "accent") {
       newTheme.customizations.tokens[token] = `${token}_exact`;
     }
+  }
+
+  for (const terminalColor of Object.keys(terminalColors)) {
+    if (terminalColors[terminalColor] === null) {
+      logWarning(`Terminal color \`${terminalColor}\` is \`null\`.`);
+      continue;
+    }
+
+    newTheme.colors["terminal" + changeCase.pascalCase(terminalColor)] = {
+      hex: terminalColors[terminalColor]
+    };
+
+    newTheme.customizations.terminal[
+      terminalColor
+    ] = `terminal${changeCase.pascalCase(terminalColor)}_exact`;
   }
 
   return newTheme;

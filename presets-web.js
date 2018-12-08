@@ -107,6 +107,63 @@ ayuMirage: {
     },
     "variable": {
       "hex": "#cbccc6"
+    },
+    "terminalBackground": {
+      "hex": "#1f2430"
+    },
+    "terminalForeground": {
+      "hex": "#cbccc6"
+    },
+    "terminalCursor": {
+      "hex": "#ffcc66"
+    },
+    "terminalBlack": {
+      "hex": "#191e2a"
+    },
+    "terminalBlue": {
+      "hex": "#6dcbfa"
+    },
+    "terminalBrightBlack": {
+      "hex": "#686868"
+    },
+    "terminalBrightBlue": {
+      "hex": "#73d0ff"
+    },
+    "terminalBrightCyan": {
+      "hex": "#95e6cb"
+    },
+    "terminalBrightGreen": {
+      "hex": "#bae67e"
+    },
+    "terminalBrightMagenta": {
+      "hex": "#d4bfff"
+    },
+    "terminalBrightRed": {
+      "hex": "#f28779"
+    },
+    "terminalBrightWhite": {
+      "hex": "#ffffff"
+    },
+    "terminalBrightYellow": {
+      "hex": "#ffd580"
+    },
+    "terminalCyan": {
+      "hex": "#90e1c6"
+    },
+    "terminalGreen": {
+      "hex": "#a6cc70"
+    },
+    "terminalMagenta": {
+      "hex": "#cfbafa"
+    },
+    "terminalRed": {
+      "hex": "#ed8274"
+    },
+    "terminalWhite": {
+      "hex": "#c7c7c7"
+    },
+    "terminalYellow": {
+      "hex": "#fad07b"
     }
   },
   "customizations": {
@@ -116,25 +173,25 @@ ayuMirage: {
       "accent_exact"
     ],
     "terminal": {
-      "background": "neutral0",
-      "foreground": "neutral34",
-      "cursor": "neutral28",
-      "black": "neutral0",
-      "red": "red16",
-      "green": "green16",
-      "yellow": "yellow30",
-      "blue": "blue30",
-      "magenta": "purple30",
-      "cyan": "cyan30",
-      "white": "neutral34",
-      "brightBlack": "neutral30",
-      "brightRed": "red30",
-      "brightGreen": "green30",
-      "brightYellow": "yellow30",
-      "brightBlue": "blue30",
-      "brightMagenta": "purple30",
-      "brightCyan": "cyan30",
-      "brightWhite": "neutral39"
+      "background": "terminalBackground_exact",
+      "foreground": "terminalForeground_exact",
+      "cursor": "terminalCursor_exact",
+      "black": "terminalBlack_exact",
+      "red": "terminalRed_exact",
+      "green": "terminalGreen_exact",
+      "yellow": "terminalYellow_exact",
+      "blue": "terminalBlue_exact",
+      "magenta": "terminalMagenta_exact",
+      "cyan": "terminalCyan_exact",
+      "white": "terminalWhite_exact",
+      "brightBlack": "terminalBrightBlack_exact",
+      "brightRed": "terminalBrightRed_exact",
+      "brightGreen": "terminalBrightGreen_exact",
+      "brightYellow": "terminalBrightYellow_exact",
+      "brightBlue": "terminalBrightBlue_exact",
+      "brightMagenta": "terminalBrightMagenta_exact",
+      "brightCyan": "terminalBrightCyan_exact",
+      "brightWhite": "terminalBrightWhite_exact"
     },
     "tokens": {
       "attributeName": "attributeName_exact",
@@ -475,6 +532,60 @@ dracula: {
     },
     "variable": {
       "hex": "#F8F8F2"
+    },
+    "terminalBackground": {
+      "hex": "#282a36"
+    },
+    "terminalForeground": {
+      "hex": "#f8f8f2"
+    },
+    "terminalBlack": {
+      "hex": "#21222c"
+    },
+    "terminalBlue": {
+      "hex": "#bd93f9"
+    },
+    "terminalBrightBlack": {
+      "hex": "#6272a4"
+    },
+    "terminalBrightBlue": {
+      "hex": "#d6acff"
+    },
+    "terminalBrightCyan": {
+      "hex": "#a4ffff"
+    },
+    "terminalBrightGreen": {
+      "hex": "#69ff94"
+    },
+    "terminalBrightMagenta": {
+      "hex": "#ff92df"
+    },
+    "terminalBrightRed": {
+      "hex": "#ff6e6e"
+    },
+    "terminalBrightWhite": {
+      "hex": "#ffffff"
+    },
+    "terminalBrightYellow": {
+      "hex": "#ffffa5"
+    },
+    "terminalCyan": {
+      "hex": "#8be9fd"
+    },
+    "terminalGreen": {
+      "hex": "#50fa7b"
+    },
+    "terminalMagenta": {
+      "hex": "#ff79c6"
+    },
+    "terminalRed": {
+      "hex": "#ff5555"
+    },
+    "terminalWhite": {
+      "hex": "#f8f8f2"
+    },
+    "terminalYellow": {
+      "hex": "#f1fa8c"
     }
   },
   "customizations": {
@@ -484,25 +595,25 @@ dracula: {
       "accent_exact"
     ],
     "terminal": {
-      "background": "neutral0",
-      "foreground": "neutral34",
+      "background": "terminalBackground_exact",
+      "foreground": "terminalForeground_exact",
       "cursor": "neutral28",
-      "black": "neutral0",
-      "red": "red16",
-      "green": "green16",
-      "yellow": "yellow30",
-      "blue": "blue30",
-      "magenta": "purple30",
-      "cyan": "cyan30",
-      "white": "neutral34",
-      "brightBlack": "neutral30",
-      "brightRed": "red30",
-      "brightGreen": "green30",
-      "brightYellow": "yellow30",
-      "brightBlue": "blue30",
-      "brightMagenta": "purple30",
-      "brightCyan": "cyan30",
-      "brightWhite": "neutral39"
+      "black": "terminalBlack_exact",
+      "red": "terminalRed_exact",
+      "green": "terminalGreen_exact",
+      "yellow": "terminalYellow_exact",
+      "blue": "terminalBlue_exact",
+      "magenta": "terminalMagenta_exact",
+      "cyan": "terminalCyan_exact",
+      "white": "terminalWhite_exact",
+      "brightBlack": "terminalBrightBlack_exact",
+      "brightRed": "terminalBrightRed_exact",
+      "brightGreen": "terminalBrightGreen_exact",
+      "brightYellow": "terminalBrightYellow_exact",
+      "brightBlue": "terminalBrightBlue_exact",
+      "brightMagenta": "terminalBrightMagenta_exact",
+      "brightCyan": "terminalBrightCyan_exact",
+      "brightWhite": "terminalBrightWhite_exact"
     },
     "tokens": {
       "attributeName": "attributeName_exact",
@@ -748,6 +859,63 @@ materialThemeOcean: {
     },
     "variable": {
       "hex": "#8F93A2"
+    },
+    "terminalBackground": {
+      "hex": "#0f111a"
+    },
+    "terminalForeground": {
+      "hex": "#8f93a2"
+    },
+    "terminalCursor": {
+      "hex": "#ffcc00"
+    },
+    "terminalBlack": {
+      "hex": "#000000"
+    },
+    "terminalBlue": {
+      "hex": "#82aaff"
+    },
+    "terminalBrightBlack": {
+      "hex": "#464b5d"
+    },
+    "terminalBrightBlue": {
+      "hex": "#82aaff"
+    },
+    "terminalBrightCyan": {
+      "hex": "#89ddff"
+    },
+    "terminalBrightGreen": {
+      "hex": "#c3e88d"
+    },
+    "terminalBrightMagenta": {
+      "hex": "#c792ea"
+    },
+    "terminalBrightRed": {
+      "hex": "#ff5370"
+    },
+    "terminalBrightWhite": {
+      "hex": "#ffffff"
+    },
+    "terminalBrightYellow": {
+      "hex": "#ffcb6b"
+    },
+    "terminalCyan": {
+      "hex": "#89ddff"
+    },
+    "terminalGreen": {
+      "hex": "#c3e88d"
+    },
+    "terminalMagenta": {
+      "hex": "#c792ea"
+    },
+    "terminalRed": {
+      "hex": "#ff5370"
+    },
+    "terminalWhite": {
+      "hex": "#ffffff"
+    },
+    "terminalYellow": {
+      "hex": "#ffcb6b"
     }
   },
   "customizations": {
@@ -757,25 +925,25 @@ materialThemeOcean: {
       "accent_exact"
     ],
     "terminal": {
-      "background": "neutral0",
-      "foreground": "neutral34",
-      "cursor": "neutral28",
-      "black": "neutral0",
-      "red": "red16",
-      "green": "green16",
-      "yellow": "yellow30",
-      "blue": "blue30",
-      "magenta": "purple30",
-      "cyan": "cyan30",
-      "white": "neutral34",
-      "brightBlack": "neutral30",
-      "brightRed": "red30",
-      "brightGreen": "green30",
-      "brightYellow": "yellow30",
-      "brightBlue": "blue30",
-      "brightMagenta": "purple30",
-      "brightCyan": "cyan30",
-      "brightWhite": "neutral39"
+      "background": "terminalBackground_exact",
+      "foreground": "terminalForeground_exact",
+      "cursor": "terminalCursor_exact",
+      "black": "terminalBlack_exact",
+      "red": "terminalRed_exact",
+      "green": "terminalGreen_exact",
+      "yellow": "terminalYellow_exact",
+      "blue": "terminalBlue_exact",
+      "magenta": "terminalMagenta_exact",
+      "cyan": "terminalCyan_exact",
+      "white": "terminalWhite_exact",
+      "brightBlack": "terminalBrightBlack_exact",
+      "brightRed": "terminalBrightRed_exact",
+      "brightGreen": "terminalBrightGreen_exact",
+      "brightYellow": "terminalBrightYellow_exact",
+      "brightBlue": "terminalBrightBlue_exact",
+      "brightMagenta": "terminalBrightMagenta_exact",
+      "brightCyan": "terminalBrightCyan_exact",
+      "brightWhite": "terminalBrightWhite_exact"
     },
     "tokens": {
       "attributeName": "attributeName_exact",
@@ -908,6 +1076,63 @@ materialThemePalenight: {
     },
     "variable": {
       "hex": "#A6ACCD"
+    },
+    "terminalBackground": {
+      "hex": "#292d3e"
+    },
+    "terminalForeground": {
+      "hex": "#a6accd"
+    },
+    "terminalCursor": {
+      "hex": "#ffcc00"
+    },
+    "terminalBlack": {
+      "hex": "#000000"
+    },
+    "terminalBlue": {
+      "hex": "#82aaff"
+    },
+    "terminalBrightBlack": {
+      "hex": "#676e95"
+    },
+    "terminalBrightBlue": {
+      "hex": "#82aaff"
+    },
+    "terminalBrightCyan": {
+      "hex": "#89ddff"
+    },
+    "terminalBrightGreen": {
+      "hex": "#c3e88d"
+    },
+    "terminalBrightMagenta": {
+      "hex": "#c792ea"
+    },
+    "terminalBrightRed": {
+      "hex": "#ff5370"
+    },
+    "terminalBrightWhite": {
+      "hex": "#ffffff"
+    },
+    "terminalBrightYellow": {
+      "hex": "#ffcb6b"
+    },
+    "terminalCyan": {
+      "hex": "#89ddff"
+    },
+    "terminalGreen": {
+      "hex": "#c3e88d"
+    },
+    "terminalMagenta": {
+      "hex": "#c792ea"
+    },
+    "terminalRed": {
+      "hex": "#ff5370"
+    },
+    "terminalWhite": {
+      "hex": "#ffffff"
+    },
+    "terminalYellow": {
+      "hex": "#ffcb6b"
     }
   },
   "customizations": {
@@ -917,25 +1142,25 @@ materialThemePalenight: {
       "accent_exact"
     ],
     "terminal": {
-      "background": "neutral0",
-      "foreground": "neutral34",
-      "cursor": "neutral28",
-      "black": "neutral0",
-      "red": "red16",
-      "green": "green16",
-      "yellow": "yellow30",
-      "blue": "blue30",
-      "magenta": "purple30",
-      "cyan": "cyan30",
-      "white": "neutral34",
-      "brightBlack": "neutral30",
-      "brightRed": "red30",
-      "brightGreen": "green30",
-      "brightYellow": "yellow30",
-      "brightBlue": "blue30",
-      "brightMagenta": "purple30",
-      "brightCyan": "cyan30",
-      "brightWhite": "neutral39"
+      "background": "terminalBackground_exact",
+      "foreground": "terminalForeground_exact",
+      "cursor": "terminalCursor_exact",
+      "black": "terminalBlack_exact",
+      "red": "terminalRed_exact",
+      "green": "terminalGreen_exact",
+      "yellow": "terminalYellow_exact",
+      "blue": "terminalBlue_exact",
+      "magenta": "terminalMagenta_exact",
+      "cyan": "terminalCyan_exact",
+      "white": "terminalWhite_exact",
+      "brightBlack": "terminalBrightBlack_exact",
+      "brightRed": "terminalBrightRed_exact",
+      "brightGreen": "terminalBrightGreen_exact",
+      "brightYellow": "terminalBrightYellow_exact",
+      "brightBlue": "terminalBrightBlue_exact",
+      "brightMagenta": "terminalBrightMagenta_exact",
+      "brightCyan": "terminalBrightCyan_exact",
+      "brightWhite": "terminalBrightWhite_exact"
     },
     "tokens": {
       "attributeName": "attributeName_exact",
@@ -1068,6 +1293,63 @@ materialTheme: {
     },
     "variable": {
       "hex": "#EEFFFF"
+    },
+    "terminalBackground": {
+      "hex": "#263238"
+    },
+    "terminalForeground": {
+      "hex": "#eeffff"
+    },
+    "terminalCursor": {
+      "hex": "#ffcc00"
+    },
+    "terminalBlack": {
+      "hex": "#000000"
+    },
+    "terminalBlue": {
+      "hex": "#82aaff"
+    },
+    "terminalBrightBlack": {
+      "hex": "#546e7a"
+    },
+    "terminalBrightBlue": {
+      "hex": "#82aaff"
+    },
+    "terminalBrightCyan": {
+      "hex": "#89ddff"
+    },
+    "terminalBrightGreen": {
+      "hex": "#c3e88d"
+    },
+    "terminalBrightMagenta": {
+      "hex": "#c792ea"
+    },
+    "terminalBrightRed": {
+      "hex": "#ff5370"
+    },
+    "terminalBrightWhite": {
+      "hex": "#ffffff"
+    },
+    "terminalBrightYellow": {
+      "hex": "#ffcb6b"
+    },
+    "terminalCyan": {
+      "hex": "#89ddff"
+    },
+    "terminalGreen": {
+      "hex": "#c3e88d"
+    },
+    "terminalMagenta": {
+      "hex": "#c792ea"
+    },
+    "terminalRed": {
+      "hex": "#ff5370"
+    },
+    "terminalWhite": {
+      "hex": "#ffffff"
+    },
+    "terminalYellow": {
+      "hex": "#ffcb6b"
     }
   },
   "customizations": {
@@ -1077,25 +1359,25 @@ materialTheme: {
       "accent_exact"
     ],
     "terminal": {
-      "background": "neutral0",
-      "foreground": "neutral34",
-      "cursor": "neutral28",
-      "black": "neutral0",
-      "red": "red16",
-      "green": "green16",
-      "yellow": "yellow30",
-      "blue": "blue30",
-      "magenta": "purple30",
-      "cyan": "cyan30",
-      "white": "neutral34",
-      "brightBlack": "neutral30",
-      "brightRed": "red30",
-      "brightGreen": "green30",
-      "brightYellow": "yellow30",
-      "brightBlue": "blue30",
-      "brightMagenta": "purple30",
-      "brightCyan": "cyan30",
-      "brightWhite": "neutral39"
+      "background": "terminalBackground_exact",
+      "foreground": "terminalForeground_exact",
+      "cursor": "terminalCursor_exact",
+      "black": "terminalBlack_exact",
+      "red": "terminalRed_exact",
+      "green": "terminalGreen_exact",
+      "yellow": "terminalYellow_exact",
+      "blue": "terminalBlue_exact",
+      "magenta": "terminalMagenta_exact",
+      "cyan": "terminalCyan_exact",
+      "white": "terminalWhite_exact",
+      "brightBlack": "terminalBrightBlack_exact",
+      "brightRed": "terminalBrightRed_exact",
+      "brightGreen": "terminalBrightGreen_exact",
+      "brightYellow": "terminalBrightYellow_exact",
+      "brightBlue": "terminalBrightBlue_exact",
+      "brightMagenta": "terminalBrightMagenta_exact",
+      "brightCyan": "terminalBrightCyan_exact",
+      "brightWhite": "terminalBrightWhite_exact"
     },
     "tokens": {
       "attributeName": "attributeName_exact",
@@ -1225,6 +1507,63 @@ monokaiNight: {
     },
     "variable": {
       "hex": "#F8F8F2"
+    },
+    "terminalBackground": {
+      "hex": "#1f1f1f"
+    },
+    "terminalForeground": {
+      "hex": "#dddddd"
+    },
+    "terminalCursor": {
+      "hex": "#f2f2f2"
+    },
+    "terminalBlack": {
+      "hex": "#333333"
+    },
+    "terminalBlue": {
+      "hex": "#6a7ec8"
+    },
+    "terminalBrightBlack": {
+      "hex": "#666666"
+    },
+    "terminalBrightBlue": {
+      "hex": "#819aff"
+    },
+    "terminalBrightCyan": {
+      "hex": "#66d9ef"
+    },
+    "terminalBrightGreen": {
+      "hex": "#a6e22e"
+    },
+    "terminalBrightMagenta": {
+      "hex": "#ae81ff"
+    },
+    "terminalBrightRed": {
+      "hex": "#f92672"
+    },
+    "terminalBrightWhite": {
+      "hex": "#f8f8f2"
+    },
+    "terminalBrightYellow": {
+      "hex": "#e2e22e"
+    },
+    "terminalCyan": {
+      "hex": "#56adbc"
+    },
+    "terminalGreen": {
+      "hex": "#86b42b"
+    },
+    "terminalMagenta": {
+      "hex": "#8c6bc8"
+    },
+    "terminalRed": {
+      "hex": "#c4265e"
+    },
+    "terminalWhite": {
+      "hex": "#e3e3dd"
+    },
+    "terminalYellow": {
+      "hex": "#b3b42b"
     }
   },
   "customizations": {
@@ -1234,25 +1573,25 @@ monokaiNight: {
       "accent_exact"
     ],
     "terminal": {
-      "background": "neutral0",
-      "foreground": "neutral34",
-      "cursor": "neutral28",
-      "black": "neutral0",
-      "red": "red16",
-      "green": "green16",
-      "yellow": "yellow30",
-      "blue": "blue30",
-      "magenta": "purple30",
-      "cyan": "cyan30",
-      "white": "neutral34",
-      "brightBlack": "neutral30",
-      "brightRed": "red30",
-      "brightGreen": "green30",
-      "brightYellow": "yellow30",
-      "brightBlue": "blue30",
-      "brightMagenta": "purple30",
-      "brightCyan": "cyan30",
-      "brightWhite": "neutral39"
+      "background": "terminalBackground_exact",
+      "foreground": "terminalForeground_exact",
+      "cursor": "terminalCursor_exact",
+      "black": "terminalBlack_exact",
+      "red": "terminalRed_exact",
+      "green": "terminalGreen_exact",
+      "yellow": "terminalYellow_exact",
+      "blue": "terminalBlue_exact",
+      "magenta": "terminalMagenta_exact",
+      "cyan": "terminalCyan_exact",
+      "white": "terminalWhite_exact",
+      "brightBlack": "terminalBrightBlack_exact",
+      "brightRed": "terminalBrightRed_exact",
+      "brightGreen": "terminalBrightGreen_exact",
+      "brightYellow": "terminalBrightYellow_exact",
+      "brightBlue": "terminalBrightBlue_exact",
+      "brightMagenta": "terminalBrightMagenta_exact",
+      "brightCyan": "terminalBrightCyan_exact",
+      "brightWhite": "terminalBrightWhite_exact"
     },
     "tokens": {
       "attributeName": "attributeName_exact",
@@ -1388,6 +1727,63 @@ nightOwl: {
     },
     "variableProperty": {
       "hex": "#7fdbca"
+    },
+    "terminalBackground": {
+      "hex": "#011627"
+    },
+    "terminalForeground": {
+      "hex": "#d6deeb"
+    },
+    "terminalCursor": {
+      "hex": "#80a4c2"
+    },
+    "terminalBlack": {
+      "hex": "#011627"
+    },
+    "terminalBlue": {
+      "hex": "#82aaff"
+    },
+    "terminalBrightBlack": {
+      "hex": "#575656"
+    },
+    "terminalBrightBlue": {
+      "hex": "#82aaff"
+    },
+    "terminalBrightCyan": {
+      "hex": "#7fdbca"
+    },
+    "terminalBrightGreen": {
+      "hex": "#22da6e"
+    },
+    "terminalBrightMagenta": {
+      "hex": "#c792ea"
+    },
+    "terminalBrightRed": {
+      "hex": "#ef5350"
+    },
+    "terminalBrightWhite": {
+      "hex": "#ffffff"
+    },
+    "terminalBrightYellow": {
+      "hex": "#ffeb95"
+    },
+    "terminalCyan": {
+      "hex": "#21c7a8"
+    },
+    "terminalGreen": {
+      "hex": "#22da6e"
+    },
+    "terminalMagenta": {
+      "hex": "#c792ea"
+    },
+    "terminalRed": {
+      "hex": "#ef5350"
+    },
+    "terminalWhite": {
+      "hex": "#ffffff"
+    },
+    "terminalYellow": {
+      "hex": "#addb67"
     }
   },
   "customizations": {
@@ -1397,25 +1793,25 @@ nightOwl: {
       "accent_exact"
     ],
     "terminal": {
-      "background": "neutral0",
-      "foreground": "neutral34",
-      "cursor": "neutral28",
-      "black": "neutral0",
-      "red": "red16",
-      "green": "green16",
-      "yellow": "yellow30",
-      "blue": "blue30",
-      "magenta": "purple30",
-      "cyan": "cyan30",
-      "white": "neutral34",
-      "brightBlack": "neutral30",
-      "brightRed": "red30",
-      "brightGreen": "green30",
-      "brightYellow": "yellow30",
-      "brightBlue": "blue30",
-      "brightMagenta": "purple30",
-      "brightCyan": "cyan30",
-      "brightWhite": "neutral39"
+      "background": "terminalBackground_exact",
+      "foreground": "terminalForeground_exact",
+      "cursor": "terminalCursor_exact",
+      "black": "terminalBlack_exact",
+      "red": "terminalRed_exact",
+      "green": "terminalGreen_exact",
+      "yellow": "terminalYellow_exact",
+      "blue": "terminalBlue_exact",
+      "magenta": "terminalMagenta_exact",
+      "cyan": "terminalCyan_exact",
+      "white": "terminalWhite_exact",
+      "brightBlack": "terminalBrightBlack_exact",
+      "brightRed": "terminalBrightRed_exact",
+      "brightGreen": "terminalBrightGreen_exact",
+      "brightYellow": "terminalBrightYellow_exact",
+      "brightBlue": "terminalBrightBlue_exact",
+      "brightMagenta": "terminalBrightMagenta_exact",
+      "brightCyan": "terminalBrightCyan_exact",
+      "brightWhite": "terminalBrightWhite_exact"
     },
     "tokens": {
       "attributeName": "attributeName_exact",
@@ -1554,6 +1950,24 @@ oneDarkPro: {
     },
     "variableProperty": {
       "hex": "#e06c75"
+    },
+    "terminalBackground": {
+      "hex": "#282c34"
+    },
+    "terminalCursor": {
+      "hex": "#528bff"
+    },
+    "terminalBlack": {
+      "hex": "#2d3139"
+    },
+    "terminalBlue": {
+      "hex": "#61afef"
+    },
+    "terminalGreen": {
+      "hex": "#98c379"
+    },
+    "terminalYellow": {
+      "hex": "#d19a66"
     }
   },
   "customizations": {
@@ -1563,14 +1977,14 @@ oneDarkPro: {
       "accent_exact"
     ],
     "terminal": {
-      "background": "neutral0",
+      "background": "terminalBackground_exact",
       "foreground": "neutral34",
-      "cursor": "neutral28",
-      "black": "neutral0",
+      "cursor": "terminalCursor_exact",
+      "black": "terminalBlack_exact",
       "red": "red16",
-      "green": "green16",
-      "yellow": "yellow30",
-      "blue": "blue30",
+      "green": "terminalGreen_exact",
+      "yellow": "terminalYellow_exact",
+      "blue": "terminalBlue_exact",
       "magenta": "purple30",
       "cyan": "cyan30",
       "white": "neutral34",

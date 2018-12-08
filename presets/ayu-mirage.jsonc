@@ -65,6 +65,63 @@
     },
     "variable": {
       "hex": "#cbccc6"
+    },
+    "terminalBackground": {
+      "hex": "#1f2430"
+    },
+    "terminalForeground": {
+      "hex": "#cbccc6"
+    },
+    "terminalCursor": {
+      "hex": "#ffcc66"
+    },
+    "terminalBlack": {
+      "hex": "#191e2a"
+    },
+    "terminalBlue": {
+      "hex": "#6dcbfa"
+    },
+    "terminalBrightBlack": {
+      "hex": "#686868"
+    },
+    "terminalBrightBlue": {
+      "hex": "#73d0ff"
+    },
+    "terminalBrightCyan": {
+      "hex": "#95e6cb"
+    },
+    "terminalBrightGreen": {
+      "hex": "#bae67e"
+    },
+    "terminalBrightMagenta": {
+      "hex": "#d4bfff"
+    },
+    "terminalBrightRed": {
+      "hex": "#f28779"
+    },
+    "terminalBrightWhite": {
+      "hex": "#ffffff"
+    },
+    "terminalBrightYellow": {
+      "hex": "#ffd580"
+    },
+    "terminalCyan": {
+      "hex": "#90e1c6"
+    },
+    "terminalGreen": {
+      "hex": "#a6cc70"
+    },
+    "terminalMagenta": {
+      "hex": "#cfbafa"
+    },
+    "terminalRed": {
+      "hex": "#ed8274"
+    },
+    "terminalWhite": {
+      "hex": "#c7c7c7"
+    },
+    "terminalYellow": {
+      "hex": "#fad07b"
     }
   },
   "customizations": {
@@ -73,6 +130,27 @@
       "accent_c0_exact",
       "accent_exact"
     ],
+    "terminal": {
+      "background": "terminalBackground_exact",
+      "foreground": "terminalForeground_exact",
+      "cursor": "terminalCursor_exact",
+      "black": "terminalBlack_exact",
+      "blue": "terminalBlue_exact",
+      "brightBlack": "terminalBrightBlack_exact",
+      "brightBlue": "terminalBrightBlue_exact",
+      "brightCyan": "terminalBrightCyan_exact",
+      "brightGreen": "terminalBrightGreen_exact",
+      "brightMagenta": "terminalBrightMagenta_exact",
+      "brightRed": "terminalBrightRed_exact",
+      "brightWhite": "terminalBrightWhite_exact",
+      "brightYellow": "terminalBrightYellow_exact",
+      "cyan": "terminalCyan_exact",
+      "green": "terminalGreen_exact",
+      "magenta": "terminalMagenta_exact",
+      "red": "terminalRed_exact",
+      "white": "terminalWhite_exact",
+      "yellow": "terminalYellow_exact"
+    },
     "tokens": {
       "attributeName": "attributeName_exact",
       "comment": "comment_exact",

@@ -68,6 +68,24 @@
     },
     "variableProperty": {
       "hex": "#e06c75"
+    },
+    "terminalBackground": {
+      "hex": "#282c34"
+    },
+    "terminalCursor": {
+      "hex": "#528bff"
+    },
+    "terminalBlack": {
+      "hex": "#2d3139"
+    },
+    "terminalBlue": {
+      "hex": "#61afef"
+    },
+    "terminalGreen": {
+      "hex": "#98c379"
+    },
+    "terminalYellow": {
+      "hex": "#d19a66"
     }
   },
   "customizations": {
@@ -76,6 +94,14 @@
       "accent_c0_exact",
       "accent_exact"
     ],
+    "terminal": {
+      "background": "terminalBackground_exact",
+      "cursor": "terminalCursor_exact",
+      "black": "terminalBlack_exact",
+      "blue": "terminalBlue_exact",
+      "green": "terminalGreen_exact",
+      "yellow": "terminalYellow_exact"
+    },
     "tokens": {
       "attributeName": "attributeName_exact",
       "comment": "comment_exact",

@@ -56,6 +56,60 @@
     },
     "variable": {
       "hex": "#F8F8F2"
+    },
+    "terminalBackground": {
+      "hex": "#282a36"
+    },
+    "terminalForeground": {
+      "hex": "#f8f8f2"
+    },
+    "terminalBlack": {
+      "hex": "#21222c"
+    },
+    "terminalBlue": {
+      "hex": "#bd93f9"
+    },
+    "terminalBrightBlack": {
+      "hex": "#6272a4"
+    },
+    "terminalBrightBlue": {
+      "hex": "#d6acff"
+    },
+    "terminalBrightCyan": {
+      "hex": "#a4ffff"
+    },
+    "terminalBrightGreen": {
+      "hex": "#69ff94"
+    },
+    "terminalBrightMagenta": {
+      "hex": "#ff92df"
+    },
+    "terminalBrightRed": {
+      "hex": "#ff6e6e"
+    },
+    "terminalBrightWhite": {
+      "hex": "#ffffff"
+    },
+    "terminalBrightYellow": {
+      "hex": "#ffffa5"
+    },
+    "terminalCyan": {
+      "hex": "#8be9fd"
+    },
+    "terminalGreen": {
+      "hex": "#50fa7b"
+    },
+    "terminalMagenta": {
+      "hex": "#ff79c6"
+    },
+    "terminalRed": {
+      "hex": "#ff5555"
+    },
+    "terminalWhite": {
+      "hex": "#f8f8f2"
+    },
+    "terminalYellow": {
+      "hex": "#f1fa8c"
     }
   },
   "customizations": {
@@ -64,6 +118,26 @@
       "accent_c0_exact",
       "accent_exact"
     ],
+    "terminal": {
+      "background": "terminalBackground_exact",
+      "foreground": "terminalForeground_exact",
+      "black": "terminalBlack_exact",
+      "blue": "terminalBlue_exact",
+      "brightBlack": "terminalBrightBlack_exact",
+      "brightBlue": "terminalBrightBlue_exact",
+      "brightCyan": "terminalBrightCyan_exact",
+      "brightGreen": "terminalBrightGreen_exact",
+      "brightMagenta": "terminalBrightMagenta_exact",
+      "brightRed": "terminalBrightRed_exact",
+      "brightWhite": "terminalBrightWhite_exact",
+      "brightYellow": "terminalBrightYellow_exact",
+      "cyan": "terminalCyan_exact",
+      "green": "terminalGreen_exact",
+      "magenta": "terminalMagenta_exact",
+      "red": "terminalRed_exact",
+      "white": "terminalWhite_exact",
+      "yellow": "terminalYellow_exact"
+    },
     "tokens": {
       "attributeName": "attributeName_exact",
       "comment": "comment_exact",
