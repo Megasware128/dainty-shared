@@ -14,13 +14,14 @@
     },
     "neutral": {
       "hex": "#092642",
+      "chromaStart": -1.25,
       "chromaEnd": -15
     },
     "blue": {
       "hex": "#0078d4"
     },
     "purple": {
-      "hex": "#b146c2"
+      "hex": "#cf90ff"
     }
   }
 }
