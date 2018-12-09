@@ -1,5 +1,5 @@
 {
-  "name": "Dracula",
+  "name": "Cobalt2",
   "type": "dark",
   "colors": {
     "_all": {
@@ -7,115 +7,124 @@
       "chroma": 0
     },
     "accent": {
-      "hex": "#50fa7b"
+      "hex": "#ffc600"
     },
     "neutral": {
-      "hex": "#282a36"
+      "hex": "#193549"
     },
     "tokenAttributeName": {
-      "hex": "#50fa7b"
+      "hex": "#ffc600"
     },
     "tokenComment": {
-      "hex": "#6272a4"
+      "hex": "#0088ff"
     },
     "tokenConstant": {
-      "hex": "#f8f8f2"
+      "hex": "#e1efff"
     },
     "tokenFunction": {
-      "hex": "#50fa7b"
+      "hex": "#ffc600"
+    },
+    "tokenJsxTag": {
+      "hex": "#80ffbb"
     },
     "tokenKeyword": {
-      "hex": "#ff79c6"
+      "hex": "#ff9d00"
     },
     "tokenLiteral": {
-      "hex": "#bd93f9"
+      "hex": "#ff628c"
     },
     "tokenNumber": {
-      "hex": "#bd93f9"
+      "hex": "#ff628c"
+    },
+    "tokenOperator": {
+      "hex": "#ffee80"
     },
     "tokenOther": {
-      "hex": "#f8f8f2"
-    },
-    "tokenParameter": {
-      "hex": "#ffb86c"
-    },
-    "tokenRegex": {
-      "hex": "#ff79c6"
-    },
-    "tokenStorageType": {
-      "hex": "#ff79c6"
-    },
-    "tokenStorageTypeFunction": {
-      "hex": "#ff79c6"
-    },
-    "tokenString": {
-      "hex": "#f1fa8c"
-    },
-    "tokenStringTemplate": {
-      "hex": "#f1fa8c"
-    },
-    "tokenSupportFunction": {
-      "hex": "#8be9fd"
-    },
-    "tokenSupportType": {
-      "hex": "#8be9fd"
-    },
-    "tokenTag": {
-      "hex": "#ff79c6"
-    },
-    "tokenType": {
-      "hex": "#8be9fd"
-    },
-    "tokenVariable": {
-      "hex": "#f8f8f2"
-    },
-    "terminalBlack": {
-      "hex": "#21222c"
-    },
-    "terminalBlue": {
-      "hex": "#bd93f9"
-    },
-    "terminalBrightBlack": {
-      "hex": "#6272a4"
-    },
-    "terminalBrightBlue": {
-      "hex": "#d6acff"
-    },
-    "terminalBrightCyan": {
-      "hex": "#a4ffff"
-    },
-    "terminalBrightGreen": {
-      "hex": "#69ff94"
-    },
-    "terminalBrightMagenta": {
-      "hex": "#ff92df"
-    },
-    "terminalBrightRed": {
-      "hex": "#ff6e6e"
-    },
-    "terminalBrightWhite": {
       "hex": "#ffffff"
     },
+    "tokenProperty": {
+      "hex": "#9effff"
+    },
+    "tokenStorageType": {
+      "hex": "#ffc600"
+    },
+    "tokenStorageTypeFunction": {
+      "hex": "#fb94ff"
+    },
+    "tokenString": {
+      "hex": "#a5ff90"
+    },
+    "tokenStringTemplate": {
+      "hex": "#3ad900"
+    },
+    "tokenSupportFunction": {
+      "hex": "#ff9d00"
+    },
+    "tokenSupportType": {
+      "hex": "#80ffbb"
+    },
+    "tokenTag": {
+      "hex": "#9effff"
+    },
+    "tokenType": {
+      "hex": "#80ffbb"
+    },
+    "tokenUrl": {
+      "hex": "#0088ff"
+    },
+    "tokenVariable": {
+      "hex": "#e1efff"
+    },
+    "terminalBlack": {
+      "hex": "#000000"
+    },
+    "terminalBlue": {
+      "hex": "#0088ff"
+    },
+    "terminalBrightBlack": {
+      "hex": "#0050a4"
+    },
+    "terminalBrightBlue": {
+      "hex": "#0088ff"
+    },
+    "terminalBrightCyan": {
+      "hex": "#80fcff"
+    },
+    "terminalBrightGreen": {
+      "hex": "#3ad900"
+    },
+    "terminalBrightMagenta": {
+      "hex": "#fb94ff"
+    },
+    "terminalBrightRed": {
+      "hex": "#ff628c"
+    },
+    "terminalBrightWhite": {
+      "hex": "#193549"
+    },
     "terminalBrightYellow": {
-      "hex": "#ffffa5"
+      "hex": "#ffc600"
     },
     "terminalCyan": {
-      "hex": "#8be9fd"
+      "hex": "#80fcff"
     },
     "terminalGreen": {
-      "hex": "#50fa7b"
+      "hex": "#3ad900"
     },
     "terminalMagenta": {
-      "hex": "#ff79c6"
+      "hex": "#fb94ff"
     },
     "terminalRed": {
-      "hex": "#ff5555"
+      "hex": "#ff628c"
     },
     "terminalWhite": {
-      "hex": "#f8f8f2"
+      "hex": "#ffffff"
     },
     "terminalYellow": {
-      "hex": "#f1fa8c"
+      "hex": "#ffc600"
+    },
+    "cursor": {
+      "hex": "#ffc600"
     }
   },
   "customizations": {
@@ -142,12 +151,13 @@
       "comment": "tokenComment_exact",
       "constant": "tokenConstant_exact",
       "function": "tokenFunction_exact",
+      "jsxTag": "tokenJsxTag_exact",
       "keyword": "tokenKeyword_exact",
       "literal": "tokenLiteral_exact",
       "number": "tokenNumber_exact",
+      "operator": "tokenOperator_exact",
       "other": "tokenOther_exact",
-      "parameter": "tokenParameter_exact",
-      "regex": "tokenRegex_exact",
+      "property": "tokenProperty_exact",
       "storageType": "tokenStorageType_exact",
       "storageTypeFunction": "tokenStorageTypeFunction_exact",
       "string": "tokenString_exact",
@@ -156,12 +166,14 @@
       "supportType": "tokenSupportType_exact",
       "tag": "tokenTag_exact",
       "type": "tokenType_exact",
+      "url": "tokenUrl_exact",
       "variable": "tokenVariable_exact"
     },
     "accents": [
       "accent_80_exact",
       "accent_c0_exact",
       "accent_exact"
-    ]
+    ],
+    "cursor": "cursor_exact"
   }
 }

@@ -48,7 +48,13 @@
     "tokenStorageType": {
       "hex": "#c792ea"
     },
+    "tokenStorageTypeFunction": {
+      "hex": "#c792ea"
+    },
     "tokenString": {
+      "hex": "#c3e88d"
+    },
+    "tokenStringTemplate": {
       "hex": "#c3e88d"
     },
     "tokenSupportFunction": {
@@ -56,6 +62,9 @@
     },
     "tokenSupportType": {
       "hex": "#ffcb6b"
+    },
+    "tokenTag": {
+      "hex": "#f07178"
     },
     "tokenUrl": {
       "hex": "#80cbc4"
@@ -116,11 +125,6 @@
     }
   },
   "customizations": {
-    "accents": [
-      "accent_80_exact",
-      "accent_c0_exact",
-      "accent_exact"
-    ],
     "terminal": {
       "black": "terminalBlack_exact",
       "blue": "terminalBlue_exact",
@@ -152,12 +156,20 @@
       "parameter": "tokenParameter_exact",
       "punctuation": "tokenPunctuation_exact",
       "storageType": "tokenStorageType_exact",
+      "storageTypeFunction": "tokenStorageTypeFunction_exact",
       "string": "tokenString_exact",
+      "stringTemplate": "tokenStringTemplate_exact",
       "supportFunction": "tokenSupportFunction_exact",
       "supportType": "tokenSupportType_exact",
+      "tag": "tokenTag_exact",
       "url": "tokenUrl_exact",
       "variable": "tokenVariable_exact"
     },
+    "accents": [
+      "accent_80_exact",
+      "accent_c0_exact",
+      "accent_exact"
+    ],
     "cursor": "cursor_exact"
   }
 }

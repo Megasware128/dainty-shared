@@ -1,0 +1,15 @@
+{
+  "tokens": {
+    "function": "entity",
+    "number": "constant",
+    "attributeName": "entity",
+    "operator": "punctuation.definition.template-expression",
+    "punctuation": "storage.type.function.arrow.js",
+    "type": "support",
+    "constant": "variable",
+    "property": "meta",
+    "literal": "constant",
+    "storageTypeFunction": "source.js storage.type.function",
+    "jsxTag": "support"
+  }
+}

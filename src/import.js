@@ -118,8 +118,12 @@ function transform(theme, hints) {
       "entity.other.attribute-name"
     ]),
     comment: getTokenColor("comment", ["comment"]),
-    constant: getTokenColor("constant", ["variable.other.constant"]),
+    constant: getTokenColor("constant", [
+      "constant",
+      "variable.other.constant"
+    ]),
     function: getTokenColor("function", ["entity.name.function"]),
+    jsxTag: getTokenColor("jsxTag", ["support.class.component.js"]),
     keyword: getTokenColor("keyword", ["keyword", "keyword.control"]),
     literal: getTokenColor("literal", ["constant.language"]),
     number: getTokenColor("number", ["constant.numeric"]),
@@ -130,13 +134,27 @@ function transform(theme, hints) {
     property: getTokenColor("property", ["support.type.property-name"]),
     punctuation: getTokenColor("punctuation", ["punctuation"]),
     regex: getTokenColor("regex", ["constant.regexp"]),
-    storageType: getTokenColor("storageType", ["storage.type"]),
+    storageType: getTokenColor("storageType", ["storage.type", "storage"]),
+    storageTypeFunction: getTokenColor("storageTypeFunction", [
+      "storage.type.function",
+      "storage.type",
+      "storage"
+    ]),
     string: getTokenColor("string", ["string"]),
-    supportFunction: getTokenColor("supportFunction", ["support.function"]),
+    stringTemplate: getTokenColor("stringTemplate", [
+      "string.template",
+      "string"
+    ]),
+    supportFunction: getTokenColor("supportFunction", [
+      "support.function",
+      "support"
+    ]),
     supportType: getTokenColor("supportType", [
       "support.type",
-      "support.class"
+      "support.class",
+      "support"
     ]),
+    tag: getTokenColor("tag", ["entity.name.tag"]),
     type: getTokenColor("type", ["entity.name.type"]),
     url: getColor("textLink.foreground"),
     variable: getTokenColor("variable", ["variable"]),
@@ -174,7 +192,6 @@ function transform(theme, hints) {
       }
     },
     customizations: {
-      accents: ["accent_80_exact", "accent_c0_exact", "accent_exact"],
       terminal: {},
       tokens: {}
     }
@@ -187,6 +204,14 @@ function transform(theme, hints) {
     }
 
     newTheme.colors[color] = { hex: colors[color] };
+
+    if (color === "accent") {
+      newTheme.customizations.accents = [
+        "accent_80_exact",
+        "accent_c0_exact",
+        "accent_exact"
+      ];
+    }
   }
 
   for (const token of Object.keys(tokens)) {
@@ -201,9 +226,7 @@ function transform(theme, hints) {
       hex: tokens[token]
     };
 
-    if (token !== "accent") {
-      newTheme.customizations.tokens[token] = `${propertyName}_exact`;
-    }
+    newTheme.customizations.tokens[token] = `${propertyName}_exact`;
   }
 
   for (const terminalColor of Object.keys(terminalColors)) {
