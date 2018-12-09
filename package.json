@@ -3,7 +3,7 @@
   "version": "2.2.0-0054bd3",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --watch",
     "build": "node src/build.js",
     "import": "node src/import.js"
   },

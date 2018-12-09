@@ -79,7 +79,10 @@
     }
   },
   "customizations": {
-    "accents": ["accent16", "accent24", "accent32"],
+    "accents": ["accent24", "accent16", "accent8"],
+    "background": "neutral40",
+    "foreground": "neutral6",
+    "cursor": "neutral12",
     "terminal": {
       "background": "neutral40",
       "foreground": "neutral0",

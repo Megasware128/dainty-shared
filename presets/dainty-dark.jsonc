@@ -80,10 +80,10 @@
   },
   "customizations": {
     "accents": ["accent16", "accent24", "accent32"],
+    "background": "neutral0",
+    "foreground": "neutral34",
+    "cursor": "neutral28",
     "terminal": {
-      "background": "neutral0",
-      "foreground": "neutral34",
-      "cursor": "neutral28",
       "black": "neutral0",
       "red": "red16",
       "green": "green16",

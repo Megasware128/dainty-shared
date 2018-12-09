@@ -265,30 +265,31 @@ function generateColorConstants(colors) {
   return constants;
 }
 
-function getAccentColorFunction(configuration, colorConstants) {
-  return accentColor => {
-    return translateColorConstant(
-      colorConstants,
-      configuration.customizations.accents[accentColor]
-    );
-  };
-}
+function getPropertyFunction(configuration, colorConstants) {
+  return descriptor => {
+    if (descriptor.startsWith("accent")) {
+      return translateColorConstant(
+        colorConstants,
+        configuration.customizations.accents[descriptor[6]]
+      );
+    } else if (descriptor.startsWith("token.")) {
+      return translateColorConstant(
+        colorConstants,
+        configuration.customizations.tokens[descriptor.substr(6)]
+      );
+    } else if (descriptor.includes(".")) {
+      const descriptor_ = descriptor.split(".");
 
-function getTerminalColorFunction(configuration, colorConstants) {
-  return terminalColor => {
-    return translateColorConstant(
-      colorConstants,
-      configuration.customizations.terminal[terminalColor]
-    );
-  };
-}
-
-function getTokenColorFunction(configuration, colorConstants) {
-  return tokenName => {
-    return translateColorConstant(
-      colorConstants,
-      configuration.customizations.tokens[tokenName]
-    );
+      return translateColorConstant(
+        colorConstants,
+        configuration.customizations[descriptor_[0]][descriptor_[1]]
+      );
+    } else {
+      return translateColorConstant(
+        colorConstants,
+        configuration.customizations[descriptor]
+      );
+    }
   };
 }
 
@@ -395,9 +396,7 @@ module.exports = {
   generateColorConstantReplacements,
   generateColorConstants,
   getTypeShadeFunction,
-  getAccentColorFunction,
-  getTerminalColorFunction,
-  getTokenColorFunction,
+  getPropertyFunction,
   translateColorConstant,
   generateColorScales,
   getColorsCountByScale,
