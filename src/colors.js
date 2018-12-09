@@ -265,9 +265,8 @@ function generateColorConstants(colors) {
   return constants;
 }
 
-function filterTokens(configuration, token) {
-  const { customizations } = configuration;
-  const filter = customizations.tokensFilter ? customizations.tokensFilter : 0;
+function filterTokens({ customizations }, token) {
+  const filter = customizations.tokensFilter;
 
   switch (filter) {
     case 0:

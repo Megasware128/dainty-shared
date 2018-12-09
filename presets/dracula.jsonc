@@ -7,60 +7,54 @@
       "chroma": 0
     },
     "accent": {
-      "hex": "#50FA7B"
+      "hex": "#50fa7b"
     },
     "neutral": {
       "hex": "#282a36"
     },
-    "attributeName": {
-      "hex": "#50FA7B"
+    "tokenAttributeName": {
+      "hex": "#50fa7b"
     },
-    "comment": {
-      "hex": "#6272A4"
+    "tokenComment": {
+      "hex": "#6272a4"
     },
-    "constant": {
-      "hex": "#F8F8F2"
-    },
-    "function": {
-      "hex": "#50FA7B"
-    },
-    "keyword": {
-      "hex": "#FF79C6"
-    },
-    "literal": {
-      "hex": "#BD93F9"
-    },
-    "number": {
-      "hex": "#BD93F9"
-    },
-    "other": {
+    "tokenConstant": {
       "hex": "#f8f8f2"
     },
-    "parameter": {
-      "hex": "#FFB86C"
+    "tokenFunction": {
+      "hex": "#50fa7b"
     },
-    "regex": {
-      "hex": "#FF79C6"
+    "tokenKeyword": {
+      "hex": "#ff79c6"
     },
-    "storageType": {
-      "hex": "#FF79C6"
+    "tokenLiteral": {
+      "hex": "#bd93f9"
     },
-    "string": {
-      "hex": "#F1FA8C"
+    "tokenNumber": {
+      "hex": "#bd93f9"
     },
-    "supportFunction": {
-      "hex": "#8BE9FD"
+    "tokenOther": {
+      "hex": "#f8f8f2"
     },
-    "type": {
-      "hex": "#8BE9FD"
+    "tokenParameter": {
+      "hex": "#ffb86c"
     },
-    "variable": {
-      "hex": "#F8F8F2"
+    "tokenRegex": {
+      "hex": "#ff79c6"
     },
-    "terminalBackground": {
-      "hex": "#282a36"
+    "tokenStorageType": {
+      "hex": "#ff79c6"
     },
-    "terminalForeground": {
+    "tokenString": {
+      "hex": "#f1fa8c"
+    },
+    "tokenSupportFunction": {
+      "hex": "#8be9fd"
+    },
+    "tokenType": {
+      "hex": "#8be9fd"
+    },
+    "tokenVariable": {
       "hex": "#f8f8f2"
     },
     "terminalBlack": {
@@ -119,8 +113,6 @@
       "accent_exact"
     ],
     "terminal": {
-      "background": "terminalBackground_exact",
-      "foreground": "terminalForeground_exact",
       "black": "terminalBlack_exact",
       "blue": "terminalBlue_exact",
       "brightBlack": "terminalBrightBlack_exact",
@@ -139,21 +131,21 @@
       "yellow": "terminalYellow_exact"
     },
     "tokens": {
-      "attributeName": "attributeName_exact",
-      "comment": "comment_exact",
-      "constant": "constant_exact",
-      "function": "function_exact",
-      "keyword": "keyword_exact",
-      "literal": "literal_exact",
-      "number": "number_exact",
-      "other": "other_exact",
-      "parameter": "parameter_exact",
-      "regex": "regex_exact",
-      "storageType": "storageType_exact",
-      "string": "string_exact",
-      "supportFunction": "supportFunction_exact",
-      "type": "type_exact",
-      "variable": "variable_exact"
+      "attributeName": "tokenAttributeName_exact",
+      "comment": "tokenComment_exact",
+      "constant": "tokenConstant_exact",
+      "function": "tokenFunction_exact",
+      "keyword": "tokenKeyword_exact",
+      "literal": "tokenLiteral_exact",
+      "number": "tokenNumber_exact",
+      "other": "tokenOther_exact",
+      "parameter": "tokenParameter_exact",
+      "regex": "tokenRegex_exact",
+      "storageType": "tokenStorageType_exact",
+      "string": "tokenString_exact",
+      "supportFunction": "tokenSupportFunction_exact",
+      "type": "tokenType_exact",
+      "variable": "tokenVariable_exact"
     }
   }
 }

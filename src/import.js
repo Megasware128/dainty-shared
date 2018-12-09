@@ -90,7 +90,7 @@ function getTokenColorFunction(tokenColors, hints) {
       );
 
       if (tokenColor && tokenColor.settings && tokenColor.settings[setting]) {
-        return tokenColor.settings[setting];
+        return tokenColor.settings[setting].toLowerCase();
       }
     }
 
@@ -146,9 +146,6 @@ function transform(theme, hints) {
   };
 
   const terminalColors = {
-    background: getColor("editor.background"),
-    foreground: getColor("editor.foreground"),
-    cursor: getColor("editorCursor.foreground"),
     black: getColor("terminal.ansiBlack"),
     blue: getColor("terminal.ansiBlue"),
     brightBlack: getColor("terminal.ansiBrightBlack"),
@@ -198,10 +195,14 @@ function transform(theme, hints) {
       continue;
     }
 
-    newTheme.colors[token] = { hex: tokens[token] };
+    const propertyName = getPropertyName("token", token);
+
+    newTheme.colors[propertyName] = {
+      hex: tokens[token]
+    };
 
     if (token !== "accent") {
-      newTheme.customizations.tokens[token] = `${token}_exact`;
+      newTheme.customizations.tokens[token] = `${propertyName}_exact`;
     }
   }
 
@@ -211,14 +212,23 @@ function transform(theme, hints) {
       continue;
     }
 
-    newTheme.colors["terminal" + changeCase.pascalCase(terminalColor)] = {
+    const propertyName = getPropertyName("terminal", terminalColor);
+
+    newTheme.colors[propertyName] = {
       hex: terminalColors[terminalColor]
     };
 
-    newTheme.customizations.terminal[
-      terminalColor
-    ] = `terminal${changeCase.pascalCase(terminalColor)}_exact`;
+    newTheme.customizations.terminal[terminalColor] = `${propertyName}_exact`;
+  }
+
+  if (getColor("editorCursor.foreground")) {
+    newTheme.colors.cursor = { hex: getColor("editorCursor.foreground") };
+    newTheme.customizations.cursor = "cursor_exact";
   }
 
   return newTheme;
+}
+
+function getPropertyName(section, property) {
+  return `${section}${changeCase.pascalCase(property)}`;
 }

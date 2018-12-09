@@ -172,10 +172,9 @@ ayuMirage: {
       "accent_c0_exact",
       "accent_exact"
     ],
+    "tokensFilter": 0,
+    "cursor": "neutral28",
     "terminal": {
-      "background": "terminalBackground_exact",
-      "foreground": "terminalForeground_exact",
-      "cursor": "terminalCursor_exact",
       "black": "terminalBlack_exact",
       "red": "terminalRed_exact",
       "green": "terminalGreen_exact",
@@ -191,7 +190,10 @@ ayuMirage: {
       "brightBlue": "terminalBrightBlue_exact",
       "brightMagenta": "terminalBrightMagenta_exact",
       "brightCyan": "terminalBrightCyan_exact",
-      "brightWhite": "terminalBrightWhite_exact"
+      "brightWhite": "terminalBrightWhite_exact",
+      "background": "terminalBackground_exact",
+      "foreground": "terminalForeground_exact",
+      "cursor": "terminalCursor_exact"
     },
     "tokens": {
       "attributeName": "attributeName_exact",
@@ -279,10 +281,9 @@ daintyDark: {
       "accent24",
       "accent32"
     ],
+    "tokensFilter": 0,
+    "cursor": "neutral28",
     "terminal": {
-      "background": "neutral0",
-      "foreground": "neutral34",
-      "cursor": "neutral28",
       "black": "neutral0",
       "red": "red16",
       "green": "green16",
@@ -382,14 +383,13 @@ daintyLight: {
   },
   "customizations": {
     "accents": [
-      "accent16",
       "accent24",
-      "accent32"
+      "accent16",
+      "accent8"
     ],
+    "tokensFilter": 0,
+    "cursor": "neutral12",
     "terminal": {
-      "background": "neutral40",
-      "foreground": "neutral0",
-      "cursor": "neutral28",
       "black": "neutral0",
       "red": "red16",
       "green": "green16",
@@ -405,7 +405,10 @@ daintyLight: {
       "brightBlue": "blue16",
       "brightMagenta": "purple16",
       "brightCyan": "cyan16",
-      "brightWhite": "neutral39"
+      "brightWhite": "neutral39",
+      "background": "neutral40",
+      "foreground": "neutral0",
+      "cursor": "neutral28"
     },
     "tokens": {
       "attributeName": "blueLessChroma18",
@@ -594,10 +597,9 @@ dracula: {
       "accent_c0_exact",
       "accent_exact"
     ],
+    "tokensFilter": 0,
+    "cursor": "neutral28",
     "terminal": {
-      "background": "terminalBackground_exact",
-      "foreground": "terminalForeground_exact",
-      "cursor": "neutral28",
       "black": "terminalBlack_exact",
       "red": "terminalRed_exact",
       "green": "terminalGreen_exact",
@@ -613,7 +615,9 @@ dracula: {
       "brightBlue": "terminalBrightBlue_exact",
       "brightMagenta": "terminalBrightMagenta_exact",
       "brightCyan": "terminalBrightCyan_exact",
-      "brightWhite": "terminalBrightWhite_exact"
+      "brightWhite": "terminalBrightWhite_exact",
+      "background": "terminalBackground_exact",
+      "foreground": "terminalForeground_exact"
     },
     "tokens": {
       "attributeName": "attributeName_exact",
@@ -707,10 +711,9 @@ fluent: {
       "accent24",
       "accent32"
     ],
+    "tokensFilter": 0,
+    "cursor": "neutral28",
     "terminal": {
-      "background": "neutral0",
-      "foreground": "neutral34",
-      "cursor": "neutral28",
       "black": "neutral0",
       "red": "red16",
       "green": "green16",
@@ -924,10 +927,9 @@ materialThemeOcean: {
       "accent_c0_exact",
       "accent_exact"
     ],
+    "tokensFilter": 0,
+    "cursor": "neutral28",
     "terminal": {
-      "background": "terminalBackground_exact",
-      "foreground": "terminalForeground_exact",
-      "cursor": "terminalCursor_exact",
       "black": "terminalBlack_exact",
       "red": "terminalRed_exact",
       "green": "terminalGreen_exact",
@@ -943,7 +945,10 @@ materialThemeOcean: {
       "brightBlue": "terminalBrightBlue_exact",
       "brightMagenta": "terminalBrightMagenta_exact",
       "brightCyan": "terminalBrightCyan_exact",
-      "brightWhite": "terminalBrightWhite_exact"
+      "brightWhite": "terminalBrightWhite_exact",
+      "background": "terminalBackground_exact",
+      "foreground": "terminalForeground_exact",
+      "cursor": "terminalCursor_exact"
     },
     "tokens": {
       "attributeName": "attributeName_exact",
@@ -1141,10 +1146,9 @@ materialThemePalenight: {
       "accent_c0_exact",
       "accent_exact"
     ],
+    "tokensFilter": 0,
+    "cursor": "neutral28",
     "terminal": {
-      "background": "terminalBackground_exact",
-      "foreground": "terminalForeground_exact",
-      "cursor": "terminalCursor_exact",
       "black": "terminalBlack_exact",
       "red": "terminalRed_exact",
       "green": "terminalGreen_exact",
@@ -1160,7 +1164,10 @@ materialThemePalenight: {
       "brightBlue": "terminalBrightBlue_exact",
       "brightMagenta": "terminalBrightMagenta_exact",
       "brightCyan": "terminalBrightCyan_exact",
-      "brightWhite": "terminalBrightWhite_exact"
+      "brightWhite": "terminalBrightWhite_exact",
+      "background": "terminalBackground_exact",
+      "foreground": "terminalForeground_exact",
+      "cursor": "terminalCursor_exact"
     },
     "tokens": {
       "attributeName": "attributeName_exact",
@@ -1358,10 +1365,9 @@ materialTheme: {
       "accent_c0_exact",
       "accent_exact"
     ],
+    "tokensFilter": 0,
+    "cursor": "neutral28",
     "terminal": {
-      "background": "terminalBackground_exact",
-      "foreground": "terminalForeground_exact",
-      "cursor": "terminalCursor_exact",
       "black": "terminalBlack_exact",
       "red": "terminalRed_exact",
       "green": "terminalGreen_exact",
@@ -1377,7 +1383,10 @@ materialTheme: {
       "brightBlue": "terminalBrightBlue_exact",
       "brightMagenta": "terminalBrightMagenta_exact",
       "brightCyan": "terminalBrightCyan_exact",
-      "brightWhite": "terminalBrightWhite_exact"
+      "brightWhite": "terminalBrightWhite_exact",
+      "background": "terminalBackground_exact",
+      "foreground": "terminalForeground_exact",
+      "cursor": "terminalCursor_exact"
     },
     "tokens": {
       "attributeName": "attributeName_exact",
@@ -1572,10 +1581,9 @@ monokaiNight: {
       "accent_c0_exact",
       "accent_exact"
     ],
+    "tokensFilter": 0,
+    "cursor": "neutral28",
     "terminal": {
-      "background": "terminalBackground_exact",
-      "foreground": "terminalForeground_exact",
-      "cursor": "terminalCursor_exact",
       "black": "terminalBlack_exact",
       "red": "terminalRed_exact",
       "green": "terminalGreen_exact",
@@ -1591,7 +1599,10 @@ monokaiNight: {
       "brightBlue": "terminalBrightBlue_exact",
       "brightMagenta": "terminalBrightMagenta_exact",
       "brightCyan": "terminalBrightCyan_exact",
-      "brightWhite": "terminalBrightWhite_exact"
+      "brightWhite": "terminalBrightWhite_exact",
+      "background": "terminalBackground_exact",
+      "foreground": "terminalForeground_exact",
+      "cursor": "terminalCursor_exact"
     },
     "tokens": {
       "attributeName": "attributeName_exact",
@@ -1792,10 +1803,9 @@ nightOwl: {
       "accent_c0_exact",
       "accent_exact"
     ],
+    "tokensFilter": 0,
+    "cursor": "neutral28",
     "terminal": {
-      "background": "terminalBackground_exact",
-      "foreground": "terminalForeground_exact",
-      "cursor": "terminalCursor_exact",
       "black": "terminalBlack_exact",
       "red": "terminalRed_exact",
       "green": "terminalGreen_exact",
@@ -1811,7 +1821,10 @@ nightOwl: {
       "brightBlue": "terminalBrightBlue_exact",
       "brightMagenta": "terminalBrightMagenta_exact",
       "brightCyan": "terminalBrightCyan_exact",
-      "brightWhite": "terminalBrightWhite_exact"
+      "brightWhite": "terminalBrightWhite_exact",
+      "background": "terminalBackground_exact",
+      "foreground": "terminalForeground_exact",
+      "cursor": "terminalCursor_exact"
     },
     "tokens": {
       "attributeName": "attributeName_exact",
@@ -1976,10 +1989,9 @@ oneDarkPro: {
       "accent_c0_exact",
       "accent_exact"
     ],
+    "tokensFilter": 0,
+    "cursor": "neutral28",
     "terminal": {
-      "background": "terminalBackground_exact",
-      "foreground": "neutral34",
-      "cursor": "terminalCursor_exact",
       "black": "terminalBlack_exact",
       "red": "red16",
       "green": "terminalGreen_exact",
@@ -1995,7 +2007,9 @@ oneDarkPro: {
       "brightBlue": "blue30",
       "brightMagenta": "purple30",
       "brightCyan": "cyan30",
-      "brightWhite": "neutral39"
+      "brightWhite": "neutral39",
+      "background": "terminalBackground_exact",
+      "cursor": "terminalCursor_exact"
     },
     "tokens": {
       "attributeName": "attributeName_exact",
@@ -2088,10 +2102,9 @@ prettier: {
       "accent24",
       "accent32"
     ],
+    "tokensFilter": 0,
+    "cursor": "neutral28",
     "terminal": {
-      "background": "neutral0",
-      "foreground": "neutral34",
-      "cursor": "neutral28",
       "black": "neutral0",
       "red": "red16",
       "green": "green16",
@@ -2201,10 +2214,9 @@ purpleHaze: {
       "accent24",
       "accent32"
     ],
+    "tokensFilter": 0,
+    "cursor": "neutral28",
     "terminal": {
-      "background": "neutral0",
-      "foreground": "neutral34",
-      "cursor": "neutral28",
       "black": "neutral0",
       "red": "red16",
       "green": "green16",

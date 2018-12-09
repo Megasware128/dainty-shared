@@ -495,14 +495,6 @@
           "minimum": 0,
           "maximum": 3
         },
-        "background": {
-          "$id": "#/properties/customizations/properties/background",
-          "type": "string"
-        },
-        "foreground": {
-          "$id": "#/properties/customizations/properties/foreground",
-          "type": "string"
-        },
         "cursor": {
           "$id": "#/properties/customizations/properties/cursor",
           "type": "string"

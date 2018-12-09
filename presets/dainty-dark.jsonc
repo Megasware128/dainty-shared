@@ -80,8 +80,7 @@
   },
   "customizations": {
     "accents": ["accent16", "accent24", "accent32"],
-    "background": "neutral0",
-    "foreground": "neutral34",
+    "tokensFilter": 0,
     "cursor": "neutral28",
     "terminal": {
       "black": "neutral0",

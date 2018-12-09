@@ -12,68 +12,59 @@
     "neutral": {
       "hex": "#1f2430"
     },
-    "attributeName": {
+    "tokenAttributeName": {
       "hex": "#ffd580"
     },
-    "comment": {
+    "tokenComment": {
       "hex": "#5c6773"
     },
-    "constant": {
+    "tokenConstant": {
       "hex": "#cbccc6"
     },
-    "function": {
+    "tokenFunction": {
       "hex": "#ffd580"
     },
-    "keyword": {
+    "tokenKeyword": {
       "hex": "#ffa759"
     },
-    "literal": {
+    "tokenLiteral": {
       "hex": "#ffcc66"
     },
-    "number": {
+    "tokenNumber": {
       "hex": "#ffcc66"
     },
-    "operator": {
+    "tokenOperator": {
       "hex": "#f29e74"
     },
-    "other": {
+    "tokenOther": {
       "hex": "#cbccc6"
     },
-    "otherType": {
+    "tokenOtherType": {
       "hex": "#5ccfe6"
     },
-    "parameter": {
+    "tokenParameter": {
       "hex": "#d4bfff"
     },
-    "property": {
+    "tokenProperty": {
       "hex": "#5ccfe6"
     },
-    "storageType": {
+    "tokenStorageType": {
       "hex": "#ffa759"
     },
-    "string": {
+    "tokenString": {
       "hex": "#bae67e"
     },
-    "supportFunction": {
+    "tokenSupportFunction": {
       "hex": "#f28779"
     },
-    "supportType": {
+    "tokenSupportType": {
       "hex": "#5ccfe6"
     },
-    "url": {
+    "tokenUrl": {
       "hex": "#ffcc66"
     },
-    "variable": {
+    "tokenVariable": {
       "hex": "#cbccc6"
-    },
-    "terminalBackground": {
-      "hex": "#1f2430"
-    },
-    "terminalForeground": {
-      "hex": "#cbccc6"
-    },
-    "terminalCursor": {
-      "hex": "#ffcc66"
     },
     "terminalBlack": {
       "hex": "#191e2a"
@@ -122,6 +113,9 @@
     },
     "terminalYellow": {
       "hex": "#fad07b"
+    },
+    "cursor": {
+      "hex": "#ffcc66"
     }
   },
   "customizations": {
@@ -131,9 +125,6 @@
       "accent_exact"
     ],
     "terminal": {
-      "background": "terminalBackground_exact",
-      "foreground": "terminalForeground_exact",
-      "cursor": "terminalCursor_exact",
       "black": "terminalBlack_exact",
       "blue": "terminalBlue_exact",
       "brightBlack": "terminalBrightBlack_exact",
@@ -152,24 +143,25 @@
       "yellow": "terminalYellow_exact"
     },
     "tokens": {
-      "attributeName": "attributeName_exact",
-      "comment": "comment_exact",
-      "constant": "constant_exact",
-      "function": "function_exact",
-      "keyword": "keyword_exact",
-      "literal": "literal_exact",
-      "number": "number_exact",
-      "operator": "operator_exact",
-      "other": "other_exact",
-      "otherType": "otherType_exact",
-      "parameter": "parameter_exact",
-      "property": "property_exact",
-      "storageType": "storageType_exact",
-      "string": "string_exact",
-      "supportFunction": "supportFunction_exact",
-      "supportType": "supportType_exact",
-      "url": "url_exact",
-      "variable": "variable_exact"
-    }
+      "attributeName": "tokenAttributeName_exact",
+      "comment": "tokenComment_exact",
+      "constant": "tokenConstant_exact",
+      "function": "tokenFunction_exact",
+      "keyword": "tokenKeyword_exact",
+      "literal": "tokenLiteral_exact",
+      "number": "tokenNumber_exact",
+      "operator": "tokenOperator_exact",
+      "other": "tokenOther_exact",
+      "otherType": "tokenOtherType_exact",
+      "parameter": "tokenParameter_exact",
+      "property": "tokenProperty_exact",
+      "storageType": "tokenStorageType_exact",
+      "string": "tokenString_exact",
+      "supportFunction": "tokenSupportFunction_exact",
+      "supportType": "tokenSupportType_exact",
+      "url": "tokenUrl_exact",
+      "variable": "tokenVariable_exact"
+    },
+    "cursor": "cursor_exact"
   }
 }
