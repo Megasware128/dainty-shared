@@ -9,8 +9,50 @@
     "accent": {
       "hex": "#ffd580"
     },
+    "red": {
+      "hex": "#ed8274"
+    },
+    "yellow": {
+      "hex": "#fad07b"
+    },
+    "green": {
+      "hex": "#a6cc70"
+    },
+    "cyan": {
+      "hex": "#90e1c6"
+    },
     "neutral": {
       "hex": "#1f2430"
+    },
+    "blue": {
+      "hex": "#6dcbfa"
+    },
+    "blueLessChroma": {
+      "hex": "#6dcbfa"
+    },
+    "blueMoreChroma": {
+      "hex": "#6dcbfa"
+    },
+    "purple": {
+      "hex": "#cfbafa"
+    },
+    "brightRed": {
+      "hex": "#f28779"
+    },
+    "brightYellow": {
+      "hex": "#ffd580"
+    },
+    "brightGreen": {
+      "hex": "#bae67e"
+    },
+    "brightCyan": {
+      "hex": "#95e6cb"
+    },
+    "brightBlue": {
+      "hex": "#73d0ff"
+    },
+    "brightPurple": {
+      "hex": "#d4bfff"
     },
     "tokenAttributeName": {
       "hex": "#ffd580"
@@ -75,76 +117,23 @@
     "tokenVariable": {
       "hex": "#cbccc6"
     },
-    "terminalBlack": {
-      "hex": "#191e2a"
-    },
-    "terminalBlue": {
-      "hex": "#6dcbfa"
-    },
-    "terminalBrightBlack": {
-      "hex": "#686868"
-    },
-    "terminalBrightBlue": {
-      "hex": "#73d0ff"
-    },
-    "terminalBrightCyan": {
-      "hex": "#95e6cb"
-    },
-    "terminalBrightGreen": {
-      "hex": "#bae67e"
-    },
-    "terminalBrightMagenta": {
-      "hex": "#d4bfff"
-    },
-    "terminalBrightRed": {
-      "hex": "#f28779"
-    },
-    "terminalBrightWhite": {
-      "hex": "#ffffff"
-    },
-    "terminalBrightYellow": {
-      "hex": "#ffd580"
-    },
-    "terminalCyan": {
-      "hex": "#90e1c6"
-    },
-    "terminalGreen": {
-      "hex": "#a6cc70"
-    },
-    "terminalMagenta": {
-      "hex": "#cfbafa"
-    },
-    "terminalRed": {
-      "hex": "#ed8274"
-    },
-    "terminalWhite": {
-      "hex": "#c7c7c7"
-    },
-    "terminalYellow": {
-      "hex": "#fad07b"
-    },
     "cursor": {
       "hex": "#ffcc66"
     }
   },
   "customizations": {
     "terminal": {
-      "black": "terminalBlack_exact",
-      "blue": "terminalBlue_exact",
-      "brightBlack": "terminalBrightBlack_exact",
-      "brightBlue": "terminalBrightBlue_exact",
-      "brightCyan": "terminalBrightCyan_exact",
-      "brightGreen": "terminalBrightGreen_exact",
-      "brightMagenta": "terminalBrightMagenta_exact",
-      "brightRed": "terminalBrightRed_exact",
-      "brightWhite": "terminalBrightWhite_exact",
-      "brightYellow": "terminalBrightYellow_exact",
-      "cyan": "terminalCyan_exact",
-      "green": "terminalGreen_exact",
-      "magenta": "terminalMagenta_exact",
-      "red": "terminalRed_exact",
-      "white": "terminalWhite_exact",
-      "yellow": "terminalYellow_exact"
+      "red": "red_exact",
+      "yellow": "yellow_exact",
+      "green": "green_exact",
+      "cyan": "cyan_exact",
+      "blue": "blue_exact",
+      "brightRed": "brightRed_exact",
+      "brightYellow": "brightYellow_exact",
+      "brightGreen": "brightGreen_exact",
+      "brightCyan": "brightCyan_exact",
+      "brightBlue": "brightBlue_exact",
+      "brightPurple": "brightPurple_exact"
     },
     "tokens": {
       "attributeName": "tokenAttributeName_exact",

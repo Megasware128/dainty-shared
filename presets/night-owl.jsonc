@@ -9,8 +9,50 @@
     "accent": {
       "hex": "#82aaff"
     },
+    "red": {
+      "hex": "#ef5350"
+    },
+    "yellow": {
+      "hex": "#addb67"
+    },
+    "green": {
+      "hex": "#22da6e"
+    },
+    "cyan": {
+      "hex": "#21c7a8"
+    },
     "neutral": {
       "hex": "#011627"
+    },
+    "blue": {
+      "hex": "#82aaff"
+    },
+    "blueLessChroma": {
+      "hex": "#82aaff"
+    },
+    "blueMoreChroma": {
+      "hex": "#82aaff"
+    },
+    "purple": {
+      "hex": "#c792ea"
+    },
+    "brightRed": {
+      "hex": "#ef5350"
+    },
+    "brightYellow": {
+      "hex": "#ffeb95"
+    },
+    "brightGreen": {
+      "hex": "#22da6e"
+    },
+    "brightCyan": {
+      "hex": "#7fdbca"
+    },
+    "brightBlue": {
+      "hex": "#82aaff"
+    },
+    "brightPurple": {
+      "hex": "#c792ea"
     },
     "tokenAttributeName": {
       "hex": "#addb67"
@@ -78,76 +120,23 @@
     "tokenVariableProperty": {
       "hex": "#7fdbca"
     },
-    "terminalBlack": {
-      "hex": "#011627"
-    },
-    "terminalBlue": {
-      "hex": "#82aaff"
-    },
-    "terminalBrightBlack": {
-      "hex": "#575656"
-    },
-    "terminalBrightBlue": {
-      "hex": "#82aaff"
-    },
-    "terminalBrightCyan": {
-      "hex": "#7fdbca"
-    },
-    "terminalBrightGreen": {
-      "hex": "#22da6e"
-    },
-    "terminalBrightMagenta": {
-      "hex": "#c792ea"
-    },
-    "terminalBrightRed": {
-      "hex": "#ef5350"
-    },
-    "terminalBrightWhite": {
-      "hex": "#ffffff"
-    },
-    "terminalBrightYellow": {
-      "hex": "#ffeb95"
-    },
-    "terminalCyan": {
-      "hex": "#21c7a8"
-    },
-    "terminalGreen": {
-      "hex": "#22da6e"
-    },
-    "terminalMagenta": {
-      "hex": "#c792ea"
-    },
-    "terminalRed": {
-      "hex": "#ef5350"
-    },
-    "terminalWhite": {
-      "hex": "#ffffff"
-    },
-    "terminalYellow": {
-      "hex": "#addb67"
-    },
     "cursor": {
       "hex": "#80a4c2"
     }
   },
   "customizations": {
     "terminal": {
-      "black": "terminalBlack_exact",
-      "blue": "terminalBlue_exact",
-      "brightBlack": "terminalBrightBlack_exact",
-      "brightBlue": "terminalBrightBlue_exact",
-      "brightCyan": "terminalBrightCyan_exact",
-      "brightGreen": "terminalBrightGreen_exact",
-      "brightMagenta": "terminalBrightMagenta_exact",
-      "brightRed": "terminalBrightRed_exact",
-      "brightWhite": "terminalBrightWhite_exact",
-      "brightYellow": "terminalBrightYellow_exact",
-      "cyan": "terminalCyan_exact",
-      "green": "terminalGreen_exact",
-      "magenta": "terminalMagenta_exact",
-      "red": "terminalRed_exact",
-      "white": "terminalWhite_exact",
-      "yellow": "terminalYellow_exact"
+      "red": "red_exact",
+      "yellow": "yellow_exact",
+      "green": "green_exact",
+      "cyan": "cyan_exact",
+      "blue": "blue_exact",
+      "brightRed": "brightRed_exact",
+      "brightYellow": "brightYellow_exact",
+      "brightGreen": "brightGreen_exact",
+      "brightCyan": "brightCyan_exact",
+      "brightBlue": "brightBlue_exact",
+      "brightPurple": "brightPurple_exact"
     },
     "tokens": {
       "attributeName": "tokenAttributeName_exact",

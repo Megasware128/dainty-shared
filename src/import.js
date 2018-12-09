@@ -110,7 +110,22 @@ function transform(theme, hints) {
 
   const colors = {
     accent: getTokenColor("function", ["entity.name.function"]),
-    neutral: getColor("editor.background")
+    red: getColor("terminal.ansiRed"),
+    yellow: getColor("terminal.ansiYellow"),
+    green: getColor("terminal.ansiGreen"),
+    cyan: getColor("terminal.ansiCyan"),
+    neutral: getColor("editor.background"),
+    blue: getColor("terminal.ansiBlue"),
+    blueLessChroma: getColor("terminal.ansiBlue"),
+    blueMoreChroma: getColor("terminal.ansiBlue"),
+    purple: getColor("terminal.ansiMagenta"),
+
+    brightRed: getColor("terminal.ansiBrightRed"),
+    brightYellow: getColor("terminal.ansiBrightYellow"),
+    brightGreen: getColor("terminal.ansiBrightGreen"),
+    brightCyan: getColor("terminal.ansiBrightCyan"),
+    brightBlue: getColor("terminal.ansiBrightBlue"),
+    brightPurple: getColor("terminal.ansiBrightMagenta")
   };
 
   const tokens = {
@@ -163,25 +178,6 @@ function transform(theme, hints) {
     ])
   };
 
-  const terminalColors = {
-    black: getColor("terminal.ansiBlack"),
-    blue: getColor("terminal.ansiBlue"),
-    brightBlack: getColor("terminal.ansiBrightBlack"),
-    brightBlue: getColor("terminal.ansiBrightBlue"),
-    brightCyan: getColor("terminal.ansiBrightCyan"),
-    brightGreen: getColor("terminal.ansiBrightGreen"),
-    brightMagenta: getColor("terminal.ansiBrightMagenta"),
-    brightRed: getColor("terminal.ansiBrightRed"),
-    brightWhite: getColor("terminal.ansiBrightWhite"),
-    brightYellow: getColor("terminal.ansiBrightYellow"),
-    cyan: getColor("terminal.ansiCyan"),
-    green: getColor("terminal.ansiGreen"),
-    magenta: getColor("terminal.ansiMagenta"),
-    red: getColor("terminal.ansiRed"),
-    white: getColor("terminal.ansiWhite"),
-    yellow: getColor("terminal.ansiYellow")
-  };
-
   let newTheme = {
     name: getProperty("name"),
     type: getProperty("type"),
@@ -212,6 +208,13 @@ function transform(theme, hints) {
         "accent_exact"
       ];
     }
+
+    if (
+      ["red", "green", "yellow", "blue", "magenta", "cyan"].includes(color) ||
+      color.startsWith("bright")
+    ) {
+      newTheme.customizations.terminal[color] = `${color}_exact`;
+    }
   }
 
   for (const token of Object.keys(tokens)) {
@@ -227,21 +230,6 @@ function transform(theme, hints) {
     };
 
     newTheme.customizations.tokens[token] = `${propertyName}_exact`;
-  }
-
-  for (const terminalColor of Object.keys(terminalColors)) {
-    if (terminalColors[terminalColor] === null) {
-      logWarning(`Terminal color \`${terminalColor}\` is \`null\`.`);
-      continue;
-    }
-
-    const propertyName = getPropertyName("terminal", terminalColor);
-
-    newTheme.colors[propertyName] = {
-      hex: terminalColors[terminalColor]
-    };
-
-    newTheme.customizations.terminal[terminalColor] = `${propertyName}_exact`;
   }
 
   if (getColor("editorCursor.foreground")) {

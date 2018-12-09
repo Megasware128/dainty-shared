@@ -9,8 +9,23 @@
     "accent": {
       "hex": "#61afef"
     },
+    "yellow": {
+      "hex": "#d19a66"
+    },
+    "green": {
+      "hex": "#98c379"
+    },
     "neutral": {
       "hex": "#282c34"
+    },
+    "blue": {
+      "hex": "#61afef"
+    },
+    "blueLessChroma": {
+      "hex": "#61afef"
+    },
+    "blueMoreChroma": {
+      "hex": "#61afef"
     },
     "tokenAttributeName": {
       "hex": "#d19a66"
@@ -78,28 +93,15 @@
     "tokenVariableProperty": {
       "hex": "#e06c75"
     },
-    "terminalBlack": {
-      "hex": "#2d3139"
-    },
-    "terminalBlue": {
-      "hex": "#61afef"
-    },
-    "terminalGreen": {
-      "hex": "#98c379"
-    },
-    "terminalYellow": {
-      "hex": "#d19a66"
-    },
     "cursor": {
       "hex": "#528bff"
     }
   },
   "customizations": {
     "terminal": {
-      "black": "terminalBlack_exact",
-      "blue": "terminalBlue_exact",
-      "green": "terminalGreen_exact",
-      "yellow": "terminalYellow_exact"
+      "yellow": "yellow_exact",
+      "green": "green_exact",
+      "blue": "blue_exact"
     },
     "tokens": {
       "attributeName": "tokenAttributeName_exact",
