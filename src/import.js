@@ -8,6 +8,7 @@ const {
   logWarning,
   pluralize
 } = require("./utils");
+const { adjustChroma } = require("./colors");
 const changeCase = require("change-case");
 
 const readdir = util.promisify(fs.readdir);
@@ -116,8 +117,12 @@ function transform(theme, hints) {
     cyan: getColor("terminal.ansiCyan"),
     neutral: getColor("editor.background"),
     blue: getColor("terminal.ansiBlue"),
-    blueLessChroma: getColor("terminal.ansiBlue"),
-    blueMoreChroma: getColor("terminal.ansiBlue"),
+    blueLessChroma: getColor("terminal.ansiBlue")
+      ? adjustChroma(getColor("terminal.ansiBlue"), -12.5)
+      : null,
+    blueMoreChroma: getColor("terminal.ansiBlue")
+      ? adjustChroma(getColor("terminal.ansiBlue"), 12.5)
+      : null,
     purple: getColor("terminal.ansiMagenta"),
 
     brightRed: getColor("terminal.ansiBrightRed"),

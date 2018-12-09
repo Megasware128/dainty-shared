@@ -9,6 +9,15 @@ const defaultHue = 264.375;
 let colorsCount = [];
 let isTrackingColorsCount = false;
 
+function adjustChroma(color, amount) {
+  const lchColor = culori.lch(color);
+
+  return culori.formatter("hex")({
+    ...lchColor,
+    c: lchColor.c + (amount / 100) * maximumChroma
+  });
+}
+
 function getInternalColor(scale, color) {
   if (color.hex) {
     const lchColor = culori.lch(color.hex);
@@ -441,6 +450,7 @@ module.exports = {
   checkColorScaleRange,
   generateColorConstantReplacements,
   generateColorConstants,
+  adjustChroma,
   getTypeShadeFunction,
   getPropertyFunction,
   translateColorConstant,

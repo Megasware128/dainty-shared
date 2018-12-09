@@ -482,6 +482,7 @@
       }
     },
     "customizations": {
+      "additionalProperties": false,
       "$id": "#/properties/customizations",
       "type": "object",
       "properties": {

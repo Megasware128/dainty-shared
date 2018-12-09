@@ -50,12 +50,12 @@ ayuMirage: {
     "blueLessChroma": {
       "hue": 264.375,
       "chroma": 18.75,
-      "hex": "#6dcbfa"
+      "hex": "#99c6e0"
     },
     "blueMoreChroma": {
       "hue": 264.375,
       "chroma": 43.75,
-      "hex": "#6dcbfa"
+      "hex": "#00d0ff"
     },
     "purple": {
       "hue": 315,
@@ -255,12 +255,12 @@ cobalt2: {
     "blueLessChroma": {
       "hue": 264.375,
       "chroma": 18.75,
-      "hex": "#0088ff"
+      "hex": "#4f87e2"
     },
     "blueMoreChroma": {
       "hue": 264.375,
       "chroma": 43.75,
-      "hex": "#0088ff"
+      "hex": "#0089ff"
     },
     "purple": {
       "hue": 315,
@@ -683,12 +683,12 @@ dracula: {
     "blueLessChroma": {
       "hue": 264.375,
       "chroma": 18.75,
-      "hex": "#bd93f9"
+      "hex": "#b799e0"
     },
     "blueMoreChroma": {
       "hue": 264.375,
       "chroma": 43.75,
-      "hex": "#bd93f9"
+      "hex": "#c18cff"
     },
     "purple": {
       "hue": 315,
@@ -995,12 +995,12 @@ materialThemeOcean: {
     "blueLessChroma": {
       "hue": 264.375,
       "chroma": 18.75,
-      "hex": "#82aaff"
+      "hex": "#94aae1"
     },
     "blueMoreChroma": {
       "hue": 264.375,
       "chroma": 43.75,
-      "hex": "#82aaff"
+      "hex": "#66abff"
     },
     "purple": {
       "hue": 315,
@@ -1197,12 +1197,12 @@ materialThemePalenight: {
     "blueLessChroma": {
       "hue": 264.375,
       "chroma": 18.75,
-      "hex": "#82aaff"
+      "hex": "#94aae1"
     },
     "blueMoreChroma": {
       "hue": 264.375,
       "chroma": 43.75,
-      "hex": "#82aaff"
+      "hex": "#66abff"
     },
     "purple": {
       "hue": 315,
@@ -1399,12 +1399,12 @@ materialTheme: {
     "blueLessChroma": {
       "hue": 264.375,
       "chroma": 18.75,
-      "hex": "#82aaff"
+      "hex": "#94aae1"
     },
     "blueMoreChroma": {
       "hue": 264.375,
       "chroma": 43.75,
-      "hex": "#82aaff"
+      "hex": "#66abff"
     },
     "purple": {
       "hue": 315,
@@ -1601,12 +1601,12 @@ monokaiNight: {
     "blueLessChroma": {
       "hue": 264.375,
       "chroma": 18.75,
-      "hex": "#6a7ec8"
+      "hex": "#767fac"
     },
     "blueMoreChroma": {
       "hue": 264.375,
       "chroma": 43.75,
-      "hex": "#6a7ec8"
+      "hex": "#577de5"
     },
     "purple": {
       "hue": 315,
@@ -1800,12 +1800,12 @@ nightOwl: {
     "blueLessChroma": {
       "hue": 264.375,
       "chroma": 18.75,
-      "hex": "#82aaff"
+      "hex": "#94aae1"
     },
     "blueMoreChroma": {
       "hue": 264.375,
       "chroma": 43.75,
-      "hex": "#82aaff"
+      "hex": "#66abff"
     },
     "purple": {
       "hue": 315,
@@ -2006,12 +2006,12 @@ oneDarkPro: {
     "blueLessChroma": {
       "hue": 264.375,
       "chroma": 18.75,
-      "hex": "#61afef"
+      "hex": "#85acd2"
     },
     "blueMoreChroma": {
       "hue": 264.375,
       "chroma": 43.75,
-      "hex": "#61afef"
+      "hex": "#00b2ff"
     },
     "purple": {
       "hue": 315,
