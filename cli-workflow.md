@@ -38,6 +38,9 @@ function udsa
 function gphda
 {
     pwd=$PWD
+    cd /mnt/c/Users/Alexander\ Teinum/repos/dainty-shared
+    echo "Pushing repository \`${PWD##*/}\`…"
+    git push
     cd /mnt/c/Users/Alexander\ Teinum/repos/dainty-vs
     echo "Pushing repository \`${PWD##*/}\`…"
     git push
