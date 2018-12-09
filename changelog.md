@@ -1,5 +1,10 @@
 # Changelog
 
+## `2.2.1`
+
+- Enable filtering of tokens
+- Import terminal colors
+
 ## `2.2.0`
 
 - Enable import of VS Code themes
