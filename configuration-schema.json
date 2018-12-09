@@ -485,6 +485,28 @@
       "$id": "#/properties/customizations",
       "type": "object",
       "properties": {
+        "accents": {
+          "$id": "#/properties/customizations/properties/accents",
+          "type": "array"
+        },
+        "tokensFilter": {
+          "$id": "#/properties/customizations/properties/tokensFilter",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "background": {
+          "$id": "#/properties/customizations/properties/background",
+          "type": "string"
+        },
+        "foreground": {
+          "$id": "#/properties/customizations/properties/foreground",
+          "type": "string"
+        },
+        "cursor": {
+          "$id": "#/properties/customizations/properties/cursor",
+          "type": "string"
+        },
         "terminal": {
           "$id": "#/properties/customizations/properties/terminal",
           "type": "object",

@@ -265,6 +265,51 @@ function generateColorConstants(colors) {
   return constants;
 }
 
+function filterTokens(configuration, token) {
+  const { customizations } = configuration;
+  const filter = customizations.tokensFilter ? customizations.tokensFilter : 0;
+
+  switch (filter) {
+    case 0:
+      break;
+    case 1:
+      if (["constant", "parameter", "variable"].includes(token)) {
+        return "other";
+      }
+      break;
+    case 2:
+      if (
+        [
+          "constant",
+          "parameter",
+          "variable",
+          "variableProperty",
+          "property"
+        ].includes(token)
+      ) {
+        return "other";
+      }
+      break;
+    case 3:
+      if (
+        [
+          "constant",
+          "parameter",
+          "variable",
+          "variableProperty",
+          "property",
+          "supportFunction",
+          "supportType"
+        ].includes(token)
+      ) {
+        return "other";
+      }
+      break;
+  }
+
+  return token;
+}
+
 function getPropertyFunction(configuration, colorConstants) {
   return descriptor => {
     if (descriptor.startsWith("accent")) {
@@ -275,7 +320,9 @@ function getPropertyFunction(configuration, colorConstants) {
     } else if (descriptor.startsWith("token.")) {
       return translateColorConstant(
         colorConstants,
-        configuration.customizations.tokens[descriptor.substr(6)]
+        configuration.customizations.tokens[
+          filterTokens(configuration, descriptor.substr(6))
+        ]
       );
     } else if (descriptor.includes(".")) {
       const descriptor_ = descriptor.split(".");
