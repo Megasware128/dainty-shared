@@ -88,6 +88,9 @@ ayuMirage: {
     "tokenFunction": {
       "hex": "#ffd580"
     },
+    "tokenJsxTag": {
+      "hex": "#5ccfe6"
+    },
     "tokenKeyword": {
       "hex": "#ffa759"
     },
@@ -175,7 +178,7 @@ ayuMirage: {
       "comment": "tokenComment_exact",
       "constant": "tokenConstant_exact",
       "function": "tokenFunction_exact",
-      "jsxTag": "blue28",
+      "jsxTag": "tokenJsxTag_exact",
       "keyword": "tokenKeyword_exact",
       "literal": "tokenLiteral_exact",
       "number": "tokenNumber_exact",
@@ -719,6 +722,9 @@ darkPlus: {
     "tokenFunction": {
       "hex": "#dcdcaa"
     },
+    "tokenJsxTag": {
+      "hex": "#569cd6"
+    },
     "tokenKeyword": {
       "hex": "#569cd6"
     },
@@ -809,7 +815,7 @@ darkPlus: {
       "comment": "tokenComment_exact",
       "constant": "neutral34",
       "function": "tokenFunction_exact",
-      "jsxTag": "blue28",
+      "jsxTag": "tokenJsxTag_exact",
       "keyword": "tokenKeyword_exact",
       "literal": "tokenLiteral_exact",
       "number": "tokenNumber_exact",
@@ -923,6 +929,9 @@ dracula: {
     "tokenFunction": {
       "hex": "#50fa7b"
     },
+    "tokenJsxTag": {
+      "hex": "#ff79c6"
+    },
     "tokenKeyword": {
       "hex": "#ff79c6"
     },
@@ -1001,7 +1010,7 @@ dracula: {
       "comment": "tokenComment_exact",
       "constant": "tokenConstant_exact",
       "function": "tokenFunction_exact",
-      "jsxTag": "blue28",
+      "jsxTag": "tokenJsxTag_exact",
       "keyword": "tokenKeyword_exact",
       "literal": "tokenLiteral_exact",
       "number": "tokenNumber_exact",
@@ -1231,6 +1240,9 @@ materialThemeOcean: {
     "tokenFunction": {
       "hex": "#82aaff"
     },
+    "tokenJsxTag": {
+      "hex": "#f07178"
+    },
     "tokenKeyword": {
       "hex": "#c792ea"
     },
@@ -1315,7 +1327,7 @@ materialThemeOcean: {
       "comment": "tokenComment_exact",
       "constant": "tokenConstant_exact",
       "function": "tokenFunction_exact",
-      "jsxTag": "blue28",
+      "jsxTag": "tokenJsxTag_exact",
       "keyword": "tokenKeyword_exact",
       "literal": "tokenLiteral_exact",
       "number": "tokenNumber_exact",
@@ -1429,6 +1441,9 @@ materialThemePalenight: {
     "tokenFunction": {
       "hex": "#82aaff"
     },
+    "tokenJsxTag": {
+      "hex": "#f07178"
+    },
     "tokenKeyword": {
       "hex": "#c792ea"
     },
@@ -1513,7 +1528,7 @@ materialThemePalenight: {
       "comment": "tokenComment_exact",
       "constant": "tokenConstant_exact",
       "function": "tokenFunction_exact",
-      "jsxTag": "blue28",
+      "jsxTag": "tokenJsxTag_exact",
       "keyword": "tokenKeyword_exact",
       "literal": "tokenLiteral_exact",
       "number": "tokenNumber_exact",
@@ -1627,6 +1642,9 @@ materialTheme: {
     "tokenFunction": {
       "hex": "#82aaff"
     },
+    "tokenJsxTag": {
+      "hex": "#f07178"
+    },
     "tokenKeyword": {
       "hex": "#c792ea"
     },
@@ -1711,7 +1729,7 @@ materialTheme: {
       "comment": "tokenComment_exact",
       "constant": "tokenConstant_exact",
       "function": "tokenFunction_exact",
-      "jsxTag": "blue28",
+      "jsxTag": "tokenJsxTag_exact",
       "keyword": "tokenKeyword_exact",
       "literal": "tokenLiteral_exact",
       "number": "tokenNumber_exact",
@@ -1946,6 +1964,9 @@ monokaiNight: {
     "tokenFunction": {
       "hex": "#a6e22e"
     },
+    "tokenJsxTag": {
+      "hex": "#f92672"
+    },
     "tokenKeyword": {
       "hex": "#f92672"
     },
@@ -2033,7 +2054,7 @@ monokaiNight: {
       "comment": "tokenComment_exact",
       "constant": "neutral34",
       "function": "tokenFunction_exact",
-      "jsxTag": "blue28",
+      "jsxTag": "tokenJsxTag_exact",
       "keyword": "tokenKeyword_exact",
       "literal": "tokenLiteral_exact",
       "number": "tokenNumber_exact",
@@ -2144,6 +2165,9 @@ monokai: {
     "tokenFunction": {
       "hex": "#a6e22e"
     },
+    "tokenJsxTag": {
+      "hex": "#f92672"
+    },
     "tokenKeyword": {
       "hex": "#f92672"
     },
@@ -2228,7 +2252,7 @@ monokai: {
       "comment": "tokenComment_exact",
       "constant": "neutral34",
       "function": "tokenFunction_exact",
-      "jsxTag": "blue28",
+      "jsxTag": "tokenJsxTag_exact",
       "keyword": "tokenKeyword_exact",
       "literal": "tokenLiteral_exact",
       "number": "tokenNumber_exact",
@@ -2390,6 +2414,9 @@ nightOwl: {
     "tokenTag": {
       "hex": "#7fdbca"
     },
+    "tokenType": {
+      "hex": "#ffcb8b"
+    },
     "tokenVariable": {
       "hex": "#d6deeb"
     },
@@ -2450,7 +2477,7 @@ nightOwl: {
       "supportFunction": "tokenSupportFunction_exact",
       "supportType": "tokenSupportType_exact",
       "tag": "tokenTag_exact",
-      "type": "blueLessChroma34",
+      "type": "tokenType_exact",
       "url": "blueMoreChroma28",
       "variable": "tokenVariable_exact",
       "variableProperty": "tokenVariableProperty_exact"
@@ -2524,6 +2551,9 @@ oneDarkPro: {
     },
     "tokenFunction": {
       "hex": "#61afef"
+    },
+    "tokenJsxTag": {
+      "hex": "#e06c75"
     },
     "tokenKeyword": {
       "hex": "#c678dd"
@@ -2614,7 +2644,7 @@ oneDarkPro: {
       "comment": "tokenComment_exact",
       "constant": "tokenConstant_exact",
       "function": "tokenFunction_exact",
-      "jsxTag": "blue28",
+      "jsxTag": "tokenJsxTag_exact",
       "keyword": "tokenKeyword_exact",
       "literal": "tokenLiteral_exact",
       "number": "tokenNumber_exact",
@@ -2956,6 +2986,9 @@ snazzyTheme: {
     "tokenFunction": {
       "hex": "#57c7ff"
     },
+    "tokenJsxTag": {
+      "hex": "#ff5c57"
+    },
     "tokenKeyword": {
       "hex": "#ff6ac1"
     },
@@ -3040,7 +3073,7 @@ snazzyTheme: {
       "comment": "tokenComment_exact",
       "constant": "tokenConstant_exact",
       "function": "tokenFunction_exact",
-      "jsxTag": "blue28",
+      "jsxTag": "tokenJsxTag_exact",
       "keyword": "tokenKeyword_exact",
       "literal": "tokenLiteral_exact",
       "number": "tokenNumber_exact",
@@ -3116,14 +3149,26 @@ tomorrowNightEighties: {
       "hue": 315,
       "chroma": 50
     },
+    "tokenAttributeName": {
+      "hex": "#f2777a"
+    },
     "tokenComment": {
       "hex": "#999999"
+    },
+    "tokenConstant": {
+      "hex": "#f2777a"
     },
     "tokenFunction": {
       "hex": "#6699cc"
     },
+    "tokenJsxTag": {
+      "hex": "#f2777a"
+    },
     "tokenKeyword": {
       "hex": "#cc99cc"
+    },
+    "tokenLiteral": {
+      "hex": "#f99157"
     },
     "tokenNumber": {
       "hex": "#f99157"
@@ -3134,11 +3179,35 @@ tomorrowNightEighties: {
     "tokenOther": {
       "hex": "#cccccc"
     },
+    "tokenOtherType": {
+      "hex": "#ffcc66"
+    },
+    "tokenParameter": {
+      "hex": "#f99157"
+    },
+    "tokenStorageType": {
+      "hex": "#cc99cc"
+    },
+    "tokenStorageTypeFunction": {
+      "hex": "#cc99cc"
+    },
     "tokenString": {
       "hex": "#99cc99"
     },
     "tokenStringTemplate": {
       "hex": "#99cc99"
+    },
+    "tokenSupportFunction": {
+      "hex": "#6699cc"
+    },
+    "tokenSupportType": {
+      "hex": "#ffcc66"
+    },
+    "tokenTag": {
+      "hex": "#f2777a"
+    },
+    "tokenType": {
+      "hex": "#ffcc66"
     },
     "tokenVariable": {
       "hex": "#f2777a"
@@ -3174,29 +3243,29 @@ tomorrowNightEighties: {
       "brightWhite": "neutral39"
     },
     "tokens": {
-      "attributeName": "blueLessChroma34",
+      "attributeName": "tokenAttributeName_exact",
       "comment": "tokenComment_exact",
-      "constant": "neutral34",
+      "constant": "tokenConstant_exact",
       "function": "tokenFunction_exact",
-      "jsxTag": "blue28",
+      "jsxTag": "tokenJsxTag_exact",
       "keyword": "tokenKeyword_exact",
-      "literal": "blue28",
+      "literal": "tokenLiteral_exact",
       "number": "tokenNumber_exact",
       "operator": "tokenOperator_exact",
       "other": "tokenOther_exact",
-      "otherType": "purple34",
-      "parameter": "neutral34",
+      "otherType": "tokenOtherType_exact",
+      "parameter": "tokenParameter_exact",
       "property": "neutral34",
       "punctuation": "neutral26",
       "regex": "purple30",
-      "storageType": "blue28",
-      "storageTypeFunction": "blue28",
+      "storageType": "tokenStorageType_exact",
+      "storageTypeFunction": "tokenStorageTypeFunction_exact",
       "string": "tokenString_exact",
       "stringTemplate": "tokenStringTemplate_exact",
-      "supportFunction": "blueLessChroma34",
-      "supportType": "blue28",
-      "tag": "blue28",
-      "type": "blueLessChroma34",
+      "supportFunction": "tokenSupportFunction_exact",
+      "supportType": "tokenSupportType_exact",
+      "tag": "tokenTag_exact",
+      "type": "tokenType_exact",
       "url": "blueMoreChroma28",
       "variable": "tokenVariable_exact",
       "variableProperty": "neutral34"
