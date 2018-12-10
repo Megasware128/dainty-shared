@@ -145,13 +145,20 @@ function transform(theme, hints) {
     function: getTokenColor("function", ["entity.name.function"]),
     jsxTag: getTokenColor("jsxTag", ["support.class.component.js"]),
     keyword: getTokenColor("keyword", ["keyword", "keyword.control"]),
-    literal: getTokenColor("literal", ["constant.language"]),
+    literal: getTokenColor("literal", [
+      "constant.language.boolean",
+      "constant.language.null",
+      "constant.language"
+    ]),
     number: getTokenColor("number", ["constant.numeric"]),
     operator: getTokenColor("operator", ["keyword.operator"]),
     other: getColor("editor.foreground"),
     otherType: getTokenColor("otherType", ["support.type", "support.class"]),
     parameter: getTokenColor("parameter", ["variable.parameter"]),
-    property: getTokenColor("property", ["support.type.property-name"]),
+    property: getTokenColor("property", [
+      "support.type.property-name",
+      "meta.object-literal.key"
+    ]),
     punctuation: getTokenColor("punctuation", ["punctuation"]),
     regex: getTokenColor("regex", ["constant.regexp"]),
     storageType: getTokenColor("storageType", ["storage.type", "storage"]),

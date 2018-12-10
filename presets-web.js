@@ -2666,4 +2666,202 @@ purpleHaze: {
     }
   }
 },
+snazzyTheme: {
+  "name": "Snazzy Theme",
+  "type": "dark",
+  "colors": {
+    "_all": {},
+    "accent": {
+      "hue": 270,
+      "chroma": 50,
+      "hex": "#57c7ff"
+    },
+    "red": {
+      "hue": 22.5,
+      "chroma": 25,
+      "hex": "#ff5c57"
+    },
+    "orange": {
+      "hue": 45,
+      "chroma": 12.5
+    },
+    "yellow": {
+      "hue": 90,
+      "chroma": 25,
+      "hex": "#f3f99d"
+    },
+    "green": {
+      "hue": 180,
+      "chroma": 25,
+      "hex": "#5af78e"
+    },
+    "cyan": {
+      "hue": 225,
+      "chroma": 25,
+      "hex": "#9aedfe"
+    },
+    "neutral": {
+      "hue": 270,
+      "chroma": 10,
+      "hex": "#282a36"
+    },
+    "blue": {
+      "hue": 270,
+      "chroma": 25,
+      "hex": "#57c7ff"
+    },
+    "blueLessChroma": {
+      "hue": 270,
+      "chroma": 12.5,
+      "hex": "#8ac2e4"
+    },
+    "blueMoreChroma": {
+      "hue": 270,
+      "chroma": 50,
+      "hex": "#00ccff"
+    },
+    "purple": {
+      "hue": 315,
+      "chroma": 50,
+      "hex": "#ff6ac1"
+    },
+    "brightRed": {
+      "hex": "#ff5c57"
+    },
+    "brightYellow": {
+      "hex": "#f3f99d"
+    },
+    "brightGreen": {
+      "hex": "#5af78e"
+    },
+    "brightCyan": {
+      "hex": "#9aedfe"
+    },
+    "brightBlue": {
+      "hex": "#57c7ff"
+    },
+    "brightPurple": {
+      "hex": "#ff6ac1"
+    },
+    "tokenAttributeName": {
+      "hex": "#f3f99d"
+    },
+    "tokenComment": {
+      "hex": "#616263"
+    },
+    "tokenConstant": {
+      "hex": "#f3f99d"
+    },
+    "tokenFunction": {
+      "hex": "#57c7ff"
+    },
+    "tokenKeyword": {
+      "hex": "#ff6ac1"
+    },
+    "tokenLiteral": {
+      "hex": "#5af78e"
+    },
+    "tokenNumber": {
+      "hex": "#5af78e"
+    },
+    "tokenOperator": {
+      "hex": "#ff6ac1"
+    },
+    "tokenOther": {
+      "hex": "#eff0eb"
+    },
+    "tokenOtherType": {
+      "hex": "#9aedfe"
+    },
+    "tokenProperty": {
+      "hex": "#ff5c57"
+    },
+    "tokenStorageType": {
+      "hex": "#f3f99d"
+    },
+    "tokenStorageTypeFunction": {
+      "hex": "#f3f99d"
+    },
+    "tokenString": {
+      "hex": "#5af78e"
+    },
+    "tokenStringTemplate": {
+      "hex": "#5af78e"
+    },
+    "tokenSupportFunction": {
+      "hex": "#57c7ff"
+    },
+    "tokenSupportType": {
+      "hex": "#9aedfe"
+    },
+    "tokenTag": {
+      "hex": "#ff5c57"
+    },
+    "tokenType": {
+      "hex": "#9aedfe"
+    },
+    "tokenVariable": {
+      "hex": "#eff0eb"
+    },
+    "cursor": {
+      "hex": "#97979b"
+    }
+  },
+  "customizations": {
+    "accents": [
+      "accent_a0_exact",
+      "accent_d0_exact",
+      "accent_exact"
+    ],
+    "tokensFilter": 0,
+    "cursor": "cursor_exact",
+    "terminal": {
+      "black": "neutral0",
+      "red": "red_exact",
+      "green": "green_exact",
+      "yellow": "yellow_exact",
+      "blue": "blue_exact",
+      "magenta": "purple30",
+      "cyan": "cyan_exact",
+      "white": "neutral34",
+      "brightBlack": "neutral30",
+      "brightRed": "brightRed_exact",
+      "brightGreen": "brightGreen_exact",
+      "brightYellow": "brightYellow_exact",
+      "brightBlue": "brightBlue_exact",
+      "brightMagenta": "purple30",
+      "brightCyan": "brightCyan_exact",
+      "brightWhite": "neutral39",
+      "brightPurple": "brightPurple_exact"
+    },
+    "tokens": {
+      "attributeName": "tokenAttributeName_exact",
+      "comment": "tokenComment_exact",
+      "constant": "tokenConstant_exact",
+      "function": "tokenFunction_exact",
+      "jsxTag": "blue28",
+      "keyword": "tokenKeyword_exact",
+      "literal": "tokenLiteral_exact",
+      "number": "tokenNumber_exact",
+      "operator": "tokenOperator_exact",
+      "other": "tokenOther_exact",
+      "otherType": "tokenOtherType_exact",
+      "parameter": "neutral34",
+      "property": "tokenProperty_exact",
+      "punctuation": "neutral26",
+      "regex": "purple30",
+      "storageType": "tokenStorageType_exact",
+      "storageTypeFunction": "tokenStorageTypeFunction_exact",
+      "string": "tokenString_exact",
+      "stringTemplate": "tokenStringTemplate_exact",
+      "supportFunction": "tokenSupportFunction_exact",
+      "supportType": "tokenSupportType_exact",
+      "tag": "tokenTag_exact",
+      "type": "tokenType_exact",
+      "url": "blueMoreChroma28",
+      "variable": "tokenVariable_exact",
+      "variableProperty": "neutral34"
+    }
+  }
+},
 }; module.exports = { presets };

@@ -4,7 +4,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "jest --watch",
-    "build": "node src/build.js",
+    "build": "node src/import.js && node src/build-presets-web.js",
     "import": "node src/import.js"
   },
   "dependencies": {
