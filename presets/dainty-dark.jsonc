@@ -4,7 +4,16 @@
   "colors": {
     "_all": {
       "lightnessStart": 10,
-      "chroma": -2.5
+      "chroma": -2.5,
+      "filter": {
+        "opacity": 6.25,
+
+        // 100 / 16 * 5
+        "chroma": 31.25,
+
+        // 270 - 90 / 16
+        "hue": 264.375
+      }
     },
     "accent": {
       // 270 - 90 / 16

@@ -5,7 +5,12 @@ ayuMirage: {
   "colors": {
     "_all": {
       "lightnessStart": 0,
-      "chroma": 0
+      "chroma": 0,
+      "filter": {
+        "opacity": 10,
+        "chroma": 31.25,
+        "hue": 264.375
+      }
     },
     "accent": {
       "hue": 264.375,
@@ -210,7 +215,12 @@ cobalt2: {
   "colors": {
     "_all": {
       "lightnessStart": 0,
-      "chroma": 0
+      "chroma": 0,
+      "filter": {
+        "opacity": 10,
+        "chroma": 31.25,
+        "hue": 264.375
+      }
     },
     "accent": {
       "hue": 264.375,
@@ -415,7 +425,12 @@ daintyDark: {
   "colors": {
     "_all": {
       "lightnessStart": 10,
-      "chroma": -2.5
+      "chroma": -2.5,
+      "filter": {
+        "opacity": 10,
+        "chroma": 31.25,
+        "hue": 264.375
+      }
     },
     "accent": {
       "hue": 264.375,
@@ -525,7 +540,12 @@ daintyLight: {
   "colors": {
     "_all": {
       "lightnessStart": 10,
-      "chroma": 25
+      "chroma": 25,
+      "filter": {
+        "opacity": 10,
+        "chroma": 31.25,
+        "hue": 264.375
+      }
     },
     "accent": {
       "hue": 264.375,
@@ -638,7 +658,12 @@ dracula: {
   "colors": {
     "_all": {
       "lightnessStart": 0,
-      "chroma": 0
+      "chroma": 0,
+      "filter": {
+        "opacity": 10,
+        "chroma": 31.25,
+        "hue": 264.375
+      }
     },
     "accent": {
       "hue": 264.375,
@@ -834,7 +859,12 @@ fluent: {
   "colors": {
     "_all": {
       "lightnessStart": 0,
-      "chroma": 0
+      "chroma": 0,
+      "filter": {
+        "opacity": 10,
+        "chroma": 31.25,
+        "hue": 264.375
+      }
     },
     "accent": {
       "hue": 264.375,
@@ -950,7 +980,12 @@ materialThemeOcean: {
   "colors": {
     "_all": {
       "lightnessStart": 0,
-      "chroma": 0
+      "chroma": 0,
+      "filter": {
+        "opacity": 10,
+        "chroma": 31.25,
+        "hue": 264.375
+      }
     },
     "accent": {
       "hue": 264.375,
@@ -1152,7 +1187,12 @@ materialThemePalenight: {
   "colors": {
     "_all": {
       "lightnessStart": 0,
-      "chroma": 0
+      "chroma": 0,
+      "filter": {
+        "opacity": 10,
+        "chroma": 31.25,
+        "hue": 264.375
+      }
     },
     "accent": {
       "hue": 264.375,
@@ -1354,7 +1394,12 @@ materialTheme: {
   "colors": {
     "_all": {
       "lightnessStart": 0,
-      "chroma": 0
+      "chroma": 0,
+      "filter": {
+        "opacity": 10,
+        "chroma": 31.25,
+        "hue": 264.375
+      }
     },
     "accent": {
       "hue": 264.375,
@@ -1556,7 +1601,12 @@ monokaiNight: {
   "colors": {
     "_all": {
       "lightnessStart": 0,
-      "chroma": 0
+      "chroma": 0,
+      "filter": {
+        "opacity": 10,
+        "chroma": 31.25,
+        "hue": 264.375
+      }
     },
     "accent": {
       "hue": 264.375,
@@ -1755,7 +1805,12 @@ monokai: {
   "colors": {
     "_all": {
       "lightnessStart": 0,
-      "chroma": 0
+      "chroma": 0,
+      "filter": {
+        "opacity": 10,
+        "chroma": 31.25,
+        "hue": 264.375
+      }
     },
     "accent": {
       "hue": 264.375,
@@ -1951,7 +2006,12 @@ nightOwl: {
   "colors": {
     "_all": {
       "lightnessStart": 0,
-      "chroma": 0
+      "chroma": 0,
+      "filter": {
+        "opacity": 10,
+        "chroma": 31.25,
+        "hue": 264.375
+      }
     },
     "accent": {
       "hue": 264.375,
@@ -2159,7 +2219,12 @@ oneDarkPro: {
   "colors": {
     "_all": {
       "lightnessStart": 0,
-      "chroma": 0
+      "chroma": 0,
+      "filter": {
+        "opacity": 10,
+        "chroma": 31.25,
+        "hue": 264.375
+      }
     },
     "accent": {
       "hue": 264.375,
@@ -2345,7 +2410,12 @@ prettier: {
   "colors": {
     "_all": {
       "lightnessStart": 0,
-      "chroma": 0
+      "chroma": 0,
+      "filter": {
+        "opacity": 10,
+        "chroma": 31.25,
+        "hue": 264.375
+      }
     },
     "accent": {
       "hue": 264.375,
@@ -2461,6 +2531,11 @@ purpleHaze: {
     "_all": {
       "lightnessStart": 10,
       "chroma": 7.5,
+      "filter": {
+        "opacity": 10,
+        "chroma": 31.25,
+        "hue": 264.375
+      },
       "lightnessEnd": -25
     },
     "accent": {

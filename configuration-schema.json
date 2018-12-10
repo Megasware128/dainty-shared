@@ -46,6 +46,24 @@
             "chromaEnd": {
               "$id": "#/properties/colors/properties/_all/properties/chromaEnd",
               "type": "number"
+            },
+            "filter": {
+              "$id": "#/properties/colors/properties/_all/properties/filter",
+              "type": "object",
+              "properties": {
+                "opacity": {
+                  "$id": "#/properties/colors/properties/_all/properties/filter/properties/chroma",
+                  "type": "number"
+                },
+                "chroma": {
+                  "$id": "#/properties/colors/properties/_all/properties/filter/properties/chroma",
+                  "type": "number"
+                },
+                "hue": {
+                  "$id": "#/properties/colors/properties/_all/properties/filter/properties/chroma",
+                  "type": "number"
+                }
+              }
             }
           }
         },

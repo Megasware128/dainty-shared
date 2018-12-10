@@ -189,7 +189,8 @@ function transform(theme, hints) {
     colors: {
       _all: {
         lightnessStart: 0,
-        chroma: 0
+        chroma: 0,
+        filter: {}
       }
     },
     customizations: {

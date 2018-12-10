@@ -34,6 +34,25 @@ function getInternalColor(scale, color) {
   }
 }
 
+function applyFilter(color, filter) {
+  if (!filter) {
+    return color;
+  }
+
+  return culori.interpolate(
+    [
+      color,
+      {
+        mode: "lch",
+        l: color.l,
+        c: (maximumChroma / 100) * filter.chroma,
+        h: filter.hue
+      }
+    ],
+    "lch"
+  )(filter.opacity / 100);
+}
+
 function getLightness(i, color, all, adjustments = {}, exact = false) {
   const lightness = [color.lightness, all.lightness, adjustments.lightness]
     .map(valueOrDefault)
@@ -100,18 +119,27 @@ function getChroma(i, color, all, adjustments = {}, exact = false) {
   }
 }
 
-function generateColorScale(scale, color, all, adjustments) {
+function generateColorScale(scale, color, all, adjustments = {}) {
   const color_ = getInternalColor(scale, color);
 
   let shades = [];
 
   for (let i = 0; i <= 40; i++) {
-    shades.push({
-      mode: "lch",
-      l: limitLightness(scale, i, getLightness(i, color_, all, adjustments)),
-      c: limitChroma(scale, i, getChroma(i, color_, all, adjustments)),
-      h: color_.hue
-    });
+    shades.push(
+      applyFilter(
+        {
+          mode: "lch",
+          l: limitLightness(
+            scale,
+            i,
+            getLightness(i, color_, all, adjustments)
+          ),
+          c: limitChroma(scale, i, getChroma(i, color_, all, adjustments)),
+          h: color_.hue
+        },
+        all.filter
+      )
+    );
   }
 
   const handler = {
@@ -129,20 +157,25 @@ function generateColorScale(scale, color, all, adjustments) {
   let exact;
 
   if (color_.hex) {
-    exact = culori.formatter("hex")({
-      mode: "lch",
-      l: limitLightness(
-        scale,
-        "_exact",
-        getLightness(null, color_, all, adjustments, true)
-      ),
-      c: limitChroma(
-        scale,
-        "_exact",
-        getChroma(null, color_, all, adjustments, true)
-      ),
-      h: color_.hue
-    });
+    exact = culori.formatter("hex")(
+      applyFilter(
+        {
+          mode: "lch",
+          l: limitLightness(
+            scale,
+            "_exact",
+            getLightness(null, color_, all, adjustments, true)
+          ),
+          c: limitChroma(
+            scale,
+            "_exact",
+            getChroma(null, color_, all, adjustments, true)
+          ),
+          h: color_.hue
+        },
+        all.filter
+      )
+    );
   } else {
     exact = null;
   }
