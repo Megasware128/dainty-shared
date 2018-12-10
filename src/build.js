@@ -15,6 +15,10 @@ const readdir = util.promisify(fs.readdir);
   for (const file of files) {
     const preset = file.slice(0, -6);
 
+    if (["_base-dark", "_base-light", "_debug"].includes(preset)) {
+      continue;
+    }
+
     const configuration = await getConfiguration(
       __dirname,
       preset,

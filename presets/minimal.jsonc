@@ -1,0 +1,99 @@
+{
+  "name": "Minimal",
+  "type": "dark",
+  "colors": {
+    "_all": {
+      "lightnessStart": 10,
+      "filter": {
+        "opacity": 6.25,
+        "chroma": 25,
+        "hue": 0
+      }
+    },
+    "accent": {
+      "hue": 264.375,
+      "chroma": 10,
+      "chromaEnd": -5
+    },
+    "red": {
+      "hue": 264.375,
+      "chroma": 10,
+      "chromaEnd": -5
+    },
+    "orange": {
+      "hue": 264.375,
+      "chroma": 10,
+      "chromaEnd": -5
+    },
+    "yellow": {
+      "hue": 264.375,
+      "chroma": 10,
+      "chromaEnd": -5
+    },
+    "green": {
+      "hue": 264.375,
+      "chroma": 10,
+      "chromaEnd": -5
+    },
+    "cyan": {
+      "hue": 264.375,
+      "chroma": 10,
+      "chromaEnd": -5
+    },
+    "neutral": {
+      "hue": 264.375,
+      "chroma": 10,
+      "chromaEnd": -5
+    },
+    "blue": {
+      "hue": 264.375,
+      "chroma": 10,
+      "chromaEnd": -5
+    },
+    "blueLessChroma": {
+      "hue": 264.375,
+      "chroma": 10,
+      "chromaEnd": -5
+    },
+    "blueMoreChroma": {
+      "hue": 264.375,
+      "chroma": 10,
+      "chromaEnd": -5
+    },
+    "purple": {
+      "hue": 264.375,
+      "chroma": 10,
+      "chromaEnd": -5
+    }
+  },
+  "customizations": {
+    "tokens": {
+      "attributeName": "neutral30",
+      "comment": "neutral16",
+      "constant": "neutral30",
+      "function": "neutral30",
+      "jsxTag": "neutral30",
+      "keyword": "neutral26",
+      "literal": "neutral32",
+      "number": "neutral34",
+      "operator": "neutral20",
+      "other": "neutral30",
+      "otherType": "neutral26",
+      "parameter": "neutral30",
+      "property": "neutral30",
+      "punctuation": "neutral16",
+      "regex": "neutral30",
+      "storageType": "neutral26",
+      "storageTypeFunction": "neutral26",
+      "string": "neutral34",
+      "stringTemplate": "neutral34",
+      "supportFunction": "neutral30",
+      "supportType": "neutral26",
+      "tag": "neutral30",
+      "type": "neutral26",
+      "url": "neutral30",
+      "variable": "neutral30",
+      "variableProperty": "neutral30"
+    }
+  }
+}
