@@ -20,6 +20,9 @@
     "tokenFunction": {
       "hex": "#6699cc"
     },
+    "tokenJsxTag": {
+      "hex": "#f2777a"
+    },
     "tokenKeyword": {
       "hex": "#cc99cc"
     },
@@ -62,6 +65,9 @@
     "tokenTag": {
       "hex": "#f2777a"
     },
+    "tokenType": {
+      "hex": "#ffcc66"
+    },
     "tokenVariable": {
       "hex": "#f2777a"
     },
@@ -76,6 +82,7 @@
       "comment": "tokenComment_exact",
       "constant": "tokenConstant_exact",
       "function": "tokenFunction_exact",
+      "jsxTag": "tokenJsxTag_exact",
       "keyword": "tokenKeyword_exact",
       "literal": "tokenLiteral_exact",
       "number": "tokenNumber_exact",
@@ -90,6 +97,7 @@
       "supportFunction": "tokenSupportFunction_exact",
       "supportType": "tokenSupportType_exact",
       "tag": "tokenTag_exact",
+      "type": "tokenType_exact",
       "variable": "tokenVariable_exact"
     },
     "accents": [

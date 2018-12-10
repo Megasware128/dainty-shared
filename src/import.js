@@ -143,7 +143,10 @@ function transform(theme, hints) {
       "variable.other.constant"
     ]),
     function: getTokenColor("function", ["entity.name.function"]),
-    jsxTag: getTokenColor("jsxTag", ["support.class.component.js"]),
+    jsxTag: getTokenColor("jsxTag", [
+      "support.class.component.js",
+      "entity.name.tag"
+    ]),
     keyword: getTokenColor("keyword", ["keyword", "keyword.control"]),
     literal: getTokenColor("literal", [
       "constant.language.boolean",
@@ -182,7 +185,11 @@ function transform(theme, hints) {
       "support"
     ]),
     tag: getTokenColor("tag", ["entity.name.tag"]),
-    type: getTokenColor("type", ["entity.name.type"]),
+    type: getTokenColor("type", [
+      "entity.name.type",
+      "entity.name.class",
+      "entity.name.type.class"
+    ]),
     url: getColor("textLink.foreground"),
     variable: getTokenColor("variable", ["variable"]),
     variableProperty: getTokenColor("variableProperty", [

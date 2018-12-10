@@ -35,6 +35,9 @@
     "tokenFunction": {
       "hex": "#61afef"
     },
+    "tokenJsxTag": {
+      "hex": "#e06c75"
+    },
     "tokenKeyword": {
       "hex": "#c678dd"
     },
@@ -104,6 +107,7 @@
       "comment": "tokenComment_exact",
       "constant": "tokenConstant_exact",
       "function": "tokenFunction_exact",
+      "jsxTag": "tokenJsxTag_exact",
       "keyword": "tokenKeyword_exact",
       "literal": "tokenLiteral_exact",
       "number": "tokenNumber_exact",

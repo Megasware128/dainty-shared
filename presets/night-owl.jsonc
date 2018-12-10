@@ -110,6 +110,9 @@
     "tokenTag": {
       "hex": "#7fdbca"
     },
+    "tokenType": {
+      "hex": "#ffcb8b"
+    },
     "tokenVariable": {
       "hex": "#d6deeb"
     },
@@ -155,6 +158,7 @@
       "supportFunction": "tokenSupportFunction_exact",
       "supportType": "tokenSupportType_exact",
       "tag": "tokenTag_exact",
+      "type": "tokenType_exact",
       "variable": "tokenVariable_exact",
       "variableProperty": "tokenVariableProperty_exact"
     },
