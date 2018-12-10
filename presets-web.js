@@ -149,8 +149,8 @@ ayuMirage: {
   },
   "customizations": {
     "accents": [
-      "accent_80_exact",
-      "accent_c0_exact",
+      "accent_a0_exact",
+      "accent_d0_exact",
       "accent_exact"
     ],
     "tokensFilter": 0,
@@ -354,8 +354,8 @@ cobalt2: {
   },
   "customizations": {
     "accents": [
-      "accent_80_exact",
-      "accent_c0_exact",
+      "accent_a0_exact",
+      "accent_d0_exact",
       "accent_exact"
     ],
     "tokensFilter": 0,
@@ -465,9 +465,9 @@ daintyDark: {
   },
   "customizations": {
     "accents": [
-      "accent16",
-      "accent24",
-      "accent32"
+      "accent24_a0",
+      "accent24_d0",
+      "accent24"
     ],
     "tokensFilter": 0,
     "cursor": "neutral28",
@@ -773,8 +773,8 @@ dracula: {
   },
   "customizations": {
     "accents": [
-      "accent_80_exact",
-      "accent_c0_exact",
+      "accent_a0_exact",
+      "accent_d0_exact",
       "accent_exact"
     ],
     "tokensFilter": 0,
@@ -890,9 +890,9 @@ fluent: {
   },
   "customizations": {
     "accents": [
-      "accent16",
-      "accent24",
-      "accent32"
+      "accent24_a0",
+      "accent24_d0",
+      "accent24"
     ],
     "tokensFilter": 0,
     "cursor": "neutral28",
@@ -1091,8 +1091,8 @@ materialThemeOcean: {
   },
   "customizations": {
     "accents": [
-      "accent_80_exact",
-      "accent_c0_exact",
+      "accent_a0_exact",
+      "accent_d0_exact",
       "accent_exact"
     ],
     "tokensFilter": 0,
@@ -1293,8 +1293,8 @@ materialThemePalenight: {
   },
   "customizations": {
     "accents": [
-      "accent_80_exact",
-      "accent_c0_exact",
+      "accent_a0_exact",
+      "accent_d0_exact",
       "accent_exact"
     ],
     "tokensFilter": 0,
@@ -1495,8 +1495,8 @@ materialTheme: {
   },
   "customizations": {
     "accents": [
-      "accent_80_exact",
-      "accent_c0_exact",
+      "accent_a0_exact",
+      "accent_d0_exact",
       "accent_exact"
     ],
     "tokensFilter": 0,
@@ -1694,8 +1694,8 @@ monokaiNight: {
   },
   "customizations": {
     "accents": [
-      "accent_80_exact",
-      "accent_c0_exact",
+      "accent_a0_exact",
+      "accent_d0_exact",
       "accent_exact"
     ],
     "tokensFilter": 0,
@@ -1744,6 +1744,202 @@ monokaiNight: {
       "tag": "tokenTag_exact",
       "type": "tokenType_exact",
       "url": "tokenUrl_exact",
+      "variable": "tokenVariable_exact",
+      "variableProperty": "neutral34"
+    }
+  }
+},
+monokai: {
+  "name": "monokai",
+  "type": "dark",
+  "colors": {
+    "_all": {
+      "lightnessStart": 0,
+      "chroma": 0
+    },
+    "accent": {
+      "hue": 264.375,
+      "chroma": 43.75,
+      "hex": "#a6e22e"
+    },
+    "red": {
+      "hue": 22.5,
+      "chroma": 31.25,
+      "hex": "#c4265e"
+    },
+    "orange": {
+      "hue": 45,
+      "chroma": 15.625
+    },
+    "yellow": {
+      "hue": 90,
+      "chroma": 25,
+      "hex": "#b3b42b"
+    },
+    "green": {
+      "hue": 180,
+      "chroma": 25,
+      "hex": "#86b42b"
+    },
+    "cyan": {
+      "hue": 225,
+      "chroma": 31.25,
+      "hex": "#56adbc"
+    },
+    "neutral": {
+      "hue": 264.375,
+      "chroma": 10,
+      "chromaEnd": -5,
+      "hex": "#272822"
+    },
+    "blue": {
+      "hue": 264.375,
+      "chroma": 31.25,
+      "hex": "#6a7ec8"
+    },
+    "blueLessChroma": {
+      "hue": 264.375,
+      "chroma": 18.75,
+      "hex": "#767fac"
+    },
+    "blueMoreChroma": {
+      "hue": 264.375,
+      "chroma": 43.75,
+      "hex": "#577de5"
+    },
+    "purple": {
+      "hue": 315,
+      "chroma": 43.75,
+      "hex": "#8c6bc8"
+    },
+    "brightRed": {
+      "hex": "#f92672"
+    },
+    "brightYellow": {
+      "hex": "#e2e22e"
+    },
+    "brightGreen": {
+      "hex": "#a6e22e"
+    },
+    "brightCyan": {
+      "hex": "#66d9ef"
+    },
+    "brightBlue": {
+      "hex": "#819aff"
+    },
+    "brightPurple": {
+      "hex": "#ae81ff"
+    },
+    "tokenAttributeName": {
+      "hex": "#a6e22e"
+    },
+    "tokenComment": {
+      "hex": "#75715e"
+    },
+    "tokenFunction": {
+      "hex": "#a6e22e"
+    },
+    "tokenKeyword": {
+      "hex": "#f92672"
+    },
+    "tokenLiteral": {
+      "hex": "#ae81ff"
+    },
+    "tokenNumber": {
+      "hex": "#ae81ff"
+    },
+    "tokenOther": {
+      "hex": "#f8f8f2"
+    },
+    "tokenOtherType": {
+      "hex": "#66d9ef"
+    },
+    "tokenParameter": {
+      "hex": "#fd971f"
+    },
+    "tokenStorageType": {
+      "hex": "#66d9ef"
+    },
+    "tokenStorageTypeFunction": {
+      "hex": "#66d9ef"
+    },
+    "tokenString": {
+      "hex": "#e6db74"
+    },
+    "tokenStringTemplate": {
+      "hex": "#e6db74"
+    },
+    "tokenSupportFunction": {
+      "hex": "#66d9ef"
+    },
+    "tokenSupportType": {
+      "hex": "#66d9ef"
+    },
+    "tokenTag": {
+      "hex": "#f92672"
+    },
+    "tokenType": {
+      "hex": "#a6e22e"
+    },
+    "tokenVariable": {
+      "hex": "#f8f8f2"
+    },
+    "cursor": {
+      "hex": "#f8f8f0"
+    }
+  },
+  "customizations": {
+    "accents": [
+      "accent_a0_exact",
+      "accent_d0_exact",
+      "accent_exact"
+    ],
+    "tokensFilter": 0,
+    "cursor": "cursor_exact",
+    "terminal": {
+      "black": "neutral0",
+      "red": "red_exact",
+      "green": "green_exact",
+      "yellow": "yellow_exact",
+      "blue": "blue_exact",
+      "magenta": "purple30",
+      "cyan": "cyan_exact",
+      "white": "neutral34",
+      "brightBlack": "neutral30",
+      "brightRed": "brightRed_exact",
+      "brightGreen": "brightGreen_exact",
+      "brightYellow": "brightYellow_exact",
+      "brightBlue": "brightBlue_exact",
+      "brightMagenta": "purple30",
+      "brightCyan": "brightCyan_exact",
+      "brightWhite": "neutral39",
+      "brightPurple": "brightPurple_exact"
+    },
+    "tokens": {
+      "attributeName": "tokenAttributeName_exact",
+      "comment": "tokenComment_exact",
+      "constant": "neutral34",
+      "function": "tokenFunction_exact",
+      "jsxTag": "blue28",
+      "keyword": "tokenKeyword_exact",
+      "literal": "tokenLiteral_exact",
+      "number": "tokenNumber_exact",
+      "operator": "neutral30",
+      "other": "tokenOther_exact",
+      "otherType": "tokenOtherType_exact",
+      "parameter": "tokenParameter_exact",
+      "property": "neutral34",
+      "punctuation": "neutral26",
+      "regex": "purple30",
+      "storageType": "tokenStorageType_exact",
+      "storageTypeFunction": "tokenStorageTypeFunction_exact",
+      "string": "tokenString_exact",
+      "stringTemplate": "tokenStringTemplate_exact",
+      "supportFunction": "tokenSupportFunction_exact",
+      "supportType": "tokenSupportType_exact",
+      "tag": "tokenTag_exact",
+      "type": "tokenType_exact",
+      "url": "blueMoreChroma28",
       "variable": "tokenVariable_exact",
       "variableProperty": "neutral34"
     }
@@ -1902,8 +2098,8 @@ nightOwl: {
   },
   "customizations": {
     "accents": [
-      "accent_80_exact",
-      "accent_c0_exact",
+      "accent_a0_exact",
+      "accent_d0_exact",
       "accent_exact"
     ],
     "tokensFilter": 0,
@@ -2089,8 +2285,8 @@ oneDarkPro: {
   },
   "customizations": {
     "accents": [
-      "accent_80_exact",
-      "accent_c0_exact",
+      "accent_a0_exact",
+      "accent_d0_exact",
       "accent_exact"
     ],
     "tokensFilter": 0,
@@ -2204,9 +2400,9 @@ prettier: {
   },
   "customizations": {
     "accents": [
-      "accent16",
-      "accent24",
-      "accent32"
+      "accent24_a0",
+      "accent24_d0",
+      "accent24"
     ],
     "tokensFilter": 0,
     "cursor": "neutral28",
@@ -2320,9 +2516,9 @@ purpleHaze: {
   },
   "customizations": {
     "accents": [
-      "accent16",
-      "accent24",
-      "accent32"
+      "accent24_a0",
+      "accent24_d0",
+      "accent24"
     ],
     "tokensFilter": 0,
     "cursor": "neutral28",

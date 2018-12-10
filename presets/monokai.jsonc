@@ -1,5 +1,5 @@
 {
-  "name": "Material Theme Palenight",
+  "name": "monokai",
   "type": "dark",
   "colors": {
     "_all": {
@@ -7,115 +7,109 @@
       "chroma": 0
     },
     "accent": {
-      "hex": "#82aaff"
+      "hex": "#a6e22e"
     },
     "red": {
-      "hex": "#ff5370"
+      "hex": "#c4265e"
     },
     "yellow": {
-      "hex": "#ffcb6b"
+      "hex": "#b3b42b"
     },
     "green": {
-      "hex": "#c3e88d"
+      "hex": "#86b42b"
     },
     "cyan": {
-      "hex": "#89ddff"
+      "hex": "#56adbc"
     },
     "neutral": {
-      "hex": "#292d3e"
+      "hex": "#272822"
     },
     "blue": {
-      "hex": "#82aaff"
+      "hex": "#6a7ec8"
     },
     "blueLessChroma": {
-      "hex": "#94aae1"
+      "hex": "#767fac"
     },
     "blueMoreChroma": {
-      "hex": "#66abff"
+      "hex": "#577de5"
     },
     "purple": {
-      "hex": "#c792ea"
+      "hex": "#8c6bc8"
     },
     "brightRed": {
-      "hex": "#ff5370"
+      "hex": "#f92672"
     },
     "brightYellow": {
-      "hex": "#ffcb6b"
+      "hex": "#e2e22e"
     },
     "brightGreen": {
-      "hex": "#c3e88d"
+      "hex": "#a6e22e"
     },
     "brightCyan": {
-      "hex": "#89ddff"
+      "hex": "#66d9ef"
     },
     "brightBlue": {
-      "hex": "#82aaff"
+      "hex": "#819aff"
     },
     "brightPurple": {
-      "hex": "#c792ea"
+      "hex": "#ae81ff"
     },
     "tokenAttributeName": {
-      "hex": "#c792ea"
+      "hex": "#a6e22e"
     },
     "tokenComment": {
-      "hex": "#676e95"
-    },
-    "tokenConstant": {
-      "hex": "#f07178"
+      "hex": "#75715e"
     },
     "tokenFunction": {
-      "hex": "#82aaff"
+      "hex": "#a6e22e"
     },
     "tokenKeyword": {
-      "hex": "#c792ea"
+      "hex": "#f92672"
     },
     "tokenLiteral": {
-      "hex": "#f78c6c"
+      "hex": "#ae81ff"
     },
     "tokenNumber": {
-      "hex": "#f78c6c"
+      "hex": "#ae81ff"
     },
     "tokenOther": {
-      "hex": "#a6accd"
+      "hex": "#f8f8f2"
     },
     "tokenOtherType": {
-      "hex": "#ffcb6b"
+      "hex": "#66d9ef"
     },
     "tokenParameter": {
-      "hex": "#ff5370"
-    },
-    "tokenPunctuation": {
-      "hex": "#89ddff"
+      "hex": "#fd971f"
     },
     "tokenStorageType": {
-      "hex": "#c792ea"
+      "hex": "#66d9ef"
     },
     "tokenStorageTypeFunction": {
-      "hex": "#c792ea"
+      "hex": "#66d9ef"
     },
     "tokenString": {
-      "hex": "#c3e88d"
+      "hex": "#e6db74"
     },
     "tokenStringTemplate": {
-      "hex": "#c3e88d"
+      "hex": "#e6db74"
     },
     "tokenSupportFunction": {
-      "hex": "#82aaff"
+      "hex": "#66d9ef"
     },
     "tokenSupportType": {
-      "hex": "#ffcb6b"
+      "hex": "#66d9ef"
     },
     "tokenTag": {
-      "hex": "#f07178"
+      "hex": "#f92672"
     },
-    "tokenUrl": {
-      "hex": "#80cbc4"
+    "tokenType": {
+      "hex": "#a6e22e"
     },
     "tokenVariable": {
-      "hex": "#a6accd"
+      "hex": "#f8f8f2"
     },
     "cursor": {
-      "hex": "#ffcc00"
+      "hex": "#f8f8f0"
     }
   },
   "customizations": {
@@ -135,7 +129,6 @@
     "tokens": {
       "attributeName": "tokenAttributeName_exact",
       "comment": "tokenComment_exact",
-      "constant": "tokenConstant_exact",
       "function": "tokenFunction_exact",
       "keyword": "tokenKeyword_exact",
       "literal": "tokenLiteral_exact",
@@ -143,7 +136,6 @@
       "other": "tokenOther_exact",
       "otherType": "tokenOtherType_exact",
       "parameter": "tokenParameter_exact",
-      "punctuation": "tokenPunctuation_exact",
       "storageType": "tokenStorageType_exact",
       "storageTypeFunction": "tokenStorageTypeFunction_exact",
       "string": "tokenString_exact",
@@ -151,7 +143,7 @@
       "supportFunction": "tokenSupportFunction_exact",
       "supportType": "tokenSupportType_exact",
       "tag": "tokenTag_exact",
-      "url": "tokenUrl_exact",
+      "type": "tokenType_exact",
       "variable": "tokenVariable_exact"
     },
     "accents": [

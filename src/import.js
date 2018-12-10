@@ -208,8 +208,8 @@ function transform(theme, hints) {
 
     if (color === "accent") {
       newTheme.customizations.accents = [
-        "accent_80_exact",
-        "accent_c0_exact",
+        "accent_a0_exact",
+        "accent_d0_exact",
         "accent_exact"
       ];
     }

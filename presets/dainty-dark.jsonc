@@ -79,7 +79,7 @@
     }
   },
   "customizations": {
-    "accents": ["accent16", "accent24", "accent32"],
+    "accents": ["accent24_a0", "accent24_d0", "accent24"],
     "tokensFilter": 0,
     "cursor": "neutral28",
     "terminal": {
