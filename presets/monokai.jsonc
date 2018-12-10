@@ -68,6 +68,9 @@
     "tokenNumber": {
       "hex": "#ae81ff"
     },
+    "tokenOperator": {
+      "hex": "#f92672"
+    },
     "tokenOther": {
       "hex": "#f8f8f2"
     },
@@ -129,6 +132,7 @@
       "keyword": "tokenKeyword_exact",
       "literal": "tokenLiteral_exact",
       "number": "tokenNumber_exact",
+      "operator": "tokenOperator_exact",
       "other": "tokenOther_exact",
       "otherType": "tokenOtherType_exact",
       "parameter": "tokenParameter_exact",

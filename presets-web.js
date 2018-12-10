@@ -1844,6 +1844,9 @@ monokaiNight: {
     "tokenNumber": {
       "hex": "#ae81ff"
     },
+    "tokenOperator": {
+      "hex": "#f92672"
+    },
     "tokenOther": {
       "hex": "#dddddd"
     },
@@ -1923,7 +1926,7 @@ monokaiNight: {
       "keyword": "tokenKeyword_exact",
       "literal": "tokenLiteral_exact",
       "number": "tokenNumber_exact",
-      "operator": "neutral30",
+      "operator": "tokenOperator_exact",
       "other": "tokenOther_exact",
       "otherType": "tokenOtherType_exact",
       "parameter": "tokenParameter_exact",
@@ -2039,6 +2042,9 @@ monokai: {
     "tokenNumber": {
       "hex": "#ae81ff"
     },
+    "tokenOperator": {
+      "hex": "#f92672"
+    },
     "tokenOther": {
       "hex": "#f8f8f2"
     },
@@ -2115,7 +2121,7 @@ monokai: {
       "keyword": "tokenKeyword_exact",
       "literal": "tokenLiteral_exact",
       "number": "tokenNumber_exact",
-      "operator": "neutral30",
+      "operator": "tokenOperator_exact",
       "other": "tokenOther_exact",
       "otherType": "tokenOtherType_exact",
       "parameter": "tokenParameter_exact",
