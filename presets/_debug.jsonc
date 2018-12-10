@@ -1,0 +1,39 @@
+{
+  "name": "_debug",
+  "type": "dark",
+  "colors": {
+    "_all": {
+      "lightnessStart": 12.5
+    }
+  },
+  "customizations": {
+    "tokens": {
+      "attributeName": "neutral34",
+      "comment": "neutral34",
+      "constant": "neutral34",
+      "function": "neutral34",
+      "jsxTag": "neutral34",
+      "keyword": "neutral34",
+      "literal": "neutral34",
+      "number": "neutral34",
+      "operator": "neutral34",
+      "other": "neutral34",
+      "otherType": "neutral34",
+      "parameter": "neutral34",
+      "property": "neutral34",
+      "punctuation": "neutral34",
+      "regex": "neutral34",
+      "storageType": "neutral34",
+      "storageTypeFunction": "neutral34",
+      "string": "neutral34",
+      "stringTemplate": "neutral34",
+      "supportFunction": "neutral34",
+      "supportType": "neutral34",
+      "tag": "neutral34",
+      "type": "neutral34",
+      "url": "neutral34",
+      "variable": "neutral34",
+      "variableProperty": "neutral34"
+    }
+  }
+}
