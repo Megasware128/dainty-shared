@@ -1750,7 +1750,7 @@ monokaiNight: {
   }
 },
 monokai: {
-  "name": "monokai",
+  "name": "Monokai",
   "type": "dark",
   "colors": {
     "_all": {

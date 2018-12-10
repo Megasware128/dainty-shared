@@ -1,6 +1,6 @@
 {
-  "type": "dark",
   "name": "Material Theme Palenight",
+  "type": "dark",
   "colors": {
     "activityBar.background": "#292d3e",
     "activityBar.border": "#292d3e60",

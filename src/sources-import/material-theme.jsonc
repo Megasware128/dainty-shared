@@ -1,6 +1,6 @@
 {
-  "type": "dark",
   "name": "Material Theme",
+  "type": "dark",
   "colors": {
     "activityBar.background": "#263238",
     "activityBar.border": "#26323860",

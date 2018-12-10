@@ -1,6 +1,6 @@
 {
-  "type": "dark",
   "name": "One Dark Pro",
+  "type": "dark",
   "colors": {
     "activityBar.background": "#282c34",
     "activityBar.foreground": "#d7dae0",

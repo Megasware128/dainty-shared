@@ -1,6 +1,6 @@
 {
-  "type": "dark",
   "name": "Ayu Mirage",
+  "type": "dark",
   "colors": {
     "activityBar.background": "#1f2430",
     "activityBar.border": "#1f2430",

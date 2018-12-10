@@ -1,6 +1,6 @@
 {
-  "type": "dark",
   "name": "Material Theme Ocean",
+  "type": "dark",
   "colors": {
     "activityBar.background": "#0f111a",
     "activityBar.border": "#0f111a60",

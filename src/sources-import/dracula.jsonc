@@ -1,6 +1,6 @@
 {
-  "type": "dark",
   "name": "Dracula",
+  "type": "dark",
   "colors": {
     "activityBar.background": "#343746",
     "activityBar.foreground": "#f8f8f2",

@@ -1,6 +1,6 @@
 {
-  "type": "dark",
   "name": "Night Owl",
+  "type": "dark",
   "colors": {
     "activityBar.background": "#011627",
     "activityBar.border": "#011627",

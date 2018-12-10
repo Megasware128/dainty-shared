@@ -1,6 +1,6 @@
 {
-  "type": "dark",
   "name": "Monokai Night",
+  "type": "dark",
   "colors": {
     "activityBar.background": "#0f0f0f",
     "activityBar.border": "#000000",
