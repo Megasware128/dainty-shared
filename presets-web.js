@@ -642,16 +642,16 @@ daintyMinimal: {
   "colors": {
     "_all": {
       "lightnessStart": 10,
-      "chroma": -1.25,
       "filter": {
-        "opacity": 10,
+        "opacity": 6.25,
         "chroma": 25,
         "hue": 0
       }
     },
     "accent": {
       "hue": 264.375,
-      "chroma": 31.25
+      "chroma": 10,
+      "chromaEnd": -5
     },
     "red": {
       "hue": 264.375,
@@ -660,7 +660,8 @@ daintyMinimal: {
     },
     "orange": {
       "hue": 45,
-      "chroma": 6.25
+      "chroma": 10,
+      "chromaEnd": -5
     },
     "yellow": {
       "hue": 264.375,
@@ -669,7 +670,8 @@ daintyMinimal: {
     },
     "green": {
       "hue": 180,
-      "chroma": 12.5
+      "chroma": 10,
+      "chromaEnd": -5
     },
     "cyan": {
       "hue": 264.375,
@@ -679,11 +681,12 @@ daintyMinimal: {
     "neutral": {
       "hue": 264.375,
       "chroma": 10,
-      "chromaEnd": -7.5
+      "chromaEnd": -5
     },
     "blue": {
       "hue": 264.375,
-      "chroma": 12.5
+      "chroma": 15,
+      "chromaEnd": -5
     },
     "blueLessChroma": {
       "hue": 264.375,
@@ -732,10 +735,10 @@ daintyMinimal: {
       "comment": "neutral16",
       "constant": "neutral30",
       "function": "neutral30",
-      "jsxTag": "neutral30",
+      "jsxTag": "blue26",
       "keyword": "blue26",
       "literal": "neutral32",
-      "number": "green32",
+      "number": "green33",
       "operator": "neutral20",
       "other": "neutral30",
       "otherType": "blue26",
@@ -745,12 +748,12 @@ daintyMinimal: {
       "regex": "neutral30",
       "storageType": "blue26",
       "storageTypeFunction": "blue26",
-      "string": "orange32",
-      "stringTemplate": "orange32",
+      "string": "orange33",
+      "stringTemplate": "orange33",
       "supportFunction": "neutral30",
-      "supportType": "neutral26",
-      "tag": "neutral30",
-      "type": "neutral26",
+      "supportType": "blue26",
+      "tag": "blue26",
+      "type": "blue26",
       "url": "neutral30",
       "variable": "neutral30",
       "variableProperty": "neutral30"
