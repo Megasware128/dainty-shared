@@ -86,56 +86,5 @@
       // 100 / 16 * 5
       "chroma": 43.75
     }
-  },
-  "customizations": {
-    "accents": ["accent24_a0", "accent24_d0", "accent24"],
-    "tokensFilter": 0,
-    "cursor": "neutral28",
-    "terminal": {
-      "black": "neutral0",
-      "red": "red16",
-      "green": "green16",
-      "yellow": "yellow30",
-      "blue": "blue30",
-      "magenta": "purple30",
-      "cyan": "cyan30",
-      "white": "neutral34",
-      "brightBlack": "neutral30",
-      "brightRed": "red30",
-      "brightGreen": "green30",
-      "brightYellow": "yellow30",
-      "brightBlue": "blue30",
-      "brightMagenta": "purple30",
-      "brightCyan": "cyan30",
-      "brightWhite": "neutral39"
-    },
-    "tokens": {
-      "attributeName": "blueLessChroma34",
-      "comment": "neutral16",
-      "constant": "neutral34",
-      "function": "blueLessChroma34",
-      "jsxTag": "blue28",
-      "keyword": "blue28",
-      "literal": "blue28",
-      "number": "green34",
-      "operator": "neutral30",
-      "other": "neutral34",
-      "otherType": "purple34",
-      "parameter": "neutral34",
-      "property": "neutral34",
-      "punctuation": "neutral26",
-      "regex": "purple30",
-      "storageType": "blue28",
-      "storageTypeFunction": "blue28",
-      "string": "orange34",
-      "stringTemplate": "orange34",
-      "supportFunction": "blueLessChroma34",
-      "supportType": "blue28",
-      "tag": "blue28",
-      "type": "blueLessChroma34",
-      "url": "blueMoreChroma28",
-      "variable": "neutral34",
-      "variableProperty": "neutral34"
-    }
   }
 }

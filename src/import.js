@@ -186,13 +186,7 @@ function transform(theme, hints) {
   let newTheme = {
     name: getProperty("name"),
     type: getProperty("type"),
-    colors: {
-      _all: {
-        lightnessStart: 0,
-        chroma: 0,
-        filter: {}
-      }
-    },
+    colors: {},
     customizations: {
       terminal: {},
       tokens: {}

@@ -1,30 +1,236 @@
 const presets = {
+baseDark: {
+  "name": "Preset Base Dark",
+  "type": "dark",
+  "colors": {
+    "_all": {},
+    "accent": {
+      "hue": 270,
+      "chroma": 50
+    },
+    "red": {
+      "hue": 22.5,
+      "chroma": 25
+    },
+    "orange": {
+      "hue": 45,
+      "chroma": 12.5
+    },
+    "yellow": {
+      "hue": 90,
+      "chroma": 25
+    },
+    "green": {
+      "hue": 180,
+      "chroma": 25
+    },
+    "cyan": {
+      "hue": 225,
+      "chroma": 25
+    },
+    "neutral": {
+      "hue": 270,
+      "chroma": 10
+    },
+    "blue": {
+      "hue": 270,
+      "chroma": 25
+    },
+    "blueLessChroma": {
+      "hue": 270,
+      "chroma": 12.5
+    },
+    "blueMoreChroma": {
+      "hue": 270,
+      "chroma": 50
+    },
+    "purple": {
+      "hue": 315,
+      "chroma": 50
+    }
+  },
+  "customizations": {
+    "accents": [
+      "accent24_a0",
+      "accent24_d0",
+      "accent24"
+    ],
+    "tokensFilter": 0,
+    "cursor": "neutral28",
+    "terminal": {
+      "black": "neutral0",
+      "red": "red16",
+      "green": "green16",
+      "yellow": "yellow30",
+      "blue": "blue30",
+      "magenta": "purple30",
+      "cyan": "cyan30",
+      "white": "neutral34",
+      "brightBlack": "neutral30",
+      "brightRed": "red30",
+      "brightGreen": "green30",
+      "brightYellow": "yellow30",
+      "brightBlue": "blue30",
+      "brightMagenta": "purple30",
+      "brightCyan": "cyan30",
+      "brightWhite": "neutral39"
+    },
+    "tokens": {
+      "attributeName": "blueLessChroma34",
+      "comment": "neutral16",
+      "constant": "neutral34",
+      "function": "blueLessChroma34",
+      "jsxTag": "blue28",
+      "keyword": "blue28",
+      "literal": "blue28",
+      "number": "green34",
+      "operator": "neutral30",
+      "other": "neutral34",
+      "otherType": "purple34",
+      "parameter": "neutral34",
+      "property": "neutral34",
+      "punctuation": "neutral26",
+      "regex": "purple30",
+      "storageType": "blue28",
+      "storageTypeFunction": "blue28",
+      "string": "orange34",
+      "stringTemplate": "orange34",
+      "supportFunction": "blueLessChroma34",
+      "supportType": "blue28",
+      "tag": "blue28",
+      "type": "blueLessChroma34",
+      "url": "blueMoreChroma28",
+      "variable": "neutral34",
+      "variableProperty": "neutral34"
+    }
+  }
+},
+baseLight: {
+  "name": "Preset Base Light",
+  "type": "light",
+  "colors": {
+    "_all": {},
+    "accent": {
+      "hue": 270,
+      "chroma": 75
+    },
+    "red": {
+      "hue": 22.5,
+      "chroma": 50
+    },
+    "orange": {
+      "hue": 45,
+      "chroma": 25
+    },
+    "yellow": {
+      "hue": 90,
+      "chroma": 50
+    },
+    "green": {
+      "hue": 180,
+      "chroma": 50
+    },
+    "cyan": {
+      "hue": 225,
+      "chroma": 50
+    },
+    "neutral": {
+      "hue": 270,
+      "chroma": 0
+    },
+    "blue": {
+      "hue": 270,
+      "chroma": 50
+    },
+    "blueLessChroma": {
+      "hue": 270,
+      "chroma": 25
+    },
+    "blueMoreChroma": {
+      "hue": 270,
+      "chroma": 75
+    },
+    "purple": {
+      "hue": 315,
+      "chroma": 50
+    }
+  },
+  "customizations": {
+    "accents": [
+      "accent24",
+      "accent16",
+      "accent8"
+    ],
+    "cursor": "neutral12",
+    "terminal": {
+      "background": "neutral40",
+      "foreground": "neutral0",
+      "cursor": "neutral28",
+      "black": "neutral0",
+      "red": "red16",
+      "green": "green16",
+      "yellow": "yellow16",
+      "blue": "blue16",
+      "magenta": "purple16",
+      "cyan": "cyan16",
+      "white": "neutral40",
+      "brightBlack": "neutral16",
+      "brightRed": "red16",
+      "brightGreen": "green16",
+      "brightYellow": "yellow16",
+      "brightBlue": "blue16",
+      "brightMagenta": "purple16",
+      "brightCyan": "cyan16",
+      "brightWhite": "neutral39"
+    },
+    "tokens": {
+      "attributeName": "blueLessChroma18",
+      "comment": "neutral24",
+      "constant": "neutral0",
+      "function": "blueLessChroma18",
+      "jsxTag": "blue12",
+      "keyword": "blue12",
+      "literal": "blue12",
+      "number": "green20",
+      "operator": "neutral16",
+      "other": "neutral0",
+      "otherType": "purple16",
+      "parameter": "neutral0",
+      "property": "neutral0",
+      "punctuation": "neutral24",
+      "regex": "purple18",
+      "storageType": "blue12",
+      "storageTypeFunction": "blue12",
+      "string": "orange18",
+      "stringTemplate": "orange18",
+      "supportFunction": "blueLessChroma10",
+      "supportType": "blue12",
+      "tag": "blue12",
+      "type": "blueLessChroma10",
+      "url": "blueMoreChroma16",
+      "variable": "neutral0",
+      "variableProperty": "neutral0"
+    }
+  }
+},
 ayuMirage: {
   "name": "Ayu Mirage",
   "type": "dark",
   "colors": {
-    "_all": {
-      "lightnessStart": 0,
-      "chroma": 0,
-      "filter": {
-        "opacity": 10,
-        "chroma": 31.25,
-        "hue": 264.375
-      }
-    },
+    "_all": {},
     "accent": {
-      "hue": 264.375,
-      "chroma": 43.75,
+      "hue": 270,
+      "chroma": 50,
       "hex": "#ffd580"
     },
     "red": {
       "hue": 22.5,
-      "chroma": 31.25,
+      "chroma": 25,
       "hex": "#ed8274"
     },
     "orange": {
       "hue": 45,
-      "chroma": 15.625
+      "chroma": 12.5
     },
     "yellow": {
       "hue": 90,
@@ -38,33 +244,32 @@ ayuMirage: {
     },
     "cyan": {
       "hue": 225,
-      "chroma": 31.25,
+      "chroma": 25,
       "hex": "#90e1c6"
     },
     "neutral": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 10,
-      "chromaEnd": -5,
       "hex": "#1f2430"
     },
     "blue": {
-      "hue": 264.375,
-      "chroma": 31.25,
+      "hue": 270,
+      "chroma": 25,
       "hex": "#6dcbfa"
     },
     "blueLessChroma": {
-      "hue": 264.375,
-      "chroma": 18.75,
+      "hue": 270,
+      "chroma": 12.5,
       "hex": "#99c6e0"
     },
     "blueMoreChroma": {
-      "hue": 264.375,
-      "chroma": 43.75,
+      "hue": 270,
+      "chroma": 50,
       "hex": "#00d0ff"
     },
     "purple": {
       "hue": 315,
-      "chroma": 43.75,
+      "chroma": 50,
       "hex": "#cfbafa"
     },
     "brightRed": {
@@ -213,28 +418,20 @@ cobalt2: {
   "name": "Cobalt2",
   "type": "dark",
   "colors": {
-    "_all": {
-      "lightnessStart": 0,
-      "chroma": 0,
-      "filter": {
-        "opacity": 10,
-        "chroma": 31.25,
-        "hue": 264.375
-      }
-    },
+    "_all": {},
     "accent": {
-      "hue": 264.375,
-      "chroma": 43.75,
+      "hue": 270,
+      "chroma": 50,
       "hex": "#ffc600"
     },
     "red": {
       "hue": 22.5,
-      "chroma": 31.25,
+      "chroma": 25,
       "hex": "#ff628c"
     },
     "orange": {
       "hue": 45,
-      "chroma": 15.625
+      "chroma": 12.5
     },
     "yellow": {
       "hue": 90,
@@ -248,33 +445,32 @@ cobalt2: {
     },
     "cyan": {
       "hue": 225,
-      "chroma": 31.25,
+      "chroma": 25,
       "hex": "#80fcff"
     },
     "neutral": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 10,
-      "chromaEnd": -5,
       "hex": "#193549"
     },
     "blue": {
-      "hue": 264.375,
-      "chroma": 31.25,
+      "hue": 270,
+      "chroma": 25,
       "hex": "#0088ff"
     },
     "blueLessChroma": {
-      "hue": 264.375,
-      "chroma": 18.75,
+      "hue": 270,
+      "chroma": 12.5,
       "hex": "#4f87e2"
     },
     "blueMoreChroma": {
-      "hue": 264.375,
-      "chroma": 43.75,
+      "hue": 270,
+      "chroma": 50,
       "hex": "#0089ff"
     },
     "purple": {
       "hue": 315,
-      "chroma": 43.75,
+      "chroma": 50,
       "hex": "#fb94ff"
     },
     "brightRed": {
@@ -427,7 +623,7 @@ daintyDark: {
       "lightnessStart": 10,
       "chroma": -2.5,
       "filter": {
-        "opacity": 10,
+        "opacity": 6.25,
         "chroma": 31.25,
         "hue": 264.375
       }
@@ -542,7 +738,7 @@ daintyLight: {
       "lightnessStart": 10,
       "chroma": 25,
       "filter": {
-        "opacity": 10,
+        "opacity": 3.125,
         "chroma": 31.25,
         "hue": 264.375
       }
@@ -599,9 +795,11 @@ daintyLight: {
       "accent16",
       "accent8"
     ],
-    "tokensFilter": 0,
     "cursor": "neutral12",
     "terminal": {
+      "background": "neutral40",
+      "foreground": "neutral0",
+      "cursor": "neutral28",
       "black": "neutral0",
       "red": "red16",
       "green": "green16",
@@ -617,10 +815,7 @@ daintyLight: {
       "brightBlue": "blue16",
       "brightMagenta": "purple16",
       "brightCyan": "cyan16",
-      "brightWhite": "neutral39",
-      "background": "neutral40",
-      "foreground": "neutral0",
-      "cursor": "neutral28"
+      "brightWhite": "neutral39"
     },
     "tokens": {
       "attributeName": "blueLessChroma18",
@@ -656,28 +851,20 @@ dracula: {
   "name": "Dracula",
   "type": "dark",
   "colors": {
-    "_all": {
-      "lightnessStart": 0,
-      "chroma": 0,
-      "filter": {
-        "opacity": 10,
-        "chroma": 31.25,
-        "hue": 264.375
-      }
-    },
+    "_all": {},
     "accent": {
-      "hue": 264.375,
-      "chroma": 43.75,
+      "hue": 270,
+      "chroma": 50,
       "hex": "#50fa7b"
     },
     "red": {
       "hue": 22.5,
-      "chroma": 31.25,
+      "chroma": 25,
       "hex": "#ff5555"
     },
     "orange": {
       "hue": 45,
-      "chroma": 15.625
+      "chroma": 12.5
     },
     "yellow": {
       "hue": 90,
@@ -691,33 +878,32 @@ dracula: {
     },
     "cyan": {
       "hue": 225,
-      "chroma": 31.25,
+      "chroma": 25,
       "hex": "#8be9fd"
     },
     "neutral": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 10,
-      "chromaEnd": -5,
       "hex": "#282a36"
     },
     "blue": {
-      "hue": 264.375,
-      "chroma": 31.25,
+      "hue": 270,
+      "chroma": 25,
       "hex": "#bd93f9"
     },
     "blueLessChroma": {
-      "hue": 264.375,
-      "chroma": 18.75,
+      "hue": 270,
+      "chroma": 12.5,
       "hex": "#b799e0"
     },
     "blueMoreChroma": {
-      "hue": 264.375,
-      "chroma": 43.75,
+      "hue": 270,
+      "chroma": 50,
       "hex": "#c18cff"
     },
     "purple": {
       "hue": 315,
-      "chroma": 43.75,
+      "chroma": 50,
       "hex": "#ff79c6"
     },
     "brightRed": {
@@ -859,24 +1045,19 @@ fluent: {
   "colors": {
     "_all": {
       "lightnessStart": 0,
-      "chroma": 0,
-      "filter": {
-        "opacity": 10,
-        "chroma": 31.25,
-        "hue": 264.375
-      }
+      "chroma": 0
     },
     "accent": {
-      "hue": 264.375,
-      "chroma": 43.75
+      "hue": 270,
+      "chroma": 50
     },
     "red": {
       "hue": 22.5,
-      "chroma": 31.25
+      "chroma": 25
     },
     "orange": {
       "hue": 45,
-      "chroma": 15.625,
+      "chroma": 12.5,
       "hex": "#ef6950"
     },
     "yellow": {
@@ -890,31 +1071,31 @@ fluent: {
     },
     "cyan": {
       "hue": 225,
-      "chroma": 31.25
+      "chroma": 25
     },
     "neutral": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 10,
-      "chromaEnd": -15,
       "hex": "#092642",
-      "chromaStart": -1.25
+      "chromaStart": -1.25,
+      "chromaEnd": -15
     },
     "blue": {
-      "hue": 264.375,
-      "chroma": 31.25,
+      "hue": 270,
+      "chroma": 25,
       "hex": "#0078d4"
     },
     "blueLessChroma": {
-      "hue": 264.375,
-      "chroma": 18.75
+      "hue": 270,
+      "chroma": 12.5
     },
     "blueMoreChroma": {
-      "hue": 264.375,
-      "chroma": 43.75
+      "hue": 270,
+      "chroma": 50
     },
     "purple": {
       "hue": 315,
-      "chroma": 43.75,
+      "chroma": 50,
       "hex": "#cf90ff"
     }
   },
@@ -978,28 +1159,20 @@ materialThemeOcean: {
   "name": "Material Theme Ocean",
   "type": "dark",
   "colors": {
-    "_all": {
-      "lightnessStart": 0,
-      "chroma": 0,
-      "filter": {
-        "opacity": 10,
-        "chroma": 31.25,
-        "hue": 264.375
-      }
-    },
+    "_all": {},
     "accent": {
-      "hue": 264.375,
-      "chroma": 43.75,
+      "hue": 270,
+      "chroma": 50,
       "hex": "#82aaff"
     },
     "red": {
       "hue": 22.5,
-      "chroma": 31.25,
+      "chroma": 25,
       "hex": "#ff5370"
     },
     "orange": {
       "hue": 45,
-      "chroma": 15.625
+      "chroma": 12.5
     },
     "yellow": {
       "hue": 90,
@@ -1013,33 +1186,32 @@ materialThemeOcean: {
     },
     "cyan": {
       "hue": 225,
-      "chroma": 31.25,
+      "chroma": 25,
       "hex": "#89ddff"
     },
     "neutral": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 10,
-      "chromaEnd": -5,
       "hex": "#0f111a"
     },
     "blue": {
-      "hue": 264.375,
-      "chroma": 31.25,
+      "hue": 270,
+      "chroma": 25,
       "hex": "#82aaff"
     },
     "blueLessChroma": {
-      "hue": 264.375,
-      "chroma": 18.75,
+      "hue": 270,
+      "chroma": 12.5,
       "hex": "#94aae1"
     },
     "blueMoreChroma": {
-      "hue": 264.375,
-      "chroma": 43.75,
+      "hue": 270,
+      "chroma": 50,
       "hex": "#66abff"
     },
     "purple": {
       "hue": 315,
-      "chroma": 43.75,
+      "chroma": 50,
       "hex": "#c792ea"
     },
     "brightRed": {
@@ -1185,28 +1357,20 @@ materialThemePalenight: {
   "name": "Material Theme Palenight",
   "type": "dark",
   "colors": {
-    "_all": {
-      "lightnessStart": 0,
-      "chroma": 0,
-      "filter": {
-        "opacity": 10,
-        "chroma": 31.25,
-        "hue": 264.375
-      }
-    },
+    "_all": {},
     "accent": {
-      "hue": 264.375,
-      "chroma": 43.75,
+      "hue": 270,
+      "chroma": 50,
       "hex": "#82aaff"
     },
     "red": {
       "hue": 22.5,
-      "chroma": 31.25,
+      "chroma": 25,
       "hex": "#ff5370"
     },
     "orange": {
       "hue": 45,
-      "chroma": 15.625
+      "chroma": 12.5
     },
     "yellow": {
       "hue": 90,
@@ -1220,33 +1384,32 @@ materialThemePalenight: {
     },
     "cyan": {
       "hue": 225,
-      "chroma": 31.25,
+      "chroma": 25,
       "hex": "#89ddff"
     },
     "neutral": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 10,
-      "chromaEnd": -5,
       "hex": "#292d3e"
     },
     "blue": {
-      "hue": 264.375,
-      "chroma": 31.25,
+      "hue": 270,
+      "chroma": 25,
       "hex": "#82aaff"
     },
     "blueLessChroma": {
-      "hue": 264.375,
-      "chroma": 18.75,
+      "hue": 270,
+      "chroma": 12.5,
       "hex": "#94aae1"
     },
     "blueMoreChroma": {
-      "hue": 264.375,
-      "chroma": 43.75,
+      "hue": 270,
+      "chroma": 50,
       "hex": "#66abff"
     },
     "purple": {
       "hue": 315,
-      "chroma": 43.75,
+      "chroma": 50,
       "hex": "#c792ea"
     },
     "brightRed": {
@@ -1392,28 +1555,20 @@ materialTheme: {
   "name": "Material Theme",
   "type": "dark",
   "colors": {
-    "_all": {
-      "lightnessStart": 0,
-      "chroma": 0,
-      "filter": {
-        "opacity": 10,
-        "chroma": 31.25,
-        "hue": 264.375
-      }
-    },
+    "_all": {},
     "accent": {
-      "hue": 264.375,
-      "chroma": 43.75,
+      "hue": 270,
+      "chroma": 50,
       "hex": "#82aaff"
     },
     "red": {
       "hue": 22.5,
-      "chroma": 31.25,
+      "chroma": 25,
       "hex": "#ff5370"
     },
     "orange": {
       "hue": 45,
-      "chroma": 15.625
+      "chroma": 12.5
     },
     "yellow": {
       "hue": 90,
@@ -1427,33 +1582,32 @@ materialTheme: {
     },
     "cyan": {
       "hue": 225,
-      "chroma": 31.25,
+      "chroma": 25,
       "hex": "#89ddff"
     },
     "neutral": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 10,
-      "chromaEnd": -5,
       "hex": "#263238"
     },
     "blue": {
-      "hue": 264.375,
-      "chroma": 31.25,
+      "hue": 270,
+      "chroma": 25,
       "hex": "#82aaff"
     },
     "blueLessChroma": {
-      "hue": 264.375,
-      "chroma": 18.75,
+      "hue": 270,
+      "chroma": 12.5,
       "hex": "#94aae1"
     },
     "blueMoreChroma": {
-      "hue": 264.375,
-      "chroma": 43.75,
+      "hue": 270,
+      "chroma": 50,
       "hex": "#66abff"
     },
     "purple": {
       "hue": 315,
-      "chroma": 43.75,
+      "chroma": 50,
       "hex": "#c792ea"
     },
     "brightRed": {
@@ -1599,28 +1753,20 @@ monokaiNight: {
   "name": "Monokai Night",
   "type": "dark",
   "colors": {
-    "_all": {
-      "lightnessStart": 0,
-      "chroma": 0,
-      "filter": {
-        "opacity": 10,
-        "chroma": 31.25,
-        "hue": 264.375
-      }
-    },
+    "_all": {},
     "accent": {
-      "hue": 264.375,
-      "chroma": 43.75,
+      "hue": 270,
+      "chroma": 50,
       "hex": "#a6e22e"
     },
     "red": {
       "hue": 22.5,
-      "chroma": 31.25,
+      "chroma": 25,
       "hex": "#c4265e"
     },
     "orange": {
       "hue": 45,
-      "chroma": 15.625
+      "chroma": 12.5
     },
     "yellow": {
       "hue": 90,
@@ -1634,33 +1780,32 @@ monokaiNight: {
     },
     "cyan": {
       "hue": 225,
-      "chroma": 31.25,
+      "chroma": 25,
       "hex": "#56adbc"
     },
     "neutral": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 10,
-      "chromaEnd": -5,
       "hex": "#1f1f1f"
     },
     "blue": {
-      "hue": 264.375,
-      "chroma": 31.25,
+      "hue": 270,
+      "chroma": 25,
       "hex": "#6a7ec8"
     },
     "blueLessChroma": {
-      "hue": 264.375,
-      "chroma": 18.75,
+      "hue": 270,
+      "chroma": 12.5,
       "hex": "#767fac"
     },
     "blueMoreChroma": {
-      "hue": 264.375,
-      "chroma": 43.75,
+      "hue": 270,
+      "chroma": 50,
       "hex": "#577de5"
     },
     "purple": {
       "hue": 315,
-      "chroma": 43.75,
+      "chroma": 50,
       "hex": "#8c6bc8"
     },
     "brightRed": {
@@ -1803,28 +1948,20 @@ monokai: {
   "name": "Monokai",
   "type": "dark",
   "colors": {
-    "_all": {
-      "lightnessStart": 0,
-      "chroma": 0,
-      "filter": {
-        "opacity": 10,
-        "chroma": 31.25,
-        "hue": 264.375
-      }
-    },
+    "_all": {},
     "accent": {
-      "hue": 264.375,
-      "chroma": 43.75,
+      "hue": 270,
+      "chroma": 50,
       "hex": "#a6e22e"
     },
     "red": {
       "hue": 22.5,
-      "chroma": 31.25,
+      "chroma": 25,
       "hex": "#c4265e"
     },
     "orange": {
       "hue": 45,
-      "chroma": 15.625
+      "chroma": 12.5
     },
     "yellow": {
       "hue": 90,
@@ -1838,33 +1975,32 @@ monokai: {
     },
     "cyan": {
       "hue": 225,
-      "chroma": 31.25,
+      "chroma": 25,
       "hex": "#56adbc"
     },
     "neutral": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 10,
-      "chromaEnd": -5,
       "hex": "#272822"
     },
     "blue": {
-      "hue": 264.375,
-      "chroma": 31.25,
+      "hue": 270,
+      "chroma": 25,
       "hex": "#6a7ec8"
     },
     "blueLessChroma": {
-      "hue": 264.375,
-      "chroma": 18.75,
+      "hue": 270,
+      "chroma": 12.5,
       "hex": "#767fac"
     },
     "blueMoreChroma": {
-      "hue": 264.375,
-      "chroma": 43.75,
+      "hue": 270,
+      "chroma": 50,
       "hex": "#577de5"
     },
     "purple": {
       "hue": 315,
-      "chroma": 43.75,
+      "chroma": 50,
       "hex": "#8c6bc8"
     },
     "brightRed": {
@@ -2004,28 +2140,20 @@ nightOwl: {
   "name": "Night Owl",
   "type": "dark",
   "colors": {
-    "_all": {
-      "lightnessStart": 0,
-      "chroma": 0,
-      "filter": {
-        "opacity": 10,
-        "chroma": 31.25,
-        "hue": 264.375
-      }
-    },
+    "_all": {},
     "accent": {
-      "hue": 264.375,
-      "chroma": 43.75,
+      "hue": 270,
+      "chroma": 50,
       "hex": "#82aaff"
     },
     "red": {
       "hue": 22.5,
-      "chroma": 31.25,
+      "chroma": 25,
       "hex": "#ef5350"
     },
     "orange": {
       "hue": 45,
-      "chroma": 15.625
+      "chroma": 12.5
     },
     "yellow": {
       "hue": 90,
@@ -2039,33 +2167,32 @@ nightOwl: {
     },
     "cyan": {
       "hue": 225,
-      "chroma": 31.25,
+      "chroma": 25,
       "hex": "#21c7a8"
     },
     "neutral": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 10,
-      "chromaEnd": -5,
       "hex": "#011627"
     },
     "blue": {
-      "hue": 264.375,
-      "chroma": 31.25,
+      "hue": 270,
+      "chroma": 25,
       "hex": "#82aaff"
     },
     "blueLessChroma": {
-      "hue": 264.375,
-      "chroma": 18.75,
+      "hue": 270,
+      "chroma": 12.5,
       "hex": "#94aae1"
     },
     "blueMoreChroma": {
-      "hue": 264.375,
-      "chroma": 43.75,
+      "hue": 270,
+      "chroma": 50,
       "hex": "#66abff"
     },
     "purple": {
       "hue": 315,
-      "chroma": 43.75,
+      "chroma": 50,
       "hex": "#c792ea"
     },
     "brightRed": {
@@ -2217,27 +2344,19 @@ oneDarkPro: {
   "name": "One Dark Pro",
   "type": "dark",
   "colors": {
-    "_all": {
-      "lightnessStart": 0,
-      "chroma": 0,
-      "filter": {
-        "opacity": 10,
-        "chroma": 31.25,
-        "hue": 264.375
-      }
-    },
+    "_all": {},
     "accent": {
-      "hue": 264.375,
-      "chroma": 43.75,
+      "hue": 270,
+      "chroma": 50,
       "hex": "#61afef"
     },
     "red": {
       "hue": 22.5,
-      "chroma": 31.25
+      "chroma": 25
     },
     "orange": {
       "hue": 45,
-      "chroma": 15.625
+      "chroma": 12.5
     },
     "yellow": {
       "hue": 90,
@@ -2251,32 +2370,31 @@ oneDarkPro: {
     },
     "cyan": {
       "hue": 225,
-      "chroma": 31.25
+      "chroma": 25
     },
     "neutral": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 10,
-      "chromaEnd": -5,
       "hex": "#282c34"
     },
     "blue": {
-      "hue": 264.375,
-      "chroma": 31.25,
+      "hue": 270,
+      "chroma": 25,
       "hex": "#61afef"
     },
     "blueLessChroma": {
-      "hue": 264.375,
-      "chroma": 18.75,
+      "hue": 270,
+      "chroma": 12.5,
       "hex": "#85acd2"
     },
     "blueMoreChroma": {
-      "hue": 264.375,
-      "chroma": 43.75,
+      "hue": 270,
+      "chroma": 50,
       "hex": "#00b2ff"
     },
     "purple": {
       "hue": 315,
-      "chroma": 43.75
+      "chroma": 50
     },
     "tokenAttributeName": {
       "hex": "#d19a66"
@@ -2410,25 +2528,20 @@ prettier: {
   "colors": {
     "_all": {
       "lightnessStart": 0,
-      "chroma": 0,
-      "filter": {
-        "opacity": 10,
-        "chroma": 31.25,
-        "hue": 264.375
-      }
+      "chroma": 0
     },
     "accent": {
-      "hue": 264.375,
-      "chroma": 43.75
+      "hue": 270,
+      "chroma": 50
     },
     "red": {
       "hue": 22.5,
-      "chroma": 31.25,
+      "chroma": 25,
       "hex": "#ea5e5e"
     },
     "orange": {
       "hue": 45,
-      "chroma": 15.625,
+      "chroma": 12.5,
       "hex": "#f2ba54"
     },
     "yellow": {
@@ -2441,30 +2554,29 @@ prettier: {
     },
     "cyan": {
       "hue": 225,
-      "chroma": 31.25
+      "chroma": 25
     },
     "neutral": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 10,
-      "chromaEnd": -5,
       "hex": "#1a2b34"
     },
     "blue": {
-      "hue": 264.375,
-      "chroma": 31.25,
+      "hue": 270,
+      "chroma": 25,
       "hex": "#6ab3b2"
     },
     "blueLessChroma": {
-      "hue": 264.375,
-      "chroma": 18.75
+      "hue": 270,
+      "chroma": 12.5
     },
     "blueMoreChroma": {
-      "hue": 264.375,
-      "chroma": 43.75
+      "hue": 270,
+      "chroma": 50
     },
     "purple": {
       "hue": 315,
-      "chroma": 43.75,
+      "chroma": 50,
       "hex": "#c098c5"
     }
   },
@@ -2529,26 +2641,20 @@ purpleHaze: {
   "type": "dark",
   "colors": {
     "_all": {
-      "lightnessStart": 10,
-      "chroma": 7.5,
-      "filter": {
-        "opacity": 10,
-        "chroma": 31.25,
-        "hue": 264.375
-      },
-      "lightnessEnd": -25
+      "lightnessEnd": -25,
+      "chroma": 7.5
     },
     "accent": {
-      "hue": 264.375,
-      "chroma": 43.75
+      "hue": 270,
+      "chroma": 50
     },
     "red": {
       "hue": 22.5,
-      "chroma": 31.25
+      "chroma": 25
     },
     "orange": {
       "hue": 45,
-      "chroma": 15.625,
+      "chroma": 12.5,
       "hex": "#2962ff"
     },
     "yellow": {
@@ -2562,30 +2668,29 @@ purpleHaze: {
     },
     "cyan": {
       "hue": 225,
-      "chroma": 31.25
+      "chroma": 25
     },
     "neutral": {
-      "hue": 264.375,
-      "chroma": 10,
-      "chromaEnd": -5
+      "hue": 270,
+      "chroma": 10
     },
     "blue": {
-      "hue": 264.375,
-      "chroma": 31.25,
+      "hue": 270,
+      "chroma": 25,
       "hex": "#9c27b0"
     },
     "blueLessChroma": {
-      "hue": 264.375,
-      "chroma": 18.75,
+      "hue": 270,
+      "chroma": 12.5,
       "hex": "#9c27b0"
     },
     "blueMoreChroma": {
-      "hue": 264.375,
-      "chroma": 43.75
+      "hue": 270,
+      "chroma": 50
     },
     "purple": {
       "hue": 315,
-      "chroma": 43.75,
+      "chroma": 50,
       "hex": "#3f51b5"
     }
   },

@@ -42,10 +42,6 @@ async function getConfiguration(
 
     defaultConfiguration = getDefaultConfiguration(schema);
 
-    configurationPresetBase = await readFileJson(
-      path.join(__dirname, `../presets/dainty-dark.jsonc`)
-    );
-
     if (await exists(path.join(dirname, "../configuration.jsonc"))) {
       configuration = await readFileJson(
         path.join(dirname, "../configuration.jsonc")
@@ -109,6 +105,15 @@ async function getConfiguration(
       return null;
     }
   }
+
+  configurationPresetBase = await readFileJson(
+    path.join(
+      __dirname,
+      configurationPreset.type === "dark"
+        ? `../presets/_base-dark.jsonc`
+        : `../presets/_base-light.jsonc`
+    )
+  );
 
   return merge(
     {},

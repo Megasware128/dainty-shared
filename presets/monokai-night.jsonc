@@ -2,11 +2,6 @@
   "name": "Monokai Night",
   "type": "dark",
   "colors": {
-    "_all": {
-      "lightnessStart": 0,
-      "chroma": 0,
-      "filter": {}
-    },
     "accent": {
       "hex": "#a6e22e"
     },
