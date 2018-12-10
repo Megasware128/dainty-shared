@@ -636,6 +636,127 @@ daintyLight: {
     }
   }
 },
+daintyMinimal: {
+  "name": "Dainty Minimal",
+  "type": "dark",
+  "colors": {
+    "_all": {
+      "lightnessStart": 10,
+      "chroma": -1.25,
+      "filter": {
+        "opacity": 10,
+        "chroma": 25,
+        "hue": 0
+      }
+    },
+    "accent": {
+      "hue": 264.375,
+      "chroma": 31.25
+    },
+    "red": {
+      "hue": 264.375,
+      "chroma": 10,
+      "chromaEnd": -5
+    },
+    "orange": {
+      "hue": 45,
+      "chroma": 6.25
+    },
+    "yellow": {
+      "hue": 264.375,
+      "chroma": 10,
+      "chromaEnd": -5
+    },
+    "green": {
+      "hue": 180,
+      "chroma": 12.5
+    },
+    "cyan": {
+      "hue": 264.375,
+      "chroma": 10,
+      "chromaEnd": -5
+    },
+    "neutral": {
+      "hue": 264.375,
+      "chroma": 10,
+      "chromaEnd": -7.5
+    },
+    "blue": {
+      "hue": 264.375,
+      "chroma": 12.5
+    },
+    "blueLessChroma": {
+      "hue": 264.375,
+      "chroma": 10,
+      "chromaEnd": -5
+    },
+    "blueMoreChroma": {
+      "hue": 264.375,
+      "chroma": 10,
+      "chromaEnd": -5
+    },
+    "purple": {
+      "hue": 264.375,
+      "chroma": 10,
+      "chromaEnd": -5
+    }
+  },
+  "customizations": {
+    "accents": [
+      "accent24_a0",
+      "accent24_d0",
+      "accent24"
+    ],
+    "tokensFilter": 0,
+    "cursor": "neutral28",
+    "terminal": {
+      "black": "neutral0",
+      "red": "red16",
+      "green": "green16",
+      "yellow": "yellow30",
+      "blue": "blue30",
+      "magenta": "purple30",
+      "cyan": "cyan30",
+      "white": "neutral34",
+      "brightBlack": "neutral30",
+      "brightRed": "red30",
+      "brightGreen": "green30",
+      "brightYellow": "yellow30",
+      "brightBlue": "blue30",
+      "brightMagenta": "purple30",
+      "brightCyan": "cyan30",
+      "brightWhite": "neutral39"
+    },
+    "tokens": {
+      "attributeName": "neutral30",
+      "comment": "neutral16",
+      "constant": "neutral30",
+      "function": "neutral30",
+      "jsxTag": "neutral30",
+      "keyword": "blue26",
+      "literal": "neutral32",
+      "number": "green32",
+      "operator": "neutral20",
+      "other": "neutral30",
+      "otherType": "blue26",
+      "parameter": "neutral30",
+      "property": "neutral30",
+      "punctuation": "neutral16",
+      "regex": "neutral30",
+      "storageType": "blue26",
+      "storageTypeFunction": "blue26",
+      "string": "orange32",
+      "stringTemplate": "orange32",
+      "supportFunction": "neutral30",
+      "supportType": "neutral26",
+      "tag": "neutral30",
+      "type": "neutral26",
+      "url": "neutral30",
+      "variable": "neutral30",
+      "variableProperty": "neutral30"
+    }
+  }
+},
 darkPlus: {
   "name": "Dark+",
   "type": "dark",
