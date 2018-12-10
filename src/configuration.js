@@ -61,20 +61,16 @@ async function getConfiguration(
       ? preset
       : configuration.preset
       ? configuration.preset
-      : null;
+      : "dainty-dark";
 
-    if (preset_) {
-      const presetPath = await getPresetPath(dirname, preset_);
+    const presetPath = await getPresetPath(dirname, preset_);
 
-      if (presetPath === null) {
-        console.error(`Configuration preset \`${preset_}\` was not found.`);
-        return null;
-      }
-
-      configurationPreset = await readFileJson(presetPath);
-    } else {
-      configurationPreset = {};
+    if (presetPath === null) {
+      console.error(`Configuration preset \`${preset_}\` was not found.`);
+      return null;
     }
+
+    configurationPreset = await readFileJson(presetPath);
   } catch (error) {
     console.error(error);
     throw new Error("Could not get configuration.");

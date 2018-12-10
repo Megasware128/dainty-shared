@@ -1,0 +1,164 @@
+{
+  "name": "Dark+",
+  "type": "dark",
+  "colors": {
+    "accent": {
+      "hex": "#dcdcaa"
+    },
+    "red": {
+      "hex": "#cd3131"
+    },
+    "yellow": {
+      "hex": "#e5e510"
+    },
+    "green": {
+      "hex": "#0dbc79"
+    },
+    "cyan": {
+      "hex": "#11a8cd"
+    },
+    "neutral": {
+      "hex": "#1e1e1e"
+    },
+    "blue": {
+      "hex": "#2472c8"
+    },
+    "blueLessChroma": {
+      "hex": "#4d71ac"
+    },
+    "blueMoreChroma": {
+      "hex": "#0073e5"
+    },
+    "purple": {
+      "hex": "#bc3fbc"
+    },
+    "brightRed": {
+      "hex": "#f14c4c"
+    },
+    "brightYellow": {
+      "hex": "#f5f543"
+    },
+    "brightGreen": {
+      "hex": "#23d18b"
+    },
+    "brightCyan": {
+      "hex": "#29b8db"
+    },
+    "brightBlue": {
+      "hex": "#3b8eea"
+    },
+    "brightPurple": {
+      "hex": "#d670d6"
+    },
+    "tokenAttributeName": {
+      "hex": "#9cdcfe"
+    },
+    "tokenComment": {
+      "hex": "#6a9955"
+    },
+    "tokenFunction": {
+      "hex": "#dcdcaa"
+    },
+    "tokenKeyword": {
+      "hex": "#569cd6"
+    },
+    "tokenLiteral": {
+      "hex": "#569cd6"
+    },
+    "tokenNumber": {
+      "hex": "#b5cea8"
+    },
+    "tokenOperator": {
+      "hex": "#d4d4d4"
+    },
+    "tokenOther": {
+      "hex": "#d4d4d4"
+    },
+    "tokenOtherType": {
+      "hex": "#4ec9b0"
+    },
+    "tokenProperty": {
+      "hex": "#9cdcfe"
+    },
+    "tokenRegex": {
+      "hex": "#646695"
+    },
+    "tokenStorageType": {
+      "hex": "#569cd6"
+    },
+    "tokenStorageTypeFunction": {
+      "hex": "#569cd6"
+    },
+    "tokenString": {
+      "hex": "#ce9178"
+    },
+    "tokenStringTemplate": {
+      "hex": "#ce9178"
+    },
+    "tokenSupportFunction": {
+      "hex": "#dcdcaa"
+    },
+    "tokenSupportType": {
+      "hex": "#4ec9b0"
+    },
+    "tokenTag": {
+      "hex": "#569cd6"
+    },
+    "tokenType": {
+      "hex": "#4ec9b0"
+    },
+    "tokenUrl": {
+      "hex": "#3794ff"
+    },
+    "tokenVariable": {
+      "hex": "#9cdcfe"
+    },
+    "cursor": {
+      "hex": "#aeafad"
+    }
+  },
+  "customizations": {
+    "terminal": {
+      "red": "red_exact",
+      "yellow": "yellow_exact",
+      "green": "green_exact",
+      "cyan": "cyan_exact",
+      "blue": "blue_exact",
+      "brightRed": "brightRed_exact",
+      "brightYellow": "brightYellow_exact",
+      "brightGreen": "brightGreen_exact",
+      "brightCyan": "brightCyan_exact",
+      "brightBlue": "brightBlue_exact",
+      "brightPurple": "brightPurple_exact"
+    },
+    "tokens": {
+      "attributeName": "tokenAttributeName_exact",
+      "comment": "tokenComment_exact",
+      "function": "tokenFunction_exact",
+      "keyword": "tokenKeyword_exact",
+      "literal": "tokenLiteral_exact",
+      "number": "tokenNumber_exact",
+      "operator": "tokenOperator_exact",
+      "other": "tokenOther_exact",
+      "otherType": "tokenOtherType_exact",
+      "property": "tokenProperty_exact",
+      "regex": "tokenRegex_exact",
+      "storageType": "tokenStorageType_exact",
+      "storageTypeFunction": "tokenStorageTypeFunction_exact",
+      "string": "tokenString_exact",
+      "stringTemplate": "tokenStringTemplate_exact",
+      "supportFunction": "tokenSupportFunction_exact",
+      "supportType": "tokenSupportType_exact",
+      "tag": "tokenTag_exact",
+      "type": "tokenType_exact",
+      "url": "tokenUrl_exact",
+      "variable": "tokenVariable_exact"
+    },
+    "accents": [
+      "accent_a0_exact",
+      "accent_d0_exact",
+      "accent_exact"
+    ],
+    "cursor": "cursor_exact"
+  }
+}

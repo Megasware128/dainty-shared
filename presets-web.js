@@ -633,6 +633,207 @@ daintyLight: {
     }
   }
 },
+darkPlus: {
+  "name": "Dark+",
+  "type": "dark",
+  "colors": {
+    "_all": {},
+    "accent": {
+      "hue": 270,
+      "chroma": 50,
+      "hex": "#dcdcaa"
+    },
+    "red": {
+      "hue": 22.5,
+      "chroma": 25,
+      "hex": "#cd3131"
+    },
+    "orange": {
+      "hue": 45,
+      "chroma": 12.5
+    },
+    "yellow": {
+      "hue": 90,
+      "chroma": 25,
+      "hex": "#e5e510"
+    },
+    "green": {
+      "hue": 180,
+      "chroma": 25,
+      "hex": "#0dbc79"
+    },
+    "cyan": {
+      "hue": 225,
+      "chroma": 25,
+      "hex": "#11a8cd"
+    },
+    "neutral": {
+      "hue": 270,
+      "chroma": 10,
+      "hex": "#1e1e1e"
+    },
+    "blue": {
+      "hue": 270,
+      "chroma": 25,
+      "hex": "#2472c8"
+    },
+    "blueLessChroma": {
+      "hue": 270,
+      "chroma": 12.5,
+      "hex": "#4d71ac"
+    },
+    "blueMoreChroma": {
+      "hue": 270,
+      "chroma": 50,
+      "hex": "#0073e5"
+    },
+    "purple": {
+      "hue": 315,
+      "chroma": 50,
+      "hex": "#bc3fbc"
+    },
+    "brightRed": {
+      "hex": "#f14c4c"
+    },
+    "brightYellow": {
+      "hex": "#f5f543"
+    },
+    "brightGreen": {
+      "hex": "#23d18b"
+    },
+    "brightCyan": {
+      "hex": "#29b8db"
+    },
+    "brightBlue": {
+      "hex": "#3b8eea"
+    },
+    "brightPurple": {
+      "hex": "#d670d6"
+    },
+    "tokenAttributeName": {
+      "hex": "#9cdcfe"
+    },
+    "tokenComment": {
+      "hex": "#6a9955"
+    },
+    "tokenFunction": {
+      "hex": "#dcdcaa"
+    },
+    "tokenKeyword": {
+      "hex": "#569cd6"
+    },
+    "tokenLiteral": {
+      "hex": "#569cd6"
+    },
+    "tokenNumber": {
+      "hex": "#b5cea8"
+    },
+    "tokenOperator": {
+      "hex": "#d4d4d4"
+    },
+    "tokenOther": {
+      "hex": "#d4d4d4"
+    },
+    "tokenOtherType": {
+      "hex": "#4ec9b0"
+    },
+    "tokenProperty": {
+      "hex": "#9cdcfe"
+    },
+    "tokenRegex": {
+      "hex": "#646695"
+    },
+    "tokenStorageType": {
+      "hex": "#569cd6"
+    },
+    "tokenStorageTypeFunction": {
+      "hex": "#569cd6"
+    },
+    "tokenString": {
+      "hex": "#ce9178"
+    },
+    "tokenStringTemplate": {
+      "hex": "#ce9178"
+    },
+    "tokenSupportFunction": {
+      "hex": "#dcdcaa"
+    },
+    "tokenSupportType": {
+      "hex": "#4ec9b0"
+    },
+    "tokenTag": {
+      "hex": "#569cd6"
+    },
+    "tokenType": {
+      "hex": "#4ec9b0"
+    },
+    "tokenUrl": {
+      "hex": "#3794ff"
+    },
+    "tokenVariable": {
+      "hex": "#9cdcfe"
+    },
+    "cursor": {
+      "hex": "#aeafad"
+    }
+  },
+  "customizations": {
+    "accents": [
+      "accent_a0_exact",
+      "accent_d0_exact",
+      "accent_exact"
+    ],
+    "tokensFilter": 0,
+    "cursor": "cursor_exact",
+    "terminal": {
+      "black": "neutral0",
+      "red": "red_exact",
+      "green": "green_exact",
+      "yellow": "yellow_exact",
+      "blue": "blue_exact",
+      "magenta": "purple30",
+      "cyan": "cyan_exact",
+      "white": "neutral34",
+      "brightBlack": "neutral30",
+      "brightRed": "brightRed_exact",
+      "brightGreen": "brightGreen_exact",
+      "brightYellow": "brightYellow_exact",
+      "brightBlue": "brightBlue_exact",
+      "brightMagenta": "purple30",
+      "brightCyan": "brightCyan_exact",
+      "brightWhite": "neutral39",
+      "brightPurple": "brightPurple_exact"
+    },
+    "tokens": {
+      "attributeName": "tokenAttributeName_exact",
+      "comment": "tokenComment_exact",
+      "constant": "neutral34",
+      "function": "tokenFunction_exact",
+      "jsxTag": "blue28",
+      "keyword": "tokenKeyword_exact",
+      "literal": "tokenLiteral_exact",
+      "number": "tokenNumber_exact",
+      "operator": "tokenOperator_exact",
+      "other": "tokenOther_exact",
+      "otherType": "tokenOtherType_exact",
+      "parameter": "neutral34",
+      "property": "tokenProperty_exact",
+      "punctuation": "neutral26",
+      "regex": "tokenRegex_exact",
+      "storageType": "tokenStorageType_exact",
+      "storageTypeFunction": "tokenStorageTypeFunction_exact",
+      "string": "tokenString_exact",
+      "stringTemplate": "tokenStringTemplate_exact",
+      "supportFunction": "tokenSupportFunction_exact",
+      "supportType": "tokenSupportType_exact",
+      "tag": "tokenTag_exact",
+      "type": "tokenType_exact",
+      "url": "tokenUrl_exact",
+      "variable": "tokenVariable_exact",
+      "variableProperty": "neutral34"
+    }
+  }
+},
 dracula: {
   "name": "Dracula",
   "type": "dark",
@@ -2858,6 +3059,144 @@ snazzyTheme: {
       "supportType": "tokenSupportType_exact",
       "tag": "tokenTag_exact",
       "type": "tokenType_exact",
+      "url": "blueMoreChroma28",
+      "variable": "tokenVariable_exact",
+      "variableProperty": "neutral34"
+    }
+  }
+},
+tomorrowNightEighties: {
+  "name": "Tomorrow Night Eighties",
+  "type": "dark",
+  "colors": {
+    "_all": {},
+    "accent": {
+      "hue": 270,
+      "chroma": 50,
+      "hex": "#6699cc"
+    },
+    "red": {
+      "hue": 22.5,
+      "chroma": 25
+    },
+    "orange": {
+      "hue": 45,
+      "chroma": 12.5
+    },
+    "yellow": {
+      "hue": 90,
+      "chroma": 25
+    },
+    "green": {
+      "hue": 180,
+      "chroma": 25
+    },
+    "cyan": {
+      "hue": 225,
+      "chroma": 25
+    },
+    "neutral": {
+      "hue": 270,
+      "chroma": 10,
+      "hex": "#2d2d2d"
+    },
+    "blue": {
+      "hue": 270,
+      "chroma": 25
+    },
+    "blueLessChroma": {
+      "hue": 270,
+      "chroma": 12.5
+    },
+    "blueMoreChroma": {
+      "hue": 270,
+      "chroma": 50
+    },
+    "purple": {
+      "hue": 315,
+      "chroma": 50
+    },
+    "tokenComment": {
+      "hex": "#999999"
+    },
+    "tokenFunction": {
+      "hex": "#6699cc"
+    },
+    "tokenKeyword": {
+      "hex": "#cc99cc"
+    },
+    "tokenNumber": {
+      "hex": "#f99157"
+    },
+    "tokenOperator": {
+      "hex": "#66cccc"
+    },
+    "tokenOther": {
+      "hex": "#cccccc"
+    },
+    "tokenString": {
+      "hex": "#99cc99"
+    },
+    "tokenStringTemplate": {
+      "hex": "#99cc99"
+    },
+    "tokenVariable": {
+      "hex": "#f2777a"
+    },
+    "cursor": {
+      "hex": "#cccccc"
+    }
+  },
+  "customizations": {
+    "accents": [
+      "accent_a0_exact",
+      "accent_d0_exact",
+      "accent_exact"
+    ],
+    "tokensFilter": 0,
+    "cursor": "cursor_exact",
+    "terminal": {
+      "black": "neutral0",
+      "red": "red16",
+      "green": "green16",
+      "yellow": "yellow30",
+      "blue": "blue30",
+      "magenta": "purple30",
+      "cyan": "cyan30",
+      "white": "neutral34",
+      "brightBlack": "neutral30",
+      "brightRed": "red30",
+      "brightGreen": "green30",
+      "brightYellow": "yellow30",
+      "brightBlue": "blue30",
+      "brightMagenta": "purple30",
+      "brightCyan": "cyan30",
+      "brightWhite": "neutral39"
+    },
+    "tokens": {
+      "attributeName": "blueLessChroma34",
+      "comment": "tokenComment_exact",
+      "constant": "neutral34",
+      "function": "tokenFunction_exact",
+      "jsxTag": "blue28",
+      "keyword": "tokenKeyword_exact",
+      "literal": "blue28",
+      "number": "tokenNumber_exact",
+      "operator": "tokenOperator_exact",
+      "other": "tokenOther_exact",
+      "otherType": "purple34",
+      "parameter": "neutral34",
+      "property": "neutral34",
+      "punctuation": "neutral26",
+      "regex": "purple30",
+      "storageType": "blue28",
+      "storageTypeFunction": "blue28",
+      "string": "tokenString_exact",
+      "stringTemplate": "tokenStringTemplate_exact",
+      "supportFunction": "blueLessChroma34",
+      "supportType": "blue28",
+      "tag": "blue28",
+      "type": "blueLessChroma34",
       "url": "blueMoreChroma28",
       "variable": "tokenVariable_exact",
       "variableProperty": "neutral34"

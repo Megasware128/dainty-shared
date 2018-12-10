@@ -1,0 +1,102 @@
+{
+  "name": "Tomorrow Night Eighties",
+  "type": "dark",
+  "colors": {
+    "accent": {
+      "hex": "#6699cc"
+    },
+    "neutral": {
+      "hex": "#2d2d2d"
+    },
+    "tokenAttributeName": {
+      "hex": "#f2777a"
+    },
+    "tokenComment": {
+      "hex": "#999999"
+    },
+    "tokenConstant": {
+      "hex": "#f2777a"
+    },
+    "tokenFunction": {
+      "hex": "#6699cc"
+    },
+    "tokenKeyword": {
+      "hex": "#cc99cc"
+    },
+    "tokenLiteral": {
+      "hex": "#f99157"
+    },
+    "tokenNumber": {
+      "hex": "#f99157"
+    },
+    "tokenOperator": {
+      "hex": "#66cccc"
+    },
+    "tokenOther": {
+      "hex": "#cccccc"
+    },
+    "tokenOtherType": {
+      "hex": "#ffcc66"
+    },
+    "tokenParameter": {
+      "hex": "#f99157"
+    },
+    "tokenStorageType": {
+      "hex": "#cc99cc"
+    },
+    "tokenStorageTypeFunction": {
+      "hex": "#cc99cc"
+    },
+    "tokenString": {
+      "hex": "#99cc99"
+    },
+    "tokenStringTemplate": {
+      "hex": "#99cc99"
+    },
+    "tokenSupportFunction": {
+      "hex": "#6699cc"
+    },
+    "tokenSupportType": {
+      "hex": "#ffcc66"
+    },
+    "tokenTag": {
+      "hex": "#f2777a"
+    },
+    "tokenVariable": {
+      "hex": "#f2777a"
+    },
+    "cursor": {
+      "hex": "#cccccc"
+    }
+  },
+  "customizations": {
+    "terminal": {},
+    "tokens": {
+      "attributeName": "tokenAttributeName_exact",
+      "comment": "tokenComment_exact",
+      "constant": "tokenConstant_exact",
+      "function": "tokenFunction_exact",
+      "keyword": "tokenKeyword_exact",
+      "literal": "tokenLiteral_exact",
+      "number": "tokenNumber_exact",
+      "operator": "tokenOperator_exact",
+      "other": "tokenOther_exact",
+      "otherType": "tokenOtherType_exact",
+      "parameter": "tokenParameter_exact",
+      "storageType": "tokenStorageType_exact",
+      "storageTypeFunction": "tokenStorageTypeFunction_exact",
+      "string": "tokenString_exact",
+      "stringTemplate": "tokenStringTemplate_exact",
+      "supportFunction": "tokenSupportFunction_exact",
+      "supportType": "tokenSupportType_exact",
+      "tag": "tokenTag_exact",
+      "variable": "tokenVariable_exact"
+    },
+    "accents": [
+      "accent_a0_exact",
+      "accent_d0_exact",
+      "accent_exact"
+    ],
+    "cursor": "cursor_exact"
+  }
+}

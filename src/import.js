@@ -68,7 +68,7 @@ function getScopesArray(scope) {
     return scope;
   } else if (typeof scope === "string") {
     if (scope.includes(",")) {
-      return scope.split(",");
+      return scope.split(",").map(s => s.trim());
     } else {
       return [scope];
     }
