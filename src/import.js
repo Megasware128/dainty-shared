@@ -111,6 +111,8 @@ function transform(theme, hints) {
 
   const colors = {
     accent: getTokenColor("function", ["entity.name.function"]),
+    black: getColor("terminal.ansiBlack"),
+    white: getColor("terminal.ansiWhite"),
     red: getColor("terminal.ansiRed"),
     yellow: getColor("terminal.ansiYellow"),
     green: getColor("terminal.ansiGreen"),
@@ -125,6 +127,8 @@ function transform(theme, hints) {
       : null,
     purple: getColor("terminal.ansiMagenta"),
 
+    brightBlack: getColor("terminal.ansiBrightBlack"),
+    brightWhite: getColor("terminal.ansiBrightWhite"),
     brightRed: getColor("terminal.ansiBrightRed"),
     brightYellow: getColor("terminal.ansiBrightYellow"),
     brightGreen: getColor("terminal.ansiBrightGreen"),
@@ -224,7 +228,16 @@ function transform(theme, hints) {
     }
 
     if (
-      ["red", "green", "yellow", "blue", "magenta", "cyan"].includes(color) ||
+      [
+        "black",
+        "white",
+        "red",
+        "green",
+        "yellow",
+        "blue",
+        "magenta",
+        "cyan"
+      ].includes(color) ||
       color.startsWith("bright")
     ) {
       newTheme.customizations.terminal[color] = `${color}_exact`;

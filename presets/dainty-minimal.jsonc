@@ -12,33 +12,27 @@
     },
     "accent": {
       "hue": 264.375,
-      "chroma": 10,
-      "chromaEnd": -5
+      "chroma": 14.0625
     },
     "red": {
-      "hue": 264.375,
-      "chroma": 10,
-      "chromaEnd": -5
+      "hue": 22.5,
+      "chroma": 12.5
     },
     "orange": {
       "hue": 45,
-      "chroma": 10,
-      "chromaEnd": -5
+      "chroma": 12.5
     },
     "yellow": {
-      "hue": 264.375,
-      "chroma": 10,
-      "chromaEnd": -5
+      "hue": 90,
+      "chroma": 12.5
     },
     "green": {
       "hue": 180,
-      "chroma": 10,
-      "chromaEnd": -5
+      "chroma": 12.5
     },
     "cyan": {
-      "hue": 264.375,
-      "chroma": 10,
-      "chromaEnd": -5
+      "hue": 212.5,
+      "chroma": 12.5
     },
     "neutral": {
       "hue": 264.375,
@@ -47,23 +41,19 @@
     },
     "blue": {
       "hue": 264.375,
-      "chroma": 15,
-      "chromaEnd": -5
+      "chroma": 12.5
     },
     "blueLessChroma": {
       "hue": 264.375,
-      "chroma": 10,
-      "chromaEnd": -5
+      "chroma": 6.25
     },
     "blueMoreChroma": {
       "hue": 264.375,
-      "chroma": 10,
-      "chromaEnd": -5
+      "chroma": 25
     },
     "purple": {
-      "hue": 264.375,
-      "chroma": 10,
-      "chromaEnd": -5
+      "hue": 315,
+      "chroma": 12.5
     }
   },
   "customizations": {

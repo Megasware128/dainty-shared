@@ -58,6 +58,18 @@ ayuMirage: {
       "chroma": 50,
       "hex": "#cfbafa"
     },
+    "black": {
+      "hex": "#191e2a"
+    },
+    "white": {
+      "hex": "#c7c7c7"
+    },
+    "brightBlack": {
+      "hex": "#686868"
+    },
+    "brightWhite": {
+      "hex": "#ffffff"
+    },
     "brightRed": {
       "hex": "#f28779"
     },
@@ -155,22 +167,22 @@ ayuMirage: {
     "tokensFilter": 0,
     "cursor": "cursor_exact",
     "terminal": {
-      "black": "neutral0",
+      "black": "black_exact",
       "red": "red_exact",
       "green": "green_exact",
       "yellow": "yellow_exact",
       "blue": "blue_exact",
       "magenta": "purple30",
       "cyan": "cyan_exact",
-      "white": "neutral34",
-      "brightBlack": "neutral30",
+      "white": "white_exact",
+      "brightBlack": "brightBlack_exact",
       "brightRed": "brightRed_exact",
       "brightGreen": "brightGreen_exact",
       "brightYellow": "brightYellow_exact",
       "brightBlue": "brightBlue_exact",
       "brightMagenta": "purple30",
       "brightCyan": "brightCyan_exact",
-      "brightWhite": "neutral39",
+      "brightWhite": "brightWhite_exact",
       "brightPurple": "brightPurple_exact"
     },
     "tokens": {
@@ -261,6 +273,18 @@ cobalt2: {
       "hue": 315,
       "chroma": 50,
       "hex": "#fb94ff"
+    },
+    "black": {
+      "hex": "#000000"
+    },
+    "white": {
+      "hex": "#ffffff"
+    },
+    "brightBlack": {
+      "hex": "#0050a4"
+    },
+    "brightWhite": {
+      "hex": "#193549"
     },
     "brightRed": {
       "hex": "#ff628c"
@@ -356,22 +380,22 @@ cobalt2: {
     "tokensFilter": 0,
     "cursor": "cursor_exact",
     "terminal": {
-      "black": "neutral0",
+      "black": "black_exact",
       "red": "red_exact",
       "green": "green_exact",
       "yellow": "yellow_exact",
       "blue": "blue_exact",
       "magenta": "purple30",
       "cyan": "cyan_exact",
-      "white": "neutral34",
-      "brightBlack": "neutral30",
+      "white": "white_exact",
+      "brightBlack": "brightBlack_exact",
       "brightRed": "brightRed_exact",
       "brightGreen": "brightGreen_exact",
       "brightYellow": "brightYellow_exact",
       "brightBlue": "brightBlue_exact",
       "brightMagenta": "purple30",
       "brightCyan": "brightCyan_exact",
-      "brightWhite": "neutral39",
+      "brightWhite": "brightWhite_exact",
       "brightPurple": "brightPurple_exact"
     },
     "tokens": {
@@ -480,7 +504,7 @@ daintyDark: {
       "magenta": "purple30",
       "cyan": "cyan30",
       "white": "neutral34",
-      "brightBlack": "neutral30",
+      "brightBlack": "neutral16",
       "brightRed": "red30",
       "brightGreen": "green30",
       "brightYellow": "yellow30",
@@ -650,33 +674,27 @@ daintyMinimal: {
     },
     "accent": {
       "hue": 264.375,
-      "chroma": 10,
-      "chromaEnd": -5
+      "chroma": 14.0625
     },
     "red": {
-      "hue": 264.375,
-      "chroma": 10,
-      "chromaEnd": -5
+      "hue": 22.5,
+      "chroma": 12.5
     },
     "orange": {
       "hue": 45,
-      "chroma": 10,
-      "chromaEnd": -5
+      "chroma": 12.5
     },
     "yellow": {
-      "hue": 264.375,
-      "chroma": 10,
-      "chromaEnd": -5
+      "hue": 90,
+      "chroma": 12.5
     },
     "green": {
       "hue": 180,
-      "chroma": 10,
-      "chromaEnd": -5
+      "chroma": 12.5
     },
     "cyan": {
-      "hue": 264.375,
-      "chroma": 10,
-      "chromaEnd": -5
+      "hue": 212.5,
+      "chroma": 12.5
     },
     "neutral": {
       "hue": 264.375,
@@ -685,23 +703,19 @@ daintyMinimal: {
     },
     "blue": {
       "hue": 264.375,
-      "chroma": 15,
-      "chromaEnd": -5
+      "chroma": 12.5
     },
     "blueLessChroma": {
       "hue": 264.375,
-      "chroma": 10,
-      "chromaEnd": -5
+      "chroma": 6.25
     },
     "blueMoreChroma": {
       "hue": 264.375,
-      "chroma": 10,
-      "chromaEnd": -5
+      "chroma": 25
     },
     "purple": {
-      "hue": 264.375,
-      "chroma": 10,
-      "chromaEnd": -5
+      "hue": 315,
+      "chroma": 12.5
     }
   },
   "customizations": {
@@ -721,7 +735,7 @@ daintyMinimal: {
       "magenta": "purple30",
       "cyan": "cyan30",
       "white": "neutral34",
-      "brightBlack": "neutral30",
+      "brightBlack": "neutral16",
       "brightRed": "red30",
       "brightGreen": "green30",
       "brightYellow": "yellow30",
@@ -739,12 +753,12 @@ daintyMinimal: {
       "keyword": "blue26",
       "literal": "neutral32",
       "number": "green33",
-      "operator": "neutral20",
+      "operator": "neutral24",
       "other": "neutral30",
       "otherType": "blue26",
       "parameter": "neutral30",
       "property": "neutral30",
-      "punctuation": "neutral16",
+      "punctuation": "neutral20",
       "regex": "neutral30",
       "storageType": "blue26",
       "storageTypeFunction": "blue26",
@@ -818,6 +832,18 @@ darkPlus: {
       "hue": 315,
       "chroma": 50,
       "hex": "#bc3fbc"
+    },
+    "black": {
+      "hex": "#000000"
+    },
+    "white": {
+      "hex": "#e5e5e5"
+    },
+    "brightBlack": {
+      "hex": "#666666"
+    },
+    "brightWhite": {
+      "hex": "#e5e5e5"
     },
     "brightRed": {
       "hex": "#f14c4c"
@@ -916,22 +942,22 @@ darkPlus: {
     "tokensFilter": 0,
     "cursor": "cursor_exact",
     "terminal": {
-      "black": "neutral0",
+      "black": "black_exact",
       "red": "red_exact",
       "green": "green_exact",
       "yellow": "yellow_exact",
       "blue": "blue_exact",
       "magenta": "purple30",
       "cyan": "cyan_exact",
-      "white": "neutral34",
-      "brightBlack": "neutral30",
+      "white": "white_exact",
+      "brightBlack": "brightBlack_exact",
       "brightRed": "brightRed_exact",
       "brightGreen": "brightGreen_exact",
       "brightYellow": "brightYellow_exact",
       "brightBlue": "brightBlue_exact",
       "brightMagenta": "purple30",
       "brightCyan": "brightCyan_exact",
-      "brightWhite": "neutral39",
+      "brightWhite": "brightWhite_exact",
       "brightPurple": "brightPurple_exact"
     },
     "tokens": {
@@ -1023,6 +1049,18 @@ dracula: {
       "chroma": 50,
       "hex": "#ff79c6"
     },
+    "black": {
+      "hex": "#21222c"
+    },
+    "white": {
+      "hex": "#f8f8f2"
+    },
+    "brightBlack": {
+      "hex": "#6272a4"
+    },
+    "brightWhite": {
+      "hex": "#ffffff"
+    },
     "brightRed": {
       "hex": "#ff6e6e"
     },
@@ -1111,22 +1149,22 @@ dracula: {
     "tokensFilter": 0,
     "cursor": "neutral28",
     "terminal": {
-      "black": "neutral0",
+      "black": "black_exact",
       "red": "red_exact",
       "green": "green_exact",
       "yellow": "yellow_exact",
       "blue": "blue_exact",
       "magenta": "purple30",
       "cyan": "cyan_exact",
-      "white": "neutral34",
-      "brightBlack": "neutral30",
+      "white": "white_exact",
+      "brightBlack": "brightBlack_exact",
       "brightRed": "brightRed_exact",
       "brightGreen": "brightGreen_exact",
       "brightYellow": "brightYellow_exact",
       "brightBlue": "brightBlue_exact",
       "brightMagenta": "purple30",
       "brightCyan": "brightCyan_exact",
-      "brightWhite": "neutral39",
+      "brightWhite": "brightWhite_exact",
       "brightPurple": "brightPurple_exact"
     },
     "tokens": {
@@ -1236,7 +1274,7 @@ fluent: {
       "magenta": "purple30",
       "cyan": "cyan30",
       "white": "neutral34",
-      "brightBlack": "neutral30",
+      "brightBlack": "neutral16",
       "brightRed": "red30",
       "brightGreen": "green30",
       "brightYellow": "yellow30",
@@ -1334,6 +1372,18 @@ materialThemeOcean: {
       "chroma": 50,
       "hex": "#c792ea"
     },
+    "black": {
+      "hex": "#000000"
+    },
+    "white": {
+      "hex": "#ffffff"
+    },
+    "brightBlack": {
+      "hex": "#464b5d"
+    },
+    "brightWhite": {
+      "hex": "#ffffff"
+    },
     "brightRed": {
       "hex": "#ff5370"
     },
@@ -1428,22 +1478,22 @@ materialThemeOcean: {
     "tokensFilter": 0,
     "cursor": "cursor_exact",
     "terminal": {
-      "black": "neutral0",
+      "black": "black_exact",
       "red": "red_exact",
       "green": "green_exact",
       "yellow": "yellow_exact",
       "blue": "blue_exact",
       "magenta": "purple30",
       "cyan": "cyan_exact",
-      "white": "neutral34",
-      "brightBlack": "neutral30",
+      "white": "white_exact",
+      "brightBlack": "brightBlack_exact",
       "brightRed": "brightRed_exact",
       "brightGreen": "brightGreen_exact",
       "brightYellow": "brightYellow_exact",
       "brightBlue": "brightBlue_exact",
       "brightMagenta": "purple30",
       "brightCyan": "brightCyan_exact",
-      "brightWhite": "neutral39",
+      "brightWhite": "brightWhite_exact",
       "brightPurple": "brightPurple_exact"
     },
     "tokens": {
@@ -1534,6 +1584,18 @@ materialThemePalenight: {
       "hue": 315,
       "chroma": 50,
       "hex": "#c792ea"
+    },
+    "black": {
+      "hex": "#000000"
+    },
+    "white": {
+      "hex": "#ffffff"
+    },
+    "brightBlack": {
+      "hex": "#676e95"
+    },
+    "brightWhite": {
+      "hex": "#ffffff"
     },
     "brightRed": {
       "hex": "#ff5370"
@@ -1629,22 +1691,22 @@ materialThemePalenight: {
     "tokensFilter": 0,
     "cursor": "cursor_exact",
     "terminal": {
-      "black": "neutral0",
+      "black": "black_exact",
       "red": "red_exact",
       "green": "green_exact",
       "yellow": "yellow_exact",
       "blue": "blue_exact",
       "magenta": "purple30",
       "cyan": "cyan_exact",
-      "white": "neutral34",
-      "brightBlack": "neutral30",
+      "white": "white_exact",
+      "brightBlack": "brightBlack_exact",
       "brightRed": "brightRed_exact",
       "brightGreen": "brightGreen_exact",
       "brightYellow": "brightYellow_exact",
       "brightBlue": "brightBlue_exact",
       "brightMagenta": "purple30",
       "brightCyan": "brightCyan_exact",
-      "brightWhite": "neutral39",
+      "brightWhite": "brightWhite_exact",
       "brightPurple": "brightPurple_exact"
     },
     "tokens": {
@@ -1735,6 +1797,18 @@ materialTheme: {
       "hue": 315,
       "chroma": 50,
       "hex": "#c792ea"
+    },
+    "black": {
+      "hex": "#000000"
+    },
+    "white": {
+      "hex": "#ffffff"
+    },
+    "brightBlack": {
+      "hex": "#546e7a"
+    },
+    "brightWhite": {
+      "hex": "#ffffff"
     },
     "brightRed": {
       "hex": "#ff5370"
@@ -1830,22 +1904,22 @@ materialTheme: {
     "tokensFilter": 0,
     "cursor": "cursor_exact",
     "terminal": {
-      "black": "neutral0",
+      "black": "black_exact",
       "red": "red_exact",
       "green": "green_exact",
       "yellow": "yellow_exact",
       "blue": "blue_exact",
       "magenta": "purple30",
       "cyan": "cyan_exact",
-      "white": "neutral34",
-      "brightBlack": "neutral30",
+      "white": "white_exact",
+      "brightBlack": "brightBlack_exact",
       "brightRed": "brightRed_exact",
       "brightGreen": "brightGreen_exact",
       "brightYellow": "brightYellow_exact",
       "brightBlue": "brightBlue_exact",
       "brightMagenta": "purple30",
       "brightCyan": "brightCyan_exact",
-      "brightWhite": "neutral39",
+      "brightWhite": "brightWhite_exact",
       "brightPurple": "brightPurple_exact"
     },
     "tokens": {
@@ -1963,7 +2037,7 @@ minimal: {
       "magenta": "purple30",
       "cyan": "cyan30",
       "white": "neutral34",
-      "brightBlack": "neutral30",
+      "brightBlack": "neutral16",
       "brightRed": "red30",
       "brightGreen": "green30",
       "brightYellow": "yellow30",
@@ -2061,6 +2135,18 @@ monokaiNight: {
       "chroma": 50,
       "hex": "#8c6bc8"
     },
+    "black": {
+      "hex": "#333333"
+    },
+    "white": {
+      "hex": "#e3e3dd"
+    },
+    "brightBlack": {
+      "hex": "#666666"
+    },
+    "brightWhite": {
+      "hex": "#f8f8f2"
+    },
     "brightRed": {
       "hex": "#f92672"
     },
@@ -2155,22 +2241,22 @@ monokaiNight: {
     "tokensFilter": 0,
     "cursor": "cursor_exact",
     "terminal": {
-      "black": "neutral0",
+      "black": "black_exact",
       "red": "red_exact",
       "green": "green_exact",
       "yellow": "yellow_exact",
       "blue": "blue_exact",
       "magenta": "purple30",
       "cyan": "cyan_exact",
-      "white": "neutral34",
-      "brightBlack": "neutral30",
+      "white": "white_exact",
+      "brightBlack": "brightBlack_exact",
       "brightRed": "brightRed_exact",
       "brightGreen": "brightGreen_exact",
       "brightYellow": "brightYellow_exact",
       "brightBlue": "brightBlue_exact",
       "brightMagenta": "purple30",
       "brightCyan": "brightCyan_exact",
-      "brightWhite": "neutral39",
+      "brightWhite": "brightWhite_exact",
       "brightPurple": "brightPurple_exact"
     },
     "tokens": {
@@ -2261,6 +2347,18 @@ monokai: {
       "hue": 315,
       "chroma": 50,
       "hex": "#8c6bc8"
+    },
+    "black": {
+      "hex": "#333333"
+    },
+    "white": {
+      "hex": "#e3e3dd"
+    },
+    "brightBlack": {
+      "hex": "#666666"
+    },
+    "brightWhite": {
+      "hex": "#f8f8f2"
     },
     "brightRed": {
       "hex": "#f92672"
@@ -2353,22 +2451,22 @@ monokai: {
     "tokensFilter": 0,
     "cursor": "cursor_exact",
     "terminal": {
-      "black": "neutral0",
+      "black": "black_exact",
       "red": "red_exact",
       "green": "green_exact",
       "yellow": "yellow_exact",
       "blue": "blue_exact",
       "magenta": "purple30",
       "cyan": "cyan_exact",
-      "white": "neutral34",
-      "brightBlack": "neutral30",
+      "white": "white_exact",
+      "brightBlack": "brightBlack_exact",
       "brightRed": "brightRed_exact",
       "brightGreen": "brightGreen_exact",
       "brightYellow": "brightYellow_exact",
       "brightBlue": "brightBlue_exact",
       "brightMagenta": "purple30",
       "brightCyan": "brightCyan_exact",
-      "brightWhite": "neutral39",
+      "brightWhite": "brightWhite_exact",
       "brightPurple": "brightPurple_exact"
     },
     "tokens": {
@@ -2459,6 +2557,18 @@ nightOwl: {
       "hue": 315,
       "chroma": 50,
       "hex": "#c792ea"
+    },
+    "black": {
+      "hex": "#011627"
+    },
+    "white": {
+      "hex": "#ffffff"
+    },
+    "brightBlack": {
+      "hex": "#575656"
+    },
+    "brightWhite": {
+      "hex": "#ffffff"
     },
     "brightRed": {
       "hex": "#ef5350"
@@ -2560,22 +2670,22 @@ nightOwl: {
     "tokensFilter": 0,
     "cursor": "cursor_exact",
     "terminal": {
-      "black": "neutral0",
+      "black": "black_exact",
       "red": "red_exact",
       "green": "green_exact",
       "yellow": "yellow_exact",
       "blue": "blue_exact",
       "magenta": "purple30",
       "cyan": "cyan_exact",
-      "white": "neutral34",
-      "brightBlack": "neutral30",
+      "white": "white_exact",
+      "brightBlack": "brightBlack_exact",
       "brightRed": "brightRed_exact",
       "brightGreen": "brightGreen_exact",
       "brightYellow": "brightYellow_exact",
       "brightBlue": "brightBlue_exact",
       "brightMagenta": "purple30",
       "brightCyan": "brightCyan_exact",
-      "brightWhite": "neutral39",
+      "brightWhite": "brightWhite_exact",
       "brightPurple": "brightPurple_exact"
     },
     "tokens": {
@@ -2664,6 +2774,9 @@ oneDarkPro: {
       "hue": 315,
       "chroma": 50
     },
+    "black": {
+      "hex": "#2d3139"
+    },
     "tokenAttributeName": {
       "hex": "#d19a66"
     },
@@ -2746,7 +2859,7 @@ oneDarkPro: {
     "tokensFilter": 0,
     "cursor": "cursor_exact",
     "terminal": {
-      "black": "neutral0",
+      "black": "black_exact",
       "red": "red16",
       "green": "green_exact",
       "yellow": "yellow_exact",
@@ -2754,7 +2867,7 @@ oneDarkPro: {
       "magenta": "purple30",
       "cyan": "cyan30",
       "white": "neutral34",
-      "brightBlack": "neutral30",
+      "brightBlack": "neutral16",
       "brightRed": "red30",
       "brightGreen": "green30",
       "brightYellow": "yellow30",
@@ -2868,7 +2981,7 @@ prettier: {
       "magenta": "purple30",
       "cyan": "cyan30",
       "white": "neutral34",
-      "brightBlack": "neutral30",
+      "brightBlack": "neutral16",
       "brightRed": "red30",
       "brightGreen": "green30",
       "brightYellow": "yellow30",
@@ -2982,7 +3095,7 @@ purpleHaze: {
       "magenta": "purple30",
       "cyan": "cyan30",
       "white": "neutral34",
-      "brightBlack": "neutral30",
+      "brightBlack": "neutral16",
       "brightRed": "red30",
       "brightGreen": "green30",
       "brightYellow": "yellow30",
@@ -3080,6 +3193,18 @@ snazzyTheme: {
       "chroma": 50,
       "hex": "#ff6ac1"
     },
+    "black": {
+      "hex": "#282a36"
+    },
+    "white": {
+      "hex": "#f1f1f0"
+    },
+    "brightBlack": {
+      "hex": "#686868"
+    },
+    "brightWhite": {
+      "hex": "#eff0eb"
+    },
     "brightRed": {
       "hex": "#ff5c57"
     },
@@ -3174,22 +3299,22 @@ snazzyTheme: {
     "tokensFilter": 0,
     "cursor": "cursor_exact",
     "terminal": {
-      "black": "neutral0",
+      "black": "black_exact",
       "red": "red_exact",
       "green": "green_exact",
       "yellow": "yellow_exact",
       "blue": "blue_exact",
       "magenta": "purple30",
       "cyan": "cyan_exact",
-      "white": "neutral34",
-      "brightBlack": "neutral30",
+      "white": "white_exact",
+      "brightBlack": "brightBlack_exact",
       "brightRed": "brightRed_exact",
       "brightGreen": "brightGreen_exact",
       "brightYellow": "brightYellow_exact",
       "brightBlue": "brightBlue_exact",
       "brightMagenta": "purple30",
       "brightCyan": "brightCyan_exact",
-      "brightWhite": "neutral39",
+      "brightWhite": "brightWhite_exact",
       "brightPurple": "brightPurple_exact"
     },
     "tokens": {
@@ -3357,7 +3482,7 @@ tomorrowNightEighties: {
       "magenta": "purple30",
       "cyan": "cyan30",
       "white": "neutral34",
-      "brightBlack": "neutral30",
+      "brightBlack": "neutral16",
       "brightRed": "red30",
       "brightGreen": "green30",
       "brightYellow": "yellow30",

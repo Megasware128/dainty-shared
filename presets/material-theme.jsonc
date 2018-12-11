@@ -5,6 +5,12 @@
     "accent": {
       "hex": "#82aaff"
     },
+    "black": {
+      "hex": "#000000"
+    },
+    "white": {
+      "hex": "#ffffff"
+    },
     "red": {
       "hex": "#ff5370"
     },
@@ -31,6 +37,12 @@
     },
     "purple": {
       "hex": "#c792ea"
+    },
+    "brightBlack": {
+      "hex": "#546e7a"
+    },
+    "brightWhite": {
+      "hex": "#ffffff"
     },
     "brightRed": {
       "hex": "#ff5370"
@@ -119,11 +131,15 @@
   },
   "customizations": {
     "terminal": {
+      "black": "black_exact",
+      "white": "white_exact",
       "red": "red_exact",
       "yellow": "yellow_exact",
       "green": "green_exact",
       "cyan": "cyan_exact",
       "blue": "blue_exact",
+      "brightBlack": "brightBlack_exact",
+      "brightWhite": "brightWhite_exact",
       "brightRed": "brightRed_exact",
       "brightYellow": "brightYellow_exact",
       "brightGreen": "brightGreen_exact",

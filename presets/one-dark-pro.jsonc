@@ -5,6 +5,9 @@
     "accent": {
       "hex": "#61afef"
     },
+    "black": {
+      "hex": "#2d3139"
+    },
     "yellow": {
       "hex": "#d19a66"
     },
@@ -98,6 +101,7 @@
   },
   "customizations": {
     "terminal": {
+      "black": "black_exact",
       "yellow": "yellow_exact",
       "green": "green_exact",
       "blue": "blue_exact"
