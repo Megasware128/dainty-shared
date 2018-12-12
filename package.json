@@ -1,6 +1,6 @@
 {
   "name": "dainty-shared",
-  "version": "2.2.1-f3a56bb",
+  "version": "2.2.1-8d9cbed",
   "main": "src/index.js",
   "scripts": {
     "test": "jest --watch",
