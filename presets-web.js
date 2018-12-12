@@ -428,20 +428,124 @@ cobalt2: {
     }
   }
 },
+daintyDarkMinimal: {
+  "name": "Dainty Dark Minimal",
+  "type": "dark",
+  "colors": {
+    "_all": {
+      "lightnessStart": 10
+    },
+    "accent": {
+      "hue": 270,
+      "chroma": 21.875
+    },
+    "red": {
+      "hue": 22.5,
+      "chroma": 9.375
+    },
+    "orange": {
+      "hue": 45,
+      "chroma": 6.25
+    },
+    "yellow": {
+      "hue": 90,
+      "chroma": 9.375
+    },
+    "green": {
+      "hue": 180,
+      "chroma": 9.375
+    },
+    "cyan": {
+      "hue": 212.5,
+      "chroma": 9.375
+    },
+    "neutral": {
+      "hue": 270,
+      "chroma": 12.109375,
+      "chromaEnd": -3.75
+    },
+    "blue": {
+      "hue": 270,
+      "chroma": 12.5
+    },
+    "blueLessChroma": {
+      "hue": 270,
+      "chroma": 9.375
+    },
+    "blueMoreChroma": {
+      "hue": 270,
+      "chroma": 21.875
+    },
+    "purple": {
+      "hue": 315,
+      "chroma": 9.375
+    }
+  },
+  "customizations": {
+    "accents": [
+      "accent24_a0",
+      "accent24_d0",
+      "accent24"
+    ],
+    "tokensFilter": 0,
+    "cursor": "neutral28",
+    "terminal": {
+      "black": "neutral0",
+      "red": "red16",
+      "green": "green16",
+      "yellow": "yellow30",
+      "blue": "blue30",
+      "magenta": "purple30",
+      "cyan": "cyan30",
+      "white": "neutral34",
+      "brightBlack": "neutral16",
+      "brightRed": "red30",
+      "brightGreen": "green30",
+      "brightYellow": "yellow30",
+      "brightBlue": "blue30",
+      "brightMagenta": "purple30",
+      "brightCyan": "cyan30",
+      "brightWhite": "neutral39"
+    },
+    "tokens": {
+      "attributeName": "neutral30",
+      "comment": "neutral16",
+      "constant": "neutral30",
+      "function": "neutral30",
+      "jsxTag": "blue26",
+      "keyword": "blue26",
+      "literal": "neutral32",
+      "number": "green34",
+      "operator": "neutral24",
+      "other": "neutral30",
+      "otherType": "blue26",
+      "parameter": "neutral30",
+      "property": "neutral30",
+      "punctuation": "neutral20",
+      "regex": "neutral30",
+      "storageType": "blue26",
+      "storageTypeFunction": "blue26",
+      "string": "orange34",
+      "stringTemplate": "orange34",
+      "supportFunction": "neutral30",
+      "supportType": "blue26",
+      "tag": "blue26",
+      "type": "blue26",
+      "url": "neutral30",
+      "variable": "neutral30",
+      "variableProperty": "neutral30"
+    }
+  }
+},
 daintyDark: {
   "name": "Dainty Dark",
   "type": "dark",
   "colors": {
     "_all": {
-      "lightnessStart": 10,
-      "filter": {
-        "opacity": 6.25,
-        "chroma": 25,
-        "hue": 0
-      }
+      "lightnessStart": 10
     },
     "accent": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 43.75
     },
     "red": {
@@ -465,20 +569,20 @@ daintyDark: {
       "chroma": 25
     },
     "neutral": {
-      "hue": 264.375,
-      "chroma": 10,
-      "chromaEnd": -5
+      "hue": 270,
+      "chroma": 12.109375,
+      "chromaEnd": -3.75
     },
     "blue": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 25
     },
     "blueLessChroma": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 18.75
     },
     "blueMoreChroma": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 31.25
     },
     "purple": {
@@ -548,15 +652,10 @@ daintyLight: {
   "colors": {
     "_all": {
       "lightnessStart": 10,
-      "chroma": 25,
-      "filter": {
-        "opacity": 3.125,
-        "chroma": 25,
-        "hue": 0
-      }
+      "chroma": 25
     },
     "accent": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 43.75
     },
     "red": {
@@ -580,20 +679,20 @@ daintyLight: {
       "chroma": 31.25
     },
     "neutral": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 0,
       "chromaEnd": -23.75
     },
     "blue": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 31.25
     },
     "blueLessChroma": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 18.75
     },
     "blueMoreChroma": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 43.75
     },
     "purple": {
@@ -656,120 +755,6 @@ daintyLight: {
       "url": "blueMoreChroma16",
       "variable": "neutral0",
       "variableProperty": "neutral0"
-    }
-  }
-},
-daintyMinimal: {
-  "name": "Dainty Minimal",
-  "type": "dark",
-  "colors": {
-    "_all": {
-      "lightnessStart": 10,
-      "filter": {
-        "opacity": 6.25,
-        "chroma": 25,
-        "hue": 0
-      }
-    },
-    "accent": {
-      "hue": 264.375,
-      "chroma": 21.875
-    },
-    "red": {
-      "hue": 22.5,
-      "chroma": 9.375
-    },
-    "orange": {
-      "hue": 45,
-      "chroma": 6.25
-    },
-    "yellow": {
-      "hue": 90,
-      "chroma": 9.375
-    },
-    "green": {
-      "hue": 180,
-      "chroma": 9.375
-    },
-    "cyan": {
-      "hue": 212.5,
-      "chroma": 9.375
-    },
-    "neutral": {
-      "hue": 264.375,
-      "chroma": 10,
-      "chromaEnd": -2.5
-    },
-    "blue": {
-      "hue": 264.375,
-      "chroma": 12.5
-    },
-    "blueLessChroma": {
-      "hue": 264.375,
-      "chroma": 9.375
-    },
-    "blueMoreChroma": {
-      "hue": 264.375,
-      "chroma": 21.875
-    },
-    "purple": {
-      "hue": 315,
-      "chroma": 9.375
-    }
-  },
-  "customizations": {
-    "accents": [
-      "accent24_a0",
-      "accent24_d0",
-      "accent24"
-    ],
-    "tokensFilter": 0,
-    "cursor": "neutral28",
-    "terminal": {
-      "black": "neutral0",
-      "red": "red16",
-      "green": "green16",
-      "yellow": "yellow30",
-      "blue": "blue30",
-      "magenta": "purple30",
-      "cyan": "cyan30",
-      "white": "neutral34",
-      "brightBlack": "neutral16",
-      "brightRed": "red30",
-      "brightGreen": "green30",
-      "brightYellow": "yellow30",
-      "brightBlue": "blue30",
-      "brightMagenta": "purple30",
-      "brightCyan": "cyan30",
-      "brightWhite": "neutral39"
-    },
-    "tokens": {
-      "attributeName": "neutral30",
-      "comment": "neutral16",
-      "constant": "neutral30",
-      "function": "neutral30",
-      "jsxTag": "blue26",
-      "keyword": "blue26",
-      "literal": "neutral32",
-      "number": "green34",
-      "operator": "neutral24",
-      "other": "neutral30",
-      "otherType": "blue26",
-      "parameter": "neutral30",
-      "property": "neutral30",
-      "punctuation": "neutral20",
-      "regex": "neutral30",
-      "storageType": "blue26",
-      "storageTypeFunction": "blue26",
-      "string": "orange34",
-      "stringTemplate": "orange34",
-      "supportFunction": "neutral30",
-      "supportType": "blue26",
-      "tag": "blue26",
-      "type": "blue26",
-      "url": "neutral30",
-      "variable": "neutral30",
-      "variableProperty": "neutral30"
     }
   }
 },
