@@ -4,87 +4,56 @@
   "colors": {
     "_all": {
       "lightnessStart": 10,
-      "chroma": -2.5,
       "filter": {
         "opacity": 6.25,
-
-        // 100 / 16 * 5
-        "chroma": 31.25,
-
-        // 270 - 90 / 16
-        "hue": 264.375
+        "chroma": 25,
+        "hue": 0
       }
     },
     "accent": {
-      // 270 - 90 / 16
       "hue": 264.375,
-
-      // 100 / 16 * 7
       "chroma": 43.75
     },
     "red": {
       "hue": 22.5,
-
-      // 100 / 16 * 5
-      "chroma": 31.25
+      "chroma": 25
     },
     "orange": {
       "hue": 45,
-
-      // 100 / 32 * 5
-      "chroma": 15.625
+      "chroma": 9.375
     },
     "yellow": {
       "hue": 90,
-
-      // 100 / 4
       "chroma": 25
     },
     "green": {
       "hue": 180,
-
-      // 100 / 4
-      "chroma": 25
+      "chroma": 18.75
     },
     "cyan": {
       "hue": 225,
-
-      // 100 / 16 * 5
-      "chroma": 31.25
+      "chroma": 25
     },
     "neutral": {
-      // 270 - 90 / 16
       "hue": 264.375,
-
       "chroma": 10,
       "chromaEnd": -5
     },
     "blue": {
-      // 270 - 90 / 16
       "hue": 264.375,
-
-      // 100 / 16 * 5
-      "chroma": 31.25
+      "chroma": 25
     },
     "blueLessChroma": {
-      // 270 - 90 / 16
       "hue": 264.375,
-
-      // 100 / 16 * 3
       "chroma": 18.75
     },
     "blueMoreChroma": {
-      // 270 - 90 / 16
       "hue": 264.375,
-
-      // 100 / 16 * 7
-      "chroma": 43.75
+      "chroma": 31.25
     },
     "purple": {
       "hue": 315,
-
-      // 100 / 16 * 5
-      "chroma": 43.75
+      "chroma": 25
     }
   }
 }

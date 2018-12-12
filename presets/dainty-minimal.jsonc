@@ -16,28 +16,28 @@
     },
     "red": {
       "hue": 22.5,
-      "chroma": 12.5
+      "chroma": 9.375
     },
     "orange": {
       "hue": 45,
-      "chroma": 12.5
+      "chroma": 6.25
     },
     "yellow": {
       "hue": 90,
-      "chroma": 12.5
+      "chroma": 9.375
     },
     "green": {
       "hue": 180,
-      "chroma": 12.5
+      "chroma": 9.375
     },
     "cyan": {
       "hue": 212.5,
-      "chroma": 12.5
+      "chroma": 9.375
     },
     "neutral": {
       "hue": 264.375,
       "chroma": 10,
-      "chromaEnd": -5
+      "chromaEnd": -2.5
     },
     "blue": {
       "hue": 264.375,
@@ -45,7 +45,7 @@
     },
     "blueLessChroma": {
       "hue": 264.375,
-      "chroma": 6.25
+      "chroma": 9.375
     },
     "blueMoreChroma": {
       "hue": 264.375,
@@ -53,7 +53,7 @@
     },
     "purple": {
       "hue": 315,
-      "chroma": 12.5
+      "chroma": 9.375
     }
   },
   "customizations": {
@@ -65,7 +65,7 @@
       "jsxTag": "blue26",
       "keyword": "blue26",
       "literal": "neutral32",
-      "number": "green33",
+      "number": "green34",
       "operator": "neutral24",
       "other": "neutral30",
       "otherType": "blue26",
@@ -75,8 +75,8 @@
       "regex": "neutral30",
       "storageType": "blue26",
       "storageTypeFunction": "blue26",
-      "string": "orange33",
-      "stringTemplate": "orange33",
+      "string": "orange34",
+      "stringTemplate": "orange34",
       "supportFunction": "neutral30",
       "supportType": "blue26",
       "tag": "blue26",
