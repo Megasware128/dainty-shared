@@ -4,15 +4,10 @@
   "colors": {
     "_all": {
       "lightnessStart": 10,
-      "chroma": 25,
-      "filter": {
-        "opacity": 3.125,
-        "chroma": 25,
-        "hue": 0
-      }
+      "chroma": 25
     },
     "accent": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 43.75
     },
     "red": {
@@ -36,20 +31,20 @@
       "chroma": 31.25
     },
     "neutral": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 0,
       "chromaEnd": -23.75
     },
     "blue": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 31.25
     },
     "blueLessChroma": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 18.75
     },
     "blueMoreChroma": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 43.75
     },
     "purple": {

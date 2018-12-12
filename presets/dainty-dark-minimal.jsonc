@@ -1,17 +1,12 @@
 {
-  "name": "Dainty Minimal",
+  "name": "Dainty Dark Minimal",
   "type": "dark",
   "colors": {
     "_all": {
-      "lightnessStart": 10,
-      "filter": {
-        "opacity": 6.25,
-        "chroma": 25,
-        "hue": 0
-      }
+      "lightnessStart": 10
     },
     "accent": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 21.875
     },
     "red": {
@@ -35,20 +30,20 @@
       "chroma": 9.375
     },
     "neutral": {
-      "hue": 264.375,
-      "chroma": 10,
-      "chromaEnd": -2.5
+      "hue": 270,
+      "chroma": 12.109375,
+      "chromaEnd": -3.75
     },
     "blue": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 12.5
     },
     "blueLessChroma": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 9.375
     },
     "blueMoreChroma": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 21.875
     },
     "purple": {
