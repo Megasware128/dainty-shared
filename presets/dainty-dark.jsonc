@@ -7,7 +7,7 @@
     },
     "accent": {
       "hue": 270,
-      "chroma": 43.75
+      "chroma": 31.25
     },
     "red": {
       "hue": 22.5,
@@ -23,7 +23,7 @@
     },
     "green": {
       "hue": 180,
-      "chroma": 18.75
+      "chroma": 17.1875
     },
     "cyan": {
       "hue": 225,
