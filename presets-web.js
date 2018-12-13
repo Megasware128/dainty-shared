@@ -461,7 +461,7 @@ daintyDarkMinimal: {
     },
     "neutral": {
       "hue": 270,
-      "chroma": 12.109375,
+      "chroma": 10.15625,
       "chromaEnd": -4.6875
     },
     "blue": {
@@ -1941,65 +1941,60 @@ minimal: {
   "type": "dark",
   "colors": {
     "_all": {
-      "lightnessStart": 10,
-      "filter": {
-        "opacity": 6.25,
-        "chroma": 25,
-        "hue": 0
-      }
+      "lightnessStart": 10
     },
     "accent": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 10,
       "chromaEnd": -5
     },
     "red": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 10,
       "chromaEnd": -5
     },
     "orange": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 10,
       "chromaEnd": -5
     },
     "yellow": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 10,
       "chromaEnd": -5
     },
     "green": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 10,
       "chromaEnd": -5
     },
     "cyan": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 10,
       "chromaEnd": -5
     },
     "neutral": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 10,
       "chromaEnd": -5
     },
     "blue": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 10,
       "chromaEnd": -5
     },
     "blueLessChroma": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 10,
       "chromaEnd": -5
     },
     "blueMoreChroma": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 10,
       "chromaEnd": -5
     },
     "purple": {
-      "hue": 264.375,
+      "hue": 270,
       "chroma": 10,
       "chromaEnd": -5
     }
