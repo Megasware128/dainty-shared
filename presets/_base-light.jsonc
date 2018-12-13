@@ -73,10 +73,10 @@
       "brightWhite": "neutral39"
     },
     "tokens": {
-      "attributeName": "blueLessChroma18",
+      "attributeName": "blueLessChroma20",
       "comment": "neutral24",
       "constant": "neutral0",
-      "function": "blueLessChroma18",
+      "function": "blueLessChroma20",
       "jsxTag": "blue12",
       "keyword": "blue12",
       "literal": "blue12",
