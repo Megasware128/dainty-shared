@@ -554,7 +554,7 @@ daintyDark: {
     },
     "orange": {
       "hue": 45,
-      "chroma": 6.25
+      "chroma": 10.15625
     },
     "yellow": {
       "hue": 90,
@@ -562,7 +562,7 @@ daintyDark: {
     },
     "green": {
       "hue": 180,
-      "chroma": 12.5
+      "chroma": 14.0625
     },
     "cyan": {
       "hue": 225,
@@ -570,7 +570,7 @@ daintyDark: {
     },
     "neutral": {
       "hue": 270,
-      "chroma": 8.59375,
+      "chroma": 10.15625,
       "chromaEnd": -4.6875
     },
     "blue": {
