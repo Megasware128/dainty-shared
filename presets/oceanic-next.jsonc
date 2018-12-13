@@ -1,0 +1,110 @@
+{
+  "name": "Oceanic Next",
+  "type": "dark",
+  "colors": {
+    "accent": {
+      "hex": "#6699cc"
+    },
+    "neutral": {
+      "hex": "#282c34"
+    },
+    "tokenAttributeName": {
+      "hex": "#bb80b3"
+    },
+    "tokenComment": {
+      "hex": "#65737e"
+    },
+    "tokenFunction": {
+      "hex": "#6699cc"
+    },
+    "tokenJsxTag": {
+      "hex": "#fac863"
+    },
+    "tokenKeyword": {
+      "hex": "#c594c5"
+    },
+    "tokenLiteral": {
+      "hex": "#f99157"
+    },
+    "tokenNumber": {
+      "hex": "#f99157"
+    },
+    "tokenOperator": {
+      "hex": "#5fb3b3"
+    },
+    "tokenOther": {
+      "hex": "#cdd3de"
+    },
+    "tokenOtherType": {
+      "hex": "#fac863"
+    },
+    "tokenParameter": {
+      "hex": "#f99157"
+    },
+    "tokenPunctuation": {
+      "hex": "#5fb3b3"
+    },
+    "tokenStorageType": {
+      "hex": "#c594c5"
+    },
+    "tokenStorageTypeFunction": {
+      "hex": "#c594c5"
+    },
+    "tokenString": {
+      "hex": "#99c794"
+    },
+    "tokenStringTemplate": {
+      "hex": "#99c794"
+    },
+    "tokenSupportFunction": {
+      "hex": "#6699cc"
+    },
+    "tokenSupportType": {
+      "hex": "#fac863"
+    },
+    "tokenTag": {
+      "hex": "#eb606b"
+    },
+    "tokenType": {
+      "hex": "#fac863"
+    },
+    "tokenVariable": {
+      "hex": "#cdd3de"
+    },
+    "cursor": {
+      "hex": "#c0c5ce"
+    }
+  },
+  "customizations": {
+    "terminal": {},
+    "tokens": {
+      "attributeName": "tokenAttributeName_exact",
+      "comment": "tokenComment_exact",
+      "function": "tokenFunction_exact",
+      "jsxTag": "tokenJsxTag_exact",
+      "keyword": "tokenKeyword_exact",
+      "literal": "tokenLiteral_exact",
+      "number": "tokenNumber_exact",
+      "operator": "tokenOperator_exact",
+      "other": "tokenOther_exact",
+      "otherType": "tokenOtherType_exact",
+      "parameter": "tokenParameter_exact",
+      "punctuation": "tokenPunctuation_exact",
+      "storageType": "tokenStorageType_exact",
+      "storageTypeFunction": "tokenStorageTypeFunction_exact",
+      "string": "tokenString_exact",
+      "stringTemplate": "tokenStringTemplate_exact",
+      "supportFunction": "tokenSupportFunction_exact",
+      "supportType": "tokenSupportType_exact",
+      "tag": "tokenTag_exact",
+      "type": "tokenType_exact",
+      "variable": "tokenVariable_exact"
+    },
+    "accents": [
+      "accent_a0_exact",
+      "accent_d0_exact",
+      "accent_exact"
+    ],
+    "cursor": "cursor_exact"
+  }
+}

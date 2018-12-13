@@ -462,7 +462,7 @@ daintyDarkMinimal: {
     "neutral": {
       "hue": 270,
       "chroma": 12.109375,
-      "chromaEnd": -3.75
+      "chromaEnd": -4.6875
     },
     "blue": {
       "hue": 270,
@@ -546,7 +546,7 @@ daintyDark: {
     },
     "accent": {
       "hue": 270,
-      "chroma": 43.75
+      "chroma": 31.25
     },
     "red": {
       "hue": 22.5,
@@ -554,7 +554,7 @@ daintyDark: {
     },
     "orange": {
       "hue": 45,
-      "chroma": 9.375
+      "chroma": 6.25
     },
     "yellow": {
       "hue": 90,
@@ -562,7 +562,7 @@ daintyDark: {
     },
     "green": {
       "hue": 180,
-      "chroma": 18.75
+      "chroma": 12.5
     },
     "cyan": {
       "hue": 225,
@@ -571,7 +571,7 @@ daintyDark: {
     "neutral": {
       "hue": 270,
       "chroma": 12.109375,
-      "chromaEnd": -3.75
+      "chromaEnd": -4.6875
     },
     "blue": {
       "hue": 270,
@@ -2699,6 +2699,180 @@ nightOwl: {
       "url": "blueMoreChroma28",
       "variable": "tokenVariable_exact",
       "variableProperty": "tokenVariableProperty_exact"
+    }
+  }
+},
+oceanicNext: {
+  "name": "Oceanic Next",
+  "type": "dark",
+  "colors": {
+    "_all": {},
+    "accent": {
+      "hue": 270,
+      "chroma": 50,
+      "hex": "#6699cc"
+    },
+    "red": {
+      "hue": 22.5,
+      "chroma": 25
+    },
+    "orange": {
+      "hue": 45,
+      "chroma": 12.5
+    },
+    "yellow": {
+      "hue": 90,
+      "chroma": 25
+    },
+    "green": {
+      "hue": 180,
+      "chroma": 25
+    },
+    "cyan": {
+      "hue": 225,
+      "chroma": 25
+    },
+    "neutral": {
+      "hue": 270,
+      "chroma": 10,
+      "hex": "#282c34"
+    },
+    "blue": {
+      "hue": 270,
+      "chroma": 25
+    },
+    "blueLessChroma": {
+      "hue": 270,
+      "chroma": 12.5
+    },
+    "blueMoreChroma": {
+      "hue": 270,
+      "chroma": 50
+    },
+    "purple": {
+      "hue": 315,
+      "chroma": 50
+    },
+    "tokenAttributeName": {
+      "hex": "#bb80b3"
+    },
+    "tokenComment": {
+      "hex": "#65737e"
+    },
+    "tokenFunction": {
+      "hex": "#6699cc"
+    },
+    "tokenJsxTag": {
+      "hex": "#fac863"
+    },
+    "tokenKeyword": {
+      "hex": "#c594c5"
+    },
+    "tokenLiteral": {
+      "hex": "#f99157"
+    },
+    "tokenNumber": {
+      "hex": "#f99157"
+    },
+    "tokenOperator": {
+      "hex": "#5fb3b3"
+    },
+    "tokenOther": {
+      "hex": "#cdd3de"
+    },
+    "tokenOtherType": {
+      "hex": "#fac863"
+    },
+    "tokenParameter": {
+      "hex": "#f99157"
+    },
+    "tokenPunctuation": {
+      "hex": "#5fb3b3"
+    },
+    "tokenStorageType": {
+      "hex": "#c594c5"
+    },
+    "tokenStorageTypeFunction": {
+      "hex": "#c594c5"
+    },
+    "tokenString": {
+      "hex": "#99c794"
+    },
+    "tokenStringTemplate": {
+      "hex": "#99c794"
+    },
+    "tokenSupportFunction": {
+      "hex": "#6699cc"
+    },
+    "tokenSupportType": {
+      "hex": "#fac863"
+    },
+    "tokenTag": {
+      "hex": "#eb606b"
+    },
+    "tokenType": {
+      "hex": "#fac863"
+    },
+    "tokenVariable": {
+      "hex": "#cdd3de"
+    },
+    "cursor": {
+      "hex": "#c0c5ce"
+    }
+  },
+  "customizations": {
+    "accents": [
+      "accent_a0_exact",
+      "accent_d0_exact",
+      "accent_exact"
+    ],
+    "tokensFilter": 0,
+    "cursor": "cursor_exact",
+    "terminal": {
+      "black": "neutral0",
+      "red": "red16",
+      "green": "green16",
+      "yellow": "yellow30",
+      "blue": "blue30",
+      "magenta": "purple30",
+      "cyan": "cyan30",
+      "white": "neutral34",
+      "brightBlack": "neutral16",
+      "brightRed": "red30",
+      "brightGreen": "green30",
+      "brightYellow": "yellow30",
+      "brightBlue": "blue30",
+      "brightMagenta": "purple30",
+      "brightCyan": "cyan30",
+      "brightWhite": "neutral39"
+    },
+    "tokens": {
+      "attributeName": "tokenAttributeName_exact",
+      "comment": "tokenComment_exact",
+      "constant": "neutral34",
+      "function": "tokenFunction_exact",
+      "jsxTag": "tokenJsxTag_exact",
+      "keyword": "tokenKeyword_exact",
+      "literal": "tokenLiteral_exact",
+      "number": "tokenNumber_exact",
+      "operator": "tokenOperator_exact",
+      "other": "tokenOther_exact",
+      "otherType": "tokenOtherType_exact",
+      "parameter": "tokenParameter_exact",
+      "property": "neutral34",
+      "punctuation": "tokenPunctuation_exact",
+      "regex": "purple30",
+      "storageType": "tokenStorageType_exact",
+      "storageTypeFunction": "tokenStorageTypeFunction_exact",
+      "string": "tokenString_exact",
+      "stringTemplate": "tokenStringTemplate_exact",
+      "supportFunction": "tokenSupportFunction_exact",
+      "supportType": "tokenSupportType_exact",
+      "tag": "tokenTag_exact",
+      "type": "tokenType_exact",
+      "url": "blueMoreChroma28",
+      "variable": "tokenVariable_exact",
+      "variableProperty": "neutral34"
     }
   }
 },
