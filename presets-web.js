@@ -570,7 +570,7 @@ daintyDark: {
     },
     "neutral": {
       "hue": 270,
-      "chroma": 12.109375,
+      "chroma": 8.59375,
       "chromaEnd": -4.6875
     },
     "blue": {
@@ -729,10 +729,10 @@ daintyLight: {
       "brightWhite": "neutral39"
     },
     "tokens": {
-      "attributeName": "blueLessChroma18",
+      "attributeName": "blueLessChroma20",
       "comment": "neutral24",
       "constant": "neutral0",
-      "function": "blueLessChroma18",
+      "function": "blueLessChroma20",
       "jsxTag": "blue12",
       "keyword": "blue12",
       "literal": "blue12",
