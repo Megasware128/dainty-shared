@@ -2,10 +2,6 @@
   "name": "Fluent",
   "type": "dark",
   "colors": {
-    "_all": {
-      "lightnessStart": 0,
-      "chroma": 0
-    },
     "orange": {
       "hex": "#ef6950"
     },
@@ -13,9 +9,7 @@
       "hex": "#00cc6a"
     },
     "neutral": {
-      "hex": "#092642",
-      "chromaStart": -1.25,
-      "chromaEnd": -15
+      "hex": "#092642"
     },
     "blue": {
       "hex": "#0078d4"

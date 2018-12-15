@@ -1,5 +1,21 @@
 # Changelog
 
+## `3.0.0`
+
+- Use virtual scales of 16 shades with Bézier interpolation
+- Change color constant format from `blue30_80` to `blue-12-0.5`
+- Fix resolving WSL paths
+- Import black, white, bright black and bright white terminal colors
+- Merge terminal colors into Dainty colors for imported color themes
+- Refine default presets
+- Add presets
+  - Debug preset
+  - Base presets for each type that every preset derives from
+  - Minimal
+  - Dainty Dark Minimal
+  - Additional imported presets
+- Extend list of supported tokens
+
 ## `2.2.1`
 
 - Enable filtering of tokens

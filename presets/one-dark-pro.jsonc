@@ -101,41 +101,41 @@
   },
   "customizations": {
     "terminal": {
-      "black": "black_exact",
-      "yellow": "yellow_exact",
-      "green": "green_exact",
-      "blue": "blue_exact"
+      "black": "black-exact",
+      "yellow": "yellow-exact",
+      "green": "green-exact",
+      "blue": "blue-exact"
     },
     "tokens": {
-      "attributeName": "tokenAttributeName_exact",
-      "comment": "tokenComment_exact",
-      "constant": "tokenConstant_exact",
-      "function": "tokenFunction_exact",
-      "jsxTag": "tokenJsxTag_exact",
-      "keyword": "tokenKeyword_exact",
-      "literal": "tokenLiteral_exact",
-      "number": "tokenNumber_exact",
-      "operator": "tokenOperator_exact",
-      "otherType": "tokenOtherType_exact",
-      "parameter": "tokenParameter_exact",
-      "property": "tokenProperty_exact",
-      "regex": "tokenRegex_exact",
-      "storageType": "tokenStorageType_exact",
-      "storageTypeFunction": "tokenStorageTypeFunction_exact",
-      "string": "tokenString_exact",
-      "stringTemplate": "tokenStringTemplate_exact",
-      "supportFunction": "tokenSupportFunction_exact",
-      "supportType": "tokenSupportType_exact",
-      "tag": "tokenTag_exact",
-      "type": "tokenType_exact",
-      "variable": "tokenVariable_exact",
-      "variableProperty": "tokenVariableProperty_exact"
+      "attributeName": "tokenAttributeName-exact",
+      "comment": "tokenComment-exact",
+      "constant": "tokenConstant-exact",
+      "function": "tokenFunction-exact",
+      "jsxTag": "tokenJsxTag-exact",
+      "keyword": "tokenKeyword-exact",
+      "literal": "tokenLiteral-exact",
+      "number": "tokenNumber-exact",
+      "operator": "tokenOperator-exact",
+      "otherType": "tokenOtherType-exact",
+      "parameter": "tokenParameter-exact",
+      "property": "tokenProperty-exact",
+      "regex": "tokenRegex-exact",
+      "storageType": "tokenStorageType-exact",
+      "storageTypeFunction": "tokenStorageTypeFunction-exact",
+      "string": "tokenString-exact",
+      "stringTemplate": "tokenStringTemplate-exact",
+      "supportFunction": "tokenSupportFunction-exact",
+      "supportType": "tokenSupportType-exact",
+      "tag": "tokenTag-exact",
+      "type": "tokenType-exact",
+      "variable": "tokenVariable-exact",
+      "variableProperty": "tokenVariableProperty-exact"
     },
     "accents": [
-      "accent_a0_exact",
-      "accent_d0_exact",
-      "accent_exact"
+      "accent-exact-0.5",
+      "accent-exact-0.75",
+      "accent-exact"
     ],
-    "cursor": "cursor_exact"
+    "cursor": "cursor-exact"
   }
 }

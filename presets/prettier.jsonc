@@ -24,16 +24,16 @@
   },
   "customizations": {
     "tokens": {
-      "function": "purple_exact",
-      "keyword": "blue_exact",
-      "literal": "red_exact",
-      "number": "red_exact",
-      "otherType": "purple_exact",
-      "regex": "purple_exact",
-      "storageType": "blue_exact",
-      "type": "blue_exact",
-      "string": "orange_exact",
-      "supportType": "blue_exact"
+      "function": "purple-exact",
+      "keyword": "blue-exact",
+      "literal": "red-exact",
+      "number": "red-exact",
+      "otherType": "purple-exact",
+      "regex": "purple-exact",
+      "storageType": "blue-exact",
+      "type": "blue-exact",
+      "string": "orange-exact",
+      "supportType": "blue-exact"
     }
   }
 }

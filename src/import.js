@@ -221,9 +221,9 @@ function transform(theme, hints) {
 
     if (color === "accent") {
       newTheme.customizations.accents = [
-        "accent_a0_exact",
-        "accent_d0_exact",
-        "accent_exact"
+        "accent-exact-0.5",
+        "accent-exact-0.75",
+        "accent-exact"
       ];
     }
 
@@ -240,7 +240,7 @@ function transform(theme, hints) {
       ].includes(color) ||
       color.startsWith("bright")
     ) {
-      newTheme.customizations.terminal[color] = `${color}_exact`;
+      newTheme.customizations.terminal[color] = `${color}-exact`;
     }
   }
 
@@ -256,12 +256,12 @@ function transform(theme, hints) {
       hex: tokens[token]
     };
 
-    newTheme.customizations.tokens[token] = `${propertyName}_exact`;
+    newTheme.customizations.tokens[token] = `${propertyName}-exact`;
   }
 
   if (getColor("editorCursor.foreground")) {
     newTheme.colors.cursor = { hex: getColor("editorCursor.foreground") };
-    newTheme.customizations.cursor = "cursor_exact";
+    newTheme.customizations.cursor = "cursor-exact";
   }
 
   return newTheme;

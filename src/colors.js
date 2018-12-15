@@ -1,21 +1,146 @@
 const culori = require("culori");
+const easing = require("bezier-easing");
 const changeCase = require("change-case");
-const { groupBy, identity, valueOrDefault, sum } = require("./utils-universal");
+const { valueOrDefault, sum } = require("./utils-universal");
 
 const maximumLightness = 100;
 const maximumChroma = 131.207;
-const defaultHue = 264.375;
+const defaultHue = 270;
 
-let colorsCount = [];
-let isTrackingColorsCount = false;
+function getInternalColor(scale, color) {
+  if (color.hex) {
+    const lchColor = culori.lch(color.hex);
 
-function adjustChroma(color, amount) {
-  const lchColor = culori.lch(color);
+    return {
+      ...color,
+      lightnessStart: scale === "neutral" ? lchColor.l : null,
+      lightnessExact: lchColor.l,
+      chroma: (lchColor.c / maximumChroma) * 100,
+      hue: lchColor.h ? lchColor.h : defaultHue
+    };
+  } else {
+    return color;
+  }
+}
 
-  return culori.formatter("hex")({
+function limit(lchColor, scale, shade) {
+  if (lchColor.l < 0) {
+    console.warn(
+      `Calculated LCh lightness \`${
+        lchColor.l
+      }\` for \`${scale}${shade}\` is out of range, and will be set to \`0\`.`
+    );
+  } else if (lchColor.l > maximumLightness) {
+    console.warn(
+      `Calculated LCh lightness \`${
+        lchColor.l
+      }\` for \`${scale}${shade}\` is out of range, and will be set to \`${maximumLightness}\`.`
+    );
+  }
+
+  if (lchColor.c < 0) {
+    console.warn(
+      `Calculated LCh chroma \`${
+        lchColor.c
+      }\` for \`${scale}${shade}\` is out of range, and will be set to \`0\`.`
+    );
+  } else if (lchColor.c > maximumChroma) {
+    console.warn(
+      `Calculated LCh chroma \`${
+        lchColor.c
+      }\` for \`${scale}${shade}\` is out of range, and will be set to \`${maximumChroma}\`.`
+    );
+  }
+
+  return {
     ...lchColor,
-    c: lchColor.c + (amount / 100) * maximumChroma
-  });
+    l: Math.max(Math.min(lchColor.l, maximumLightness), 0),
+    c: Math.max(Math.min(lchColor.c, maximumChroma), 0)
+  };
+}
+
+function getLightness(start, color, all, userAdjustments = {}, adjustments) {
+  const lightness = [
+    color.lightness,
+    all.lightness,
+    userAdjustments.lightness,
+    adjustments.lightness
+  ];
+
+  if (start) {
+    return (
+      (maximumLightness / 100) *
+      lightness
+        .concat([
+          color.lightnessStart,
+          all.lightnessStart,
+          userAdjustments.lightnessStart,
+          adjustments.lightnessStart
+        ])
+        .map(valueOrDefault)
+        .reduce(sum)
+    );
+  } else {
+    return (
+      100 +
+      (maximumLightness / 100) *
+        lightness
+          .concat([
+            color.lightnessEnd,
+            all.lightnessEnd,
+            userAdjustments.lightnessEnd,
+            adjustments.lightnessEnd
+          ])
+          .map(valueOrDefault)
+          .reduce(sum)
+    );
+  }
+}
+
+function getChroma(start, color, all, userAdjustments = {}, adjustments) {
+  const chroma = [
+    color.chroma,
+    all.chroma,
+    userAdjustments.chroma,
+    adjustments.chroma
+  ];
+
+  if (start) {
+    return (
+      (maximumChroma / 100) *
+      chroma
+        .concat([
+          color.chromaStart,
+          all.chromaStart,
+          userAdjustments.chromaStart,
+          adjustments.chromaStart
+        ])
+        .map(valueOrDefault)
+        .reduce(sum)
+    );
+  } else {
+    return (
+      (maximumChroma / 100) *
+      chroma
+        .concat([
+          color.chromaEnd,
+          all.chromaEnd,
+          userAdjustments.chromaEnd,
+          adjustments.chromaEnd
+        ])
+        .map(valueOrDefault)
+        .reduce(sum)
+    );
+  }
+}
+
+function getColor(start, color, all, userAdjustments, adjustments) {
+  return {
+    mode: "lch",
+    l: getLightness(start, color, all, userAdjustments, adjustments),
+    c: getChroma(start, color, all, userAdjustments, adjustments),
+    h: color.hue
+  };
 }
 
 function getInternalColor(scale, color) {
@@ -34,277 +159,81 @@ function getInternalColor(scale, color) {
   }
 }
 
-function applyFilter(color, filter) {
-  if (!filter) {
-    return color;
-  }
-
-  return culori.interpolate(
-    [
-      color,
-      {
-        mode: "lch",
-        l: color.l,
-        c: (maximumChroma / 100) * filter.chroma,
-        h: filter.hue
-      }
-    ],
-    "lch"
-  )(filter.opacity / 100);
-}
-
-function getLightness(i, color, all, adjustments = {}, exact = false) {
-  const lightness = [color.lightness, all.lightness, adjustments.lightness]
-    .map(valueOrDefault)
-    .reduce(sum);
-
-  const lightnessStart = [
-    color.lightnessStart,
-    all.lightnessStart,
-    adjustments.lightnessStart
+function getExactColor(color, all, userAdjustments = {}, adjustments) {
+  const lightness = [
+    color.lightnessExact,
+    all.lightness,
+    userAdjustments.lightness,
+    adjustments.lightness
   ]
     .map(valueOrDefault)
     .reduce(sum);
 
-  const lightnessEnd = [
-    color.lightnessEnd,
-    all.lightnessEnd,
-    adjustments.lightnessEnd
+  const chroma = [
+    color.chroma,
+    all.chroma,
+    userAdjustments.chroma,
+    adjustments.chroma
   ]
     .map(valueOrDefault)
     .reduce(sum);
 
-  if (exact) {
-    return color.lightnessExact + lightness + lightnessStart + lightnessEnd;
-  } else {
-    return (
-      maximumLightness -
-      (maximumLightness / 40) * (40 - i) +
-      lightness +
-      (lightnessStart / 40) * (40 - i) +
-      (lightnessEnd / 40) * i
-    );
-  }
-}
-
-function getChroma(i, color, all, adjustments = {}, exact = false) {
-  const chroma = [color.chroma, all.chroma, adjustments.chroma]
-    .map(valueOrDefault)
-    .reduce(sum);
-
-  const chromaStart = [
-    color.chromaStart,
-    all.chromaStart,
-    adjustments.chromaStart
-  ]
-    .map(valueOrDefault)
-    .reduce(sum);
-
-  const chromaEnd = [color.chromaEnd, all.chromaEnd, adjustments.chromaEnd]
-    .map(valueOrDefault)
-    .reduce(sum);
-
-  if (exact) {
-    return (
-      (maximumChroma / 100) * chroma +
-      (maximumChroma / 100) * chromaStart +
-      (maximumChroma / 100) * chromaEnd
-    );
-  } else {
-    return (
-      (maximumChroma / 100) * chroma +
-      (maximumChroma / 100) * (chromaStart / 40) * (40 - i) +
-      (maximumChroma / 100) * (chromaEnd / 40) * i
-    );
-  }
-}
-
-function generateColorScale(scale, color, all, adjustments = {}) {
-  const color_ = getInternalColor(scale, color);
-
-  let shades = [];
-
-  for (let i = 0; i <= 40; i++) {
-    shades.push(
-      applyFilter(
-        {
-          mode: "lch",
-          l: limitLightness(
-            scale,
-            i,
-            getLightness(i, color_, all, adjustments)
-          ),
-          c: limitChroma(scale, i, getChroma(i, color_, all, adjustments)),
-          h: color_.hue
-        },
-        all.filter
-      )
-    );
-  }
-
-  const handler = {
-    get: (target, propertyKey, reciever) => {
-      if (isTrackingColorsCount) {
-        if (propertyKey !== "length" && propertyKey !== "entries") {
-          increaseColorCount(scale, propertyKey);
-        }
-      }
-
-      return Reflect.get(target, propertyKey, reciever);
-    }
+  return {
+    mode: "lch",
+    l: (maximumLightness / 100) * lightness,
+    c: (maximumChroma / 100) * chroma,
+    h: color.hue
   };
-
-  let exact;
-
-  if (color_.hex) {
-    exact = culori.formatter("hex")(
-      applyFilter(
-        {
-          mode: "lch",
-          l: limitLightness(
-            scale,
-            "_exact",
-            getLightness(null, color_, all, adjustments, true)
-          ),
-          c: limitChroma(
-            scale,
-            "_exact",
-            getChroma(null, color_, all, adjustments, true)
-          ),
-          h: color_.hue
-        },
-        all.filter
-      )
-    );
-  } else {
-    exact = null;
-  }
-
-  return new Proxy(
-    [...shades.map(culori.formatter("hex")), { exact }],
-    handler
-  );
 }
 
-function limitLightness(scale, i, lightness) {
-  if (lightness < 0) {
-    console.warn(
-      `Calculated LCh lightness \`${lightness}\` for \`${scale}${i}\` is out of range. Will be set to \`0\`.`
-    );
-  } else if (lightness > maximumLightness) {
-    console.warn(
-      `Calculated LCh lightness \`${lightness}\` for \`${scale}${i}\` is out of range. Will be set to \`${maximumLightness}\`.`
-    );
-  }
+function getColorFunction({ type, colors }) {
+  return (scale, shade, alpha = 1, adjustments = {}) => {
+    const color = getInternalColor(scale, colors[scale]);
 
-  return Math.max(Math.min(lightness, maximumLightness), 0);
-}
-
-function limitChroma(scale, i, chroma) {
-  if (chroma < 0) {
-    console.warn(
-      `Calculated LCh chroma \`${chroma}\` for \`${scale}${i}\` is out of range. Will be set to \`0\`.`
-    );
-  } else if (chroma > maximumChroma) {
-    console.warn(
-      `Calculated LCh chroma \`${chroma}\` for \`${scale}${i}\` is out of range. Will be set to \`${maximumChroma}\`.`
-    );
-  }
-
-  return Math.max(Math.min(chroma, maximumChroma), 0);
-}
-
-function generateColorScales(configuration) {
-  let scales = {};
-
-  for (const scale of Object.keys(configuration.colors).filter(
-    k => !(k === "_all" || k === "_adjustments")
-  )) {
-    scales[scale] = generateColorScale(
-      scale,
-      configuration.colors[scale],
-      configuration.colors["_all"],
-      configuration.colors["_adjustments"]
-    );
-  }
-
-  return scales;
-}
-
-function trackColorsCount(isTracking) {
-  isTrackingColorsCount = isTracking;
-}
-
-function increaseColorCount(scale, shade) {
-  const el = colorsCount.find(c => c.color === `${scale}${shade}`);
-
-  if (!el) {
-    colorsCount.push({ scale, color: `${scale}${shade}`, count: 1 });
-  } else {
-    el.count = el.count + 1;
-  }
-}
-
-function getColorsCountByScale(filterFn = identity) {
-  return groupBy(
-    colorsCount
-      .sort((a, b) => a.color.localeCompare(b.color, "en", { numeric: true }))
-      .filter(filterFn),
-    "scale"
-  );
-}
-
-function alpha(colorHex, alpha) {
-  return (
-    colorHex +
-    Math.round(alpha * 255)
-      .toString(16)
-      .padStart(2, "0")
-  );
-}
-
-function rgbString(color) {
-  const r = Math.round(Math.max(color.r, 0) * 255);
-  const g = Math.round(Math.max(color.g, 0) * 255);
-  const b = Math.round(Math.max(color.b, 0) * 255);
-
-  return `${r}, ${g}, ${b}`;
-}
-
-function isHexColor(colorHex) {
-  return /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/.test(colorHex);
-}
-
-function generateColorConstantReplacements(colors, quotedKeys = true) {
-  let replacements = [];
-
-  for (const key of Object.keys(colors)) {
-    for (let i = 0; i < colors[key].length; i++) {
-      if (quotedKeys) {
-        replacements.push([`"${key}${i}"`, colors[key][i]]);
-      } else {
-        replacements.push([`${key}${i}`, colors[key][i]]);
-      }
-    }
-  }
-
-  return replacements;
-}
-
-function generateColorConstants(colors) {
-  let constants = {};
-
-  for (const key of Object.keys(colors)) {
-    for (let i = 0; i <= 40; i++) {
-      constants[`${key}${i}`] = colors[key][i];
+    if (shade === "exact") {
+      return (
+        culori.formatter("hex")(
+          limit(
+            getExactColor(color, colors._all, colors._adjustments, adjustments)
+          )
+        ) +
+        Math.round(alpha * 255)
+          .toString(16)
+          .padStart(2, "0")
+      );
     }
 
-    if (colors[key].find(c => c.exact)) {
-      constants[`${key}_exact`] = colors[key].find(c => c.exact).exact;
-    }
-  }
+    const start = getColor(
+      true,
+      color,
+      colors._all,
+      colors._adjustments,
+      adjustments
+    );
+    const end = getColor(
+      false,
+      color,
+      colors._all,
+      colors._adjustments,
+      adjustments
+    );
 
-  return constants;
+    const interpolated = culori.interpolate([start, end], "lch");
+
+    const bezier =
+      type === "dark"
+        ? easing(0.25 + 1 / 16, 0.25 - 1 / 16, 0.75, 0.75)
+        : easing(0.25, 0.25, 0.75 - 1 / 16, 0.75 + 1 / 16);
+
+    return (
+      culori.formatter("hex")(
+        limit(interpolated(bezier((1 / 16) * shade)), scale, shade)
+      ) +
+      Math.round(alpha * 255)
+        .toString(16)
+        .padStart(2, "0")
+    );
+  };
 }
 
 function filterTokens({ customizations }, token) {
@@ -351,94 +280,46 @@ function filterTokens({ customizations }, token) {
   return token;
 }
 
-function getPropertyFunction(configuration, colorConstants) {
+function getPropertyFunction(configuration, getColor) {
   return descriptor => {
     if (descriptor.startsWith("accent")) {
-      return translateColorConstant(
-        colorConstants,
-        configuration.customizations.accents[descriptor[6]]
+      return getColor(
+        ...configuration.customizations.accents[descriptor[6]].split("-")
       );
     } else if (descriptor.startsWith("token.")) {
-      return translateColorConstant(
-        colorConstants,
-        configuration.customizations.tokens[
+      return getColor(
+        ...configuration.customizations.tokens[
           filterTokens(configuration, descriptor.substr(6))
-        ]
+        ].split("-")
       );
     } else if (descriptor.includes(".")) {
       const descriptor_ = descriptor.split(".");
 
-      return translateColorConstant(
-        colorConstants,
-        configuration.customizations[descriptor_[0]][descriptor_[1]]
+      return getColor(
+        ...configuration.customizations[descriptor_[0]][descriptor_[1]].split(
+          "-"
+        )
       );
     } else {
-      return translateColorConstant(
-        colorConstants,
-        configuration.customizations[descriptor]
-      );
+      return getColor(...configuration.customizations[descriptor].split("-"));
     }
   };
 }
 
 function getTypeShadeFunction(configuration) {
   return (shade, lightShade = null) => {
-    const dark = configuration.type !== "light";
+    const dark = configuration.type === "dark";
 
-    return dark ? shade : lightShade ? lightShade : 40 - shade;
+    return dark ? shade : lightShade ? lightShade : 16 - shade;
   };
 }
 
-function splitColorConstant(colorConstant) {
-  if (Number.isNaN(parseInt(colorConstant[colorConstant.length - 2], 10))) {
-    return [
-      colorConstant.substr(0, colorConstant.length - 1),
-      colorConstant[colorConstant.length - 1]
-    ];
-  } else {
-    return [
-      colorConstant.substr(0, colorConstant.length - 2),
-      colorConstant.substr(colorConstant.length - 2)
-    ];
-  }
-}
+function getTypeValueFunction(configuration) {
+  return (darkValue, lightValue) => {
+    const dark = configuration.type === "dark";
 
-function translateColorConstant(colorConstants, colorConstant) {
-  let exact = false;
-  let colorConstant_ = colorConstant;
-
-  if (colorConstant_.endsWith("_exact")) {
-    exact = true;
-    colorConstant_ = colorConstant_.slice(0, -6);
-  }
-
-  if (colorConstant_.includes("_")) {
-    const [colorConstant__, alpha] = colorConstant_.split("_");
-
-    if (isTrackingColorsCount) {
-      const [scale, shade] = splitColorConstant(colorConstant__);
-
-      increaseColorCount(scale, shade);
-    }
-
-    if (exact) {
-      return colorConstants[colorConstant__ + "_exact"] + alpha;
-    } else {
-      return colorConstants[colorConstant__] + alpha;
-    }
-  } else {
-    if (isTrackingColorsCount) {
-      const [scale, shade] = splitColorConstant(colorConstant_);
-
-      increaseColorCount(scale, shade);
-    }
-
-    if (exact) {
-      return colorConstants[colorConstant_ + "_exact"];
-    } else {
-      return colorConstants[colorConstant_];
-    }
-  }
+    return dark ? darkValue : lightValue;
+  };
 }
 
 function getColorScaleName(constantName) {
@@ -452,45 +333,20 @@ function getColorScaleName(constantName) {
   }
 }
 
-function applyColorConstantReplacements(
-  color,
-  colorReplacements,
-  colorReplacementKeys
-) {
-  if (isHexColor(color)) {
-    return color;
-  } else if (colorReplacementKeys.includes(color) !== -1) {
-    return colorReplacements[colorReplacementKeys.indexOf(color)];
-  } else {
-    throw new Error(`Dainty color constant ${color} not found.`);
-  }
-}
+function adjustChroma(color, amount) {
+  const lchColor = culori.lch(color);
 
-function checkColorScaleRange(index) {
-  if (!(Number.isInteger(index) && index >= 0 && index <= 39)) {
-    throw new Error(
-      `\`${index}\` is not a valid index for a Dainty color scale. Index must be an integer ≥ 0 and ≤ 39.`
-    );
-  }
-
-  return index;
+  return culori.formatter("hex")({
+    ...lchColor,
+    c: lchColor.c + (amount / 100) * maximumChroma
+  });
 }
 
 module.exports = {
-  getInternalColor,
-  alpha,
-  applyColorConstantReplacements,
-  checkColorScaleRange,
-  generateColorConstantReplacements,
-  generateColorConstants,
-  adjustChroma,
+  getColorFunction,
   getTypeShadeFunction,
-  getPropertyFunction,
-  translateColorConstant,
-  generateColorScales,
-  getColorsCountByScale,
   getColorScaleName,
-  isHexColor,
-  rgbString,
-  trackColorsCount
+  getTypeValueFunction,
+  getPropertyFunction,
+  adjustChroma
 };
