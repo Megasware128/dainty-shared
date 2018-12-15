@@ -128,19 +128,37 @@ async function readFileJson(filename) {
 async function appDataPath(windowsSubPath = "Roaming") {
   const path = appDataPath_();
 
+  console.log({ path, platform: process.platform });
+
   if (process.platform === "windows") {
     return path.replace(new RegExp("Roaming$"), windowsSubPath);
-  } else if (process.platform === "linux" && path.startsWith("C:")) {
-    const { error, stdout } = await execAsync(`wslpath "${path}"`);
+  } else if (process.platform === "linux") {
+    const uname = await execAsync(`uname -a`);
 
-    if (error) {
-      throw new Error(`Failed to exec \`wslpath "${path}"\``);
+    if (uname.error) {
+      throw new Error(`Failed to exec \`uname -a\``);
     }
 
-    return stdout.slice(0, -1).replace(new RegExp("Roaming$"), windowsSubPath);
-  } else {
-    return path;
+    if (uname.stdout.includes("Microsoft")) {
+      const cmd = await execAsync(`cmd.exe /c "echo %APPDATA%"`);
+
+      if (cmd.error) {
+        throw new Error(`Failed to exec \`cmd.exe /c "echo %APPDATA%"\``);
+      }
+
+      const wslpath = await execAsync(`wslpath "${cmd.stdout.trimRight()}"`);
+
+      if (wslpath.error) {
+        throw new Error(`Failed to exec \`wslpath "${cmd.stdout}"\``);
+      }
+
+      return wslpath.stdout
+        .slice(0, -1)
+        .replace(new RegExp("Roaming$"), windowsSubPath);
+    }
   }
+
+  return path;
 }
 
 module.exports = {
