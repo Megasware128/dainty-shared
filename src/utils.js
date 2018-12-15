@@ -128,8 +128,6 @@ async function readFileJson(filename) {
 async function appDataPath(windowsSubPath = "Roaming") {
   const path = appDataPath_();
 
-  console.log({ path, platform: process.platform });
-
   if (process.platform === "windows") {
     return path.replace(new RegExp("Roaming$"), windowsSubPath);
   } else if (process.platform === "linux") {
