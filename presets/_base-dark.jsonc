@@ -15,6 +15,10 @@
       "hue": 45,
       "chroma": 12.5
     },
+    "orangeMoreChroma": {
+      "hue": 45,
+      "chroma": 50
+    },
     "yellow": {
       "hue": 90,
       "chroma": 25
@@ -44,6 +48,10 @@
       "chroma": 50
     },
     "purple": {
+      "hue": 315,
+      "chroma": 50
+    },
+    "purpleMoreChroma": {
       "hue": 315,
       "chroma": 50
     }
