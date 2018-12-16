@@ -18,6 +18,10 @@ ayuMirage: {
       "hue": 45,
       "chroma": 12.5
     },
+    "orangeMoreChroma": {
+      "hue": 45,
+      "chroma": 50
+    },
     "yellow": {
       "hue": 90,
       "chroma": 25,
@@ -55,8 +59,12 @@ ayuMirage: {
     },
     "purple": {
       "hue": 315,
-      "chroma": 50,
+      "chroma": 25,
       "hex": "#cfbafa"
+    },
+    "purpleMoreChroma": {
+      "hue": 315,
+      "chroma": 37.5
     },
     "black": {
       "hex": "#191e2a"
@@ -229,6 +237,10 @@ cobalt2: {
       "hue": 45,
       "chroma": 12.5
     },
+    "orangeMoreChroma": {
+      "hue": 45,
+      "chroma": 50
+    },
     "yellow": {
       "hue": 90,
       "chroma": 25,
@@ -266,8 +278,12 @@ cobalt2: {
     },
     "purple": {
       "hue": 315,
-      "chroma": 50,
+      "chroma": 25,
       "hex": "#fb94ff"
+    },
+    "purpleMoreChroma": {
+      "hue": 315,
+      "chroma": 37.5
     },
     "black": {
       "hex": "#000000"
@@ -437,6 +453,10 @@ daintyDarkMinimal: {
       "hue": 45,
       "chroma": 6.25
     },
+    "orangeMoreChroma": {
+      "hue": 45,
+      "chroma": 50
+    },
     "yellow": {
       "hue": 90,
       "chroma": 9.375
@@ -469,6 +489,10 @@ daintyDarkMinimal: {
     "purple": {
       "hue": 315,
       "chroma": 9.375
+    },
+    "purpleMoreChroma": {
+      "hue": 315,
+      "chroma": 37.5
     }
   },
   "customizations": {
@@ -541,6 +565,10 @@ daintyDark: {
       "hue": 45,
       "chroma": 10.15625
     },
+    "orangeMoreChroma": {
+      "hue": 45,
+      "chroma": 50
+    },
     "yellow": {
       "hue": 90,
       "chroma": 25
@@ -573,6 +601,10 @@ daintyDark: {
     "purple": {
       "hue": 315,
       "chroma": 25
+    },
+    "purpleMoreChroma": {
+      "hue": 315,
+      "chroma": 37.5
     }
   },
   "customizations": {
@@ -646,6 +678,10 @@ daintyLight: {
       "hue": 45,
       "chroma": 15.625
     },
+    "orangeMoreChroma": {
+      "hue": 45,
+      "chroma": 50
+    },
     "yellow": {
       "hue": 90,
       "chroma": 25
@@ -678,6 +714,10 @@ daintyLight: {
     "purple": {
       "hue": 315,
       "chroma": 31.25
+    },
+    "purpleMoreChroma": {
+      "hue": 315,
+      "chroma": 50
     }
   },
   "customizations": {
@@ -752,6 +792,10 @@ darkPlus: {
       "hue": 45,
       "chroma": 12.5
     },
+    "orangeMoreChroma": {
+      "hue": 45,
+      "chroma": 50
+    },
     "yellow": {
       "hue": 90,
       "chroma": 25,
@@ -789,8 +833,12 @@ darkPlus: {
     },
     "purple": {
       "hue": 315,
-      "chroma": 50,
+      "chroma": 25,
       "hex": "#bc3fbc"
+    },
+    "purpleMoreChroma": {
+      "hue": 315,
+      "chroma": 37.5
     },
     "black": {
       "hex": "#000000"
@@ -963,6 +1011,10 @@ dracula: {
       "hue": 45,
       "chroma": 12.5
     },
+    "orangeMoreChroma": {
+      "hue": 45,
+      "chroma": 50
+    },
     "yellow": {
       "hue": 90,
       "chroma": 25,
@@ -1000,8 +1052,12 @@ dracula: {
     },
     "purple": {
       "hue": 315,
-      "chroma": 50,
+      "chroma": 25,
       "hex": "#ff79c6"
+    },
+    "purpleMoreChroma": {
+      "hue": 315,
+      "chroma": 37.5
     },
     "black": {
       "hex": "#21222c"
@@ -1164,6 +1220,10 @@ fluent: {
       "chroma": 12.5,
       "hex": "#ef6950"
     },
+    "orangeMoreChroma": {
+      "hue": 45,
+      "chroma": 50
+    },
     "yellow": {
       "hue": 90,
       "chroma": 25
@@ -1197,8 +1257,12 @@ fluent: {
     },
     "purple": {
       "hue": 315,
-      "chroma": 50,
+      "chroma": 25,
       "hex": "#cf90ff"
+    },
+    "purpleMoreChroma": {
+      "hue": 315,
+      "chroma": 37.5
     }
   },
   "customizations": {
@@ -1271,6 +1335,10 @@ materialThemeOcean: {
       "hue": 45,
       "chroma": 12.5
     },
+    "orangeMoreChroma": {
+      "hue": 45,
+      "chroma": 50
+    },
     "yellow": {
       "hue": 90,
       "chroma": 25,
@@ -1308,8 +1376,12 @@ materialThemeOcean: {
     },
     "purple": {
       "hue": 315,
-      "chroma": 50,
+      "chroma": 25,
       "hex": "#c792ea"
+    },
+    "purpleMoreChroma": {
+      "hue": 315,
+      "chroma": 37.5
     },
     "black": {
       "hex": "#000000"
@@ -1479,6 +1551,10 @@ materialThemePalenight: {
       "hue": 45,
       "chroma": 12.5
     },
+    "orangeMoreChroma": {
+      "hue": 45,
+      "chroma": 50
+    },
     "yellow": {
       "hue": 90,
       "chroma": 25,
@@ -1516,8 +1592,12 @@ materialThemePalenight: {
     },
     "purple": {
       "hue": 315,
-      "chroma": 50,
+      "chroma": 25,
       "hex": "#c792ea"
+    },
+    "purpleMoreChroma": {
+      "hue": 315,
+      "chroma": 37.5
     },
     "black": {
       "hex": "#000000"
@@ -1687,6 +1767,10 @@ materialTheme: {
       "hue": 45,
       "chroma": 12.5
     },
+    "orangeMoreChroma": {
+      "hue": 45,
+      "chroma": 50
+    },
     "yellow": {
       "hue": 90,
       "chroma": 25,
@@ -1724,8 +1808,12 @@ materialTheme: {
     },
     "purple": {
       "hue": 315,
-      "chroma": 50,
+      "chroma": 25,
       "hex": "#c792ea"
+    },
+    "purpleMoreChroma": {
+      "hue": 315,
+      "chroma": 37.5
     },
     "black": {
       "hex": "#000000"
@@ -1898,6 +1986,10 @@ minimal: {
       "chroma": 10,
       "chromaEnd": -5
     },
+    "orangeMoreChroma": {
+      "hue": 45,
+      "chroma": 50
+    },
     "yellow": {
       "hue": 270,
       "chroma": 10,
@@ -1937,6 +2029,10 @@ minimal: {
       "hue": 270,
       "chroma": 10,
       "chromaEnd": -5
+    },
+    "purpleMoreChroma": {
+      "hue": 315,
+      "chroma": 37.5
     }
   },
   "customizations": {
@@ -2009,6 +2105,10 @@ monokaiNight: {
       "hue": 45,
       "chroma": 12.5
     },
+    "orangeMoreChroma": {
+      "hue": 45,
+      "chroma": 50
+    },
     "yellow": {
       "hue": 90,
       "chroma": 25,
@@ -2046,8 +2146,12 @@ monokaiNight: {
     },
     "purple": {
       "hue": 315,
-      "chroma": 50,
+      "chroma": 25,
       "hex": "#8c6bc8"
+    },
+    "purpleMoreChroma": {
+      "hue": 315,
+      "chroma": 37.5
     },
     "black": {
       "hex": "#333333"
@@ -2217,6 +2321,10 @@ monokai: {
       "hue": 45,
       "chroma": 12.5
     },
+    "orangeMoreChroma": {
+      "hue": 45,
+      "chroma": 50
+    },
     "yellow": {
       "hue": 90,
       "chroma": 25,
@@ -2254,8 +2362,12 @@ monokai: {
     },
     "purple": {
       "hue": 315,
-      "chroma": 50,
+      "chroma": 25,
       "hex": "#8c6bc8"
+    },
+    "purpleMoreChroma": {
+      "hue": 315,
+      "chroma": 37.5
     },
     "black": {
       "hex": "#333333"
@@ -2422,6 +2534,10 @@ nightOwl: {
       "hue": 45,
       "chroma": 12.5
     },
+    "orangeMoreChroma": {
+      "hue": 45,
+      "chroma": 50
+    },
     "yellow": {
       "hue": 90,
       "chroma": 25,
@@ -2459,8 +2575,12 @@ nightOwl: {
     },
     "purple": {
       "hue": 315,
-      "chroma": 50,
+      "chroma": 25,
       "hex": "#c792ea"
+    },
+    "purpleMoreChroma": {
+      "hue": 315,
+      "chroma": 37.5
     },
     "black": {
       "hex": "#011627"
@@ -2635,6 +2755,10 @@ oceanicNext: {
       "hue": 45,
       "chroma": 12.5
     },
+    "orangeMoreChroma": {
+      "hue": 45,
+      "chroma": 50
+    },
     "yellow": {
       "hue": 90,
       "chroma": 25
@@ -2666,7 +2790,11 @@ oceanicNext: {
     },
     "purple": {
       "hue": 315,
-      "chroma": 50
+      "chroma": 25
+    },
+    "purpleMoreChroma": {
+      "hue": 315,
+      "chroma": 37.5
     },
     "tokenAttributeName": {
       "hex": "#bb80b3"
@@ -2804,6 +2932,10 @@ oneDarkPro: {
       "hue": 45,
       "chroma": 12.5
     },
+    "orangeMoreChroma": {
+      "hue": 45,
+      "chroma": 50
+    },
     "yellow": {
       "hue": 90,
       "chroma": 25,
@@ -2840,7 +2972,11 @@ oneDarkPro: {
     },
     "purple": {
       "hue": 315,
-      "chroma": 50
+      "chroma": 25
+    },
+    "purpleMoreChroma": {
+      "hue": 315,
+      "chroma": 37.5
     },
     "black": {
       "hex": "#2d3139"
@@ -2991,6 +3127,10 @@ prettier: {
       "chroma": 12.5,
       "hex": "#f2ba54"
     },
+    "orangeMoreChroma": {
+      "hue": 45,
+      "chroma": 50
+    },
     "yellow": {
       "hue": 90,
       "chroma": 25
@@ -3023,8 +3163,12 @@ prettier: {
     },
     "purple": {
       "hue": 315,
-      "chroma": 50,
+      "chroma": 25,
       "hex": "#c098c5"
+    },
+    "purpleMoreChroma": {
+      "hue": 315,
+      "chroma": 37.5
     }
   },
   "customizations": {
@@ -3099,6 +3243,10 @@ purpleHaze: {
       "chroma": 12.5,
       "hex": "#2962ff"
     },
+    "orangeMoreChroma": {
+      "hue": 45,
+      "chroma": 50
+    },
     "yellow": {
       "hue": 90,
       "chroma": 25
@@ -3132,8 +3280,12 @@ purpleHaze: {
     },
     "purple": {
       "hue": 315,
-      "chroma": 50,
+      "chroma": 25,
       "hex": "#3f51b5"
+    },
+    "purpleMoreChroma": {
+      "hue": 315,
+      "chroma": 37.5
     }
   },
   "customizations": {
@@ -3206,6 +3358,10 @@ snazzyTheme: {
       "hue": 45,
       "chroma": 12.5
     },
+    "orangeMoreChroma": {
+      "hue": 45,
+      "chroma": 50
+    },
     "yellow": {
       "hue": 90,
       "chroma": 25,
@@ -3243,8 +3399,12 @@ snazzyTheme: {
     },
     "purple": {
       "hue": 315,
-      "chroma": 50,
+      "chroma": 25,
       "hex": "#ff6ac1"
+    },
+    "purpleMoreChroma": {
+      "hue": 315,
+      "chroma": 37.5
     },
     "black": {
       "hex": "#282a36"
@@ -3413,6 +3573,10 @@ tomorrowNightEighties: {
       "hue": 45,
       "chroma": 12.5
     },
+    "orangeMoreChroma": {
+      "hue": 45,
+      "chroma": 50
+    },
     "yellow": {
       "hue": 90,
       "chroma": 25
@@ -3444,7 +3608,11 @@ tomorrowNightEighties: {
     },
     "purple": {
       "hue": 315,
-      "chroma": 50
+      "chroma": 25
+    },
+    "purpleMoreChroma": {
+      "hue": 315,
+      "chroma": 37.5
     },
     "tokenAttributeName": {
       "hex": "#f2777a"
