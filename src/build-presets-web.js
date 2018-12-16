@@ -37,8 +37,5 @@ const readdir = util.promisify(fs.readdir);
 
   data.push(`}; module.exports = { presets };`);
 
-  await writeFileLog(
-    path.join(__dirname, "../presets-web.js"),
-    data.join("\n")
-  );
+  await writeFileLog(path.join(__dirname, "./presets-web.js"), data.join("\n"));
 })();
