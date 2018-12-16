@@ -17,7 +17,7 @@
     },
     "orangeMoreChroma": {
       "hue": 45,
-      "chroma": 75
+      "chroma": 50
     },
     "yellow": {
       "hue": 90,
@@ -53,7 +53,7 @@
     },
     "purpleMoreChroma": {
       "hue": 315,
-      "chroma": 75
+      "chroma": 50
     }
   },
   "customizations": {

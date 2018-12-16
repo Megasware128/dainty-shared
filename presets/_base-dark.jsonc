@@ -49,11 +49,11 @@
     },
     "purple": {
       "hue": 315,
-      "chroma": 50
+      "chroma": 25
     },
     "purpleMoreChroma": {
       "hue": 315,
-      "chroma": 50
+      "chroma": 37.5
     }
   },
   "customizations": {
