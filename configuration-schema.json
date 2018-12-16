@@ -504,10 +504,6 @@
       "$id": "#/properties/customizations",
       "type": "object",
       "properties": {
-        "accents": {
-          "$id": "#/properties/customizations/properties/accents",
-          "type": "array"
-        },
         "tokensFilter": {
           "$id": "#/properties/customizations/properties/tokensFilter",
           "type": "integer",

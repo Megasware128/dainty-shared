@@ -219,14 +219,6 @@ function transform(theme, hints) {
 
     newTheme.colors[color] = { hex: colors[color] };
 
-    if (color === "accent") {
-      newTheme.customizations.accents = [
-        "accent-exact-0.5",
-        "accent-exact-0.75",
-        "accent-exact"
-      ];
-    }
-
     if (
       [
         "black",

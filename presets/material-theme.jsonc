@@ -170,11 +170,6 @@
       "url": "tokenUrl-exact",
       "variable": "tokenVariable-exact"
     },
-    "accents": [
-      "accent-exact-0.5",
-      "accent-exact-0.75",
-      "accent-exact"
-    ],
     "cursor": "cursor-exact"
   }
 }

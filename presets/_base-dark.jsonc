@@ -49,7 +49,6 @@
     }
   },
   "customizations": {
-    "accents": ["accent-10-0.5", "accent-10-0.75", "accent-10-1"],
     "tokensFilter": 0,
     "cursor": "neutral-11",
     "terminal": {

@@ -49,7 +49,6 @@
     }
   },
   "customizations": {
-    "accents": ["accent-4-0.5", "accent-4-0.75", "accent-4-1"],
     "cursor": "neutral-5",
     "terminal": {
       "background": "neutral-16",

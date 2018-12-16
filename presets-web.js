@@ -159,11 +159,6 @@ ayuMirage: {
     }
   },
   "customizations": {
-    "accents": [
-      "accent-exact-0.5",
-      "accent-exact-0.75",
-      "accent-exact"
-    ],
     "tokensFilter": 0,
     "cursor": "cursor-exact",
     "terminal": {
@@ -372,11 +367,6 @@ cobalt2: {
     }
   },
   "customizations": {
-    "accents": [
-      "accent-exact-0.5",
-      "accent-exact-0.75",
-      "accent-exact"
-    ],
     "tokensFilter": 0,
     "cursor": "cursor-exact",
     "terminal": {
@@ -482,11 +472,6 @@ daintyDarkMinimal: {
     }
   },
   "customizations": {
-    "accents": [
-      "accent-10-0.5",
-      "accent-10-0.75",
-      "accent-10-1"
-    ],
     "tokensFilter": 0,
     "cursor": "neutral-11",
     "terminal": {
@@ -591,11 +576,6 @@ daintyDark: {
     }
   },
   "customizations": {
-    "accents": [
-      "accent-10-0.5",
-      "accent-10-0.75",
-      "accent-10-1"
-    ],
     "tokensFilter": 0,
     "cursor": "neutral-11",
     "terminal": {
@@ -701,11 +681,6 @@ daintyLight: {
     }
   },
   "customizations": {
-    "accents": [
-      "accent-4-0.5",
-      "accent-4-0.75",
-      "accent-4-1"
-    ],
     "cursor": "neutral-5",
     "terminal": {
       "background": "neutral-16",
@@ -918,11 +893,6 @@ darkPlus: {
     }
   },
   "customizations": {
-    "accents": [
-      "accent-exact-0.5",
-      "accent-exact-0.75",
-      "accent-exact"
-    ],
     "tokensFilter": 0,
     "cursor": "cursor-exact",
     "terminal": {
@@ -1125,11 +1095,6 @@ dracula: {
     }
   },
   "customizations": {
-    "accents": [
-      "accent-exact-0.5",
-      "accent-exact-0.75",
-      "accent-exact"
-    ],
     "tokensFilter": 0,
     "cursor": "neutral-11",
     "terminal": {
@@ -1237,11 +1202,6 @@ fluent: {
     }
   },
   "customizations": {
-    "accents": [
-      "accent-10-0.5",
-      "accent-10-0.75",
-      "accent-10-1"
-    ],
     "tokensFilter": 0,
     "cursor": "neutral-11",
     "terminal": {
@@ -1449,11 +1409,6 @@ materialThemeOcean: {
     }
   },
   "customizations": {
-    "accents": [
-      "accent-exact-0.5",
-      "accent-exact-0.75",
-      "accent-exact"
-    ],
     "tokensFilter": 0,
     "cursor": "cursor-exact",
     "terminal": {
@@ -1662,11 +1617,6 @@ materialThemePalenight: {
     }
   },
   "customizations": {
-    "accents": [
-      "accent-exact-0.5",
-      "accent-exact-0.75",
-      "accent-exact"
-    ],
     "tokensFilter": 0,
     "cursor": "cursor-exact",
     "terminal": {
@@ -1875,11 +1825,6 @@ materialTheme: {
     }
   },
   "customizations": {
-    "accents": [
-      "accent-exact-0.5",
-      "accent-exact-0.75",
-      "accent-exact"
-    ],
     "tokensFilter": 0,
     "cursor": "cursor-exact",
     "terminal": {
@@ -1995,11 +1940,6 @@ minimal: {
     }
   },
   "customizations": {
-    "accents": [
-      "accent-10-0.5",
-      "accent-10-0.75",
-      "accent-10-1"
-    ],
     "tokensFilter": 0,
     "cursor": "neutral-11",
     "terminal": {
@@ -2207,11 +2147,6 @@ monokaiNight: {
     }
   },
   "customizations": {
-    "accents": [
-      "accent-exact-0.5",
-      "accent-exact-0.75",
-      "accent-exact"
-    ],
     "tokensFilter": 0,
     "cursor": "cursor-exact",
     "terminal": {
@@ -2417,11 +2352,6 @@ monokai: {
     }
   },
   "customizations": {
-    "accents": [
-      "accent-exact-0.5",
-      "accent-exact-0.75",
-      "accent-exact"
-    ],
     "tokensFilter": 0,
     "cursor": "cursor-exact",
     "terminal": {
@@ -2636,11 +2566,6 @@ nightOwl: {
     }
   },
   "customizations": {
-    "accents": [
-      "accent-exact-0.5",
-      "accent-exact-0.75",
-      "accent-exact"
-    ],
     "tokensFilter": 0,
     "cursor": "cursor-exact",
     "terminal": {
@@ -2811,11 +2736,6 @@ oceanicNext: {
     }
   },
   "customizations": {
-    "accents": [
-      "accent-exact-0.5",
-      "accent-exact-0.75",
-      "accent-exact"
-    ],
     "tokensFilter": 0,
     "cursor": "cursor-exact",
     "terminal": {
@@ -2999,11 +2919,6 @@ oneDarkPro: {
     }
   },
   "customizations": {
-    "accents": [
-      "accent-exact-0.5",
-      "accent-exact-0.75",
-      "accent-exact"
-    ],
     "tokensFilter": 0,
     "cursor": "cursor-exact",
     "terminal": {
@@ -3113,11 +3028,6 @@ prettier: {
     }
   },
   "customizations": {
-    "accents": [
-      "accent-10-0.5",
-      "accent-10-0.75",
-      "accent-10-1"
-    ],
     "tokensFilter": 0,
     "cursor": "neutral-11",
     "terminal": {
@@ -3227,11 +3137,6 @@ purpleHaze: {
     }
   },
   "customizations": {
-    "accents": [
-      "accent-10-0.5",
-      "accent-10-0.75",
-      "accent-10-1"
-    ],
     "tokensFilter": 0,
     "cursor": "neutral-11",
     "terminal": {
@@ -3439,11 +3344,6 @@ snazzyTheme: {
     }
   },
   "customizations": {
-    "accents": [
-      "accent-exact-0.5",
-      "accent-exact-0.75",
-      "accent-exact"
-    ],
     "tokensFilter": 0,
     "cursor": "cursor-exact",
     "terminal": {
@@ -3614,11 +3514,6 @@ tomorrowNightEighties: {
     }
   },
   "customizations": {
-    "accents": [
-      "accent-exact-0.5",
-      "accent-exact-0.75",
-      "accent-exact"
-    ],
     "tokensFilter": 0,
     "cursor": "cursor-exact",
     "terminal": {
