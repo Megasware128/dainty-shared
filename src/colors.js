@@ -220,10 +220,12 @@ function getColorFunction({ type, colors }) {
 
     const interpolated = culori.interpolate([start, end], "lch");
 
+    const bezierAdjustment = (1 / 64) * 7;
+
     const bezier =
       type === "dark"
-        ? easing(0.25 + 1 / 16, 0.25 - 1 / 16, 0.75, 0.75)
-        : easing(0.25, 0.25, 0.75 - 1 / 16, 0.75 + 1 / 16);
+        ? easing(0.25 + bezierAdjustment, 0.25 - bezierAdjustment, 0.75, 0.75)
+        : easing(0.25, 0.25, 0.75 - bezierAdjustment, 0.75 + bezierAdjustment);
 
     return (
       culori.formatter("hex")(
