@@ -630,7 +630,7 @@ daintyDark: {
     },
     "tokens": {
       "attributeName": "blueLessChroma-13",
-      "comment": "neutral-6",
+      "comment": "neutral-8",
       "constant": "neutral-14",
       "function": "blueLessChroma-13",
       "jsxTag": "blue-11",
@@ -781,7 +781,7 @@ darkPlus: {
     "accent": {
       "hue": 270,
       "chroma": 50,
-      "hex": "#dcdcaa"
+      "hex": "#569cd6"
     },
     "red": {
       "hue": 22.5,
@@ -880,7 +880,7 @@ darkPlus: {
       "hex": "#dcdcaa"
     },
     "tokenJsxTag": {
-      "hex": "#569cd6"
+      "hex": "#4ec9b0"
     },
     "tokenKeyword": {
       "hex": "#569cd6"
@@ -1288,7 +1288,7 @@ fluent: {
     },
     "tokens": {
       "attributeName": "blueLessChroma-13",
-      "comment": "neutral-6",
+      "comment": "neutral-8",
       "constant": "neutral-14",
       "function": "blueLessChroma-13",
       "jsxTag": "blue-11",
@@ -2058,7 +2058,7 @@ minimal: {
     },
     "tokens": {
       "attributeName": "neutral-12",
-      "comment": "neutral-6",
+      "comment": "neutral-8",
       "constant": "neutral-12",
       "function": "neutral-12",
       "jsxTag": "neutral-12",
@@ -2070,7 +2070,7 @@ minimal: {
       "otherType": "neutral-10",
       "parameter": "neutral-12",
       "property": "neutral-12",
-      "punctuation": "neutral-6",
+      "punctuation": "neutral-8",
       "regex": "neutral-12",
       "storageType": "neutral-10",
       "storageTypeFunction": "neutral-10",
@@ -3194,7 +3194,7 @@ prettier: {
     },
     "tokens": {
       "attributeName": "blueLessChroma-13",
-      "comment": "neutral-6",
+      "comment": "neutral-8",
       "constant": "neutral-14",
       "function": "purple-exact",
       "jsxTag": "blue-11",
@@ -3311,7 +3311,7 @@ purpleHaze: {
     },
     "tokens": {
       "attributeName": "blueLessChroma-13",
-      "comment": "neutral-6",
+      "comment": "neutral-8",
       "constant": "neutral-14",
       "function": "blueLessChroma-13",
       "jsxTag": "blue-11",
