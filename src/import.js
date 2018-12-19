@@ -110,7 +110,9 @@ function transform(theme, hints) {
   const getTokenColor = getTokenColorFunction(theme.tokenColors, hints);
 
   const colors = {
-    accent: getTokenColor("function", ["entity.name.function"]),
+    accent: hints.accent
+      ? getTokenColor(null, [hints.accent])
+      : getTokenColor("function", ["entity.name.function"]),
     black: getColor("terminal.ansiBlack"),
     white: getColor("terminal.ansiWhite"),
     red: getColor("terminal.ansiRed"),
