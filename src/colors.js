@@ -220,7 +220,7 @@ function getColorFunction({ type, colors }) {
 
     const interpolated = culori.interpolate([start, end], "lch");
 
-    const bezierAdjustment = (1 / 64) * 7;
+    const bezierAdjustment = (1 / 32) * 3;
 
     const bezier =
       type === "dark"
