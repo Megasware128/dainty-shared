@@ -39,7 +39,8 @@ ayuMirage: {
     },
     "neutral": {
       "hue": 270,
-      "chroma": 10,
+      "chroma": 6.25,
+      "chromaEnd": -6.25,
       "hex": "#1f2430"
     },
     "blue": {
@@ -196,6 +197,7 @@ ayuMirage: {
       "jsxTag": "tokenJsxTag-exact",
       "keyword": "tokenKeyword-exact",
       "literal": "tokenLiteral-exact",
+      "namespace": "neutral-13",
       "number": "tokenNumber-exact",
       "operator": "tokenOperator-exact",
       "other": "tokenOther-exact",
@@ -258,7 +260,8 @@ cobalt2: {
     },
     "neutral": {
       "hue": 270,
-      "chroma": 10,
+      "chroma": 6.25,
+      "chromaEnd": -6.25,
       "hex": "#193549"
     },
     "blue": {
@@ -412,6 +415,7 @@ cobalt2: {
       "jsxTag": "tokenJsxTag-exact",
       "keyword": "tokenKeyword-exact",
       "literal": "tokenLiteral-exact",
+      "namespace": "neutral-13",
       "number": "tokenNumber-exact",
       "operator": "tokenOperator-exact",
       "other": "tokenOther-exact",
@@ -471,8 +475,8 @@ daintyDarkMinimal: {
     },
     "neutral": {
       "hue": 270,
-      "chroma": 10.15625,
-      "chromaEnd": -4.6875
+      "chroma": 7.8125,
+      "chromaEnd": -7.8125
     },
     "blue": {
       "hue": 270,
@@ -524,7 +528,8 @@ daintyDarkMinimal: {
       "jsxTag": "blue-10",
       "keyword": "blue-10",
       "literal": "neutral-13",
-      "number": "green-14",
+      "namespace": "neutral-13",
+      "number": "green-13",
       "operator": "neutral-10",
       "other": "neutral-12",
       "otherType": "blue-10",
@@ -534,8 +539,8 @@ daintyDarkMinimal: {
       "regex": "neutral-12",
       "storageType": "blue-10",
       "storageTypeFunction": "blue-10",
-      "string": "orange-14",
-      "stringTemplate": "orange-14",
+      "string": "orange-13",
+      "stringTemplate": "orange-13",
       "supportFunction": "neutral-12",
       "supportType": "blue-10",
       "tag": "blue-10",
@@ -583,8 +588,8 @@ daintyDark: {
     },
     "neutral": {
       "hue": 270,
-      "chroma": 10.15625,
-      "chromaEnd": -4.6875
+      "chroma": 7.8125,
+      "chromaEnd": -7.8125
     },
     "blue": {
       "hue": 270,
@@ -636,6 +641,7 @@ daintyDark: {
       "jsxTag": "blue-11",
       "keyword": "blue-11",
       "literal": "blue-11",
+      "namespace": "neutral-13",
       "number": "green-14",
       "operator": "neutral-12",
       "other": "neutral-14",
@@ -664,7 +670,7 @@ daintyLight: {
   "colors": {
     "_all": {
       "lightnessStart": 10,
-      "chroma": 25
+      "chroma": 15.625
     },
     "accent": {
       "hue": 270,
@@ -751,6 +757,7 @@ daintyLight: {
       "jsxTag": "blue-5",
       "keyword": "blue-5",
       "literal": "blue-5",
+      "namespace": "neutral-4",
       "number": "green-8",
       "operator": "neutral-6",
       "other": "neutral-0",
@@ -813,7 +820,8 @@ darkPlus: {
     },
     "neutral": {
       "hue": 270,
-      "chroma": 10,
+      "chroma": 6.25,
+      "chromaEnd": -6.25,
       "hex": "#1e1e1e"
     },
     "blue": {
@@ -970,6 +978,7 @@ darkPlus: {
       "jsxTag": "tokenJsxTag-exact",
       "keyword": "tokenKeyword-exact",
       "literal": "tokenLiteral-exact",
+      "namespace": "neutral-13",
       "number": "tokenNumber-exact",
       "operator": "tokenOperator-exact",
       "other": "tokenOther-exact",
@@ -1032,7 +1041,8 @@ dracula: {
     },
     "neutral": {
       "hue": 270,
-      "chroma": 10,
+      "chroma": 6.25,
+      "chromaEnd": -6.25,
       "hex": "#282a36"
     },
     "blue": {
@@ -1180,6 +1190,7 @@ dracula: {
       "jsxTag": "tokenJsxTag-exact",
       "keyword": "tokenKeyword-exact",
       "literal": "tokenLiteral-exact",
+      "namespace": "neutral-13",
       "number": "tokenNumber-exact",
       "operator": "neutral-12",
       "other": "tokenOther-exact",
@@ -1239,7 +1250,8 @@ fluent: {
     },
     "neutral": {
       "hue": 270,
-      "chroma": 10,
+      "chroma": 6.25,
+      "chromaEnd": -6.25,
       "hex": "#092642"
     },
     "blue": {
@@ -1294,6 +1306,7 @@ fluent: {
       "jsxTag": "blue-11",
       "keyword": "blue-11",
       "literal": "blue-11",
+      "namespace": "neutral-13",
       "number": "green-14",
       "operator": "neutral-12",
       "other": "neutral-14",
@@ -1356,7 +1369,8 @@ materialThemeOcean: {
     },
     "neutral": {
       "hue": 270,
-      "chroma": 10,
+      "chroma": 6.25,
+      "chromaEnd": -6.25,
       "hex": "#0f111a"
     },
     "blue": {
@@ -1510,6 +1524,7 @@ materialThemeOcean: {
       "jsxTag": "tokenJsxTag-exact",
       "keyword": "tokenKeyword-exact",
       "literal": "tokenLiteral-exact",
+      "namespace": "neutral-13",
       "number": "tokenNumber-exact",
       "operator": "neutral-12",
       "other": "tokenOther-exact",
@@ -1572,7 +1587,8 @@ materialThemePalenight: {
     },
     "neutral": {
       "hue": 270,
-      "chroma": 10,
+      "chroma": 6.25,
+      "chromaEnd": -6.25,
       "hex": "#292d3e"
     },
     "blue": {
@@ -1726,6 +1742,7 @@ materialThemePalenight: {
       "jsxTag": "tokenJsxTag-exact",
       "keyword": "tokenKeyword-exact",
       "literal": "tokenLiteral-exact",
+      "namespace": "neutral-13",
       "number": "tokenNumber-exact",
       "operator": "neutral-12",
       "other": "tokenOther-exact",
@@ -1788,7 +1805,8 @@ materialTheme: {
     },
     "neutral": {
       "hue": 270,
-      "chroma": 10,
+      "chroma": 6.25,
+      "chromaEnd": -6.25,
       "hex": "#263238"
     },
     "blue": {
@@ -1942,6 +1960,7 @@ materialTheme: {
       "jsxTag": "tokenJsxTag-exact",
       "keyword": "tokenKeyword-exact",
       "literal": "tokenLiteral-exact",
+      "namespace": "neutral-13",
       "number": "tokenNumber-exact",
       "operator": "neutral-12",
       "other": "tokenOther-exact",
@@ -2064,6 +2083,7 @@ minimal: {
       "jsxTag": "neutral-12",
       "keyword": "neutral-10",
       "literal": "neutral-13",
+      "namespace": "neutral-13",
       "number": "neutral-14",
       "operator": "neutral-8",
       "other": "neutral-12",
@@ -2126,7 +2146,8 @@ monokaiNight: {
     },
     "neutral": {
       "hue": 270,
-      "chroma": 10,
+      "chroma": 6.25,
+      "chromaEnd": -6.25,
       "hex": "#1f1f1f"
     },
     "blue": {
@@ -2280,6 +2301,7 @@ monokaiNight: {
       "jsxTag": "tokenJsxTag-exact",
       "keyword": "tokenKeyword-exact",
       "literal": "tokenLiteral-exact",
+      "namespace": "neutral-13",
       "number": "tokenNumber-exact",
       "operator": "tokenOperator-exact",
       "other": "tokenOther-exact",
@@ -2342,7 +2364,8 @@ monokai: {
     },
     "neutral": {
       "hue": 270,
-      "chroma": 10,
+      "chroma": 6.25,
+      "chromaEnd": -6.25,
       "hex": "#272822"
     },
     "blue": {
@@ -2493,6 +2516,7 @@ monokai: {
       "jsxTag": "tokenJsxTag-exact",
       "keyword": "tokenKeyword-exact",
       "literal": "tokenLiteral-exact",
+      "namespace": "neutral-13",
       "number": "tokenNumber-exact",
       "operator": "tokenOperator-exact",
       "other": "tokenOther-exact",
@@ -2555,7 +2579,8 @@ nightOwl: {
     },
     "neutral": {
       "hue": 270,
-      "chroma": 10,
+      "chroma": 6.25,
+      "chromaEnd": -6.25,
       "hex": "#011627"
     },
     "blue": {
@@ -2715,6 +2740,7 @@ nightOwl: {
       "jsxTag": "tokenJsxTag-exact",
       "keyword": "tokenKeyword-exact",
       "literal": "tokenLiteral-exact",
+      "namespace": "neutral-13",
       "number": "tokenNumber-exact",
       "operator": "tokenOperator-exact",
       "other": "tokenOther-exact",
@@ -2773,7 +2799,8 @@ oceanicNext: {
     },
     "neutral": {
       "hue": 270,
-      "chroma": 10,
+      "chroma": 6.25,
+      "chromaEnd": -6.25,
       "hex": "#282c34"
     },
     "blue": {
@@ -2892,6 +2919,7 @@ oceanicNext: {
       "jsxTag": "tokenJsxTag-exact",
       "keyword": "tokenKeyword-exact",
       "literal": "tokenLiteral-exact",
+      "namespace": "neutral-13",
       "number": "tokenNumber-exact",
       "operator": "tokenOperator-exact",
       "other": "tokenOther-exact",
@@ -2952,7 +2980,8 @@ oneDarkPro: {
     },
     "neutral": {
       "hue": 270,
-      "chroma": 10,
+      "chroma": 6.25,
+      "chromaEnd": -6.25,
       "hex": "#282c34"
     },
     "blue": {
@@ -3083,6 +3112,7 @@ oneDarkPro: {
       "jsxTag": "tokenJsxTag-exact",
       "keyword": "tokenKeyword-exact",
       "literal": "tokenLiteral-exact",
+      "namespace": "neutral-13",
       "number": "tokenNumber-exact",
       "operator": "tokenOperator-exact",
       "other": "neutral-14",
@@ -3145,7 +3175,8 @@ prettier: {
     },
     "neutral": {
       "hue": 270,
-      "chroma": 10,
+      "chroma": 6.25,
+      "chromaEnd": -6.25,
       "hex": "#1a2b34"
     },
     "blue": {
@@ -3200,6 +3231,7 @@ prettier: {
       "jsxTag": "blue-11",
       "keyword": "blue-exact",
       "literal": "red-exact",
+      "namespace": "neutral-13",
       "number": "red-exact",
       "operator": "neutral-12",
       "other": "neutral-14",
@@ -3262,7 +3294,8 @@ purpleHaze: {
     },
     "neutral": {
       "hue": 270,
-      "chroma": 10
+      "chroma": 6.25,
+      "chromaEnd": -6.25
     },
     "blue": {
       "hue": 270,
@@ -3317,6 +3350,7 @@ purpleHaze: {
       "jsxTag": "blue-11",
       "keyword": "blue-11",
       "literal": "blue-11",
+      "namespace": "neutral-13",
       "number": "green-14",
       "operator": "neutral-12",
       "other": "neutral-14",
@@ -3379,7 +3413,8 @@ snazzyTheme: {
     },
     "neutral": {
       "hue": 270,
-      "chroma": 10,
+      "chroma": 6.25,
+      "chromaEnd": -6.25,
       "hex": "#282a36"
     },
     "blue": {
@@ -3533,6 +3568,7 @@ snazzyTheme: {
       "jsxTag": "tokenJsxTag-exact",
       "keyword": "tokenKeyword-exact",
       "literal": "tokenLiteral-exact",
+      "namespace": "neutral-13",
       "number": "tokenNumber-exact",
       "operator": "tokenOperator-exact",
       "other": "tokenOther-exact",
@@ -3591,7 +3627,8 @@ tomorrowNightEighties: {
     },
     "neutral": {
       "hue": 270,
-      "chroma": 10,
+      "chroma": 6.25,
+      "chromaEnd": -6.25,
       "hex": "#2d2d2d"
     },
     "blue": {
@@ -3710,6 +3747,7 @@ tomorrowNightEighties: {
       "jsxTag": "tokenJsxTag-exact",
       "keyword": "tokenKeyword-exact",
       "literal": "tokenLiteral-exact",
+      "namespace": "neutral-13",
       "number": "tokenNumber-exact",
       "operator": "tokenOperator-exact",
       "other": "tokenOther-exact",
