@@ -33,7 +33,8 @@
     },
     "neutral": {
       "hue": 270,
-      "chroma": 10
+      "chroma": 6.25,
+      "chromaEnd": -6.25
     },
     "blue": {
       "hue": 270,

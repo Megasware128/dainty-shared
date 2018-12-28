@@ -31,8 +31,8 @@
     },
     "neutral": {
       "hue": 270,
-      "chroma": 10.15625,
-      "chromaEnd": -4.6875
+      "chroma": 7.8125,
+      "chromaEnd": -7.8125
     },
     "blue": {
       "hue": 270,
@@ -60,7 +60,7 @@
       "jsxTag": "blue-10",
       "keyword": "blue-10",
       "literal": "neutral-13",
-      "number": "green-14",
+      "number": "green-13",
       "operator": "neutral-10",
       "other": "neutral-12",
       "otherType": "blue-10",
@@ -70,8 +70,8 @@
       "regex": "neutral-12",
       "storageType": "blue-10",
       "storageTypeFunction": "blue-10",
-      "string": "orange-14",
-      "stringTemplate": "orange-14",
+      "string": "orange-13",
+      "stringTemplate": "orange-13",
       "supportFunction": "neutral-12",
       "supportType": "blue-10",
       "tag": "blue-10",
