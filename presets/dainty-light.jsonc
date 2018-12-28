@@ -4,7 +4,7 @@
   "colors": {
     "_all": {
       "lightnessStart": 10,
-      "chroma": 25
+      "chroma": 15.625
     },
     "accent": {
       "hue": 270,
