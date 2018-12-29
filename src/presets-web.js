@@ -589,7 +589,7 @@ daintyDark: {
     "neutral": {
       "hue": 270,
       "chroma": 7.8125,
-      "chromaEnd": -7.8125
+      "chromaEnd": -5.4375
     },
     "blue": {
       "hue": 270,
@@ -702,8 +702,8 @@ daintyLight: {
     },
     "neutral": {
       "hue": 270,
-      "chroma": 0,
-      "chromaEnd": -23.75
+      "chroma": 7.8125,
+      "chromaEnd": -24.1875
     },
     "blue": {
       "hue": 270,
