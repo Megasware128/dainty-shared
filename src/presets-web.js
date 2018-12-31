@@ -475,8 +475,8 @@ daintyDarkMinimal: {
     },
     "neutral": {
       "hue": 270,
-      "chroma": 7.8125,
-      "chromaEnd": -7.8125
+      "chroma": 8.59375,
+      "chromaEnd": -6.09375
     },
     "blue": {
       "hue": 270,
@@ -568,7 +568,7 @@ daintyDark: {
     },
     "orange": {
       "hue": 45,
-      "chroma": 10.15625
+      "chroma": 11.71875
     },
     "orangeMoreChroma": {
       "hue": 45,
@@ -588,8 +588,8 @@ daintyDark: {
     },
     "neutral": {
       "hue": 270,
-      "chroma": 7.8125,
-      "chromaEnd": -5.4375
+      "chroma": 8.59375,
+      "chromaEnd": -6.09375
     },
     "blue": {
       "hue": 270,
