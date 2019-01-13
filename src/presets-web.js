@@ -1964,33 +1964,33 @@ minimal: {
       "brightWhite": "neutral-16"
     },
     "tokens": {
-      "attributeName": "neutral-12",
+      "attributeName": "blueLessChroma-13",
       "comment": "neutral-8",
-      "constant": "neutral-12",
-      "function": "neutral-12",
-      "jsxTag": "neutral-12",
-      "keyword": "neutral-10",
-      "literal": "neutral-13",
+      "constant": "neutral-14",
+      "function": "blueLessChroma-13",
+      "jsxTag": "blue-11",
+      "keyword": "blue-11",
+      "literal": "blue-11",
       "namespace": "neutral-13",
-      "number": "neutral-14",
-      "operator": "neutral-8",
-      "other": "neutral-12",
-      "otherType": "neutral-10",
-      "parameter": "neutral-12",
-      "property": "neutral-12",
-      "punctuation": "neutral-8",
-      "regex": "neutral-12",
-      "storageType": "neutral-10",
-      "storageTypeFunction": "neutral-10",
-      "string": "neutral-14",
-      "stringTemplate": "neutral-14",
-      "supportFunction": "neutral-12",
-      "supportType": "neutral-10",
-      "tag": "neutral-12",
-      "type": "neutral-10",
-      "url": "neutral-12",
-      "variable": "neutral-12",
-      "variableProperty": "neutral-12"
+      "number": "green-14",
+      "operator": "neutral-12",
+      "other": "neutral-14",
+      "otherType": "purple-14",
+      "parameter": "neutral-14",
+      "property": "neutral-14",
+      "punctuation": "neutral-10",
+      "regex": "purple-12",
+      "storageType": "blue-11",
+      "storageTypeFunction": "blue-11",
+      "string": "orange-14",
+      "stringTemplate": "orange-14",
+      "supportFunction": "blueLessChroma-13",
+      "supportType": "blue-11",
+      "tag": "blue-11",
+      "type": "blueLessChroma-13",
+      "url": "blueMoreChroma-11",
+      "variable": "neutral-14",
+      "variableProperty": "neutral-14"
     }
   }
 },
@@ -3475,6 +3475,120 @@ snazzyTheme: {
       "type": "tokenType-exact",
       "url": "blueMoreChroma-11",
       "variable": "tokenVariable-exact",
+      "variableProperty": "neutral-14"
+    }
+  }
+},
+timbre: {
+  "name": "Timbre",
+  "type": "dark",
+  "colors": {
+    "_all": {
+      "lightnessStart": 10,
+      "chroma": -3.75
+    },
+    "accent": {
+      "hue": 45,
+      "chroma": 25
+    },
+    "red": {
+      "hue": 90,
+      "chroma": 25
+    },
+    "orange": {
+      "hue": 135,
+      "chroma": 25
+    },
+    "orangeMoreChroma": {
+      "hue": 45,
+      "chroma": 50
+    },
+    "yellow": {
+      "hue": 180,
+      "chroma": 25
+    },
+    "green": {
+      "hue": 225,
+      "chroma": 25
+    },
+    "cyan": {
+      "hue": 270,
+      "chroma": 25
+    },
+    "neutral": {
+      "hue": 247.5,
+      "chroma": 10,
+      "chromaEnd": -6.25
+    },
+    "blue": {
+      "hue": 247.5,
+      "chroma": 25
+    },
+    "blueLessChroma": {
+      "hue": 0,
+      "chroma": 25
+    },
+    "blueMoreChroma": {
+      "hue": 247.5,
+      "chroma": 25
+    },
+    "purple": {
+      "hue": 45,
+      "chroma": 25
+    },
+    "purpleMoreChroma": {
+      "hue": 315,
+      "chroma": 37.5
+    }
+  },
+  "customizations": {
+    "tokensFilter": 0,
+    "cursor": "neutral-11",
+    "terminal": {
+      "black": "neutral-0",
+      "red": "red-6",
+      "green": "green-6",
+      "yellow": "yellow-12",
+      "blue": "blue-12",
+      "magenta": "purple-12",
+      "cyan": "cyan-12",
+      "white": "neutral-14",
+      "brightBlack": "neutral-6",
+      "brightRed": "red-12",
+      "brightGreen": "green-12",
+      "brightYellow": "yellow-12",
+      "brightBlue": "blue-12",
+      "brightMagenta": "purple-12",
+      "brightCyan": "cyan-12",
+      "brightWhite": "neutral-16"
+    },
+    "tokens": {
+      "attributeName": "blueLessChroma-13",
+      "comment": "neutral-8",
+      "constant": "neutral-14",
+      "function": "blueLessChroma-13",
+      "jsxTag": "blue-11",
+      "keyword": "blue-11",
+      "literal": "blue-11",
+      "namespace": "neutral-13",
+      "number": "green-14",
+      "operator": "neutral-12",
+      "other": "neutral-14",
+      "otherType": "purple-14",
+      "parameter": "neutral-14",
+      "property": "neutral-14",
+      "punctuation": "neutral-10",
+      "regex": "purple-12",
+      "storageType": "blue-11",
+      "storageTypeFunction": "blue-11",
+      "string": "orange-14",
+      "stringTemplate": "orange-14",
+      "supportFunction": "blueLessChroma-13",
+      "supportType": "blue-11",
+      "tag": "blue-11",
+      "type": "blueLessChroma-13",
+      "url": "blueMoreChroma-11",
+      "variable": "neutral-14",
       "variableProperty": "neutral-14"
     }
   }
