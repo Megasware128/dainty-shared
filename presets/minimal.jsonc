@@ -60,35 +60,5 @@
       "chroma": 10,
       "chromaEnd": -5
     }
-  },
-  "customizations": {
-    "tokens": {
-      "attributeName": "neutral-12",
-      "comment": "neutral-8",
-      "constant": "neutral-12",
-      "function": "neutral-12",
-      "jsxTag": "neutral-12",
-      "keyword": "neutral-10",
-      "literal": "neutral-13",
-      "number": "neutral-14",
-      "operator": "neutral-8",
-      "other": "neutral-12",
-      "otherType": "neutral-10",
-      "parameter": "neutral-12",
-      "property": "neutral-12",
-      "punctuation": "neutral-8",
-      "regex": "neutral-12",
-      "storageType": "neutral-10",
-      "storageTypeFunction": "neutral-10",
-      "string": "neutral-14",
-      "stringTemplate": "neutral-14",
-      "supportFunction": "neutral-12",
-      "supportType": "neutral-10",
-      "tag": "neutral-12",
-      "type": "neutral-10",
-      "url": "neutral-12",
-      "variable": "neutral-12",
-      "variableProperty": "neutral-12"
-    }
   }
 }
