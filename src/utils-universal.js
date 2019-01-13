@@ -12,8 +12,8 @@ function identity(value) {
   return value;
 }
 
-function valueOrDefault(value) {
-  return value ? value : 0;
+function valueOrDefault(value, defaultValue = 0) {
+  return value ? value : defaultValue;
 }
 
 function sum(a, b) {

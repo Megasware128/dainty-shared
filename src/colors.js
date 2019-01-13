@@ -77,7 +77,7 @@ function getLightness(start, color, all, userAdjustments = {}, adjustments) {
           userAdjustments.lightnessStart,
           adjustments.lightnessStart
         ])
-        .map(valueOrDefault)
+        .map(v => valueOrDefault(v))
         .reduce(sum)
     );
   } else {
@@ -91,7 +91,7 @@ function getLightness(start, color, all, userAdjustments = {}, adjustments) {
             userAdjustments.lightnessEnd,
             adjustments.lightnessEnd
           ])
-          .map(valueOrDefault)
+          .map(v => valueOrDefault(v))
           .reduce(sum)
     );
   }
@@ -115,7 +115,7 @@ function getChroma(start, color, all, userAdjustments = {}, adjustments) {
           userAdjustments.chromaStart,
           adjustments.chromaStart
         ])
-        .map(valueOrDefault)
+        .map(v => valueOrDefault(v))
         .reduce(sum)
     );
   } else {
@@ -128,7 +128,7 @@ function getChroma(start, color, all, userAdjustments = {}, adjustments) {
           userAdjustments.chromaEnd,
           adjustments.chromaEnd
         ])
-        .map(valueOrDefault)
+        .map(v => valueOrDefault(v))
         .reduce(sum)
     );
   }
@@ -220,12 +220,29 @@ function getColorFunction({ type, colors }) {
 
     const interpolated = culori.interpolate([start, end], "lch");
 
-    const bezierAdjustment = (1 / 32) * 3;
+    const bezierStart = valueOrDefault(
+      valueOrDefault(colors._adjustments, {}).bezierStart,
+      (1 / 32) * 3
+    );
+    const bezierEnd = valueOrDefault(
+      valueOrDefault(colors._adjustments, {}).bezierEnd,
+      0
+    );
 
     const bezier =
       type === "dark"
-        ? easing(0.25 + bezierAdjustment, 0.25 - bezierAdjustment, 0.75, 0.75)
-        : easing(0.25, 0.25, 0.75 - bezierAdjustment, 0.75 + bezierAdjustment);
+        ? easing(
+            0.25 + bezierStart,
+            0.25 - bezierStart,
+            0.75 - bezierEnd,
+            0.75 + bezierEnd
+          )
+        : easing(
+            0.25 + bezierEnd,
+            0.25 - bezierEnd,
+            0.75 - bezierStart,
+            0.75 + bezierStart
+          );
 
     return (
       culori.formatter("hex")(
