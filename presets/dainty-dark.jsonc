@@ -3,7 +3,8 @@
   "type": "dark",
   "colors": {
     "_all": {
-      "lightnessStart": 10
+      "lightnessStart": 10.9375,
+      "chroma": 1.25
     },
     "accent": {
       "hue": 270,
