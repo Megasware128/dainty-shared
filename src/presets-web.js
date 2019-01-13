@@ -443,7 +443,7 @@ daintyDark: {
   "type": "dark",
   "colors": {
     "_all": {
-      "lightnessStart": 10.9375,
+      "lightnessStart": 10,
       "chroma": 0.5
     },
     "accent": {
