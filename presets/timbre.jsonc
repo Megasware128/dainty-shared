@@ -1,0 +1,55 @@
+{
+  "name": "Timbre",
+  "type": "dark",
+  "colors": {
+    "_all": {
+      "lightnessStart": 10,
+      "chroma": -3.75
+    },
+    "accent": {
+      "hue": 45,
+      "chroma": 25
+    },
+    "red": {
+      "hue": 90,
+      "chroma": 25
+    },
+    "orange": {
+      "hue": 135,
+      "chroma": 25
+    },
+    "yellow": {
+      "hue": 180,
+      "chroma": 25
+    },
+    "green": {
+      "hue": 225,
+      "chroma": 25
+    },
+    "cyan": {
+      "hue": 270,
+      "chroma": 25
+    },
+    "neutral": {
+      "hue": 247.5,
+      "chroma": 10,
+      "chromaEnd": -6.25
+    },
+    "blue": {
+      "hue": 247.5,
+      "chroma": 25
+    },
+    "blueLessChroma": {
+      "hue": 0,
+      "chroma": 25
+    },
+    "blueMoreChroma": {
+      "hue": 247.5,
+      "chroma": 25
+    },
+    "purple": {
+      "hue": 45,
+      "chroma": 25
+    }
+  }
+}
