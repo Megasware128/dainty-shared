@@ -166,7 +166,7 @@ function getExactColor(color, all, userAdjustments = {}, adjustments) {
     userAdjustments.lightness,
     adjustments.lightness
   ]
-    .map(valueOrDefault)
+    .map(v => valueOrDefault(v))
     .reduce(sum);
 
   const chroma = [
@@ -175,7 +175,7 @@ function getExactColor(color, all, userAdjustments = {}, adjustments) {
     userAdjustments.chroma,
     adjustments.chroma
   ]
-    .map(valueOrDefault)
+    .map(v => valueOrDefault(v))
     .reduce(sum);
 
   return {
