@@ -3484,57 +3484,56 @@ timbre: {
   "type": "dark",
   "colors": {
     "_all": {
-      "lightnessStart": 10,
-      "chroma": -3.75
+      "lightnessStart": 9.875
     },
     "accent": {
-      "hue": 45,
-      "chroma": 25
+      "hue": 191.25,
+      "chroma": 31.25
     },
     "red": {
-      "hue": 90,
-      "chroma": 25
+      "hue": 45,
+      "chroma": 31.25
     },
     "orange": {
-      "hue": 135,
-      "chroma": 25
+      "hue": 157.5,
+      "chroma": 31.25
     },
     "orangeMoreChroma": {
       "hue": 45,
       "chroma": 50
     },
     "yellow": {
-      "hue": 180,
-      "chroma": 25
+      "hue": 213.75,
+      "chroma": 31.25
     },
     "green": {
       "hue": 225,
-      "chroma": 25
+      "chroma": 31.25
     },
     "cyan": {
-      "hue": 270,
-      "chroma": 25
+      "hue": 191.25,
+      "chroma": 31.25
     },
     "neutral": {
-      "hue": 247.5,
-      "chroma": 10,
-      "chromaEnd": -6.25
+      "hue": 258.75,
+      "chroma": 7.8125,
+      "chromaEnd": -7.8125
     },
     "blue": {
-      "hue": 247.5,
-      "chroma": 25
+      "hue": 292.5,
+      "chroma": 31.25
     },
     "blueLessChroma": {
-      "hue": 0,
-      "chroma": 25
+      "hue": 258.75,
+      "chroma": 31.25
     },
     "blueMoreChroma": {
-      "hue": 247.5,
-      "chroma": 25
+      "hue": 258.75,
+      "chroma": 31.25
     },
     "purple": {
-      "hue": 45,
-      "chroma": 25
+      "hue": 292.5,
+      "chroma": 31.25
     },
     "purpleMoreChroma": {
       "hue": 315,
@@ -3565,31 +3564,31 @@ timbre: {
     "tokens": {
       "attributeName": "blueLessChroma-13",
       "comment": "neutral-8",
-      "constant": "neutral-14",
+      "constant": "neutral-13",
       "function": "blueLessChroma-13",
-      "jsxTag": "blue-11",
-      "keyword": "blue-11",
-      "literal": "blue-11",
+      "jsxTag": "blue-12",
+      "keyword": "blue-12",
+      "literal": "blue-12",
       "namespace": "neutral-13",
       "number": "green-14",
       "operator": "neutral-12",
-      "other": "neutral-14",
-      "otherType": "purple-14",
-      "parameter": "neutral-14",
-      "property": "neutral-14",
+      "other": "neutral-13",
+      "otherType": "purple-13",
+      "parameter": "neutral-13",
+      "property": "neutral-13",
       "punctuation": "neutral-10",
-      "regex": "purple-12",
-      "storageType": "blue-11",
-      "storageTypeFunction": "blue-11",
+      "regex": "purple-13",
+      "storageType": "blue-12",
+      "storageTypeFunction": "blue-12",
       "string": "orange-14",
       "stringTemplate": "orange-14",
       "supportFunction": "blueLessChroma-13",
-      "supportType": "blue-11",
-      "tag": "blue-11",
+      "supportType": "blue-12",
+      "tag": "blue-12",
       "type": "blueLessChroma-13",
-      "url": "blueMoreChroma-11",
-      "variable": "neutral-14",
-      "variableProperty": "neutral-14"
+      "url": "blueMoreChroma-13",
+      "variable": "neutral-13",
+      "variableProperty": "neutral-13"
     }
   }
 },
