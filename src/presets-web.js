@@ -3479,6 +3479,119 @@ snazzyTheme: {
     }
   }
 },
+timbreLessChroma: {
+  "name": "Timbre (less chroma)",
+  "type": "dark",
+  "colors": {
+    "_all": {
+      "lightnessStart": 9.875
+    },
+    "accent": {
+      "hue": 191.25,
+      "chroma": 21.875
+    },
+    "red": {
+      "hue": 45,
+      "chroma": 21.875
+    },
+    "orange": {
+      "hue": 157.5,
+      "chroma": 21.875
+    },
+    "orangeMoreChroma": {
+      "hue": 45,
+      "chroma": 50
+    },
+    "yellow": {
+      "hue": 213.75,
+      "chroma": 21.875
+    },
+    "green": {
+      "hue": 225,
+      "chroma": 21.875
+    },
+    "cyan": {
+      "hue": 191.25,
+      "chroma": 21.875
+    },
+    "neutral": {
+      "hue": 258.75,
+      "chroma": 7.8125,
+      "chromaEnd": -7.8125
+    },
+    "blue": {
+      "hue": 292.5,
+      "chroma": 21.875
+    },
+    "blueLessChroma": {
+      "hue": 258.75,
+      "chroma": 21.875
+    },
+    "blueMoreChroma": {
+      "hue": 258.75,
+      "chroma": 21.875
+    },
+    "purple": {
+      "hue": 292.5,
+      "chroma": 21.875
+    },
+    "purpleMoreChroma": {
+      "hue": 315,
+      "chroma": 37.5
+    }
+  },
+  "customizations": {
+    "tokensFilter": 0,
+    "cursor": "neutral-11",
+    "terminal": {
+      "black": "neutral-0",
+      "red": "red-6",
+      "green": "green-6",
+      "yellow": "yellow-12",
+      "blue": "blue-12",
+      "magenta": "purple-12",
+      "cyan": "cyan-12",
+      "white": "neutral-14",
+      "brightBlack": "neutral-6",
+      "brightRed": "red-12",
+      "brightGreen": "green-12",
+      "brightYellow": "yellow-12",
+      "brightBlue": "blue-12",
+      "brightMagenta": "purple-12",
+      "brightCyan": "cyan-12",
+      "brightWhite": "neutral-16"
+    },
+    "tokens": {
+      "attributeName": "blueLessChroma-13",
+      "comment": "neutral-8",
+      "constant": "neutral-14",
+      "function": "blueLessChroma-13",
+      "jsxTag": "blue-12",
+      "keyword": "blue-12",
+      "literal": "blue-12",
+      "namespace": "neutral-14",
+      "number": "green-14",
+      "operator": "neutral-12",
+      "other": "neutral-14",
+      "otherType": "purple-13",
+      "parameter": "neutral-14",
+      "property": "neutral-14",
+      "punctuation": "neutral-10",
+      "regex": "purple-13",
+      "storageType": "blue-12",
+      "storageTypeFunction": "blue-12",
+      "string": "orange-14",
+      "stringTemplate": "orange-14",
+      "supportFunction": "blueLessChroma-13",
+      "supportType": "blue-12",
+      "tag": "blue-12",
+      "type": "blueLessChroma-13",
+      "url": "blueMoreChroma-13",
+      "variable": "neutral-14",
+      "variableProperty": "neutral-14"
+    }
+  }
+},
 timbre: {
   "name": "Timbre",
   "type": "dark",
