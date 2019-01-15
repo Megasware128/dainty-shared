@@ -3564,18 +3564,18 @@ timbre: {
     "tokens": {
       "attributeName": "blueLessChroma-13",
       "comment": "neutral-8",
-      "constant": "neutral-13",
+      "constant": "neutral-14",
       "function": "blueLessChroma-13",
       "jsxTag": "blue-12",
       "keyword": "blue-12",
       "literal": "blue-12",
-      "namespace": "neutral-13",
+      "namespace": "neutral-14",
       "number": "green-14",
       "operator": "neutral-12",
-      "other": "neutral-13",
+      "other": "neutral-14",
       "otherType": "purple-13",
-      "parameter": "neutral-13",
-      "property": "neutral-13",
+      "parameter": "neutral-14",
+      "property": "neutral-14",
       "punctuation": "neutral-10",
       "regex": "purple-13",
       "storageType": "blue-12",
@@ -3587,8 +3587,8 @@ timbre: {
       "tag": "blue-12",
       "type": "blueLessChroma-13",
       "url": "blueMoreChroma-13",
-      "variable": "neutral-13",
-      "variableProperty": "neutral-13"
+      "variable": "neutral-14",
+      "variableProperty": "neutral-14"
     }
   }
 },
