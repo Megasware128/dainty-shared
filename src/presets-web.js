@@ -3516,8 +3516,8 @@ timbreLessChroma: {
     },
     "neutral": {
       "hue": 258.75,
-      "chroma": 7.8125,
-      "chromaEnd": -7.8125
+      "chroma": 6.25,
+      "chromaEnd": -6.25
     },
     "blue": {
       "hue": 292.5,
@@ -3601,15 +3601,15 @@ timbre: {
     },
     "accent": {
       "hue": 191.25,
-      "chroma": 31.25
+      "chroma": 28.125
     },
     "red": {
       "hue": 45,
-      "chroma": 31.25
+      "chroma": 28.125
     },
     "orange": {
       "hue": 157.5,
-      "chroma": 31.25
+      "chroma": 28.125
     },
     "orangeMoreChroma": {
       "hue": 45,
@@ -3617,15 +3617,15 @@ timbre: {
     },
     "yellow": {
       "hue": 213.75,
-      "chroma": 31.25
+      "chroma": 28.125
     },
     "green": {
       "hue": 225,
-      "chroma": 31.25
+      "chroma": 28.125
     },
     "cyan": {
       "hue": 191.25,
-      "chroma": 31.25
+      "chroma": 28.125
     },
     "neutral": {
       "hue": 258.75,
@@ -3634,19 +3634,19 @@ timbre: {
     },
     "blue": {
       "hue": 292.5,
-      "chroma": 31.25
+      "chroma": 28.125
     },
     "blueLessChroma": {
       "hue": 258.75,
-      "chroma": 31.25
+      "chroma": 28.125
     },
     "blueMoreChroma": {
       "hue": 258.75,
-      "chroma": 31.25
+      "chroma": 28.125
     },
     "purple": {
       "hue": 292.5,
-      "chroma": 31.25
+      "chroma": 28.125
     },
     "purpleMoreChroma": {
       "hue": 315,
