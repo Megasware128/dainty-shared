@@ -1,12 +1,12 @@
 {
-  "name": "Timbre (less chroma)",
+  "name": "Pivot",
   "type": "dark",
   "colors": {
     "_all": {
       "lightnessStart": 9.875
     },
     "accent": {
-      "hue": 191.25,
+      "hue": 258.75,
       "chroma": 21.875
     },
     "red": {
@@ -14,7 +14,7 @@
       "chroma": 21.875
     },
     "orange": {
-      "hue": 157.5,
+      "hue": 292.5,
       "chroma": 21.875
     },
     "yellow": {
@@ -26,7 +26,7 @@
       "chroma": 21.875
     },
     "cyan": {
-      "hue": 191.25,
+      "hue": 292.5,
       "chroma": 21.875
     },
     "neutral": {
@@ -39,7 +39,7 @@
       "chroma": 21.875
     },
     "blueLessChroma": {
-      "hue": 258.75,
+      "hue": 225,
       "chroma": 21.875
     },
     "blueMoreChroma": {
@@ -53,10 +53,10 @@
   },
   "customizations": {
     "tokens": {
-      "attributeName": "blueLessChroma-13",
+      "attributeName": "blueLessChroma-12",
       "comment": "neutral-8",
       "constant": "neutral-14",
-      "function": "blueLessChroma-13",
+      "function": "blueLessChroma-12",
       "jsxTag": "blue-12",
       "keyword": "blue-12",
       "literal": "blue-12",
@@ -73,10 +73,10 @@
       "storageTypeFunction": "blue-12",
       "string": "orange-14",
       "stringTemplate": "orange-14",
-      "supportFunction": "blueLessChroma-13",
+      "supportFunction": "blueLessChroma-12",
       "supportType": "blue-12",
       "tag": "blue-12",
-      "type": "blueLessChroma-13",
+      "type": "blueLessChroma-12",
       "url": "blueMoreChroma-13",
       "variable": "neutral-14",
       "variableProperty": "neutral-14"

@@ -1,83 +1,83 @@
 {
-  "name": "Timbre (less chroma)",
+  "name": "Ardent (less chroma)",
   "type": "dark",
   "colors": {
     "_all": {
-      "lightnessStart": 9.875
+      "lightnessStart": 9.375
     },
     "accent": {
-      "hue": 191.25,
-      "chroma": 21.875
+      "hue": 314.7,
+      "chroma": 25
     },
     "red": {
-      "hue": 45,
-      "chroma": 21.875
+      "hue": 270,
+      "chroma": 62.5
     },
     "orange": {
-      "hue": 157.5,
-      "chroma": 21.875
+      "hue": 67.5,
+      "chroma": 31.25
     },
     "yellow": {
-      "hue": 213.75,
-      "chroma": 21.875
+      "hue": 270,
+      "chroma": 62.5
     },
     "green": {
-      "hue": 225,
-      "chroma": 21.875
+      "hue": 157.5,
+      "chroma": 31.25
     },
     "cyan": {
-      "hue": 191.25,
-      "chroma": 21.875
+      "hue": 270,
+      "chroma": 62.5
     },
     "neutral": {
-      "hue": 258.75,
+      "hue": 270,
       "chroma": 9.375,
       "chromaEnd": -9.375
     },
     "blue": {
-      "hue": 292.5,
-      "chroma": 21.875
+      "hue": 314.7,
+      "chroma": 25
     },
     "blueLessChroma": {
-      "hue": 258.75,
-      "chroma": 21.875
+      "hue": 270,
+      "chroma": 25
     },
     "blueMoreChroma": {
-      "hue": 258.75,
-      "chroma": 21.875
+      "hue": 270,
+      "chroma": 62.5
     },
     "purple": {
-      "hue": 292.5,
-      "chroma": 21.875
+      "hue": 270,
+      "chroma": 62.5
     }
   },
   "customizations": {
     "tokens": {
       "attributeName": "blueLessChroma-13",
-      "comment": "neutral-8",
+      "comment": "neutral-14",
       "constant": "neutral-14",
       "function": "blueLessChroma-13",
-      "jsxTag": "blue-12",
-      "keyword": "blue-12",
-      "literal": "blue-12",
+      "jsxTag": "blue-13",
+      "keyword": "blue-13",
+      "literal": "blue-13",
       "namespace": "neutral-14",
       "number": "green-14",
       "operator": "neutral-12",
       "other": "neutral-14",
-      "otherType": "purple-13",
+      "otherType": "purple-14",
       "parameter": "neutral-14",
       "property": "neutral-14",
       "punctuation": "neutral-10",
-      "regex": "purple-13",
-      "storageType": "blue-12",
-      "storageTypeFunction": "blue-12",
+      "regex": "purple-14",
+      "storageType": "blue-13",
+      "storageTypeFunction": "blue-13",
       "string": "orange-14",
       "stringTemplate": "orange-14",
       "supportFunction": "blueLessChroma-13",
-      "supportType": "blue-12",
-      "tag": "blue-12",
+      "supportType": "blue-13",
+      "tag": "blue-13",
       "type": "blueLessChroma-13",
-      "url": "blueMoreChroma-13",
+      "url": "blueMoreChroma-14",
       "variable": "neutral-14",
       "variableProperty": "neutral-14"
     }

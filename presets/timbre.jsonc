@@ -6,7 +6,7 @@
       "lightnessStart": 9.875
     },
     "accent": {
-      "hue": 191.25,
+      "hue": 292.5,
       "chroma": 28.125
     },
     "red": {
@@ -31,8 +31,8 @@
     },
     "neutral": {
       "hue": 258.75,
-      "chroma": 7.8125,
-      "chromaEnd": -7.8125
+      "chroma": 10.9375,
+      "chromaEnd": -10.9375
     },
     "blue": {
       "hue": 292.5,
