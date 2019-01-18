@@ -1,4 +1,231 @@
 const presets = {
+ardentDarkerLessChroma: {
+  "name": "Ardent (darker, less chroma)",
+  "type": "dark",
+  "colors": {
+    "_all": {
+      "lightnessStart": 4.6875
+    },
+    "accent": {
+      "hue": 314.7,
+      "chroma": 25
+    },
+    "red": {
+      "hue": 270,
+      "chroma": 62.5
+    },
+    "orange": {
+      "hue": 67.5,
+      "chroma": 31.25
+    },
+    "orangeMoreChroma": {
+      "hue": 45,
+      "chroma": 50
+    },
+    "yellow": {
+      "hue": 270,
+      "chroma": 62.5
+    },
+    "green": {
+      "hue": 157.5,
+      "chroma": 31.25
+    },
+    "cyan": {
+      "hue": 270,
+      "chroma": 62.5
+    },
+    "neutral": {
+      "hue": 270,
+      "chroma": 9.375,
+      "chromaEnd": -9.375
+    },
+    "blue": {
+      "hue": 314.7,
+      "chroma": 25
+    },
+    "blueLessChroma": {
+      "hue": 270,
+      "chroma": 25
+    },
+    "blueMoreChroma": {
+      "hue": 270,
+      "chroma": 62.5
+    },
+    "purple": {
+      "hue": 270,
+      "chroma": 62.5
+    },
+    "purpleMoreChroma": {
+      "hue": 315,
+      "chroma": 37.5
+    }
+  },
+  "customizations": {
+    "tokensFilter": 0,
+    "cursor": "neutral-11",
+    "terminal": {
+      "black": "neutral-0",
+      "red": "red-6",
+      "green": "green-6",
+      "yellow": "yellow-12",
+      "blue": "blue-12",
+      "magenta": "purple-12",
+      "cyan": "cyan-12",
+      "white": "neutral-14",
+      "brightBlack": "neutral-6",
+      "brightRed": "red-12",
+      "brightGreen": "green-12",
+      "brightYellow": "yellow-12",
+      "brightBlue": "blue-12",
+      "brightMagenta": "purple-12",
+      "brightCyan": "cyan-12",
+      "brightWhite": "neutral-16"
+    },
+    "tokens": {
+      "attributeName": "blueLessChroma-13",
+      "comment": "neutral-14",
+      "constant": "neutral-14",
+      "function": "blueLessChroma-13",
+      "jsxTag": "blue-13",
+      "keyword": "blue-13",
+      "literal": "blue-13",
+      "namespace": "neutral-14",
+      "number": "green-14",
+      "operator": "neutral-12",
+      "other": "neutral-14",
+      "otherType": "purple-14",
+      "parameter": "neutral-14",
+      "property": "neutral-14",
+      "punctuation": "neutral-10",
+      "regex": "purple-14",
+      "storageType": "blue-13",
+      "storageTypeFunction": "blue-13",
+      "string": "orange-14",
+      "stringTemplate": "orange-14",
+      "supportFunction": "blueLessChroma-13",
+      "supportType": "blue-13",
+      "tag": "blue-13",
+      "type": "blueLessChroma-13",
+      "url": "blueMoreChroma-14",
+      "variable": "neutral-14",
+      "variableProperty": "neutral-14"
+    }
+  }
+},
+ardentDarker: {
+  "name": "Ardent (darker)",
+  "type": "dark",
+  "colors": {
+    "_all": {
+      "lightnessStart": 4.6875,
+      "chroma": 2.5
+    },
+    "accent": {
+      "hue": 314.7,
+      "chroma": 25
+    },
+    "red": {
+      "hue": 270,
+      "chroma": 62.5
+    },
+    "orange": {
+      "hue": 67.5,
+      "chroma": 31.25
+    },
+    "orangeMoreChroma": {
+      "hue": 45,
+      "chroma": 50
+    },
+    "yellow": {
+      "hue": 270,
+      "chroma": 62.5
+    },
+    "green": {
+      "hue": 157.5,
+      "chroma": 31.25
+    },
+    "cyan": {
+      "hue": 270,
+      "chroma": 62.5
+    },
+    "neutral": {
+      "hue": 270,
+      "chroma": 10.9375,
+      "chromaEnd": -10.9375
+    },
+    "blue": {
+      "hue": 314.7,
+      "chroma": 25
+    },
+    "blueLessChroma": {
+      "hue": 270,
+      "chroma": 25
+    },
+    "blueMoreChroma": {
+      "hue": 270,
+      "chroma": 62.5
+    },
+    "purple": {
+      "hue": 270,
+      "chroma": 62.5
+    },
+    "purpleMoreChroma": {
+      "hue": 315,
+      "chroma": 37.5
+    }
+  },
+  "customizations": {
+    "tokensFilter": 0,
+    "cursor": "neutral-11",
+    "terminal": {
+      "black": "neutral-0",
+      "red": "red-6",
+      "green": "green-6",
+      "yellow": "yellow-12",
+      "blue": "blue-12",
+      "magenta": "purple-12",
+      "cyan": "cyan-12",
+      "white": "neutral-14",
+      "brightBlack": "neutral-6",
+      "brightRed": "red-12",
+      "brightGreen": "green-12",
+      "brightYellow": "yellow-12",
+      "brightBlue": "blue-12",
+      "brightMagenta": "purple-12",
+      "brightCyan": "cyan-12",
+      "brightWhite": "neutral-16"
+    },
+    "tokens": {
+      "attributeName": "blueLessChroma-13",
+      "comment": "neutral-14",
+      "constant": "neutral-14",
+      "function": "blueLessChroma-13",
+      "jsxTag": "blue-13",
+      "keyword": "blue-13",
+      "literal": "blue-13",
+      "namespace": "neutral-14",
+      "number": "green-14",
+      "operator": "neutral-12",
+      "other": "neutral-14",
+      "otherType": "purple-14",
+      "parameter": "neutral-14",
+      "property": "neutral-14",
+      "punctuation": "neutral-10",
+      "regex": "purple-14",
+      "storageType": "blue-13",
+      "storageTypeFunction": "blue-13",
+      "string": "orange-14",
+      "stringTemplate": "orange-14",
+      "supportFunction": "blueLessChroma-13",
+      "supportType": "blue-13",
+      "tag": "blue-13",
+      "type": "blueLessChroma-13",
+      "url": "blueMoreChroma-14",
+      "variable": "neutral-14",
+      "variableProperty": "neutral-14"
+    }
+  }
+},
 ardentLessChroma: {
   "name": "Ardent (less chroma)",
   "type": "dark",
