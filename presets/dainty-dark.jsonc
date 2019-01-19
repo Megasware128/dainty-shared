@@ -16,7 +16,7 @@
     },
     "orange": {
       "hue": 45,
-      "chroma": 11.71875
+      "chroma": 12.5
     },
     "yellow": {
       "hue": 90,
@@ -24,7 +24,7 @@
     },
     "green": {
       "hue": 180,
-      "chroma": 14.0625
+      "chroma": 15.625
     },
     "cyan": {
       "hue": 225,
