@@ -1,0 +1,8 @@
+{
+  "accent": "string",
+  "tokens": {
+    "constant": "variable.other.constant",
+    "number": "constant",
+    "literal": "constant"
+  }
+}
