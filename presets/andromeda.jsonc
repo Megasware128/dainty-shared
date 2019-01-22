@@ -1,0 +1,97 @@
+{
+  "name": "Andromeda",
+  "type": "dark",
+  "colors": {
+    "accent": {
+      "hex": "#00e8c6"
+    },
+    "neutral": {
+      "hex": "#262a33"
+    },
+    "tokenAttributeName": {
+      "hex": "#f39c12"
+    },
+    "tokenComment": {
+      "hex": "#5f6167"
+    },
+    "tokenConstant": {
+      "hex": "#00e8c6"
+    },
+    "tokenFunction": {
+      "hex": "#ffe66d"
+    },
+    "tokenJsxTag": {
+      "hex": "#f92672"
+    },
+    "tokenKeyword": {
+      "hex": "#c74ded"
+    },
+    "tokenNumber": {
+      "hex": "#f39c12"
+    },
+    "tokenOperator": {
+      "hex": "#ee5d43"
+    },
+    "tokenOther": {
+      "hex": "#d5ced9"
+    },
+    "tokenOtherType": {
+      "hex": "#ee5d43"
+    },
+    "tokenStorageType": {
+      "hex": "#c74ded"
+    },
+    "tokenStorageTypeFunction": {
+      "hex": "#c74ded"
+    },
+    "tokenString": {
+      "hex": "#96e072"
+    },
+    "tokenStringTemplate": {
+      "hex": "#96e072"
+    },
+    "tokenSupportFunction": {
+      "hex": "#ffe66d"
+    },
+    "tokenSupportType": {
+      "hex": "#ee5d43"
+    },
+    "tokenTag": {
+      "hex": "#f92672"
+    },
+    "tokenType": {
+      "hex": "#ffe66d"
+    },
+    "tokenVariable": {
+      "hex": "#00e8c6"
+    },
+    "cursor": {
+      "hex": "#ffffff"
+    }
+  },
+  "customizations": {
+    "terminal": {},
+    "tokens": {
+      "attributeName": "tokenAttributeName-exact",
+      "comment": "tokenComment-exact",
+      "constant": "tokenConstant-exact",
+      "function": "tokenFunction-exact",
+      "jsxTag": "tokenJsxTag-exact",
+      "keyword": "tokenKeyword-exact",
+      "number": "tokenNumber-exact",
+      "operator": "tokenOperator-exact",
+      "other": "tokenOther-exact",
+      "otherType": "tokenOtherType-exact",
+      "storageType": "tokenStorageType-exact",
+      "storageTypeFunction": "tokenStorageTypeFunction-exact",
+      "string": "tokenString-exact",
+      "stringTemplate": "tokenStringTemplate-exact",
+      "supportFunction": "tokenSupportFunction-exact",
+      "supportType": "tokenSupportType-exact",
+      "tag": "tokenTag-exact",
+      "type": "tokenType-exact",
+      "variable": "tokenVariable-exact"
+    },
+    "cursor": "cursor-exact"
+  }
+}
