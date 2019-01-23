@@ -1,0 +1,163 @@
+{
+  "name": "City Lights",
+  "type": "dark",
+  "colors": {
+    "accent": {
+      "hex": "#68a1f0"
+    },
+    "black": {
+      "hex": "#41505e"
+    },
+    "white": {
+      "hex": "#ffffff"
+    },
+    "red": {
+      "hex": "#d95468"
+    },
+    "yellow": {
+      "hex": "#ebbf83"
+    },
+    "green": {
+      "hex": "#8bd49c"
+    },
+    "cyan": {
+      "hex": "#70e1e8"
+    },
+    "neutral": {
+      "hex": "#1d252c"
+    },
+    "blue": {
+      "hex": "#539afc"
+    },
+    "blueLessChroma": {
+      "hex": "#7299de"
+    },
+    "blueMoreChroma": {
+      "hex": "#009bff"
+    },
+    "purple": {
+      "hex": "#b62d65"
+    },
+    "brightBlack": {
+      "hex": "#41505e"
+    },
+    "brightWhite": {
+      "hex": "#ffffff"
+    },
+    "brightRed": {
+      "hex": "#d95468"
+    },
+    "brightYellow": {
+      "hex": "#ebbf83"
+    },
+    "brightGreen": {
+      "hex": "#8bd49c"
+    },
+    "brightCyan": {
+      "hex": "#70e1e8"
+    },
+    "brightBlue": {
+      "hex": "#539afc"
+    },
+    "brightPurple": {
+      "hex": "#b62d65"
+    },
+    "tokenComment": {
+      "hex": "#41505e"
+    },
+    "tokenConstant": {
+      "hex": "#e27e8d"
+    },
+    "tokenFunction": {
+      "hex": "#70e1e8"
+    },
+    "tokenJsxTag": {
+      "hex": "#008b94"
+    },
+    "tokenKeyword": {
+      "hex": "#5ec4ff"
+    },
+    "tokenNumber": {
+      "hex": "#e27e8d"
+    },
+    "tokenOther": {
+      "hex": "#b7c5d3"
+    },
+    "tokenParameter": {
+      "hex": "#ebbf83"
+    },
+    "tokenProperty": {
+      "hex": "#718ca1"
+    },
+    "tokenPunctuation": {
+      "hex": "#718ca1"
+    },
+    "tokenStorageType": {
+      "hex": "#008b94"
+    },
+    "tokenStorageTypeFunction": {
+      "hex": "#008b94"
+    },
+    "tokenString": {
+      "hex": "#68a1f0"
+    },
+    "tokenStringTemplate": {
+      "hex": "#68a1f0"
+    },
+    "tokenSupportFunction": {
+      "hex": "#70e1e8"
+    },
+    "tokenSupportType": {
+      "hex": "#718ca1"
+    },
+    "tokenUrl": {
+      "hex": "#718ca1"
+    },
+    "tokenVariable": {
+      "hex": "#718ca1"
+    },
+    "cursor": {
+      "hex": "#5ec4ff"
+    }
+  },
+  "customizations": {
+    "terminal": {
+      "black": "black-exact",
+      "white": "white-exact",
+      "red": "red-exact",
+      "yellow": "yellow-exact",
+      "green": "green-exact",
+      "cyan": "cyan-exact",
+      "blue": "blue-exact",
+      "brightBlack": "brightBlack-exact",
+      "brightWhite": "brightWhite-exact",
+      "brightRed": "brightRed-exact",
+      "brightYellow": "brightYellow-exact",
+      "brightGreen": "brightGreen-exact",
+      "brightCyan": "brightCyan-exact",
+      "brightBlue": "brightBlue-exact",
+      "brightPurple": "brightPurple-exact"
+    },
+    "tokens": {
+      "comment": "tokenComment-exact",
+      "constant": "tokenConstant-exact",
+      "function": "tokenFunction-exact",
+      "jsxTag": "tokenJsxTag-exact",
+      "keyword": "tokenKeyword-exact",
+      "number": "tokenNumber-exact",
+      "other": "tokenOther-exact",
+      "parameter": "tokenParameter-exact",
+      "property": "tokenProperty-exact",
+      "punctuation": "tokenPunctuation-exact",
+      "storageType": "tokenStorageType-exact",
+      "storageTypeFunction": "tokenStorageTypeFunction-exact",
+      "string": "tokenString-exact",
+      "stringTemplate": "tokenStringTemplate-exact",
+      "supportFunction": "tokenSupportFunction-exact",
+      "supportType": "tokenSupportType-exact",
+      "url": "tokenUrl-exact",
+      "variable": "tokenVariable-exact"
+    },
+    "cursor": "cursor-exact"
+  }
+}

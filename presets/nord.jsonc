@@ -1,0 +1,175 @@
+{
+  "name": "Nord",
+  "type": "dark",
+  "colors": {
+    "accent": {
+      "hex": "#88c0d0"
+    },
+    "black": {
+      "hex": "#3b4252"
+    },
+    "white": {
+      "hex": "#e5e9f0"
+    },
+    "red": {
+      "hex": "#bf616a"
+    },
+    "yellow": {
+      "hex": "#ebcb8b"
+    },
+    "green": {
+      "hex": "#a3be8c"
+    },
+    "cyan": {
+      "hex": "#88c0d0"
+    },
+    "neutral": {
+      "hex": "#2e3440"
+    },
+    "blue": {
+      "hex": "#81a1c1"
+    },
+    "blueLessChroma": {
+      "hex": "#989ea5"
+    },
+    "blueMoreChroma": {
+      "hex": "#60a4dd"
+    },
+    "purple": {
+      "hex": "#b48ead"
+    },
+    "brightBlack": {
+      "hex": "#4c566a"
+    },
+    "brightWhite": {
+      "hex": "#eceff4"
+    },
+    "brightRed": {
+      "hex": "#bf616a"
+    },
+    "brightYellow": {
+      "hex": "#ebcb8b"
+    },
+    "brightGreen": {
+      "hex": "#a3be8c"
+    },
+    "brightCyan": {
+      "hex": "#8fbcbb"
+    },
+    "brightBlue": {
+      "hex": "#81a1c1"
+    },
+    "brightPurple": {
+      "hex": "#b48ead"
+    },
+    "tokenAttributeName": {
+      "hex": "#8fbcbb"
+    },
+    "tokenComment": {
+      "hex": "#4c566a"
+    },
+    "tokenFunction": {
+      "hex": "#88c0d0"
+    },
+    "tokenJsxTag": {
+      "hex": "#81a1c1"
+    },
+    "tokenKeyword": {
+      "hex": "#81a1c1"
+    },
+    "tokenLiteral": {
+      "hex": "#81a1c1"
+    },
+    "tokenNumber": {
+      "hex": "#b48ead"
+    },
+    "tokenOperator": {
+      "hex": "#81a1c1"
+    },
+    "tokenOther": {
+      "hex": "#d8dee9"
+    },
+    "tokenOtherType": {
+      "hex": "#8fbcbb"
+    },
+    "tokenParameter": {
+      "hex": "#d8dee9"
+    },
+    "tokenPunctuation": {
+      "hex": "#eceff4"
+    },
+    "tokenRegex": {
+      "hex": "#ebcb8b"
+    },
+    "tokenStorageType": {
+      "hex": "#81a1c1"
+    },
+    "tokenStorageTypeFunction": {
+      "hex": "#81a1c1"
+    },
+    "tokenString": {
+      "hex": "#a3be8c"
+    },
+    "tokenStringTemplate": {
+      "hex": "#a3be8c"
+    },
+    "tokenSupportFunction": {
+      "hex": "#88c0d0"
+    },
+    "tokenSupportType": {
+      "hex": "#8fbcbb"
+    },
+    "tokenTag": {
+      "hex": "#81a1c1"
+    },
+    "tokenType": {
+      "hex": "#8fbcbb"
+    },
+    "cursor": {
+      "hex": "#d8dee9"
+    }
+  },
+  "customizations": {
+    "terminal": {
+      "black": "black-exact",
+      "white": "white-exact",
+      "red": "red-exact",
+      "yellow": "yellow-exact",
+      "green": "green-exact",
+      "cyan": "cyan-exact",
+      "blue": "blue-exact",
+      "brightBlack": "brightBlack-exact",
+      "brightWhite": "brightWhite-exact",
+      "brightRed": "brightRed-exact",
+      "brightYellow": "brightYellow-exact",
+      "brightGreen": "brightGreen-exact",
+      "brightCyan": "brightCyan-exact",
+      "brightBlue": "brightBlue-exact",
+      "brightPurple": "brightPurple-exact"
+    },
+    "tokens": {
+      "attributeName": "tokenAttributeName-exact",
+      "comment": "tokenComment-exact",
+      "function": "tokenFunction-exact",
+      "jsxTag": "tokenJsxTag-exact",
+      "keyword": "tokenKeyword-exact",
+      "literal": "tokenLiteral-exact",
+      "number": "tokenNumber-exact",
+      "operator": "tokenOperator-exact",
+      "other": "tokenOther-exact",
+      "otherType": "tokenOtherType-exact",
+      "parameter": "tokenParameter-exact",
+      "punctuation": "tokenPunctuation-exact",
+      "regex": "tokenRegex-exact",
+      "storageType": "tokenStorageType-exact",
+      "storageTypeFunction": "tokenStorageTypeFunction-exact",
+      "string": "tokenString-exact",
+      "stringTemplate": "tokenStringTemplate-exact",
+      "supportFunction": "tokenSupportFunction-exact",
+      "supportType": "tokenSupportType-exact",
+      "tag": "tokenTag-exact",
+      "type": "tokenType-exact"
+    },
+    "cursor": "cursor-exact"
+  }
+}

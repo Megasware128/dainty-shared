@@ -1,0 +1,9 @@
+{
+  "accent": "string",
+  "tokens": {
+    "number": "constant",
+    "function": "entity",
+    "property": "meta",
+    "constant": "variable.other.constant.js"
+  }
+}
