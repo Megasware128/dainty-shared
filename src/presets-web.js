@@ -608,7 +608,7 @@ cityLights: {
       "hex": "#41505e"
     },
     "tokenConstant": {
-      "hex": "#e27e8d"
+      "hex": "#8bd49c"
     },
     "tokenFunction": {
       "hex": "#70e1e8"
