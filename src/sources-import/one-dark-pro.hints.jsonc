@@ -1,10 +1,11 @@
 {
   "tokens": {
-    "storageType": "keyword",
-    "literal": "constant",
+    "constant": "variable.other.constant",
     "parameter": "variable.parameter.function.js",
+    "literal": "constant",
     "variableProperty": "meta.property.object",
     "property": "support.type.property-name.json",
-    "regex": "constant.other.character-class.regexp"
+    "regex": "constant.other.character-class.regexp",
+    "punctuation": "punctuation.separator.delimiter"
   }
 }

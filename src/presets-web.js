@@ -3728,7 +3728,8 @@ oneDarkPro: {
     },
     "red": {
       "hue": 22.5,
-      "chroma": 25
+      "chroma": 25,
+      "hex": "#e06c75"
     },
     "orange": {
       "hue": 45,
@@ -3741,7 +3742,7 @@ oneDarkPro: {
     "yellow": {
       "hue": 90,
       "chroma": 25,
-      "hex": "#d19a66"
+      "hex": "#e5c07b"
     },
     "green": {
       "hue": 180,
@@ -3750,7 +3751,8 @@ oneDarkPro: {
     },
     "cyan": {
       "hue": 225,
-      "chroma": 25
+      "chroma": 25,
+      "hex": "#56b6c2"
     },
     "neutral": {
       "hue": 270,
@@ -3775,7 +3777,8 @@ oneDarkPro: {
     },
     "purple": {
       "hue": 315,
-      "chroma": 25
+      "chroma": 25,
+      "hex": "#c678dd"
     },
     "purpleMoreChroma": {
       "hue": 315,
@@ -3784,6 +3787,33 @@ oneDarkPro: {
     "black": {
       "hex": "#2d3139"
     },
+    "white": {
+      "hex": "#d7dae0"
+    },
+    "brightBlack": {
+      "hex": "#7f848e"
+    },
+    "brightWhite": {
+      "hex": "#d7dae0"
+    },
+    "brightRed": {
+      "hex": "#f44747"
+    },
+    "brightYellow": {
+      "hex": "#e5c07b"
+    },
+    "brightGreen": {
+      "hex": "#98c379"
+    },
+    "brightCyan": {
+      "hex": "#56b6c2"
+    },
+    "brightBlue": {
+      "hex": "#528bff"
+    },
+    "brightPurple": {
+      "hex": "#7e0097"
+    },
     "tokenAttributeName": {
       "hex": "#d19a66"
     },
@@ -3791,7 +3821,7 @@ oneDarkPro: {
       "hex": "#7f848e"
     },
     "tokenConstant": {
-      "hex": "#d19a66"
+      "hex": "#e5c07b"
     },
     "tokenFunction": {
       "hex": "#61afef"
@@ -3820,6 +3850,9 @@ oneDarkPro: {
     "tokenProperty": {
       "hex": "#e06c75"
     },
+    "tokenPunctuation": {
+      "hex": "#bbbbbb"
+    },
     "tokenRegex": {
       "hex": "#e06c75"
     },
@@ -3847,6 +3880,9 @@ oneDarkPro: {
     "tokenType": {
       "hex": "#e5c07b"
     },
+    "tokenUrl": {
+      "hex": "#61afef"
+    },
     "tokenVariable": {
       "hex": "#e06c75"
     },
@@ -3862,21 +3898,22 @@ oneDarkPro: {
     "cursor": "cursor-exact",
     "terminal": {
       "black": "black-exact",
-      "red": "red-6",
+      "red": "red-exact",
       "green": "green-exact",
       "yellow": "yellow-exact",
       "blue": "blue-exact",
       "magenta": "purple-12",
-      "cyan": "cyan-12",
-      "white": "neutral-14",
-      "brightBlack": "neutral-6",
-      "brightRed": "red-12",
-      "brightGreen": "green-12",
-      "brightYellow": "yellow-12",
-      "brightBlue": "blue-12",
+      "cyan": "cyan-exact",
+      "white": "white-exact",
+      "brightBlack": "brightBlack-exact",
+      "brightRed": "brightRed-exact",
+      "brightGreen": "brightGreen-exact",
+      "brightYellow": "brightYellow-exact",
+      "brightBlue": "brightBlue-exact",
       "brightMagenta": "purple-12",
-      "brightCyan": "cyan-12",
-      "brightWhite": "neutral-16"
+      "brightCyan": "brightCyan-exact",
+      "brightWhite": "brightWhite-exact",
+      "brightPurple": "brightPurple-exact"
     },
     "tokens": {
       "attributeName": "tokenAttributeName-exact",
@@ -3893,7 +3930,7 @@ oneDarkPro: {
       "otherType": "tokenOtherType-exact",
       "parameter": "tokenParameter-exact",
       "property": "tokenProperty-exact",
-      "punctuation": "neutral-10",
+      "punctuation": "tokenPunctuation-exact",
       "regex": "tokenRegex-exact",
       "storageType": "tokenStorageType-exact",
       "storageTypeFunction": "tokenStorageTypeFunction-exact",
@@ -3903,7 +3940,7 @@ oneDarkPro: {
       "supportType": "tokenSupportType-exact",
       "tag": "tokenTag-exact",
       "type": "tokenType-exact",
-      "url": "blueMoreChroma-11",
+      "url": "tokenUrl-exact",
       "variable": "tokenVariable-exact",
       "variableProperty": "tokenVariableProperty-exact"
     }
