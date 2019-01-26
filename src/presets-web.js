@@ -934,7 +934,7 @@ cobalt2: {
   }
 },
 daintyDark: {
-  "name": "One Dark Pro",
+  "name": "Dainty Dark",
   "type": "dark",
   "colors": {
     "_all": {},
