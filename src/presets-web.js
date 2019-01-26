@@ -934,16 +934,14 @@ cobalt2: {
   }
 },
 daintyDark: {
-  "name": "Dainty Dark",
+  "name": "One Dark Pro",
   "type": "dark",
   "colors": {
-    "_all": {
-      "lightnessStart": 10,
-      "chroma": 0.5
-    },
+    "_all": {},
     "accent": {
       "hue": 270,
-      "chroma": 31.25
+      "chroma": 50,
+      "hex": "#7d96f1"
     },
     "red": {
       "hue": 22.5,
@@ -963,7 +961,7 @@ daintyDark: {
     },
     "green": {
       "hue": 180,
-      "chroma": 15.625
+      "chroma": 25
     },
     "cyan": {
       "hue": 225,
@@ -971,8 +969,9 @@ daintyDark: {
     },
     "neutral": {
       "hue": 270,
-      "chroma": 8.59375,
-      "chromaEnd": -6.09375
+      "chroma": 6.25,
+      "chromaEnd": -6.25,
+      "hex": "#161b31"
     },
     "blue": {
       "hue": 270,
@@ -980,11 +979,11 @@ daintyDark: {
     },
     "blueLessChroma": {
       "hue": 270,
-      "chroma": 18.75
+      "chroma": 12.5
     },
     "blueMoreChroma": {
       "hue": 270,
-      "chroma": 31.25
+      "chroma": 50
     },
     "purple": {
       "hue": 315,
@@ -993,11 +992,89 @@ daintyDark: {
     "purpleMoreChroma": {
       "hue": 315,
       "chroma": 37.5
+    },
+    "tokenAttributeName": {
+      "hex": "#bedeff"
+    },
+    "tokenComment": {
+      "hex": "#878dab"
+    },
+    "tokenConstant": {
+      "hex": "#d8ddf1"
+    },
+    "tokenFunction": {
+      "hex": "#c1ceff"
+    },
+    "tokenJsxTag": {
+      "hex": "#c6b3ff"
+    },
+    "tokenKeyword": {
+      "hex": "#93a7f9"
+    },
+    "tokenLiteral": {
+      "hex": "#b4f5ff"
+    },
+    "tokenNumber": {
+      "hex": "#b1ffdf"
+    },
+    "tokenOperator": {
+      "hex": "#b8c1e8"
+    },
+    "tokenOtherType": {
+      "hex": "#f6c4ff"
+    },
+    "tokenParameter": {
+      "hex": "#d8ddf1"
+    },
+    "tokenProperty": {
+      "hex": "#d8ddf1"
+    },
+    "tokenPunctuation": {
+      "hex": "#9ca4c7"
+    },
+    "tokenRegex": {
+      "hex": "#f6c4ff"
+    },
+    "tokenStorageType": {
+      "hex": "#93a7f9"
+    },
+    "tokenStorageTypeFunction": {
+      "hex": "#93a7f9"
+    },
+    "tokenString": {
+      "hex": "#ffe0db"
+    },
+    "tokenStringTemplate": {
+      "hex": "#ffe0db"
+    },
+    "tokenSupportFunction": {
+      "hex": "#c1ceff"
+    },
+    "tokenSupportType": {
+      "hex": "#d8ddf1"
+    },
+    "tokenTag": {
+      "hex": "#c6b3ff"
+    },
+    "tokenType": {
+      "hex": "#d8ddf1"
+    },
+    "tokenUrl": {
+      "hex": "#7d96f1"
+    },
+    "tokenVariable": {
+      "hex": "#d8ddf1"
+    },
+    "tokenVariableProperty": {
+      "hex": "#d8ddf1"
+    },
+    "cursor": {
+      "hex": "#c1ceff"
     }
   },
   "customizations": {
     "tokensFilter": 0,
-    "cursor": "neutral-11",
+    "cursor": "cursor-exact",
     "terminal": {
       "black": "neutral-0",
       "red": "red-6",
@@ -1017,33 +1094,33 @@ daintyDark: {
       "brightWhite": "neutral-16"
     },
     "tokens": {
-      "attributeName": "blueLessChroma-13",
-      "comment": "neutral-8",
-      "constant": "neutral-14",
-      "function": "blueLessChroma-13",
-      "jsxTag": "blue-11",
-      "keyword": "blue-11",
-      "literal": "blue-11",
+      "attributeName": "tokenAttributeName-exact",
+      "comment": "tokenComment-exact",
+      "constant": "tokenConstant-exact",
+      "function": "tokenFunction-exact",
+      "jsxTag": "tokenJsxTag-exact",
+      "keyword": "tokenKeyword-exact",
+      "literal": "tokenLiteral-exact",
       "namespace": "neutral-13",
-      "number": "green-14",
-      "operator": "neutral-12",
+      "number": "tokenNumber-exact",
+      "operator": "tokenOperator-exact",
       "other": "neutral-14",
-      "otherType": "purple-14",
-      "parameter": "neutral-14",
-      "property": "neutral-14",
-      "punctuation": "neutral-10",
-      "regex": "purple-12",
-      "storageType": "blue-11",
-      "storageTypeFunction": "blue-11",
-      "string": "orange-14",
-      "stringTemplate": "orange-14",
-      "supportFunction": "blueLessChroma-13",
-      "supportType": "blue-11",
-      "tag": "blue-11",
-      "type": "blueLessChroma-13",
-      "url": "blueMoreChroma-11",
-      "variable": "neutral-14",
-      "variableProperty": "neutral-14"
+      "otherType": "tokenOtherType-exact",
+      "parameter": "tokenParameter-exact",
+      "property": "tokenProperty-exact",
+      "punctuation": "tokenPunctuation-exact",
+      "regex": "tokenRegex-exact",
+      "storageType": "tokenStorageType-exact",
+      "storageTypeFunction": "tokenStorageTypeFunction-exact",
+      "string": "tokenString-exact",
+      "stringTemplate": "tokenStringTemplate-exact",
+      "supportFunction": "tokenSupportFunction-exact",
+      "supportType": "tokenSupportType-exact",
+      "tag": "tokenTag-exact",
+      "type": "tokenType-exact",
+      "url": "tokenUrl-exact",
+      "variable": "tokenVariable-exact",
+      "variableProperty": "tokenVariableProperty-exact"
     }
   }
 },
