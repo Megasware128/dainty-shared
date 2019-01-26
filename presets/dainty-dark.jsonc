@@ -63,7 +63,7 @@
     //   "hex":
     // },
     "tokenAttributeName": {
-      "hex": "#bedeff"
+      "hex": "#d1e6ff"
     },
     "tokenComment": {
       "hex": "#878dab"
@@ -72,7 +72,7 @@
       "hex": "#d8ddf1"
     },
     "tokenFunction": {
-      "hex": "#c1ceff"
+      "hex": "#cad5ff"
     },
     "tokenJsxTag": {
       "hex": "#c6b3ff"
@@ -117,7 +117,7 @@
       "hex": "#ffe0db"
     },
     "tokenSupportFunction": {
-      "hex": "#c1ceff"
+      "hex": "#cad5ff"
     },
     "tokenSupportType": {
       "hex": "#d8ddf1"
@@ -138,7 +138,7 @@
       "hex": "#d8ddf1"
     },
     "cursor": {
-      "hex": "#c1ceff"
+      "hex": "#cad5ff"
     }
   },
   "customizations": {

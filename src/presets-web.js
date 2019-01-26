@@ -994,7 +994,7 @@ daintyDark: {
       "chroma": 37.5
     },
     "tokenAttributeName": {
-      "hex": "#bedeff"
+      "hex": "#d1e6ff"
     },
     "tokenComment": {
       "hex": "#878dab"
@@ -1003,7 +1003,7 @@ daintyDark: {
       "hex": "#d8ddf1"
     },
     "tokenFunction": {
-      "hex": "#c1ceff"
+      "hex": "#cad5ff"
     },
     "tokenJsxTag": {
       "hex": "#c6b3ff"
@@ -1048,7 +1048,7 @@ daintyDark: {
       "hex": "#ffe0db"
     },
     "tokenSupportFunction": {
-      "hex": "#c1ceff"
+      "hex": "#cad5ff"
     },
     "tokenSupportType": {
       "hex": "#d8ddf1"
@@ -1069,7 +1069,7 @@ daintyDark: {
       "hex": "#d8ddf1"
     },
     "cursor": {
-      "hex": "#c1ceff"
+      "hex": "#cad5ff"
     }
   },
   "customizations": {
