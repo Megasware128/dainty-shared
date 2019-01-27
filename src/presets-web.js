@@ -1240,8 +1240,8 @@ daintyLight: {
     }
   }
 },
-darkPlus_2019Remaster: {
-  "name": "Dark+ (2019 Remaster)",
+darkPlusReimagined: {
+  "name": "Dark+ Reimagined",
   "type": "dark",
   "colors": {
     "_all": {},
@@ -1307,7 +1307,7 @@ darkPlus_2019Remaster: {
       "hex": "#959aa7"
     },
     "tokenFunction": {
-      "hex": "#f0f0e0"
+      "hex": "#e8e8d8"
     },
     "tokenJsxTag": {
       "hex": "#80ebe1"
@@ -1352,7 +1352,7 @@ darkPlus_2019Remaster: {
       "hex": "#ffd3c0"
     },
     "tokenSupportFunction": {
-      "hex": "#f0f0e0"
+      "hex": "#e8e8d8"
     },
     "tokenSupportType": {
       "hex": "#80ebe1"
