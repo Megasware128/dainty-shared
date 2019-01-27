@@ -1,0 +1,184 @@
+{
+  "name": "Dark+ (2019 Remaster)",
+  "type": "dark",
+  "colors": {
+    "_all": {},
+    "accent": {
+      "hex": "#80a1ff"
+    },
+    // "black": {
+    //   "hex": "#000000"
+    // },
+    // "white": {
+    //   "hex": "#e5e5e5"
+    // },
+    // "red": {
+    //   "hex": "#cd3131"
+    // },
+    // "yellow": {
+    //   "hex": "#e5e510"
+    // },
+    // "green": {
+    //   "hex": "#0dbc79"
+    // },
+    // "cyan": {
+    //   "hex": "#11a8cd"
+    // },
+    "neutral": {
+      "hex": "#181b2d"
+    },
+    // "blue": {
+    //   "hex": "#2472c8"
+    // },
+    // "blueLessChroma": {
+    //   "hex": "#4d71ac"
+    // },
+    // "blueMoreChroma": {
+    //   "hex": "#0073e5"
+    // },
+    // "purple": {
+    //   "hex": "#bc3fbc"
+    // },
+    // "brightBlack": {
+    //   "hex": "#666666"
+    // },
+    // "brightWhite": {
+    //   "hex": "#e5e5e5"
+    // },
+    // "brightRed": {
+    //   "hex": "#f14c4c"
+    // },
+    // "brightYellow": {
+    //   "hex": "#f5f543"
+    // },
+    // "brightGreen": {
+    //   "hex": "#23d18b"
+    // },
+    // "brightCyan": {
+    //   "hex": "#29b8db"
+    // },
+    // "brightBlue": {
+    //   "hex": "#3b8eea"
+    // },
+    // "brightPurple": {
+    //   "hex": "#d670d6"
+    // },
+    "tokenAttributeName": {
+      "hex": "#c1d1ff"
+    },
+    "tokenComment": {
+      "hex": "#959aa7"
+    },
+    "tokenFunction": {
+      "hex": "#e8e8d8"
+    },
+    "tokenJsxTag": {
+      "hex": "#80ebe1"
+    },
+    "tokenKeyword": {
+      "hex": "#80a1ff"
+    },
+    "tokenLiteral": {
+      "hex": "#80a1ff"
+    },
+    "tokenNumber": {
+      "hex": "#b6ffe1"
+    },
+    "tokenOperator": {
+      "hex": "#a7b0cd"
+    },
+    "tokenOther": {
+      "hex": "#d4d4d4"
+    },
+    "tokenOtherType": {
+      "hex": "#80ebe1"
+    },
+    "tokenProperty": {
+      "hex": "#c1d1ff"
+    },
+    "tokenPunctuation": {
+      "hex": "#acb2c2"
+    },
+    "tokenRegex": {
+      "hex": "#646695"
+    },
+    "tokenStorageType": {
+      "hex": "#80a1ff"
+    },
+    "tokenStorageTypeFunction": {
+      "hex": "#80a1ff"
+    },
+    "tokenString": {
+      "hex": "#ffd3c0"
+    },
+    "tokenStringTemplate": {
+      "hex": "#ffd3c0"
+    },
+    "tokenSupportFunction": {
+      "hex": "#e8e8d8"
+    },
+    "tokenSupportType": {
+      "hex": "#80ebe1"
+    },
+    "tokenTag": {
+      "hex": "#80a1ff"
+    },
+    "tokenType": {
+      "hex": "#80ebe1"
+    },
+    "tokenUrl": {
+      "hex": "#3794ff"
+    },
+    "tokenVariable": {
+      "hex": "#c1d1ff"
+    },
+    "cursor": {
+      "hex": "#aeafad"
+    }
+  },
+  "customizations": {
+    "terminal": {
+      // "black": "black-exact",
+      // "white": "white-exact",
+      // "red": "red-exact",
+      // "yellow": "yellow-exact",
+      // "green": "green-exact",
+      // "cyan": "cyan-exact",
+      // "blue": "blue-exact",
+      // "brightBlack": "brightBlack-exact",
+      // "brightWhite": "brightWhite-exact",
+      // "brightRed": "brightRed-exact",
+      // "brightYellow": "brightYellow-exact",
+      // "brightGreen": "brightGreen-exact",
+      // "brightCyan": "brightCyan-exact",
+      // "brightBlue": "brightBlue-exact",
+      // "brightPurple": "brightPurple-exact"
+    },
+    "tokens": {
+      "attributeName": "tokenAttributeName-exact",
+      "comment": "tokenComment-exact",
+      "function": "tokenFunction-exact",
+      "jsxTag": "tokenJsxTag-exact",
+      "keyword": "tokenKeyword-exact",
+      "literal": "tokenLiteral-exact",
+      "number": "tokenNumber-exact",
+      "operator": "tokenOperator-exact",
+      "other": "tokenOther-exact",
+      "otherType": "tokenOtherType-exact",
+      "property": "tokenProperty-exact",
+      "punctuation": "tokenPunctuation-exact",
+      "regex": "tokenRegex-exact",
+      "storageType": "tokenStorageType-exact",
+      "storageTypeFunction": "tokenStorageTypeFunction-exact",
+      "string": "tokenString-exact",
+      "stringTemplate": "tokenStringTemplate-exact",
+      "supportFunction": "tokenSupportFunction-exact",
+      "supportType": "tokenSupportType-exact",
+      "tag": "tokenTag-exact",
+      "type": "tokenType-exact",
+      "url": "tokenUrl-exact",
+      "variable": "tokenVariable-exact"
+    },
+    "cursor": "cursor-exact"
+  }
+}

@@ -1240,6 +1240,191 @@ daintyLight: {
     }
   }
 },
+darkPlus_2019Remaster: {
+  "name": "Dark+ (2019 Remaster)",
+  "type": "dark",
+  "colors": {
+    "_all": {},
+    "accent": {
+      "hue": 270,
+      "chroma": 50,
+      "hex": "#80a1ff"
+    },
+    "red": {
+      "hue": 22.5,
+      "chroma": 25
+    },
+    "orange": {
+      "hue": 45,
+      "chroma": 12.5
+    },
+    "orangeMoreChroma": {
+      "hue": 45,
+      "chroma": 50
+    },
+    "yellow": {
+      "hue": 90,
+      "chroma": 25
+    },
+    "green": {
+      "hue": 180,
+      "chroma": 25
+    },
+    "cyan": {
+      "hue": 225,
+      "chroma": 25
+    },
+    "neutral": {
+      "hue": 270,
+      "chroma": 6.25,
+      "chromaEnd": -6.25,
+      "hex": "#181b2d"
+    },
+    "blue": {
+      "hue": 270,
+      "chroma": 25
+    },
+    "blueLessChroma": {
+      "hue": 270,
+      "chroma": 12.5
+    },
+    "blueMoreChroma": {
+      "hue": 270,
+      "chroma": 50
+    },
+    "purple": {
+      "hue": 315,
+      "chroma": 25
+    },
+    "purpleMoreChroma": {
+      "hue": 315,
+      "chroma": 37.5
+    },
+    "tokenAttributeName": {
+      "hex": "#c1d1ff"
+    },
+    "tokenComment": {
+      "hex": "#959aa7"
+    },
+    "tokenFunction": {
+      "hex": "#f0f0e0"
+    },
+    "tokenJsxTag": {
+      "hex": "#80ebe1"
+    },
+    "tokenKeyword": {
+      "hex": "#80a1ff"
+    },
+    "tokenLiteral": {
+      "hex": "#80a1ff"
+    },
+    "tokenNumber": {
+      "hex": "#b6ffe1"
+    },
+    "tokenOperator": {
+      "hex": "#a7b0cd"
+    },
+    "tokenOther": {
+      "hex": "#d4d4d4"
+    },
+    "tokenOtherType": {
+      "hex": "#80ebe1"
+    },
+    "tokenProperty": {
+      "hex": "#c1d1ff"
+    },
+    "tokenPunctuation": {
+      "hex": "#acb2c2"
+    },
+    "tokenRegex": {
+      "hex": "#646695"
+    },
+    "tokenStorageType": {
+      "hex": "#80a1ff"
+    },
+    "tokenStorageTypeFunction": {
+      "hex": "#80a1ff"
+    },
+    "tokenString": {
+      "hex": "#ffd3c0"
+    },
+    "tokenStringTemplate": {
+      "hex": "#ffd3c0"
+    },
+    "tokenSupportFunction": {
+      "hex": "#f0f0e0"
+    },
+    "tokenSupportType": {
+      "hex": "#80ebe1"
+    },
+    "tokenTag": {
+      "hex": "#80a1ff"
+    },
+    "tokenType": {
+      "hex": "#80ebe1"
+    },
+    "tokenUrl": {
+      "hex": "#3794ff"
+    },
+    "tokenVariable": {
+      "hex": "#c1d1ff"
+    },
+    "cursor": {
+      "hex": "#aeafad"
+    }
+  },
+  "customizations": {
+    "tokensFilter": 0,
+    "cursor": "cursor-exact",
+    "terminal": {
+      "black": "neutral-0",
+      "red": "red-6",
+      "green": "green-6",
+      "yellow": "yellow-12",
+      "blue": "blue-12",
+      "magenta": "purple-12",
+      "cyan": "cyan-12",
+      "white": "neutral-14",
+      "brightBlack": "neutral-6",
+      "brightRed": "red-12",
+      "brightGreen": "green-12",
+      "brightYellow": "yellow-12",
+      "brightBlue": "blue-12",
+      "brightMagenta": "purple-12",
+      "brightCyan": "cyan-12",
+      "brightWhite": "neutral-16"
+    },
+    "tokens": {
+      "attributeName": "tokenAttributeName-exact",
+      "comment": "tokenComment-exact",
+      "constant": "neutral-14",
+      "function": "tokenFunction-exact",
+      "jsxTag": "tokenJsxTag-exact",
+      "keyword": "tokenKeyword-exact",
+      "literal": "tokenLiteral-exact",
+      "namespace": "neutral-13",
+      "number": "tokenNumber-exact",
+      "operator": "tokenOperator-exact",
+      "other": "tokenOther-exact",
+      "otherType": "tokenOtherType-exact",
+      "parameter": "neutral-14",
+      "property": "tokenProperty-exact",
+      "punctuation": "tokenPunctuation-exact",
+      "regex": "tokenRegex-exact",
+      "storageType": "tokenStorageType-exact",
+      "storageTypeFunction": "tokenStorageTypeFunction-exact",
+      "string": "tokenString-exact",
+      "stringTemplate": "tokenStringTemplate-exact",
+      "supportFunction": "tokenSupportFunction-exact",
+      "supportType": "tokenSupportType-exact",
+      "tag": "tokenTag-exact",
+      "type": "tokenType-exact",
+      "url": "tokenUrl-exact",
+      "variable": "tokenVariable-exact",
+      "variableProperty": "neutral-14"
+    }
+  }
+},
 darkPlus: {
   "name": "Dark+",
   "type": "dark",
